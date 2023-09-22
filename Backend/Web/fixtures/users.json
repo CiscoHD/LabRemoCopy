@@ -1,0 +1,26 @@
+[
+    {
+        "model":"users.user",
+        "id": 1,
+        "pk": null,
+        "fields":{
+            "username": "sdev02",
+            "email":"sdev02@labrem.ddns.net",
+            "password": "pbkdf2_sha256$600000$5zCcoNOgPXpTXxGrQnzdnn$zcjyrgnLBsYR9Ru4yq1VLH9lme36Fg/azE0E60aHKIc=",
+            "isAvailable": 0,
+            "userType": null
+        }
+    },
+    {
+        "model":"users.user",
+        "id": 2,
+        "pk": null,
+        "fields":{
+            "username": "user3",
+            "email": "user3@labrem.ddns.net",
+            "password": "pbkdf2_sha256$600000$5zCcoNOgPXpTXxGrQnzdnn$zcjyrgnLBsYR9Ru4yq1VLH9lme36Fg/azE0E60aHKIc=",
+            "isAvailable": 0,
+            "userType": null
+        }
+    }
+]

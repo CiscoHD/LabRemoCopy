@@ -1,0 +1,4 @@
+[{"model": "users.schools", "pk": 1, "fields": {"university": 1, "name": "Facultad de Ingenier\u00eda", "isAvailable": 1}},
+{"model": "users.schools", "pk": 2, "fields": {"university": 1, "name": "Anexo de Ingenier\u00eda", "isAvailable": 1}},
+{"model": "users.schools", "pk": 3, "fields": {"university": 1, "name": "Otra Facultad de Ingenier\u00eda", "isAvailable": 1}}
+]

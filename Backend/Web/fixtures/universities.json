@@ -1,0 +1,4 @@
+[{"model": "users.universities", "pk": 1, "fields": {"name": "Universad Naciona...", "isAvailable": 1, "country": 1}},
+{"model": "users.universities", "pk": 2, "fields": {"name": "IPN", "isAvailable": 1, "country": 1}},
+{"model": "users.universities", "pk": 3, "fields": {"name": "UAM", "isAvailable": 0, "country": 1}}
+]
