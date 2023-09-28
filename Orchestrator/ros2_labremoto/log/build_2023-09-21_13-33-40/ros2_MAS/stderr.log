@@ -1,0 +1,1 @@
+[0mCMake Error: The source "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/ros2_mas/CMakeLists.txt" does not match the source "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/ros2_MAS/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.[0m

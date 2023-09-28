@@ -1,0 +1,42 @@
+[1.885s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/ros2_mas -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas
+[2.139s] -- The C compiler identification is GNU 11.4.0
+[2.387s] -- The CXX compiler identification is GNU 11.4.0
+[2.431s] -- Detecting C compiler ABI info
+[2.885s] -- Detecting C compiler ABI info - done
+[2.918s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.923s] -- Detecting C compile features
+[2.923s] -- Detecting C compile features - done
+[2.947s] -- Detecting CXX compiler ABI info
+[3.320s] -- Detecting CXX compiler ABI info - done
+[3.352s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.353s] -- Detecting CXX compile features
+[3.355s] -- Detecting CXX compile features - done
+[3.360s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.047s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.469s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.801s] -- Added test 'lint_cmake' to check CMake code style
+[4.806s] -- Added test 'xmllint' to check XML markup files
+[4.824s] -- Configuring done
+[4.843s] -- Generating done
+[4.847s] -- Build files have been written to: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas
+[4.877s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas' returned '0': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/ros2_mas -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas
+[4.879s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas -- -j4 -l4
+[5.044s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas' returned '0': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas -- -j4 -l4
+[5.132s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --install /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas
+[5.156s] -- Install configuration: ""
+[5.159s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ament_index/resource_index/package_run_dependencies/ros2_mas
+[5.165s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ament_index/resource_index/parent_prefix_path/ros2_mas
+[5.166s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/environment/ament_prefix_path.sh
+[5.167s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/environment/ament_prefix_path.dsv
+[5.167s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/environment/path.sh
+[5.168s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/environment/path.dsv
+[5.168s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/local_setup.bash
+[5.169s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/local_setup.sh
+[5.170s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/local_setup.zsh
+[5.170s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/local_setup.dsv
+[5.171s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/package.dsv
+[5.172s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ament_index/resource_index/packages/ros2_mas
+[5.174s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/cmake/ros2_masConfig.cmake
+[5.174s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/cmake/ros2_masConfig-version.cmake
+[5.175s] -- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ros2_mas/share/ros2_mas/package.xml
+[5.194s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas' returned '0': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --install /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ros2_mas

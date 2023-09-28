@@ -1,0 +1,28 @@
+[2.162s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log --single-version-externally-managed
+[2.950s] running egg_info
+[2.952s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[2.953s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[2.954s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[2.954s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[2.958s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[2.961s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.966s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.969s] running build
+[2.970s] running build_py
+[2.970s] copying py_pubsub/fibonacci_action_server.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[2.971s] running install
+[2.971s] running install_lib
+[2.973s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub/fibonacci_action_server.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[2.976s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/fibonacci_action_server.py to fibonacci_action_server.cpython-310.pyc
+[2.978s] running install_data
+[2.979s] running install_egg_info
+[2.984s] removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[2.985s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info
+[2.990s] running install_scripts
+[3.048s] Installing action script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[3.049s] Installing client script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[3.051s] Installing listener script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[3.051s] Installing service script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[3.052s] Installing talker script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[3.052s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log'
+[3.142s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub' returned '0': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log --single-version-externally-managed
