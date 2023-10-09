@@ -15,6 +15,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SensorMeasurment.msg"
   "srv/LoadFile.srv"
   "action/Fibonacci.action"
+  "action/Cargahex.action"
   DEPENDENCIES geometry_msgs
 )
 

@@ -25,7 +25,8 @@ setup(
                 'listener = py_pubsub.subscriber_member_function:main',
                 'service = py_pubsub.service_member_function:main',
                 'client = py_pubsub.client_member_function:main',
-                'action = py_pubsub.fibonacci_action_server:main'
+                'action = py_pubsub.fibonacci_action_server:main',
+                'con_arduino = py_pubsub.arduio_infrastructure:main',
         ],
 },
 )

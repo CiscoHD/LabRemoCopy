@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_mas__cpp"
+  "rosidl_generator_cpp/my_mas/action/cargahex.hpp"
+  "rosidl_generator_cpp/my_mas/action/detail/cargahex__builder.hpp"
+  "rosidl_generator_cpp/my_mas/action/detail/cargahex__struct.hpp"
+  "rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp"
   "rosidl_generator_cpp/my_mas/action/detail/fibonacci__builder.hpp"
   "rosidl_generator_cpp/my_mas/action/detail/fibonacci__struct.hpp"
   "rosidl_generator_cpp/my_mas/action/detail/fibonacci__traits.hpp"

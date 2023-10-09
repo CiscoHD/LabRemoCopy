@@ -8,9 +8,9 @@ setup.py
 ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
 ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
 ../../build/py_pubsub/py_pubsub.egg-info/zip-safe
-py_pubsub/Arduino_infrastructure.py
 py_pubsub/__init__.py
 py_pubsub/arduino.py
+py_pubsub/arduino_infrastructure.py
 py_pubsub/client_member_function.py
 py_pubsub/fibonacci_action_server.py
 py_pubsub/publisher_member_function.py

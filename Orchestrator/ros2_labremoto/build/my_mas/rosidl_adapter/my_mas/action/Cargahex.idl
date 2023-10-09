@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_mas/action/Cargahex.action
+// generated code does not contain a copyright notice
+
+
+module my_mas {
+  module action {
+    struct Cargahex_Goal {
+      string path_hex;
+    };
+    struct Cargahex_Result {
+      string status;
+    };
+    struct Cargahex_Feedback {
+      string status_final;
+    };
+  };
+};

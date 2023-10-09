@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../../../build/nodes_comunication/nodes_comunication.egg-info/PKG-INFO
+../../../../build/nodes_comunication/nodes_comunication.egg-info/SOURCES.txt
+../../../../build/nodes_comunication/nodes_comunication.egg-info/dependency_links.txt
+../../../../build/nodes_comunication/nodes_comunication.egg-info/entry_points.txt
+../../../../build/nodes_comunication/nodes_comunication.egg-info/requires.txt
+../../../../build/nodes_comunication/nodes_comunication.egg-info/top_level.txt
+../../../../build/nodes_comunication/nodes_comunication.egg-info/zip-safe
+nodes_comunication/__init__.py
+nodes_comunication/minimal_pub.py
+nodes_comunication/publisher_node.py
+resource/nodes_comunication
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

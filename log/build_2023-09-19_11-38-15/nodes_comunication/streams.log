@@ -1,0 +1,37 @@
+[3.943s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/nodes_comunication': PYTHONPATH=/home/ffelix07/Documents/LabRemo/build/nodes_comunication/prefix_override:/home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/nodes_comunication build --build-base /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build install --record /home/ffelix07/Documents/LabRemo/build/nodes_comunication/install.log --single-version-externally-managed
+[5.582s] running egg_info
+[5.584s] creating ../../../../build/nodes_comunication/nodes_comunication.egg-info
+[5.584s] writing ../../../../build/nodes_comunication/nodes_comunication.egg-info/PKG-INFO
+[5.586s] writing dependency_links to ../../../../build/nodes_comunication/nodes_comunication.egg-info/dependency_links.txt
+[5.586s] writing entry points to ../../../../build/nodes_comunication/nodes_comunication.egg-info/entry_points.txt
+[5.587s] writing requirements to ../../../../build/nodes_comunication/nodes_comunication.egg-info/requires.txt
+[5.587s] writing top-level names to ../../../../build/nodes_comunication/nodes_comunication.egg-info/top_level.txt
+[5.588s] writing manifest file '../../../../build/nodes_comunication/nodes_comunication.egg-info/SOURCES.txt'
+[5.595s] reading manifest file '../../../../build/nodes_comunication/nodes_comunication.egg-info/SOURCES.txt'
+[5.599s] writing manifest file '../../../../build/nodes_comunication/nodes_comunication.egg-info/SOURCES.txt'
+[5.599s] running build
+[5.600s] running build_py
+[5.601s] creating /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build
+[5.601s] creating /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build/lib
+[5.602s] creating /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build/lib/nodes_comunication
+[5.603s] copying nodes_comunication/publisher_node.py -> /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build/lib/nodes_comunication
+[5.603s] copying nodes_comunication/__init__.py -> /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build/lib/nodes_comunication
+[5.604s] running install
+[5.604s] running install_lib
+[5.611s] creating /home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/python3.10/site-packages/nodes_comunication
+[5.612s] copying /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build/lib/nodes_comunication/publisher_node.py -> /home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/python3.10/site-packages/nodes_comunication
+[5.612s] copying /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build/lib/nodes_comunication/__init__.py -> /home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/python3.10/site-packages/nodes_comunication
+[5.618s] byte-compiling /home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/python3.10/site-packages/nodes_comunication/publisher_node.py to publisher_node.cpython-310.pyc
+[5.620s] byte-compiling /home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/python3.10/site-packages/nodes_comunication/__init__.py to __init__.cpython-310.pyc
+[5.620s] running install_data
+[5.622s] creating /home/ffelix07/Documents/LabRemo/install/nodes_comunication/share/ament_index
+[5.623s] creating /home/ffelix07/Documents/LabRemo/install/nodes_comunication/share/ament_index/resource_index
+[5.624s] creating /home/ffelix07/Documents/LabRemo/install/nodes_comunication/share/ament_index/resource_index/packages
+[5.625s] copying resource/nodes_comunication -> /home/ffelix07/Documents/LabRemo/install/nodes_comunication/share/ament_index/resource_index/packages
+[5.627s] copying package.xml -> /home/ffelix07/Documents/LabRemo/install/nodes_comunication/share/nodes_comunication
+[5.627s] running install_egg_info
+[5.632s] Copying ../../../../build/nodes_comunication/nodes_comunication.egg-info to /home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/python3.10/site-packages/nodes_comunication-0.0.0-py3.10.egg-info
+[5.637s] running install_scripts
+[5.711s] Installing pub_node script to /home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/nodes_comunication
+[5.712s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/build/nodes_comunication/install.log'
+[5.833s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/nodes_comunication' returned '0': PYTHONPATH=/home/ffelix07/Documents/LabRemo/build/nodes_comunication/prefix_override:/home/ffelix07/Documents/LabRemo/install/nodes_comunication/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/nodes_comunication build --build-base /home/ffelix07/Documents/LabRemo/build/nodes_comunication/build install --record /home/ffelix07/Documents/LabRemo/build/nodes_comunication/install.log --single-version-externally-managed

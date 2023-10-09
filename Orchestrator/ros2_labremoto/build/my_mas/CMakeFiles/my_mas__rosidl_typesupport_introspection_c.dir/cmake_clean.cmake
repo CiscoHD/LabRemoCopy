@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/cargahex__type_support.c.o"
+  "CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/cargahex__type_support.c.o.d"
   "CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/fibonacci__type_support.c.o"
   "CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/fibonacci__type_support.c.o.d"
   "CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.c.o"
@@ -7,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/srv/detail/load_file__type_support.c.o.d"
   "libmy_mas__rosidl_typesupport_introspection_c.pdb"
   "libmy_mas__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/my_mas/action/detail/cargahex__type_support.c"
   "rosidl_typesupport_introspection_c/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_mas/action/detail/fibonacci__type_support.c"
   "rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_c.h"

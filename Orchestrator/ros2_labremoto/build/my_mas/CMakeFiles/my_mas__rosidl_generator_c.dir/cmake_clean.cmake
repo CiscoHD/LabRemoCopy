@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o"
+  "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o.d"
   "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o"
   "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o.d"
   "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c.o"
@@ -7,6 +9,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o.d"
   "libmy_mas__rosidl_generator_c.pdb"
   "libmy_mas__rosidl_generator_c.so"
+  "rosidl_generator_c/my_mas/action/cargahex.h"
+  "rosidl_generator_c/my_mas/action/detail/cargahex__functions.c"
+  "rosidl_generator_c/my_mas/action/detail/cargahex__functions.h"
+  "rosidl_generator_c/my_mas/action/detail/cargahex__struct.h"
+  "rosidl_generator_c/my_mas/action/detail/cargahex__type_support.h"
   "rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c"
   "rosidl_generator_c/my_mas/action/detail/fibonacci__functions.h"
   "rosidl_generator_c/my_mas/action/detail/fibonacci__struct.h"

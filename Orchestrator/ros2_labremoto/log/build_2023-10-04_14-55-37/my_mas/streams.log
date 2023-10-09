@@ -1,0 +1,52 @@
+[0.678s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas -- -j4 -l4
+[0.895s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.476s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.484s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.496s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.618s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.749s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.980s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[2.980s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name my_mas
+[2.981s]   --arguments-file
+[2.981s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter__arguments__my_mas.json
+[2.982s]   --output-dir
+[2.982s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas
+[2.982s]   --output-file
+[2.983s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas.idls)
+[2.983s]   returned error code 1:
+[2.983s] 
+[2.984s]   Traceback (most recent call last):
+[2.984s] 
+[2.985s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2.985s]       return _run_code(code, main_globals, None,
+[2.985s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[2.986s]       exec(code, run_globals)
+[2.986s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[2.986s]       sys.exit(main())
+[2.987s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[2.987s]       abs_idl_file = convert_to_idl(
+[2.988s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 29, in convert_to_idl
+[2.988s]       return convert_action_to_idl(
+[2.989s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/action/__init__.py", line 28, in convert_action_to_idl
+[2.989s]       action = parse_action_string(package_name, input_file.stem, content)
+[2.990s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 902, in parse_action_string
+[2.990s]       goal_message = parse_message_string(
+[2.991s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 544, in parse_message_string
+[2.991s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[2.991s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 388, in __init__
+[2.994s]       self.base_type = BaseType(
+[2.995s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__
+[2.995s]       raise InvalidResourceName(
+[2.996s] 
+[2.996s]   rosidl_adapter.parser.InvalidResourceName: 'Carga_hex_Goal' is an invalid
+[2.996s]   message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[2.997s] 
+[2.997s] Call Stack (most recent call first):
+[2.997s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[2.997s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[2.998s] 
+[2.998s] [0m
+[2.999s] -- Configuring incomplete, errors occurred!
+[2.999s] See also "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles/CMakeOutput.log".
+[3.003s] gmake: *** [Makefile:1179: cmake_check_build_system] Error 1
+[3.007s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas -- -j4 -l4

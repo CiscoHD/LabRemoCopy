@@ -78,6 +78,10 @@ CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/fibonacci.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__builder.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__struct.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/cargahex.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp
 
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -97,6 +101,7 @@ rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/ros
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/SensorMeasurment.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/srv/LoadFile.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/action/Fibonacci.idl
+rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/action/Cargahex.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -199,7 +204,23 @@ rosidl_generator_cpp/my_mas/action/detail/fibonacci__struct.hpp: rosidl_generato
 rosidl_generator_cpp/my_mas/action/detail/fibonacci__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/fibonacci__traits.hpp
 
+rosidl_generator_cpp/my_mas/action/cargahex.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/cargahex.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/cargahex__builder.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/cargahex__builder.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/cargahex__struct.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/cargahex__struct.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp
+
 my_mas__cpp: CMakeFiles/my_mas__cpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/cargahex.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__traits.hpp

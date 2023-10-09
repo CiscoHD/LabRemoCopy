@@ -1,0 +1,3 @@
+[console_scripts]
+pub_node = nodes_comunication.publisher_node:mainpub_min = nodes_comunication.minimal_pub:main
+

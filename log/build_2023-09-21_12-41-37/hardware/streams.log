@@ -1,0 +1,20 @@
+[6.392s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware': PYTHONPATH=/home/ffelix07/Documents/LabRemo/build/hardware/prefix_override:/home/ffelix07/Documents/LabRemo/install/hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/hardware build --build-base /home/ffelix07/Documents/LabRemo/build/hardware/build install --record /home/ffelix07/Documents/LabRemo/build/hardware/install.log --single-version-externally-managed
+[8.278s] running egg_info
+[8.279s] writing ../../../../build/hardware/hardware.egg-info/PKG-INFO
+[8.283s] writing dependency_links to ../../../../build/hardware/hardware.egg-info/dependency_links.txt
+[8.284s] writing entry points to ../../../../build/hardware/hardware.egg-info/entry_points.txt
+[8.289s] writing requirements to ../../../../build/hardware/hardware.egg-info/requires.txt
+[8.290s] writing top-level names to ../../../../build/hardware/hardware.egg-info/top_level.txt
+[8.298s] reading manifest file '../../../../build/hardware/hardware.egg-info/SOURCES.txt'
+[8.302s] writing manifest file '../../../../build/hardware/hardware.egg-info/SOURCES.txt'
+[8.303s] running build
+[8.303s] running build_py
+[8.304s] running install
+[8.305s] running install_lib
+[8.314s] running install_data
+[8.317s] running install_egg_info
+[8.323s] removing '/home/ffelix07/Documents/LabRemo/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info' (and everything under it)
+[8.329s] Copying ../../../../build/hardware/hardware.egg-info to /home/ffelix07/Documents/LabRemo/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info
+[8.336s] running install_scripts
+[8.437s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/build/hardware/install.log'
+[8.584s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware' returned '0': PYTHONPATH=/home/ffelix07/Documents/LabRemo/build/hardware/prefix_override:/home/ffelix07/Documents/LabRemo/install/hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/hardware build --build-base /home/ffelix07/Documents/LabRemo/build/hardware/build install --record /home/ffelix07/Documents/LabRemo/build/hardware/install.log --single-version-externally-managed

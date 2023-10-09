@@ -1,0 +1,6 @@
+{
+  "package_name": "my_mas",
+  "non_idl_tuples": [
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/SensorMeasurment.msg"
+  ]
+}

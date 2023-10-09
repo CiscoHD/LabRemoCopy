@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/my_mas/action/__init__.py"
+  "../rosidl_generator_py/my_mas/action/_cargahex.py"
+  "../rosidl_generator_py/my_mas/action/_cargahex_s.c"
   "../rosidl_generator_py/my_mas/action/_fibonacci.py"
   "../rosidl_generator_py/my_mas/action/_fibonacci_s.c"
   "../rosidl_generator_py/my_mas/msg/__init__.py"

@@ -5,7 +5,8 @@
   "idl_tuples": [
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:msg/SensorMeasurment.idl",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:srv/LoadFile.idl",
-    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:action/Fibonacci.idl"
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:action/Fibonacci.idl",
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:action/Cargahex.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -87,6 +88,7 @@
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas/msg/SensorMeasurment.idl",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas/srv/LoadFile.idl",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas/action/Fibonacci.idl",
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas/action/Cargahex.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

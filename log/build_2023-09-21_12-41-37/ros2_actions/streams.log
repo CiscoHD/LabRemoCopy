@@ -1,0 +1,44 @@
+[2.630s] Invoking command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake /home/ffelix07/Documents/LabRemo/ros2_actions -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/install/ros2_actions
+[3.731s] -- The C compiler identification is GNU 11.4.0
+[4.461s] -- The CXX compiler identification is GNU 11.4.0
+[4.541s] -- Detecting C compiler ABI info
+[5.182s] -- Detecting C compiler ABI info - done
+[5.223s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.229s] -- Detecting C compile features
+[5.229s] -- Detecting C compile features - done
+[5.252s] -- Detecting CXX compiler ABI info
+[5.919s] -- Detecting CXX compiler ABI info - done
+[6.005s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.009s] -- Detecting CXX compile features
+[6.011s] -- Detecting CXX compile features - done
+[6.134s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[7.373s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[8.085s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.826s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.827s] -- Added test 'lint_cmake' to check CMake code style
+[8.835s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.838s] -- Added test 'xmllint' to check XML markup files
+[8.865s] -- Configuring done
+[8.875s] -- Generating done
+[8.889s] -- Build files have been written to: /home/ffelix07/Documents/LabRemo/build/ros2_actions
+[8.914s] Invoked command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions' returned '0': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake /home/ffelix07/Documents/LabRemo/ros2_actions -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/install/ros2_actions
+[8.918s] Invoking command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/build/ros2_actions -- -j4 -l4
+[9.071s] Invoked command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions' returned '0': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/build/ros2_actions -- -j4 -l4
+[9.174s] Invoking command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --install /home/ffelix07/Documents/LabRemo/build/ros2_actions
+[9.215s] -- Install configuration: ""
+[9.220s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ament_index/resource_index/package_run_dependencies/ros2_actions
+[9.221s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ament_index/resource_index/parent_prefix_path/ros2_actions
+[9.222s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/environment/ament_prefix_path.sh
+[9.226s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/environment/ament_prefix_path.dsv
+[9.229s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/environment/path.sh
+[9.231s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/environment/path.dsv
+[9.232s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/local_setup.bash
+[9.232s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/local_setup.sh
+[9.233s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/local_setup.zsh
+[9.239s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/local_setup.dsv
+[9.240s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/package.dsv
+[9.241s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ament_index/resource_index/packages/ros2_actions
+[9.248s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/cmake/ros2_actionsConfig.cmake
+[9.256s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/cmake/ros2_actionsConfig-version.cmake
+[9.257s] -- Installing: /home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/package.xml
+[9.258s] Invoked command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions' returned '0': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --install /home/ffelix07/Documents/LabRemo/build/ros2_actions

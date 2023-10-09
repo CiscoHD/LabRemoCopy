@@ -1,0 +1,15 @@
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ament_index/resource_index/package_run_dependencies/ros2_actions
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ament_index/resource_index/parent_prefix_path/ros2_actions
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/environment/ament_prefix_path.sh
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/environment/ament_prefix_path.dsv
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/environment/path.sh
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/environment/path.dsv
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/local_setup.bash
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/local_setup.sh
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/local_setup.zsh
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/local_setup.dsv
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/package.dsv
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ament_index/resource_index/packages/ros2_actions
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/cmake/ros2_actionsConfig.cmake
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/cmake/ros2_actionsConfig-version.cmake
+/home/ffelix07/Documents/LabRemo/install/ros2_actions/share/ros2_actions/package.xml

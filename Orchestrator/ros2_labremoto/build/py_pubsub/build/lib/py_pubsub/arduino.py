@@ -2,6 +2,18 @@ import subprocess
 import shlex
 import unittest
 
+import pandas as pd
+import os
+import json
+
+def devices_arduino_info():
+    try:
+        dispositivos = pd.concat(list(map(pd.json_normalize,json.loads(os.popen("arduino-cli board list --format json").read()))))
+        return dispositivos
+    except ValueError:
+        return "No dispositivos conectados" 
+
+
 class FailureCommandException(Exception):
   """
   Attributes
@@ -97,38 +109,45 @@ class TestArduinoCLI(unittest.TestCase):
     self.executer = ExecuteCommand()
     print("\n[Metodo: " + self._testMethodName + "]\n")
   
-  def testCompilationSuccess(self):
-    command = "arduino-cli compile --fqbn arduino:avr:uno ./arduino/arduino_test"
+  def testCompilationSuccess(self,FQBN,sketch_path):
+    command = f"arduino-cli compile --fqbn {FQBN} {sketch_path}"
     self.executer.execute(command)
     self.assertEqual(self.executer.error, "","No hay errores en la compilación")
     self.assertEqual(self.executer.warning, "","No hay advertencias en la compilación")
     print(self.executer.output)
-
-  def testCompilationFailure(self):
-    command = "arduino-cli compile --fqbn arduino:avr:uno ./arduino/arduino_compilation_error"
+  
+  def testCompilationFailure(self,FQBN,sketch_path):
+    command = f"arduino-cli compile --fqbn {FQBN} {sketch_path}"
     self.executer.execute(command)
     self.assertNotEqual(self.executer.error, "", "Error en la compilación")
     print(self.executer.error)
-  
-  def testUploadSuccess(self):
-    command = "avrdude -patmega328p -carduino -b115200 -P /dev/ttyUSB0 -D -Uflash:w:./arduino/output/arduino_test.ino.hex"
+
+  def testWarnings(self,FQBN,sketch_path):
+    command = f"arduino-cli compile --warnings -Wall --fqbn {FQBN} {sketch_path}"
+    self.executer.execute(command)
+    self.assertNotEqual(self.executer.warning, "", "Hay advertencias en la compilación")
+    print(self.executer.warning)
+
+
+  def testUploadSuccess(self,PORT,sketch_path, binary = False):
+    if binary:
+      command = f"arduino-cli upload -i {sketch_path} -p {PORT} "
+    else:
+      command = f"arduino-cli upload {sketch_path} -p {PORT} "
+    
+    #"avrdude -patmega328p -carduino -b115200 -P /dev/ttyUSB0 -D -Uflash:w:./arduino/output/arduino_test.ino.hex"
     self.executer.execute(command)
     self.assertEqual(self.executer.error, "", "No hay errores en la compilación")
     self.assertEqual(self.executer.warning, "", "No hay advertencias en la compilación")
     print(self.executer.output)
 
-  def testUploadFailure(self):
-    command = "avrdude -patmega328p -carduino -b115200 -P /dev/ttyUSB0 -D -Uflash:w:./arduino/output/arduino_test.ino.he"
+
+  def testUploadFailure(self,PORT,sketch_path):
+    command = f"arduino-cli -p {PORT} upload {sketch_path}"
+    #"avrdude -patmega328p -carduino -b115200 -P /dev/ttyUSB0 -D -Uflash:w:./arduino/output/arduino_test.ino.he"
     self.executer.execute(command)
     self.assertNotEqual(self.executer.error, "", "Error en la carga")
     print(self.executer.error)
-  
-  def testWarnings(self):
-    command = "arduino-cli compile --warnings -Wall --fqbn arduino:avr:uno ./arduino/arduino_test"
-    self.executer.execute(command)
-    self.assertNotEqual(self.executer.warning, "", "Hay advertencias en la compilación")
-    print(self.executer.warning)
-
 
 if __name__ == "__main__":
   unittest.main()

@@ -1,0 +1,5 @@
+[2.504s] Invoking command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions': /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/build/ros2_actions -- -j4 -l4
+[2.591s] [0mCMake Error: The source directory "/home/ffelix07/Documents/LabRemo/ros2_actions" does not exist.
+[2.592s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[2.593s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[2.598s] Invoked command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions' returned '2': /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/build/ros2_actions -- -j4 -l4
