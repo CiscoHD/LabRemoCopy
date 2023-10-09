@@ -1,0 +1,28 @@
+-- Setting build type to 'Release' as none was specified.
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring Fast RTPS
+-- Version: 1.6.0
+-- To change de version modify the file configure.ac
+-- Performing Test SUPPORTS_CXX14
+-- Performing Test SUPPORTS_CXX14 - Success
+-- fastcdr library found...
+-- Could NOT find asio (missing: ASIO_INCLUDE_DIR) 
+-- Found tinyxml2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done

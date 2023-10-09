@@ -1,0 +1,13 @@
+# Target labels
+ poco-1.8.0.1-release
+# Source files and their labels
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/CMakeFiles/poco-1.8.0.1-release
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/CMakeFiles/poco-1.8.0.1-release.rule
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/CMakeFiles/poco-1.8.0.1-release-complete.rule
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-build.rule
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-configure.rule
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-download.rule
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-install.rule
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-mkdir.rule
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-patch.rule
+/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-update.rule

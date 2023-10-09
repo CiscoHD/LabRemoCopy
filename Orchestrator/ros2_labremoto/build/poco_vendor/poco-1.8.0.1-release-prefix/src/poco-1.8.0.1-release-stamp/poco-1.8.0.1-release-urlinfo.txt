@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/pocoproject/poco/archive/poco-1.8.0.1-release.tar.gz'
+tag='MD5=07aa03d7976d0dbc141d95821c104c10'

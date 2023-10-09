@@ -1,0 +1,61 @@
+# Copyright 2016 Proyectos y Sistemas de Mantenimiento SL (eProsima).
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+macro(generate_sources_for_autotools)
+    set(fastrtps_SOURCES_TMP @fastrtps_SOURCES@)
+    set(fastrtps_SOURCES_AUTOTOOLS "libfastrtps_la_SOURCES = ")
+    set(section_ FALSE)
+    set(restart_ FALSE)
+    foreach(fastrtps_SOURCE ${fastrtps_SOURCES_TMP})
+        if(section_)
+            set(section_ FALSE)
+            set(fastrtps_SOURCES_AUTOTOOLS "${fastrtps_SOURCES_AUTOTOOLS} \nif ${fastrtps_SOURCE}")
+            set(fastrtps_SOURCES_AUTOTOOLS "${fastrtps_SOURCES_AUTOTOOLS} \nlibfastrtps_la_SOURCES += ")
+        elseif(restart_)
+            set(restart_ FALSE)
+            set(fastrtps_SOURCES_AUTOTOOLS "${fastrtps_SOURCES_AUTOTOOLS} \nlibfastrtps_la_SOURCES += ")
+            set(fastrtps_SOURCES_AUTOTOOLS "${fastrtps_SOURCES_AUTOTOOLS} ${fastrtps_SOURCE}")
+        elseif("${fastrtps_SOURCE}" STREQUAL "SECTION")
+            set(section_ TRUE)
+            set(restart_ FALSE)
+            set(fastrtps_SOURCES_AUTOTOOLS "${fastrtps_SOURCES_AUTOTOOLS} \n")
+        elseif("${fastrtps_SOURCE}" STREQUAL "ENDSECTION")
+            set(restart_ TRUE)
+            set(fastrtps_SOURCES_AUTOTOOLS "${fastrtps_SOURCES_AUTOTOOLS} \nendif\n")
+        else()
+            set(fastrtps_SOURCES_AUTOTOOLS "${fastrtps_SOURCES_AUTOTOOLS} ${fastrtps_SOURCE}")
+        endif()
+    endforeach()
+endmacro()
+
+macro(generate_public_headers_for_autotools)
+    set(fastrtps_PUBLIC_HEADERS_DIRECTORIES_TMP @fastrtps_PUBLIC_HEADERS_DIRECTORIES@)
+    set(fastrtps_PUBLIC_HEADERS_AUTOTOOLS "")
+    foreach(directory ${fastrtps_PUBLIC_HEADERS_DIRECTORIES_TMP})
+        file(GLOB_RECURSE fastrtps_PUBLIC_HEADERS_TMP RELATIVE ${directory} ${directory}/*.h)
+        foreach(fastrtps_PUBLIC_HEADER ${fastrtps_PUBLIC_HEADERS_TMP})
+            set(fastrtps_PUBLIC_HEADERS_AUTOTOOLS "${fastrtps_PUBLIC_HEADERS_AUTOTOOLS} ${fastrtps_PUBLIC_HEADER}")
+        endforeach()
+        file(GLOB_RECURSE fastrtps_PUBLIC_HEADERS_TMP RELATIVE ${directory} ${directory}/*.hpp)
+        foreach(fastrtps_PUBLIC_HEADER ${fastrtps_PUBLIC_HEADERS_TMP})
+            set(fastrtps_PUBLIC_HEADERS_AUTOTOOLS "${fastrtps_PUBLIC_HEADERS_AUTOTOOLS} ${fastrtps_PUBLIC_HEADER}")
+        endforeach()
+    endforeach()
+
+    set(fastrtps_PUBLIC_HEADERS_FILES_TMP @fastrtps_PUBLIC_HEADERS_FILES@)
+    foreach(file ${fastrtps_PUBLIC_HEADERS_FILES_TMP})
+        set(fastrtps_PUBLIC_HEADERS_AUTOTOOLS "${fastrtps_PUBLIC_HEADERS_AUTOTOOLS} ${file}")
+    endforeach()
+endmacro()
+

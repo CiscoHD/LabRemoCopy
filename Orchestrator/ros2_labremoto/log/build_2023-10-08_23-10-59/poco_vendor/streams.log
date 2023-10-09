@@ -1,0 +1,73 @@
+[2.664s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/ros2/poco_vendor -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/poco_vendor
+[3.429s] -- The C compiler identification is GNU 11.4.0
+[4.085s] -- The CXX compiler identification is GNU 11.4.0
+[4.150s] -- Detecting C compiler ABI info
+[4.567s] -- Detecting C compiler ABI info - done
+[4.651s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.653s] -- Detecting C compile features
+[4.653s] -- Detecting C compile features - done
+[4.683s] -- Detecting CXX compiler ABI info
+[5.258s] -- Detecting CXX compiler ABI info - done
+[5.371s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.372s] -- Detecting CXX compile features
+[5.372s] -- Detecting CXX compile features - done
+[5.552s] -- Configuring done
+[5.569s] -- Generating done
+[5.579s] -- Build files have been written to: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor
+[5.600s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/ros2/poco_vendor -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/poco_vendor
+[5.603s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor -- -j4 -l4
+[5.853s] [ 12%] [34m[1mCreating directories for 'poco-1.8.0.1-release'[0m
+[6.396s] [ 25%] [34m[1mPerforming download step (download, verify and extract) for 'poco-1.8.0.1-release'[0m
+[6.496s] -- Downloading...
+[6.497s]    dst='/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release.tar.gz'
+[6.497s]    timeout='600 seconds'
+[6.499s]    inactivity timeout='none'
+[6.499s] -- Using src='https://github.com/pocoproject/poco/archive/poco-1.8.0.1-release.tar.gz'
+[14.847s] -- verifying file...
+[14.848s]        file='/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release.tar.gz'
+[14.909s] -- Downloading... done
+[15.094s] -- extracting...
+[15.094s]      src='/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release.tar.gz'
+[15.095s]      dst='/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release'
+[15.124s] -- extracting... [tar xfz]
+[17.880s] -- extracting... [analysis]
+[17.882s] -- extracting... [rename]
+[17.883s] -- extracting... [clean up]
+[17.884s] -- extracting... done
+[17.978s] [ 37%] [34m[1mNo update step for 'poco-1.8.0.1-release'[0m
+[18.070s] [ 50%] [34m[1mNo patch step for 'poco-1.8.0.1-release'[0m
+[18.212s] [ 62%] [34m[1mPerforming configure step for 'poco-1.8.0.1-release'[0m
+[18.640s] -- The C compiler identification is GNU 11.4.0
+[18.993s] -- The CXX compiler identification is GNU 11.4.0
+[19.032s] -- Detecting C compiler ABI info
+[19.422s] -- Detecting C compiler ABI info - done
+[19.473s] -- Check for working C compiler: /usr/bin/cc - skipped
+[19.476s] -- Detecting C compile features
+[19.478s] -- Detecting C compile features - done
+[19.498s] -- Detecting CXX compiler ABI info
+[19.867s] -- Detecting CXX compiler ABI info - done
+[19.907s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[19.908s] -- Detecting CXX compile features
+[19.910s] -- Detecting CXX compile features - done
+[19.913s] -- Poco package version: 1.8.0.1
+[19.914s] -- Checking for C++11 compiler
+[21.325s] -- Checking for C++11 compiler - available
+[21.325s] -- Checking for C++14 compiler
+[22.682s] -- Checking for C++14 compiler - available
+[22.685s] -- Setting Poco build type - RelWithDebInfo
+[22.687s] -- Building dynamic libraries
+[22.688s] -- Building without tests & samples
+[22.688s] -- Build with using external sqlite, libz, pcre, expat ...
+[23.218s] [31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+[23.218s]   Could NOT find PCRE (missing: PCRE_LIBRARY PCRE_INCLUDE_DIR)
+[23.219s] Call Stack (most recent call first):
+[23.219s]   /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)
+[23.220s]   cmake/FindPCRE.cmake:23 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+[23.220s]   Foundation/CMakeLists.txt:35 (find_package)
+[23.220s] 
+[23.223s] [0m
+[23.223s] -- Configuring incomplete, errors occurred!
+[23.224s] See also "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-build/CMakeFiles/CMakeOutput.log".
+[23.230s] gmake[2]: *** [CMakeFiles/poco-1.8.0.1-release.dir/build.make:92: poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-configure] Error 1
+[23.231s] gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/poco-1.8.0.1-release.dir/all] Error 2
+[23.239s] gmake: *** [Makefile:136: all] Error 2

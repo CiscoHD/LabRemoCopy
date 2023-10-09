@@ -1,0 +1,11 @@
+[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find PCRE (missing: PCRE_LIBRARY PCRE_INCLUDE_DIR)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)
+  cmake/FindPCRE.cmake:23 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  Foundation/CMakeLists.txt:35 (find_package)
+
+[0m
+gmake[2]: *** [CMakeFiles/poco-1.8.0.1-release.dir/build.make:92: poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-configure] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/poco-1.8.0.1-release.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

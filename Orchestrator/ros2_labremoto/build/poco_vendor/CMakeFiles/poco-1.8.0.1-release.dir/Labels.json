@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/CMakeFiles/poco-1.8.0.1-release"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/CMakeFiles/poco-1.8.0.1-release.rule"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/CMakeFiles/poco-1.8.0.1-release-complete.rule"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-build.rule"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-configure.rule"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-download.rule"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-install.rule"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-mkdir.rule"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-patch.rule"
+		},
+		{
+			"file" : "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/poco_vendor/poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"poco-1.8.0.1-release"
+		],
+		"name" : "poco-1.8.0.1-release"
+	}
+}

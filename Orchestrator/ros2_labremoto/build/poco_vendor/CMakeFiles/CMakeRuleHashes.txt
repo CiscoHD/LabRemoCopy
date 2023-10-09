@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+358d78923410d9c18383fc348e4e5dad CMakeFiles/poco-1.8.0.1-release
+93b20bb125470c3c6e08cf18903e3cce CMakeFiles/poco-1.8.0.1-release-complete
+c17a5e8ce38b8d0b16acd706f05e970b poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-build
+ffff112a95ab97e27a84da99c1bfaff1 poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-configure
+dcd78ba1df89e9645952f8adc168fb9a poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-download
+626fb09889f4367c5a99aa3e97292a6e poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-install
+5144d89e6115c833d86666a7b9261d97 poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-mkdir
+8830e5c277e6e85c68c7cbe011c3cdb1 poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-patch
+29f29cd1f243a3dcf1d74c6960c7f69d poco-1.8.0.1-release-prefix/src/poco-1.8.0.1-release-stamp/poco-1.8.0.1-release-update

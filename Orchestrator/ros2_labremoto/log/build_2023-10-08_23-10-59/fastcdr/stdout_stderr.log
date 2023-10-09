@@ -1,0 +1,130 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:18 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+-- Setting build type to 'Release' as none was specified.
+[0m
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring Fast CDR
+-- Version: 1.0.7
+-- To change de version modify the file configure.ac
+-- Performing Test SUPPORTS_CXX11
+-- Performing Test SUPPORTS_CXX11 - Success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/fastcdr
+[ 14%] [32mBuilding CXX object src/cpp/CMakeFiles/fastcdr.dir/FastCdr.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/cpp/CMakeFiles/fastcdr.dir/Cdr.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/cpp/CMakeFiles/fastcdr.dir/FastBuffer.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/cpp/CMakeFiles/fastcdr.dir/exceptions/Exception.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/cpp/CMakeFiles/fastcdr.dir/exceptions/NotEnoughMemoryException.cpp.o[0m
+In file included from [01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/src/cpp/Cdr.cpp:15[m[K:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(uint8_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:524:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  524 |                         return serialize([01;35m[K(const char)octet_t[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(uint8_t, eprosima::fastcdr::Cdr::Endianness)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:537:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  537 |                         return serialize([01;35m[K(const char)octet_t[m[K, endianness);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(int8_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:570:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  570 |                         return serialize([01;35m[K(const char)int8[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(int8_t, eprosima::fastcdr::Cdr::Endianness)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:583:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  583 |                         return serialize([01;35m[K(const char)int8[m[K, endianness);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(uint16_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:595:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  595 |                         return serialize([01;35m[K(const int16_t)ushort_t[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(uint16_t, eprosima::fastcdr::Cdr::Endianness)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:608:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  608 |                         return serialize([01;35m[K(const int16_t)ushort_t[m[K, endianness);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(uint32_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:637:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  637 |                         return serialize([01;35m[K(const int32_t)ulong_t[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(uint32_t, eprosima::fastcdr::Cdr::Endianness)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:650:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  650 |                         return serialize([01;35m[K(const int32_t)ulong_t[m[K, endianness);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(wchar_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:673:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  673 |                         return serialize([01;35m[K(const uint32_t)wchar[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(wchar_t, eprosima::fastcdr::Cdr::Endianness)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:679:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  679 |                         return serialize([01;35m[K(const uint32_t)wchar[m[K, endianness);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(uint64_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:691:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  691 |                         return serialize([01;35m[K(const int64_t)ulonglong_t[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::Cdr& eprosima::fastcdr::Cdr::serialize(uint64_t, eprosima::fastcdr::Cdr::Endianness)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/Cdr.h:704:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  704 |                         return serialize([01;35m[K(const int64_t)ulonglong_t[m[K, endianness);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/src/cpp/FastCdr.cpp:15[m[K:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::FastCdr& eprosima::fastcdr::FastCdr::serialize(uint8_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:422:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  422 |                         return serialize([01;35m[K(const char)octet_t[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::FastCdr& eprosima::fastcdr::FastCdr::serialize(int8_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:452:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  452 |                         return serialize([01;35m[K(const char)int8[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::FastCdr& eprosima::fastcdr::FastCdr::serialize(uint16_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:464:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  464 |                         return serialize([01;35m[K(const int16_t)ushort_t[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::FastCdr& eprosima::fastcdr::FastCdr::serialize(uint32_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:496:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  496 |                         return serialize([01;35m[K(const int32_t)ulong_t[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::FastCdr& eprosima::fastcdr::FastCdr::serialize(wchar_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:523:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  523 |                         return serialize([01;35m[K(const uint32_t)wchar[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:[m[K In member function ‘[01m[Keprosima::fastcdr::FastCdr& eprosima::fastcdr::FastCdr::serialize(uint64_t)[m[K’:
+[01m[K/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-CDR/include/fastcdr/FastCdr.h:535:42:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+  535 |                         return serialize([01;35m[K(const int64_t)ulonglong_t[m[K);
+      |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 85%] [32mBuilding CXX object src/cpp/CMakeFiles/fastcdr.dir/exceptions/BadParamException.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libfastcdr.so[0m
+[100%] Built target fastcdr
+-- Install configuration: "Release"
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/share/fastcdr/LICENSE
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib/fastcdr/cmake/fastcdrConfig.cmake
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib/fastcdr/cmake/fastcdrConfigVersion.cmake
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/fastcdr_dll.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/Cdr.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/FastCdr.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/eProsima_auto_link.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/FastBuffer.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/exceptions
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/exceptions/NotEnoughMemoryException.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/exceptions/BadParamException.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/exceptions/Exception.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/include/fastcdr/config.h
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib/libfastcdr.so.1.0.7
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib/libfastcdr.so
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib/fastcdr/cmake/fastcdrTargets.cmake
+-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib/fastcdr/cmake/fastcdrTargets-release.cmake

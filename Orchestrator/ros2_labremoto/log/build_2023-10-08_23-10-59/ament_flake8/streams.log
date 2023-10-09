@@ -1,0 +1,38 @@
+[5.953s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/ament/ament_lint/ament_flake8': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/ament_flake8 build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/install.log --single-version-externally-managed
+[7.642s] running egg_info
+[7.647s] creating ../../../../build/ament_flake8/ament_flake8.egg-info
+[7.651s] writing ../../../../build/ament_flake8/ament_flake8.egg-info/PKG-INFO
+[7.656s] writing dependency_links to ../../../../build/ament_flake8/ament_flake8.egg-info/dependency_links.txt
+[7.660s] writing entry points to ../../../../build/ament_flake8/ament_flake8.egg-info/entry_points.txt
+[7.663s] writing requirements to ../../../../build/ament_flake8/ament_flake8.egg-info/requires.txt
+[7.666s] writing top-level names to ../../../../build/ament_flake8/ament_flake8.egg-info/top_level.txt
+[7.670s] writing manifest file '../../../../build/ament_flake8/ament_flake8.egg-info/SOURCES.txt'
+[7.681s] reading manifest file '../../../../build/ament_flake8/ament_flake8.egg-info/SOURCES.txt'
+[7.685s] writing manifest file '../../../../build/ament_flake8/ament_flake8.egg-info/SOURCES.txt'
+[7.688s] running build
+[7.689s] running build_py
+[7.694s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build
+[7.697s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib
+[7.700s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8
+[7.700s] copying ament_flake8/main.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8
+[7.707s] copying ament_flake8/__init__.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8
+[7.707s] copying ament_flake8/legacy.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8
+[7.712s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8/configuration
+[7.712s] copying ament_flake8/configuration/ament_flake8.ini -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8/configuration
+[7.713s] running install
+[7.713s] running install_lib
+[7.717s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8
+[7.722s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8/main.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8
+[7.730s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8/__init__.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8
+[7.731s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8/legacy.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8
+[7.731s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8/configuration
+[7.731s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build/lib/ament_flake8/configuration/ament_flake8.ini -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8/configuration
+[7.766s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8/main.py to main.cpython-310.pyc
+[7.805s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8/__init__.py to __init__.cpython-310.pyc
+[7.830s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8/legacy.py to legacy.cpython-310.pyc
+[7.837s] running install_egg_info
+[7.857s] Copying ../../../../build/ament_flake8/ament_flake8.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages/ament_flake8-0.5.2-py3.10.egg-info
+[7.864s] running install_scripts
+[8.032s] Installing ament_flake8 script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/bin
+[8.035s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/install.log'
+[8.204s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/ament/ament_lint/ament_flake8' returned '0': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/ament_flake8 build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/ament_flake8/install.log --single-version-externally-managed

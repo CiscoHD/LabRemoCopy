@@ -1,0 +1,80 @@
+[0.612s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/fastrtps': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastrtps
+[0.678s] -- Setting build type to 'Release' as none was specified.
+[1.183s] -- The C compiler identification is GNU 11.4.0
+[1.695s] -- The CXX compiler identification is GNU 11.4.0
+[1.747s] -- Detecting C compiler ABI info
+[2.261s] -- Detecting C compiler ABI info - done
+[2.340s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.340s] -- Detecting C compile features
+[2.346s] -- Detecting C compile features - done
+[2.398s] -- Detecting CXX compiler ABI info
+[3.163s] -- Detecting CXX compiler ABI info - done
+[3.180s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.186s] -- Detecting CXX compile features
+[3.206s] -- Detecting CXX compile features - done
+[3.206s] -- Configuring Fast RTPS
+[3.207s] -- Version: 1.6.0
+[3.207s] -- To change de version modify the file configure.ac
+[3.250s] -- Performing Test SUPPORTS_CXX14
+[3.829s] -- Performing Test SUPPORTS_CXX14 - Success
+[3.882s] -- fastcdr library found...
+[3.972s] -- Could NOT find asio (missing: ASIO_INCLUDE_DIR) 
+[3.974s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[3.975s]   The package name passed to `find_package_handle_standard_args` (asio) does
+[3.975s]   not match the name of the calling package (Asio).  This can lead to
+[3.975s]   problems in calling code that expects `find_package` result variables
+[3.975s]   (e.g., `_FOUND`) to follow a certain pattern.
+[3.976s] Call Stack (most recent call first):
+[3.976s]   cmake/modules/FindAsio.cmake:16 (find_package_handle_standard_args)
+[3.976s]   cmake/common/eprosima_libraries.cmake:92 (find_package)
+[3.977s]   CMakeLists.txt:206 (eprosima_find_thirdparty)
+[3.977s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.977s] [0m
+[4.020s] -- Found tinyxml2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[4.034s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[4.035s]   The package name passed to `find_package_handle_standard_args` (tinyxml2)
+[4.035s]   does not match the name of the calling package (TinyXML2).  This can lead
+[4.035s]   to problems in calling code that expects `find_package` result variables
+[4.036s]   (e.g., `_FOUND`) to follow a certain pattern.
+[4.036s] Call Stack (most recent call first):
+[4.036s]   cmake/modules/FindTinyXML2.cmake:40 (find_package_handle_standard_args)
+[4.036s]   cmake/common/eprosima_libraries.cmake:92 (find_package)
+[4.037s]   CMakeLists.txt:207 (eprosima_find_thirdparty)
+[4.037s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.042s] [0m
+[4.074s] -- Looking for pthread.h
+[4.615s] -- Looking for pthread.h - found
+[4.638s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.983s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.988s] -- Found Threads: TRUE  
+[5.087s] -- Configuring done
+[5.088s] [0mCMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+[5.088s] Please set them or make sure they are set and tested correctly in the CMake files:
+[5.089s] ASIO_INCLUDE_DIR (ADVANCED)
+[5.089s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.089s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.094s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.094s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.094s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.095s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.095s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.095s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.096s]    used as include directory in directory /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS/src/cpp
+[5.097s] [0m
+[5.097s] [31mCMake Error in src/cpp/CMakeLists.txt:
+[5.098s]   Found relative path while evaluating include directories of "fastrtps":
+[5.098s] 
+[5.098s]     "ASIO_INCLUDE_DIR-NOTFOUND"
+[5.099s] 
+[5.099s] 
+[5.099s] [0m
+[5.100s] [31mCMake Error in src/cpp/CMakeLists.txt:
+[5.100s]   Found relative path while evaluating include directories of "fastrtps":
+[5.100s] 
+[5.100s]     "ASIO_INCLUDE_DIR-NOTFOUND"
+[5.101s] 
+[5.101s] 
+[5.114s] [0m
+[5.183s] -- Generating done
+[5.186s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[5.239s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/fastrtps' returned '1': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/eProsima/Fast-RTPS -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastrtps
