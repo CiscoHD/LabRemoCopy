@@ -1,5 +1,0 @@
-[2.260s] Invoking command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/build/ros2_actions -- -j4 -l4
-[2.338s] [0mCMake Error: The source directory "/home/ffelix07/Documents/LabRemo/ros2_actions" does not exist.
-[2.338s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[2.343s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[2.369s] Invoked command in '/home/ffelix07/Documents/LabRemo/build/ros2_actions' returned '2': CMAKE_PREFIX_PATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/nodes_comunication:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/build/ros2_actions -- -j4 -l4
