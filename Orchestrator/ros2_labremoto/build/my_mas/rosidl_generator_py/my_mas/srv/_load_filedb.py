@@ -64,20 +64,20 @@ class LoadFiledb_Request(metaclass=Metaclass_LoadFiledb_Request):
     ]
 
     _fields_and_field_types = {
-        'id_node': 'string',
+        'id_node': 'int32',
         'name_node': 'string',
         'type_transaction': 'string',
         'date_process': 'string',
-        'id_user': 'string',
+        'id_user': 'int32',
         'log_process': 'string',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
@@ -85,11 +85,11 @@ class LoadFiledb_Request(metaclass=Metaclass_LoadFiledb_Request):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.id_node = kwargs.get('id_node', str())
+        self.id_node = kwargs.get('id_node', int())
         self.name_node = kwargs.get('name_node', str())
         self.type_transaction = kwargs.get('type_transaction', str())
         self.date_process = kwargs.get('date_process', str())
-        self.id_user = kwargs.get('id_user', str())
+        self.id_user = kwargs.get('id_user', int())
         self.log_process = kwargs.get('log_process', str())
 
     def __repr__(self):
@@ -149,8 +149,10 @@ class LoadFiledb_Request(metaclass=Metaclass_LoadFiledb_Request):
     def id_node(self, value):
         if __debug__:
             assert \
-                isinstance(value, str), \
-                "The 'id_node' field must be of type 'str'"
+                isinstance(value, int), \
+                "The 'id_node' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'id_node' field must be an integer in [-2147483648, 2147483647]"
         self._id_node = value
 
     @builtins.property
@@ -201,8 +203,10 @@ class LoadFiledb_Request(metaclass=Metaclass_LoadFiledb_Request):
     def id_user(self, value):
         if __debug__:
             assert \
-                isinstance(value, str), \
-                "The 'id_user' field must be of type 'str'"
+                isinstance(value, int), \
+                "The 'id_user' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'id_user' field must be an integer in [-2147483648, 2147483647]"
         self._id_user = value
 
     @builtins.property

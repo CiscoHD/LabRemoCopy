@@ -18,7 +18,7 @@ class SendTranDataBase(Node):
                     "id_user": request.id_user,
                     "log_process": request.log_process}
 
-        resp = requests.post('http://labrem.ddns.net/api/users/', data=InfoTran)
+        resp = requests.post('http://labrem.ddns.net/api/TranOrquestador/', data=InfoTran)
 
         return resp.status_code
 

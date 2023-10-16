@@ -18,22 +18,20 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'id_node'
 // Member 'name_node'
 // Member 'type_transaction'
 // Member 'date_process'
-// Member 'id_user'
 // Member 'log_process'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in srv/LoadFiledb in the package my_mas.
 typedef struct my_mas__srv__LoadFiledb_Request
 {
-  rosidl_runtime_c__String id_node;
+  int32_t id_node;
   rosidl_runtime_c__String name_node;
   rosidl_runtime_c__String type_transaction;
   rosidl_runtime_c__String date_process;
-  rosidl_runtime_c__String id_user;
+  int32_t id_user;
   rosidl_runtime_c__String log_process;
 } my_mas__srv__LoadFiledb_Request;
 

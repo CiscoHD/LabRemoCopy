@@ -19,6 +19,7 @@ py_pubsub/client_member_function.py
 py_pubsub/fibonacci_action_server.py
 py_pubsub/publisher_member_function.py
 py_pubsub/service_member_function.py
+py_pubsub/sesiones.py
 py_pubsub/subscriber_member_function.py
 resource/py_pubsub
 test/test_copyright.py

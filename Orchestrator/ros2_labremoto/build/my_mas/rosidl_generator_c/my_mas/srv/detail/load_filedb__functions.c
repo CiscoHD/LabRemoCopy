@@ -11,11 +11,9 @@
 #include "rcutils/allocator.h"
 
 // Include directives for member types
-// Member `id_node`
 // Member `name_node`
 // Member `type_transaction`
 // Member `date_process`
-// Member `id_user`
 // Member `log_process`
 #include "rosidl_runtime_c/string_functions.h"
 
@@ -26,10 +24,6 @@ my_mas__srv__LoadFiledb_Request__init(my_mas__srv__LoadFiledb_Request * msg)
     return false;
   }
   // id_node
-  if (!rosidl_runtime_c__String__init(&msg->id_node)) {
-    my_mas__srv__LoadFiledb_Request__fini(msg);
-    return false;
-  }
   // name_node
   if (!rosidl_runtime_c__String__init(&msg->name_node)) {
     my_mas__srv__LoadFiledb_Request__fini(msg);
@@ -46,10 +40,6 @@ my_mas__srv__LoadFiledb_Request__init(my_mas__srv__LoadFiledb_Request * msg)
     return false;
   }
   // id_user
-  if (!rosidl_runtime_c__String__init(&msg->id_user)) {
-    my_mas__srv__LoadFiledb_Request__fini(msg);
-    return false;
-  }
   // log_process
   if (!rosidl_runtime_c__String__init(&msg->log_process)) {
     my_mas__srv__LoadFiledb_Request__fini(msg);
@@ -65,7 +55,6 @@ my_mas__srv__LoadFiledb_Request__fini(my_mas__srv__LoadFiledb_Request * msg)
     return;
   }
   // id_node
-  rosidl_runtime_c__String__fini(&msg->id_node);
   // name_node
   rosidl_runtime_c__String__fini(&msg->name_node);
   // type_transaction
@@ -73,7 +62,6 @@ my_mas__srv__LoadFiledb_Request__fini(my_mas__srv__LoadFiledb_Request * msg)
   // date_process
   rosidl_runtime_c__String__fini(&msg->date_process);
   // id_user
-  rosidl_runtime_c__String__fini(&msg->id_user);
   // log_process
   rosidl_runtime_c__String__fini(&msg->log_process);
 }
@@ -85,9 +73,7 @@ my_mas__srv__LoadFiledb_Request__are_equal(const my_mas__srv__LoadFiledb_Request
     return false;
   }
   // id_node
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->id_node), &(rhs->id_node)))
-  {
+  if (lhs->id_node != rhs->id_node) {
     return false;
   }
   // name_node
@@ -109,9 +95,7 @@ my_mas__srv__LoadFiledb_Request__are_equal(const my_mas__srv__LoadFiledb_Request
     return false;
   }
   // id_user
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->id_user), &(rhs->id_user)))
-  {
+  if (lhs->id_user != rhs->id_user) {
     return false;
   }
   // log_process
@@ -132,11 +116,7 @@ my_mas__srv__LoadFiledb_Request__copy(
     return false;
   }
   // id_node
-  if (!rosidl_runtime_c__String__copy(
-      &(input->id_node), &(output->id_node)))
-  {
-    return false;
-  }
+  output->id_node = input->id_node;
   // name_node
   if (!rosidl_runtime_c__String__copy(
       &(input->name_node), &(output->name_node)))
@@ -156,11 +136,7 @@ my_mas__srv__LoadFiledb_Request__copy(
     return false;
   }
   // id_user
-  if (!rosidl_runtime_c__String__copy(
-      &(input->id_user), &(output->id_user)))
-  {
-    return false;
-  }
+  output->id_user = input->id_user;
   // log_process
   if (!rosidl_runtime_c__String__copy(
       &(input->log_process), &(output->log_process)))

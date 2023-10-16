@@ -13,11 +13,9 @@
 
 
 // Include directives for member types
-// Member `id_node`
 // Member `name_node`
 // Member `type_transaction`
 // Member `date_process`
-// Member `id_user`
 // Member `log_process`
 #include "rosidl_runtime_c/string_functions.h"
 
@@ -43,7 +41,7 @@ void my_mas__srv__LoadFiledb_Request__rosidl_typesupport_introspection_c__LoadFi
 static rosidl_typesupport_introspection_c__MessageMember my_mas__srv__LoadFiledb_Request__rosidl_typesupport_introspection_c__LoadFiledb_Request_message_member_array[6] = {
   {
     "id_node",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -111,7 +109,7 @@ static rosidl_typesupport_introspection_c__MessageMember my_mas__srv__LoadFiledb
   },
   {
     "id_user",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

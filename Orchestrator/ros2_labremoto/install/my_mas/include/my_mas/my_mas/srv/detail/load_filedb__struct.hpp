@@ -38,38 +38,36 @@ struct LoadFiledb_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->id_node = "";
+      this->id_node = 0l;
       this->name_node = "";
       this->type_transaction = "";
       this->date_process = "";
-      this->id_user = "";
+      this->id_user = 0l;
       this->log_process = "";
     }
   }
 
   explicit LoadFiledb_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : id_node(_alloc),
-    name_node(_alloc),
+  : name_node(_alloc),
     type_transaction(_alloc),
     date_process(_alloc),
-    id_user(_alloc),
     log_process(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->id_node = "";
+      this->id_node = 0l;
       this->name_node = "";
       this->type_transaction = "";
       this->date_process = "";
-      this->id_user = "";
+      this->id_user = 0l;
       this->log_process = "";
     }
   }
 
   // field types and members
   using _id_node_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    int32_t;
   _id_node_type id_node;
   using _name_node_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
@@ -81,7 +79,7 @@ struct LoadFiledb_Request_
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _date_process_type date_process;
   using _id_user_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    int32_t;
   _id_user_type id_user;
   using _log_process_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
@@ -89,7 +87,7 @@ struct LoadFiledb_Request_
 
   // setters for named parameter idiom
   Type & set__id_node(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const int32_t & _arg)
   {
     this->id_node = _arg;
     return *this;
@@ -113,7 +111,7 @@ struct LoadFiledb_Request_
     return *this;
   }
   Type & set__id_user(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const int32_t & _arg)
   {
     this->id_user = _arg;
     return *this;

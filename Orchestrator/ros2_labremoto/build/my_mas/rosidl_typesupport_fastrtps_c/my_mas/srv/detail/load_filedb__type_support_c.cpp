@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // date_process, id_node, id_user, log_process, name_node, type_transaction
-#include "rosidl_runtime_c/string_functions.h"  // date_process, id_node, id_user, log_process, name_node, type_transaction
+#include "rosidl_runtime_c/string.h"  // date_process, log_process, name_node, type_transaction
+#include "rosidl_runtime_c/string_functions.h"  // date_process, log_process, name_node, type_transaction
 
 // forward declare type support functions
 
@@ -53,16 +53,7 @@ static bool _LoadFiledb_Request__cdr_serialize(
   const _LoadFiledb_Request__ros_msg_type * ros_message = static_cast<const _LoadFiledb_Request__ros_msg_type *>(untyped_ros_message);
   // Field name: id_node
   {
-    const rosidl_runtime_c__String * str = &ros_message->id_node;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->id_node;
   }
 
   // Field name: name_node
@@ -109,16 +100,7 @@ static bool _LoadFiledb_Request__cdr_serialize(
 
   // Field name: id_user
   {
-    const rosidl_runtime_c__String * str = &ros_message->id_user;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->id_user;
   }
 
   // Field name: log_process
@@ -149,18 +131,7 @@ static bool _LoadFiledb_Request__cdr_deserialize(
   _LoadFiledb_Request__ros_msg_type * ros_message = static_cast<_LoadFiledb_Request__ros_msg_type *>(untyped_ros_message);
   // Field name: id_node
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->id_node.data) {
-      rosidl_runtime_c__String__init(&ros_message->id_node);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->id_node,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'id_node'\n");
-      return false;
-    }
+    cdr >> ros_message->id_node;
   }
 
   // Field name: name_node
@@ -213,18 +184,7 @@ static bool _LoadFiledb_Request__cdr_deserialize(
 
   // Field name: id_user
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->id_user.data) {
-      rosidl_runtime_c__String__init(&ros_message->id_user);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->id_user,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'id_user'\n");
-      return false;
-    }
+    cdr >> ros_message->id_user;
   }
 
   // Field name: log_process
@@ -261,9 +221,11 @@ size_t get_serialized_size_my_mas__srv__LoadFiledb_Request(
   (void)wchar_size;
 
   // field.name id_node
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->id_node.size + 1);
+  {
+    size_t item_size = sizeof(ros_message->id_node);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name name_node
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -277,9 +239,11 @@ size_t get_serialized_size_my_mas__srv__LoadFiledb_Request(
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->date_process.size + 1);
   // field.name id_user
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->id_user.size + 1);
+  {
+    size_t item_size = sizeof(ros_message->id_user);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name log_process
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -315,13 +279,8 @@ size_t max_serialized_size_my_mas__srv__LoadFiledb_Request(
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: name_node
   {
@@ -363,13 +322,8 @@ size_t max_serialized_size_my_mas__srv__LoadFiledb_Request(
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: log_process
   {
