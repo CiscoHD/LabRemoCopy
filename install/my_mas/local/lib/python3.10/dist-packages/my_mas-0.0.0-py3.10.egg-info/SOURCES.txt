@@ -1,6 +1,0 @@
-setup.py
-my_mas/__init__.py
-my_mas.egg-info/PKG-INFO
-my_mas.egg-info/SOURCES.txt
-my_mas.egg-info/dependency_links.txt
-my_mas.egg-info/top_level.txt
