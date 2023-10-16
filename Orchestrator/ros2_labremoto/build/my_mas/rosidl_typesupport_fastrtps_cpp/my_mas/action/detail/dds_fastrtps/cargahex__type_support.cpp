@@ -231,8 +231,8 @@ cdr_serialize(
   const my_mas::action::Cargahex_Result & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: status
-  cdr << ros_message.status;
+  // Member: status_final
+  cdr << ros_message.status_final;
   return true;
 }
 
@@ -242,8 +242,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   my_mas::action::Cargahex_Result & ros_message)
 {
-  // Member: status
-  cdr >> ros_message.status;
+  // Member: status_final
+  cdr >> ros_message.status_final;
 
   return true;
 }
@@ -261,10 +261,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: status
+  // Member: status_final
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.status.size() + 1);
+    (ros_message.status_final.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -287,7 +287,7 @@ max_serialized_size_Cargahex_Result(
   is_plain = true;
 
 
-  // Member: status
+  // Member: status_final
   {
     size_t array_size = 1;
 
@@ -430,8 +430,8 @@ cdr_serialize(
   const my_mas::action::Cargahex_Feedback & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: status_final
-  cdr << ros_message.status_final;
+  // Member: status
+  cdr << ros_message.status;
   return true;
 }
 
@@ -441,8 +441,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   my_mas::action::Cargahex_Feedback & ros_message)
 {
-  // Member: status_final
-  cdr >> ros_message.status_final;
+  // Member: status
+  cdr >> ros_message.status;
 
   return true;
 }
@@ -460,10 +460,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: status_final
+  // Member: status
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.status_final.size() + 1);
+    (ros_message.status.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -486,7 +486,7 @@ max_serialized_size_Cargahex_Feedback(
   is_plain = true;
 
 
-  // Member: status_final
+  // Member: status
   {
     size_t array_size = 1;
 

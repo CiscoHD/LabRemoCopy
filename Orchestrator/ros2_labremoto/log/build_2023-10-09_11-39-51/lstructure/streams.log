@@ -1,0 +1,36 @@
+[6.824s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/lstructure': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lstructure build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/install.log --single-version-externally-managed
+[8.629s] running egg_info
+[8.632s] creating ../../build/lstructure/lstructure.egg-info
+[8.632s] writing ../../build/lstructure/lstructure.egg-info/PKG-INFO
+[8.633s] writing dependency_links to ../../build/lstructure/lstructure.egg-info/dependency_links.txt
+[8.636s] writing entry points to ../../build/lstructure/lstructure.egg-info/entry_points.txt
+[8.644s] writing requirements to ../../build/lstructure/lstructure.egg-info/requires.txt
+[8.644s] writing top-level names to ../../build/lstructure/lstructure.egg-info/top_level.txt
+[8.645s] writing manifest file '../../build/lstructure/lstructure.egg-info/SOURCES.txt'
+[8.645s] reading manifest file '../../build/lstructure/lstructure.egg-info/SOURCES.txt'
+[8.651s] writing manifest file '../../build/lstructure/lstructure.egg-info/SOURCES.txt'
+[8.651s] running build
+[8.651s] running build_py
+[8.653s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build
+[8.654s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build/lib
+[8.654s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build/lib/lstructure
+[8.655s] copying lstructure/linicial.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build/lib/lstructure
+[8.658s] copying lstructure/__init__.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build/lib/lstructure
+[8.663s] running install
+[8.668s] running install_lib
+[8.670s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages/lstructure
+[8.672s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build/lib/lstructure/linicial.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages/lstructure
+[8.677s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build/lib/lstructure/__init__.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages/lstructure
+[8.677s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages/lstructure/linicial.py to linicial.cpython-310.pyc
+[8.680s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages/lstructure/__init__.py to __init__.cpython-310.pyc
+[8.682s] running install_data
+[8.686s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/share/ament_index
+[8.687s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/share/ament_index/resource_index
+[8.687s] creating /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/share/ament_index/resource_index/packages
+[8.689s] copying resource/lstructure -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/share/ament_index/resource_index/packages
+[8.692s] copying package.xml -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/share/lstructure
+[8.693s] running install_egg_info
+[8.699s] Copying ../../build/lstructure/lstructure.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages/lstructure-0.0.0-py3.10.egg-info
+[8.705s] running install_scripts
+[8.777s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/install.log'
+[9.510s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/lstructure' returned '0': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lstructure build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/install.log --single-version-externally-managed

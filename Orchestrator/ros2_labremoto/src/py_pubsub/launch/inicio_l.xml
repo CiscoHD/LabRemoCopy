@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="py_pubsub" exec="arduino_infrastructure" />
+  <node pkg="py_pubsub" exec="fibonacci_action_server" />
+</launch>

@@ -131,6 +131,9 @@ PyObject * my_mas__srv__load_file__request__convert_to_py(void * raw_ros_message
 // already included above
 // #include "my_mas/srv/detail/load_file__functions.h"
 
+#include "rosidl_runtime_c/string.h"
+#include "rosidl_runtime_c/string_functions.h"
+
 
 ROSIDL_GENERATOR_C_EXPORT
 bool my_mas__srv__load_file__response__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -165,13 +168,19 @@ bool my_mas__srv__load_file__response__convert_from_py(PyObject * _pymsg, void *
     assert(strncmp("my_mas.srv._load_file.LoadFile_Response", full_classname_dest, 39) == 0);
   }
   my_mas__srv__LoadFile_Response * ros_message = _ros_message;
-  {  // sum
-    PyObject * field = PyObject_GetAttrString(_pymsg, "sum");
+  {  // result
+    PyObject * field = PyObject_GetAttrString(_pymsg, "result");
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->sum = PyLong_AsLongLong(field);
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->result, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
 
@@ -196,11 +205,17 @@ PyObject * my_mas__srv__load_file__response__convert_to_py(void * raw_ros_messag
     }
   }
   my_mas__srv__LoadFile_Response * ros_message = (my_mas__srv__LoadFile_Response *)raw_ros_message;
-  {  // sum
+  {  // result
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->sum);
+    field = PyUnicode_DecodeUTF8(
+      ros_message->result.data,
+      strlen(ros_message->result.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "sum", field);
+      int rc = PyObject_SetAttrString(_pymessage, "result", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -1,0 +1,5 @@
+  File "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino_infrastructure.py", line 34
+    copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               goal_handle.execute()
+                                                                                              ^^^^^^^^^^^
+SyntaxError: invalid syntax
+

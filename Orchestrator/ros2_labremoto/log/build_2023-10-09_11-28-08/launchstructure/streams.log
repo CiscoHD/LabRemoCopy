@@ -1,0 +1,21 @@
+[6.132s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/launchstructure': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/launchstructure/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/launchstructure build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/launchstructure/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/launchstructure/install.log --single-version-externally-managed
+[7.668s] running egg_info
+[7.672s] writing ../build/launchstructure/launchstructure.egg-info/PKG-INFO
+[7.674s] writing dependency_links to ../build/launchstructure/launchstructure.egg-info/dependency_links.txt
+[7.675s] writing entry points to ../build/launchstructure/launchstructure.egg-info/entry_points.txt
+[7.675s] writing requirements to ../build/launchstructure/launchstructure.egg-info/requires.txt
+[7.675s] writing top-level names to ../build/launchstructure/launchstructure.egg-info/top_level.txt
+[7.691s] reading manifest file '../build/launchstructure/launchstructure.egg-info/SOURCES.txt'
+[7.692s] writing manifest file '../build/launchstructure/launchstructure.egg-info/SOURCES.txt'
+[7.692s] running build
+[7.693s] running build_py
+[7.700s] running install
+[7.700s] running install_lib
+[7.701s] running install_data
+[7.701s] copying package.xml -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/share/launchstructure
+[7.710s] running install_egg_info
+[7.719s] removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages/launchstructure-0.0.0-py3.10.egg-info' (and everything under it)
+[7.723s] Copying ../build/launchstructure/launchstructure.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages/launchstructure-0.0.0-py3.10.egg-info
+[7.727s] running install_scripts
+[7.859s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/launchstructure/install.log'
+[8.070s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/launchstructure' returned '0': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/launchstructure/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/launchstructure build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/launchstructure/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/launchstructure/install.log --single-version-externally-managed

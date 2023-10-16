@@ -37,10 +37,14 @@ typedef struct my_mas__srv__LoadFile_Request__Sequence
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'result'
+#include "rosidl_runtime_c/string.h"
+
 /// Struct defined in srv/LoadFile in the package my_mas.
 typedef struct my_mas__srv__LoadFile_Response
 {
-  int64_t sum;
+  rosidl_runtime_c__String result;
 } my_mas__srv__LoadFile_Response;
 
 // Struct for a sequence of my_mas__srv__LoadFile_Response.

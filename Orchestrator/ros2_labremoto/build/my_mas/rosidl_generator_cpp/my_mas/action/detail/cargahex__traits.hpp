@@ -117,10 +117,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: status
+  // member: status_final
   {
-    out << "status: ";
-    rosidl_generator_traits::value_to_yaml(msg.status, out);
+    out << "status_final: ";
+    rosidl_generator_traits::value_to_yaml(msg.status_final, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -129,13 +129,13 @@ inline void to_block_style_yaml(
   const Cargahex_Result & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: status
+  // member: status_final
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "status: ";
-    rosidl_generator_traits::value_to_yaml(msg.status, out);
+    out << "status_final: ";
+    rosidl_generator_traits::value_to_yaml(msg.status_final, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -209,10 +209,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: status_final
+  // member: status
   {
-    out << "status_final: ";
-    rosidl_generator_traits::value_to_yaml(msg.status_final, out);
+    out << "status: ";
+    rosidl_generator_traits::value_to_yaml(msg.status, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -221,13 +221,13 @@ inline void to_block_style_yaml(
   const Cargahex_Feedback & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: status_final
+  // member: status
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "status_final: ";
-    rosidl_generator_traits::value_to_yaml(msg.status_final, out);
+    out << "status: ";
+    rosidl_generator_traits::value_to_yaml(msg.status, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

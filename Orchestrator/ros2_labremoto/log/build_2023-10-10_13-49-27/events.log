@@ -1,0 +1,557 @@
+[0.000000] (-) TimerEvent: {}
+[0.001552] (hardware) JobQueued: {'identifier': 'hardware', 'dependencies': OrderedDict()}
+[0.001701] (my_mas) JobQueued: {'identifier': 'my_mas', 'dependencies': OrderedDict()}
+[0.001776] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('my_mas', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas')])}
+[0.004368] (my_mas) JobStarted: {'identifier': 'my_mas'}
+[0.099230] (-) TimerEvent: {}
+[0.200077] (-) TimerEvent: {}
+[0.301630] (-) TimerEvent: {}
+[0.402247] (-) TimerEvent: {}
+[0.485066] (hardware) JobStarted: {'identifier': 'hardware'}
+[0.502446] (-) TimerEvent: {}
+[0.603528] (-) TimerEvent: {}
+[0.704415] (-) TimerEvent: {}
+[0.805315] (-) TimerEvent: {}
+[0.906095] (-) TimerEvent: {}
+[0.983260] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'cmake'}
+[0.986108] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'build'}
+[0.990606] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas', '--', '-j4', '-l4'], 'cwd': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ffelix07'), ('GIO_MODULE_DIR', '/home/ffelix07/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/142/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ffelix07'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.83.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/142/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/ffelix07/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/142/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/142/usr/share/code/code'), ('MANAGERPID', '1485'), ('SYSTEMD_EXEC_PID', '1675'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8963'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ffelix07'), ('JOURNAL_STREAM', '8:31854'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'ffelix07'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ffelix07/miniconda3/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/home/ffelix07/miniconda3/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/bin:/opt/ros/humble/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ffelix07-X541NA:@/tmp/.ICE-unix/1624,unix/ffelix07-X541NA:/tmp/.ICE-unix/1624'), ('GTK_EXE_PREFIX', '/snap/code/142/usr'), ('INVOCATION_ID', 'bcea4845c6c441ccb601fee68bbe4c9c'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/142/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.077NC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7d9ba7ad38.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ffelix07/snap/code/142/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/ffelix07/snap/code/142/.local/share:/home/ffelix07/snap/code/142:/snap/code/142/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble')]), 'shell': False}
+[1.007981] (-) TimerEvent: {}
+[1.109024] (-) TimerEvent: {}
+[1.210029] (-) TimerEvent: {}
+[1.312474] (-) TimerEvent: {}
+[1.413304] (-) TimerEvent: {}
+[1.476992] (my_mas) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.513511] (-) TimerEvent: {}
+[1.618247] (-) TimerEvent: {}
+[1.722342] (-) TimerEvent: {}
+[1.823005] (-) TimerEvent: {}
+[1.923739] (-) TimerEvent: {}
+[2.024635] (-) TimerEvent: {}
+[2.125244] (-) TimerEvent: {}
+[2.225886] (-) TimerEvent: {}
+[2.326539] (-) TimerEvent: {}
+[2.427163] (-) TimerEvent: {}
+[2.527716] (-) TimerEvent: {}
+[2.628384] (-) TimerEvent: {}
+[2.729714] (-) TimerEvent: {}
+[2.836564] (-) TimerEvent: {}
+[2.937577] (-) TimerEvent: {}
+[3.038663] (-) TimerEvent: {}
+[3.139430] (-) TimerEvent: {}
+[3.242352] (-) TimerEvent: {}
+[3.343312] (-) TimerEvent: {}
+[3.396536] (my_mas) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.423325] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.443469] (-) TimerEvent: {}
+[3.449674] (my_mas) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.544677] (-) TimerEvent: {}
+[3.645292] (-) TimerEvent: {}
+[3.702503] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.745485] (-) TimerEvent: {}
+[3.846150] (-) TimerEvent: {}
+[3.944111] (my_mas) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.947232] (-) TimerEvent: {}
+[4.048829] (-) TimerEvent: {}
+[4.150506] (-) TimerEvent: {}
+[4.251952] (-) TimerEvent: {}
+[4.352593] (-) TimerEvent: {}
+[4.453249] (-) TimerEvent: {}
+[4.554033] (-) TimerEvent: {}
+[4.655064] (-) TimerEvent: {}
+[4.755671] (-) TimerEvent: {}
+[4.856321] (-) TimerEvent: {}
+[4.958309] (-) TimerEvent: {}
+[5.058990] (-) TimerEvent: {}
+[5.159629] (-) TimerEvent: {}
+[5.260257] (-) TimerEvent: {}
+[5.361034] (-) TimerEvent: {}
+[5.435779] (hardware) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/hardware', 'build', '--build-base', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build', 'install', '--record', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log', '--single-version-externally-managed'], 'cwd': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ffelix07', 'GIO_MODULE_DIR': '/home/ffelix07/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/142/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ffelix07', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.83.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/142/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/ffelix07/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/142/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/142/usr/share/code/code', 'MANAGERPID': '1485', 'SYSTEMD_EXEC_PID': '1675', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8963', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ffelix07', 'JOURNAL_STREAM': '8:31854', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'ffelix07', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ffelix07/miniconda3/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/home/ffelix07/miniconda3/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/bin:/opt/ros/humble/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ffelix07-X541NA:@/tmp/.ICE-unix/1624,unix/ffelix07-X541NA:/tmp/.ICE-unix/1624', 'GTK_EXE_PREFIX': '/snap/code/142/usr', 'INVOCATION_ID': 'bcea4845c6c441ccb601fee68bbe4c9c', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/142/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.077NC2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7d9ba7ad38.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/ffelix07/snap/code/142/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '--ms-enable-electron-run-as-node', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/ffelix07/snap/code/142/.local/share:/home/ffelix07/snap/code/142:/snap/code/142/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core'}, 'shell': False}
+[5.461185] (-) TimerEvent: {}
+[5.561776] (-) TimerEvent: {}
+[5.662387] (-) TimerEvent: {}
+[5.763046] (-) TimerEvent: {}
+[5.863768] (-) TimerEvent: {}
+[5.964312] (-) TimerEvent: {}
+[6.064947] (-) TimerEvent: {}
+[6.165854] (-) TimerEvent: {}
+[6.266464] (-) TimerEvent: {}
+[6.367064] (-) TimerEvent: {}
+[6.467656] (-) TimerEvent: {}
+[6.568241] (-) TimerEvent: {}
+[6.668830] (-) TimerEvent: {}
+[6.732522] (hardware) StdoutLine: {'line': b'running egg_info\n'}
+[6.734197] (hardware) StdoutLine: {'line': b'writing ../../build/hardware/hardware.egg-info/PKG-INFO\n'}
+[6.735303] (hardware) StdoutLine: {'line': b'writing dependency_links to ../../build/hardware/hardware.egg-info/dependency_links.txt\n'}
+[6.736118] (hardware) StdoutLine: {'line': b'writing entry points to ../../build/hardware/hardware.egg-info/entry_points.txt\n'}
+[6.736751] (hardware) StdoutLine: {'line': b'writing requirements to ../../build/hardware/hardware.egg-info/requires.txt\n'}
+[6.737428] (hardware) StdoutLine: {'line': b'writing top-level names to ../../build/hardware/hardware.egg-info/top_level.txt\n'}
+[6.739565] (my_mas) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[6.745251] (hardware) StdoutLine: {'line': b"reading manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'\n"}
+[6.752660] (hardware) StdoutLine: {'line': b"writing manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'\n"}
+[6.753337] (hardware) StdoutLine: {'line': b'running build\n'}
+[6.753723] (hardware) StdoutLine: {'line': b'running build_py\n'}
+[6.754200] (hardware) StdoutLine: {'line': b'running install\n'}
+[6.754600] (hardware) StdoutLine: {'line': b'running install_lib\n'}
+[6.756883] (hardware) StdoutLine: {'line': b'running install_data\n'}
+[6.757544] (hardware) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.763403] (hardware) StdoutLine: {'line': b"removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.765391] (hardware) StdoutLine: {'line': b'Copying ../../build/hardware/hardware.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info\n'}
+[6.768981] (-) TimerEvent: {}
+[6.769891] (hardware) StdoutLine: {'line': b'running install_scripts\n'}
+[6.855563] (hardware) StdoutLine: {'line': b"writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log'\n"}
+[6.869176] (-) TimerEvent: {}
+[6.970485] (-) TimerEvent: {}
+[6.999379] (hardware) CommandEnded: {'returncode': 0}
+[7.070649] (-) TimerEvent: {}
+[7.177982] (-) TimerEvent: {}
+[7.279296] (-) TimerEvent: {}
+[7.380372] (-) TimerEvent: {}
+[7.432671] (hardware) JobEnded: {'identifier': 'hardware', 'rc': 0}
+[7.480495] (-) TimerEvent: {}
+[7.581098] (-) TimerEvent: {}
+[7.681819] (-) TimerEvent: {}
+[7.783010] (-) TimerEvent: {}
+[7.883640] (-) TimerEvent: {}
+[7.925974] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.983826] (-) TimerEvent: {}
+[8.084553] (-) TimerEvent: {}
+[8.185504] (-) TimerEvent: {}
+[8.286160] (-) TimerEvent: {}
+[8.386749] (-) TimerEvent: {}
+[8.487333] (-) TimerEvent: {}
+[8.588033] (-) TimerEvent: {}
+[8.689390] (-) TimerEvent: {}
+[8.789932] (-) TimerEvent: {}
+[8.890563] (-) TimerEvent: {}
+[8.991225] (-) TimerEvent: {}
+[9.091863] (-) TimerEvent: {}
+[9.192536] (-) TimerEvent: {}
+[9.274929] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.292773] (-) TimerEvent: {}
+[9.359370] (my_mas) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[9.392976] (-) TimerEvent: {}
+[9.453420] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.453873] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.454164] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[9.493156] (-) TimerEvent: {}
+[9.593706] (-) TimerEvent: {}
+[9.660118] (my_mas) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.693952] (-) TimerEvent: {}
+[9.794599] (-) TimerEvent: {}
+[9.894483] (my_mas) StdoutLine: {'line': b'-- Generating done\n'}
+[9.894889] (-) TimerEvent: {}
+[9.909641] (my_mas) StdoutLine: {'line': b'-- Build files have been written to: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas\n'}
+[9.995092] (-) TimerEvent: {}
+[10.064329] (my_mas) StdoutLine: {'line': b'[  1%] Built target my_mas__cpp\n'}
+[10.096992] (-) TimerEvent: {}
+[10.197709] (-) TimerEvent: {}
+[10.227359] (my_mas) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_my_mas\n'}
+[10.278323] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[10.297912] (-) TimerEvent: {}
+[10.401868] (my_mas) StdoutLine: {'line': b'[ 12%] Built target my_mas__rosidl_typesupport_fastrtps_cpp\n'}
+[10.402429] (-) TimerEvent: {}
+[10.440808] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[10.502614] (-) TimerEvent: {}
+[10.509952] (my_mas) StdoutLine: {'line': b'[ 23%] Built target my_mas__rosidl_typesupport_introspection_cpp\n'}
+[10.602809] (-) TimerEvent: {}
+[10.703423] (-) TimerEvent: {}
+[10.804186] (-) TimerEvent: {}
+[10.907070] (-) TimerEvent: {}
+[11.007628] (-) TimerEvent: {}
+[11.108728] (-) TimerEvent: {}
+[11.209279] (-) TimerEvent: {}
+[11.309846] (-) TimerEvent: {}
+[11.410492] (-) TimerEvent: {}
+[11.511234] (-) TimerEvent: {}
+[11.611841] (-) TimerEvent: {}
+[11.708377] (my_mas) StdoutLine: {'line': b'running egg_info\n'}
+[11.710283] (my_mas) StdoutLine: {'line': b'writing my_mas.egg-info/PKG-INFO\n'}
+[11.713864] (my_mas) StdoutLine: {'line': b'writing dependency_links to my_mas.egg-info/dependency_links.txt\n'}
+[11.714434] (-) TimerEvent: {}
+[11.714900] (my_mas) StdoutLine: {'line': b'writing top-level names to my_mas.egg-info/top_level.txt\n'}
+[11.722992] (my_mas) StdoutLine: {'line': b"reading manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[11.727002] (my_mas) StdoutLine: {'line': b"writing manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[11.814645] (-) TimerEvent: {}
+[11.828196] (my_mas) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_build_my_mas_egg\n'}
+[11.871643] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_cpp\x1b[0m\n'}
+[11.914781] (-) TimerEvent: {}
+[11.923159] (my_mas) StdoutLine: {'line': b'[ 34%] Built target my_mas__rosidl_typesupport_cpp\n'}
+[11.961621] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_generator_c\x1b[0m\n'}
+[12.007846] (my_mas) StdoutLine: {'line': b'[ 46%] Built target my_mas__rosidl_generator_c\n'}
+[12.014955] (-) TimerEvent: {}
+[12.065912] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[12.115156] (-) TimerEvent: {}
+[12.121818] (my_mas) StdoutLine: {'line': b'[ 57%] Built target my_mas__rosidl_typesupport_fastrtps_c\n'}
+[12.157818] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_c\x1b[0m\n'}
+[12.207301] (my_mas) StdoutLine: {'line': b'[ 68%] Built target my_mas__rosidl_typesupport_c\n'}
+[12.215334] (-) TimerEvent: {}
+[12.255887] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[12.315653] (-) TimerEvent: {}
+[12.338025] (my_mas) StdoutLine: {'line': b'[ 79%] Built target my_mas__rosidl_typesupport_introspection_c\n'}
+[12.415838] (-) TimerEvent: {}
+[12.427374] (my_mas) StdoutLine: {'line': b'[ 79%] Built target my_mas\n'}
+[12.516052] (-) TimerEvent: {}
+[12.522284] (my_mas) StdoutLine: {'line': b'[ 80%] Built target my_mas__py\n'}
+[12.592632] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_generator_py\x1b[0m\n'}
+[12.616235] (-) TimerEvent: {}
+[12.684519] (my_mas) StdoutLine: {'line': b'[ 90%] Built target my_mas__rosidl_generator_py\n'}
+[12.718889] (-) TimerEvent: {}
+[12.735303] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[12.786968] (my_mas) StdoutLine: {'line': b'[ 93%] Built target my_mas__rosidl_typesupport_fastrtps_c__pyext\n'}
+[12.819118] (-) TimerEvent: {}
+[12.837684] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[12.892290] (my_mas) StdoutLine: {'line': b'[ 96%] Built target my_mas__rosidl_typesupport_c__pyext\n'}
+[12.919450] (-) TimerEvent: {}
+[12.943610] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[13.019754] (-) TimerEvent: {}
+[13.022007] (my_mas) StdoutLine: {'line': b'[100%] Built target my_mas__rosidl_typesupport_introspection_c__pyext\n'}
+[13.064373] (my_mas) CommandEnded: {'returncode': 0}
+[13.119868] (-) TimerEvent: {}
+[13.222480] (-) TimerEvent: {}
+[13.323340] (-) TimerEvent: {}
+[13.424001] (-) TimerEvent: {}
+[13.524620] (-) TimerEvent: {}
+[13.600424] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'install'}
+[13.624805] (-) TimerEvent: {}
+[13.635716] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas'], 'cwd': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ffelix07'), ('GIO_MODULE_DIR', '/home/ffelix07/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/142/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ffelix07'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.83.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/142/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/ffelix07/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/142/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/142/usr/share/code/code'), ('MANAGERPID', '1485'), ('SYSTEMD_EXEC_PID', '1675'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8963'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ffelix07'), ('JOURNAL_STREAM', '8:31854'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'ffelix07'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ffelix07/miniconda3/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/home/ffelix07/miniconda3/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/bin:/opt/ros/humble/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ffelix07-X541NA:@/tmp/.ICE-unix/1624,unix/ffelix07-X541NA:/tmp/.ICE-unix/1624'), ('GTK_EXE_PREFIX', '/snap/code/142/usr'), ('INVOCATION_ID', 'bcea4845c6c441ccb601fee68bbe4c9c'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/142/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.077NC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7d9ba7ad38.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ffelix07/snap/code/142/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/ffelix07/snap/code/142/.local/share:/home/ffelix07/snap/code/142:/snap/code/142/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble')]), 'shell': False}
+[13.671643] (my_mas) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.672387] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/ament_index/resource_index/rosidl_interfaces/my_mas\n'}
+[13.672817] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[13.673497] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[13.674724] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[13.680028] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__functions.c\n'}
+[13.680610] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.h\n'}
+[13.681036] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__struct.h\n'}
+[13.682411] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__functions.h\n'}
+[13.684062] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/load_file.h\n'}
+[13.684499] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[13.684907] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/fibonacci.h\n'}
+[13.685381] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[13.685868] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__struct.h\n'}
+[13.697738] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__functions.c\n'}
+[13.700154] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__functions.c\n'}
+[13.700562] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.h\n'}
+[13.700859] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__functions.h\n'}
+[13.701133] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.h\n'}
+[13.701441] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__functions.h\n'}
+[13.701810] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__struct.h\n'}
+[13.707745] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/cargahex.h\n'}
+[13.708693] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[13.709227] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/sensor_measurment.h\n'}
+[13.709638] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.711158] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[13.714582] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.h\n'}
+[13.723039] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__struct.h\n'}
+[13.723652] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__type_support.h\n'}
+[13.724569] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__struct.h\n'}
+[13.725172] (-) TimerEvent: {}
+[13.728166] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__functions.c\n'}
+[13.728973] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__functions.h\n'}
+[13.729526] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__functions.c\n'}
+[13.733665] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__functions.h\n'}
+[13.734224] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/auditor_msg.h\n'}
+[13.734868] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/library_path.sh\n'}
+[13.736712] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/library_path.dsv\n'}
+[13.737242] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/libmy_mas__rosidl_generator_c.so\n'}
+[13.739957] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[13.740390] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[13.740838] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[13.742622] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_c.h\n'}
+[13.743142] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[13.743560] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[13.743987] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_fastrtps_c.h\n'}
+[13.749905] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[13.751212] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[13.751703] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.752037] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[13.752349] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[13.752745] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_c.h\n'}
+[13.753048] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_c.so\n'}
+[13.753366] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[13.753724] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[13.762543] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[13.763045] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_introspection_c.h\n'}
+[13.763471] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.c\n'}
+[13.763882] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[13.764268] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[13.764660] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[13.765063] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.c\n'}
+[13.765475] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.c\n'}
+[13.765869] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_c.h\n'}
+[13.772837] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[13.773354] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[13.773770] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_c.h\n'}
+[13.774263] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.c\n'}
+[13.774741] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__type_support.c\n'}
+[13.775188] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__rosidl_typesupport_introspection_c.h\n'}
+[13.775591] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.775999] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_c.so\n'}
+[13.776398] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_c.so\n'}
+[13.776815] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[13.777247] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[13.783409] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/load_file.hpp\n'}
+[13.783802] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[13.784199] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__struct.hpp\n'}
+[13.784561] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__builder.hpp\n'}
+[13.784940] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__traits.hpp\n'}
+[13.785349] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[13.785760] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/fibonacci.hpp\n'}
+[13.793280] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[13.793794] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__builder.hpp\n'}
+[13.794293] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__builder.hpp\n'}
+[13.794905] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__struct.hpp\n'}
+[13.795314] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__struct.hpp\n'}
+[13.795600] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__traits.hpp\n'}
+[13.795926] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__traits.hpp\n'}
+[13.796282] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/cargahex.hpp\n'}
+[13.798970] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[13.799518] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/auditor_msg.hpp\n'}
+[13.800016] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[13.800442] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__struct.hpp\n'}
+[13.800925] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__traits.hpp\n'}
+[13.809102] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__traits.hpp\n'}
+[13.809462] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__builder.hpp\n'}
+[13.809758] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__struct.hpp\n'}
+[13.810253] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__builder.hpp\n'}
+[13.810922] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/sensor_measurment.hpp\n'}
+[13.811452] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[13.811918] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[13.812365] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[13.819655] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.820158] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/dds_fastrtps\n'}
+[13.824071] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[13.824609] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[13.825599] (-) TimerEvent: {}
+[13.826020] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.827249] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/dds_fastrtps\n'}
+[13.827718] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.828114] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[13.829129] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[13.829577] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.830021] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/dds_fastrtps\n'}
+[13.831765] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.832351] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.832792] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.833208] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[13.833780] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[13.834722] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[13.835264] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.835735] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.cpp\n'}
+[13.836243] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[13.836666] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[13.837100] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.837526] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.cpp\n'}
+[13.837953] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.847026] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.cpp\n'}
+[13.847609] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[13.848143] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[13.848614] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__type_support.cpp\n'}
+[13.849088] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.cpp\n'}
+[13.849586] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.850020] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.852206] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_cpp.so\n'}
+[13.852553] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_cpp.so\n'}
+[13.852896] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/pythonpath.sh\n'}
+[13.853422] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/pythonpath.dsv\n'}
+[13.854048] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info\n'}
+[13.856323] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[13.857117] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[13.858144] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[13.858612] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[13.859207] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas\n'}
+[13.859668] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.860271] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_c.c\n'}
+[13.860900] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/__init__.py\n'}
+[13.861325] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv\n'}
+[13.862059] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file_s.c\n'}
+[13.862975] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/__init__.py\n'}
+[13.863397] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file.py\n'}
+[13.863836] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action\n'}
+[13.864256] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex_s.c\n'}
+[13.864671] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex.py\n'}
+[13.865065] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/__init__.py\n'}
+[13.865494] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci.py\n'}
+[13.865893] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci_s.c\n'}
+[13.866959] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg\n'}
+[13.867441] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment_s.c\n'}
+[13.867787] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/__init__.py\n'}
+[13.868130] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment.py\n'}
+[13.868569] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor_msg.py\n'}
+[13.869049] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor_msg_s.c\n'}
+[13.869452] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.869871] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/libmy_mas__rosidl_generator_py.so\n'}
+[13.870620] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.870966] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.871324] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.925767] (-) TimerEvent: {}
+[13.932024] (my_mas) StdoutLine: {'line': b"Listing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas'...\n"}
+[13.932855] (my_mas) StdoutLine: {'line': b"Compiling '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/__init__.py'...\n"}
+[13.933907] (my_mas) StdoutLine: {'line': b"Listing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action'...\n"}
+[13.934540] (my_mas) StdoutLine: {'line': b"Listing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg'...\n"}
+[13.934994] (my_mas) StdoutLine: {'line': b"Listing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv'...\n"}
+[13.959750] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.962693] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.964932] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.967316] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/libmy_mas__rosidl_generator_py.so\n'}
+[13.967981] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/msg/SensorMeasurment.idl\n'}
+[13.968633] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/msg/AuditorMsg.idl\n'}
+[13.969073] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/srv/LoadFile.idl\n'}
+[13.969482] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/action/Fibonacci.idl\n'}
+[13.970480] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/action/Cargahex.idl\n'}
+[13.970985] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/msg/SensorMeasurment.msg\n'}
+[13.971417] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/msg/AuditorMsg.msg\n'}
+[13.971817] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/srv/LoadFile.srv\n'}
+[13.972498] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/srv/LoadFile_Request.msg\n'}
+[13.973014] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/srv/LoadFile_Response.msg\n'}
+[13.973685] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/action/Fibonacci.action\n'}
+[13.974418] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/action/Cargahex.action\n'}
+[13.975299] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/ament_index/resource_index/package_run_dependencies/my_mas\n'}
+[13.975727] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/ament_index/resource_index/parent_prefix_path/my_mas\n'}
+[13.976142] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/ament_prefix_path.sh\n'}
+[13.976526] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/ament_prefix_path.dsv\n'}
+[13.976887] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/path.sh\n'}
+[13.977245] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/path.dsv\n'}
+[13.978878] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/local_setup.bash\n'}
+[13.979360] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/local_setup.sh\n'}
+[13.981162] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/local_setup.zsh\n'}
+[13.981823] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/local_setup.dsv\n'}
+[13.982336] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.dsv\n'}
+[13.982944] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/ament_index/resource_index/packages/my_mas\n'}
+[13.983393] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport.cmake\n'}
+[13.983677] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.984076] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.986304] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.987428] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.988226] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.989075] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport.cmake\n'}
+[13.990368] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.991012] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cppExport.cmake\n'}
+[13.991378] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.991754] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.992124] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.999632] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.000371] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport.cmake\n'}
+[14.000867] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.001521] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport.cmake\n'}
+[14.001983] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.002804] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/rosidl_cmake-extras.cmake\n'}
+[14.003555] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.003954] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.004293] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.004613] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.005001] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.005308] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.005588] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_masConfig.cmake\n'}
+[14.005903] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_masConfig-version.cmake\n'}
+[14.006650] (my_mas) StdoutLine: {'line': b'-- Installing: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.xml\n'}
+[14.029404] (my_mas) CommandEnded: {'returncode': 0}
+[14.030988] (-) TimerEvent: {}
+[14.132709] (-) TimerEvent: {}
+[14.233844] (-) TimerEvent: {}
+[14.358890] (-) TimerEvent: {}
+[14.460914] (-) TimerEvent: {}
+[14.561729] (-) TimerEvent: {}
+[14.662471] (-) TimerEvent: {}
+[14.763215] (-) TimerEvent: {}
+[14.864000] (-) TimerEvent: {}
+[14.966768] (-) TimerEvent: {}
+[15.067475] (-) TimerEvent: {}
+[15.168444] (-) TimerEvent: {}
+[15.269271] (-) TimerEvent: {}
+[15.370305] (-) TimerEvent: {}
+[15.470857] (-) TimerEvent: {}
+[15.572027] (-) TimerEvent: {}
+[15.673436] (-) TimerEvent: {}
+[15.690091] (my_mas) JobEnded: {'identifier': 'my_mas', 'rc': 0}
+[15.691544] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[15.773931] (-) TimerEvent: {}
+[15.875034] (-) TimerEvent: {}
+[15.976080] (-) TimerEvent: {}
+[16.077004] (-) TimerEvent: {}
+[16.177594] (-) TimerEvent: {}
+[16.283139] (-) TimerEvent: {}
+[16.383781] (-) TimerEvent: {}
+[16.484500] (-) TimerEvent: {}
+[16.585229] (-) TimerEvent: {}
+[16.685957] (-) TimerEvent: {}
+[16.786590] (-) TimerEvent: {}
+[16.887222] (-) TimerEvent: {}
+[16.987903] (-) TimerEvent: {}
+[17.088607] (-) TimerEvent: {}
+[17.189268] (-) TimerEvent: {}
+[17.290336] (-) TimerEvent: {}
+[17.391035] (-) TimerEvent: {}
+[17.491965] (-) TimerEvent: {}
+[17.592694] (-) TimerEvent: {}
+[17.693379] (-) TimerEvent: {}
+[17.794212] (-) TimerEvent: {}
+[17.895192] (-) TimerEvent: {}
+[17.996720] (-) TimerEvent: {}
+[18.097945] (-) TimerEvent: {}
+[18.198876] (-) TimerEvent: {}
+[18.301714] (-) TimerEvent: {}
+[18.406287] (-) TimerEvent: {}
+[18.506921] (-) TimerEvent: {}
+[18.607606] (-) TimerEvent: {}
+[18.710271] (-) TimerEvent: {}
+[18.811180] (-) TimerEvent: {}
+[18.914073] (-) TimerEvent: {}
+[19.015264] (-) TimerEvent: {}
+[19.117822] (-) TimerEvent: {}
+[19.219795] (-) TimerEvent: {}
+[19.320473] (-) TimerEvent: {}
+[19.421325] (-) TimerEvent: {}
+[19.521941] (-) TimerEvent: {}
+[19.622571] (-) TimerEvent: {}
+[19.723152] (-) TimerEvent: {}
+[19.823771] (-) TimerEvent: {}
+[19.924898] (-) TimerEvent: {}
+[20.025676] (-) TimerEvent: {}
+[20.050770] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build', 'install', '--record', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ffelix07', 'GIO_MODULE_DIR': '/home/ffelix07/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/142/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ffelix07', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.83.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/142/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/ffelix07/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/142/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/142/usr/share/code/code', 'MANAGERPID': '1485', 'SYSTEMD_EXEC_PID': '1675', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8963', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ffelix07', 'JOURNAL_STREAM': '8:31854', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'ffelix07', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ffelix07/miniconda3/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/home/ffelix07/miniconda3/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/bin:/opt/ros/humble/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ffelix07-X541NA:@/tmp/.ICE-unix/1624,unix/ffelix07-X541NA:/tmp/.ICE-unix/1624', 'GTK_EXE_PREFIX': '/snap/code/142/usr', 'INVOCATION_ID': 'bcea4845c6c441ccb601fee68bbe4c9c', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/142/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.077NC2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7d9ba7ad38.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/ffelix07/snap/code/142/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '--ms-enable-electron-run-as-node', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/ffelix07/snap/code/142/.local/share:/home/ffelix07/snap/code/142:/snap/code/142/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core'}, 'shell': False}
+[20.125891] (-) TimerEvent: {}
+[20.226753] (-) TimerEvent: {}
+[20.327407] (-) TimerEvent: {}
+[20.428152] (-) TimerEvent: {}
+[20.528839] (-) TimerEvent: {}
+[20.629495] (-) TimerEvent: {}
+[20.730171] (-) TimerEvent: {}
+[20.830768] (-) TimerEvent: {}
+[20.931388] (-) TimerEvent: {}
+[21.032061] (-) TimerEvent: {}
+[21.132701] (-) TimerEvent: {}
+[21.234301] (-) TimerEvent: {}
+[21.276085] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[21.281509] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[21.282052] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[21.282549] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[21.282988] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[21.283351] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[21.286418] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[21.293981] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[21.295006] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[21.295543] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[21.297062] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[21.298195] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[21.304358] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[21.311708] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub\n'}
+[21.312750] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[21.318710] (py_pubsub) StdoutLine: {'line': b"removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[21.320040] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info\n'}
+[21.326941] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[21.334472] (-) TimerEvent: {}
+[21.396860] (py_pubsub) StdoutLine: {'line': b'Installing action script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[21.397585] (py_pubsub) StdoutLine: {'line': b'Installing arduino_client script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[21.398531] (py_pubsub) StdoutLine: {'line': b'Installing client script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[21.399959] (py_pubsub) StdoutLine: {'line': b'Installing con_arduino script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[21.401340] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[21.402451] (py_pubsub) StdoutLine: {'line': b'Installing service script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[21.403546] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[21.406048] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log'\n"}
+[21.434644] (-) TimerEvent: {}
+[21.509686] (py_pubsub) CommandEnded: {'returncode': 0}
+[21.535039] (-) TimerEvent: {}
+[21.636365] (-) TimerEvent: {}
+[21.737522] (-) TimerEvent: {}
+[21.823102] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[21.826097] (-) EventReactorShutdown: {}

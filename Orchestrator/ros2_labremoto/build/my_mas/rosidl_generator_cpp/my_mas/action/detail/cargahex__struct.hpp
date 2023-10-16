@@ -152,30 +152,30 @@ struct Cargahex_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->status = "";
+      this->status_final = "";
     }
   }
 
   explicit Cargahex_Result_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : status(_alloc)
+  : status_final(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->status = "";
+      this->status_final = "";
     }
   }
 
   // field types and members
-  using _status_type =
+  using _status_final_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _status_type status;
+  _status_final_type status_final;
 
   // setters for named parameter idiom
-  Type & set__status(
+  Type & set__status_final(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->status = _arg;
+    this->status_final = _arg;
     return *this;
   }
 
@@ -221,7 +221,7 @@ struct Cargahex_Result_
   // comparison operators
   bool operator==(const Cargahex_Result_ & other) const
   {
-    if (this->status != other.status) {
+    if (this->status_final != other.status_final) {
       return false;
     }
     return true;
@@ -266,30 +266,30 @@ struct Cargahex_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->status_final = "";
+      this->status = "";
     }
   }
 
   explicit Cargahex_Feedback_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : status_final(_alloc)
+  : status(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->status_final = "";
+      this->status = "";
     }
   }
 
   // field types and members
-  using _status_final_type =
+  using _status_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _status_final_type status_final;
+  _status_type status;
 
   // setters for named parameter idiom
-  Type & set__status_final(
+  Type & set__status(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->status_final = _arg;
+    this->status = _arg;
     return *this;
   }
 
@@ -335,7 +335,7 @@ struct Cargahex_Feedback_
   // comparison operators
   bool operator==(const Cargahex_Feedback_ & other) const
   {
-    if (this->status_final != other.status_final) {
+    if (this->status != other.status) {
       return false;
     }
     return true;

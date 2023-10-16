@@ -1,0 +1,5 @@
+  File "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino_infrastructure.py", line 23
+    self.get_logger().info('Feedback: {0}'.format(goal_handle.request.path_hex)))
+                                                                                ^
+SyntaxError: unmatched ')'
+

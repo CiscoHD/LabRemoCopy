@@ -248,8 +248,8 @@ cdr_serialize(
   const my_mas::srv::LoadFile_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: sum
-  cdr << ros_message.sum;
+  // Member: result
+  cdr << ros_message.result;
   return true;
 }
 
@@ -259,8 +259,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   my_mas::srv::LoadFile_Response & ros_message)
 {
-  // Member: sum
-  cdr >> ros_message.sum;
+  // Member: result
+  cdr >> ros_message.result;
 
   return true;
 }
@@ -278,12 +278,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: sum
-  {
-    size_t item_size = sizeof(ros_message.sum);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // Member: result
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.result.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -306,12 +304,17 @@ max_serialized_size_LoadFile_Response(
   is_plain = true;
 
 
-  // Member: sum
+  // Member: result
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   return current_alignment - initial_alignment;

@@ -11,7 +11,7 @@ module my_mas {
       int64 b;
     };
     struct LoadFile_Response {
-      int64 sum;
+      string result;
     };
   };
 };

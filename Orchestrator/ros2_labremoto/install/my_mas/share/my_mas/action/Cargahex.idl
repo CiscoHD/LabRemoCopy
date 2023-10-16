@@ -9,10 +9,10 @@ module my_mas {
       string path_hex;
     };
     struct Cargahex_Result {
-      string status;
+      string status_final;
     };
     struct Cargahex_Feedback {
-      string status_final;
+      string status;
     };
   };
 };

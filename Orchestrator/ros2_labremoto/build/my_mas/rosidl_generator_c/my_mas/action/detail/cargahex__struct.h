@@ -41,14 +41,14 @@ typedef struct my_mas__action__Cargahex_Goal__Sequence
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'status'
+// Member 'status_final'
 // already included above
 // #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in action/Cargahex in the package my_mas.
 typedef struct my_mas__action__Cargahex_Result
 {
-  rosidl_runtime_c__String status;
+  rosidl_runtime_c__String status_final;
 } my_mas__action__Cargahex_Result;
 
 // Struct for a sequence of my_mas__action__Cargahex_Result.
@@ -65,14 +65,14 @@ typedef struct my_mas__action__Cargahex_Result__Sequence
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'status_final'
+// Member 'status'
 // already included above
 // #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in action/Cargahex in the package my_mas.
 typedef struct my_mas__action__Cargahex_Feedback
 {
-  rosidl_runtime_c__String status_final;
+  rosidl_runtime_c__String status;
 } my_mas__action__Cargahex_Feedback;
 
 // Struct for a sequence of my_mas__action__Cargahex_Feedback.

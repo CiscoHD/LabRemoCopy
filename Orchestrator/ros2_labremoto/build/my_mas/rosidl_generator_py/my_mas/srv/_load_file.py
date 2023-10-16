@@ -201,22 +201,22 @@ class LoadFile_Response(metaclass=Metaclass_LoadFile_Response):
     """Message class 'LoadFile_Response'."""
 
     __slots__ = [
-        '_sum',
+        '_result',
     ]
 
     _fields_and_field_types = {
-        'sum': 'int64',
+        'result': 'string',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.sum = kwargs.get('sum', int())
+        self.result = kwargs.get('result', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -247,7 +247,7 @@ class LoadFile_Response(metaclass=Metaclass_LoadFile_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.sum != other.sum:
+        if self.result != other.result:
             return False
         return True
 
@@ -256,20 +256,18 @@ class LoadFile_Response(metaclass=Metaclass_LoadFile_Response):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property  # noqa: A003
-    def sum(self):  # noqa: A003
-        """Message field 'sum'."""
-        return self._sum
+    @builtins.property
+    def result(self):
+        """Message field 'result'."""
+        return self._result
 
-    @sum.setter  # noqa: A003
-    def sum(self, value):  # noqa: A003
+    @result.setter
+    def result(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'sum' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'sum' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._sum = value
+                isinstance(value, str), \
+                "The 'result' field must be of type 'str'"
+        self._result = value
 
 
 class Metaclass_LoadFile(type):

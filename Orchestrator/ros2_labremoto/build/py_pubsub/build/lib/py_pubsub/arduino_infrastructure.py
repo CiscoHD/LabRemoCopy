@@ -1,23 +1,12 @@
-import arduino
 from my_mas.action import Cargahex
 import time
 import rclpy
 from rclpy.action import ActionServer
 from rclpy.node import Node
-
-import pandas as pd
 import os
 import json
 
-
-def devices_arduino_info():
-    try:
-        dispositivos = pd.concat(list(map(pd.json_normalize,json.loads(os.popen("arduino-cli board list --format json").read()))))
-        return dispositivos
-    except ValueError:
-        return "No dispositivos conectados" 
-
-class ActionServer(Node):
+class ArduinoActionServer(Node):
 
     def __init__(self):
         super().__init__('carga_arduino_action_server')
@@ -27,42 +16,54 @@ class ActionServer(Node):
             'arduino_inf',
             self.execute_callback)
 
-    def execute_callback(self,goal_handle):
-        
+
+    def execute_callback(self, goal_handle):
+        self.get_logger().info('Executing upload to arduino...')
         feedback_msg = Cargahex.Feedback()
-        feedback_msg.status = 'Executing...'
-        goal_handle.publish_feedback(feedback_msg)
 
-        """dispositivos = devices_arduino_info()
+  
+        dispositivos = json.loads(os.popen("arduino-cli board list --format json").read())
 
-        feedback_msg.status = f'No. dispositivos {len(dispositivos)}'
-        goal_handle.publish_feedback(feedback_msg)
+        if len(dispositivos)!= 0:
+            self.get_logger().info("Looking for file .hex ..." )
+            #try:
+            sketch_path = goal_handle.request.path_hex 
+            PORT = dispositivos[0]['port']['address']
+            FQBN = dispositivos[0]['matching_boards'][0]['fqbn']
+            try:
+                copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               
+                upload_r = os.popen(f"arduino-cli -p {PORT} upload {sketch_path}").read()
+                feedback_msg.status = 'update finish'
+                goal_handle.succeed()
+                self.get_logger().info(feedback_msg.status)
 
-        port = dispositivos['port.label'][0]
-        fqbn_ard = dispositivos.iloc[0]['matching_boards'][0]['fqbn']
+                result = Cargahex.Result()
+                result.status_final = upload_r 
+                
+                return result
 
-        sketch_path = goal_handle.request.path_hex
-    
-        ard_infres = arduino.TestArduinoCLI()
-        ard_infres.setUp()
+            except:
+                feedback_msg.status = 'File no found'
+                goal_handle.abort()
+                result = Cargahex.Result()
+                result.status_final = feedback_msg.status
+                self.get_logger().info(result.status_final)
+                return result
 
-        feedback_msg.status = 'load'
-        goal_handle.publish_feedback(feedback_msg)
-        feedback_msg.status = ard_infres.testCompilationSuccess(fqbn_ard,sketch_path)"""
-
-        goal_handle.succeed()
-
-        result = Cargahex.status_final()
-        #result.status_final = f"conexión {port} {fqbn_ard}"
-        result.status_final = f"conexión"
-
-        return result
+  
+        else: 
+            feedback_msg.status = 'Error infrestractura, no arduinos found'
+            goal_handle.abort()
+            result = Cargahex.Result()
+            result.status_final = feedback_msg.status
+            self.get_logger().info(result.status_final)
+            return result
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    action_server = ActionServer()
+    action_server = ArduinoActionServer()
 
     rclpy.spin(action_server)
 

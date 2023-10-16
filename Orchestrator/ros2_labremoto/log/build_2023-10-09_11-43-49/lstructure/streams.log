@@ -1,0 +1,20 @@
+[2.640s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/lstructure': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lstructure build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/install.log --single-version-externally-managed
+[3.557s] running egg_info
+[3.559s] writing ../../build/lstructure/lstructure.egg-info/PKG-INFO
+[3.559s] writing dependency_links to ../../build/lstructure/lstructure.egg-info/dependency_links.txt
+[3.560s] writing entry points to ../../build/lstructure/lstructure.egg-info/entry_points.txt
+[3.561s] writing requirements to ../../build/lstructure/lstructure.egg-info/requires.txt
+[3.561s] writing top-level names to ../../build/lstructure/lstructure.egg-info/top_level.txt
+[3.568s] reading manifest file '../../build/lstructure/lstructure.egg-info/SOURCES.txt'
+[3.572s] writing manifest file '../../build/lstructure/lstructure.egg-info/SOURCES.txt'
+[3.573s] running build
+[3.574s] running build_py
+[3.574s] running install
+[3.575s] running install_lib
+[3.579s] running install_data
+[3.581s] running install_egg_info
+[3.588s] removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages/lstructure-0.0.0-py3.10.egg-info' (and everything under it)
+[3.589s] Copying ../../build/lstructure/lstructure.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages/lstructure-0.0.0-py3.10.egg-info
+[3.595s] running install_scripts
+[3.661s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/install.log'
+[3.772s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/lstructure' returned '0': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lstructure build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/lstructure/install.log --single-version-externally-managed

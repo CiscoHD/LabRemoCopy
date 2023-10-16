@@ -1,0 +1,33 @@
+[1.817s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/build/structure': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble /usr/bin/cmake /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/structure -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/install/structure
+[2.055s] -- The C compiler identification is GNU 11.4.0
+[2.308s] -- The CXX compiler identification is GNU 11.4.0
+[2.341s] -- Detecting C compiler ABI info
+[2.657s] -- Detecting C compiler ABI info - done
+[2.689s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.690s] -- Detecting C compile features
+[2.692s] -- Detecting C compile features - done
+[2.708s] -- Detecting CXX compiler ABI info
+[3.101s] -- Detecting CXX compiler ABI info - done
+[3.144s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.145s] -- Detecting CXX compile features
+[3.150s] -- Detecting CXX compile features - done
+[3.155s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.254s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3") 
+[3.255s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.602s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.112s] -- Added test 'lint_cmake' to check CMake code style
+[5.113s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_test/cmake/ament_add_test.cmake:86 (get_executable_path):
+[5.113s]   Unknown CMake command "get_executable_path".
+[5.114s] Call Stack (most recent call first):
+[5.114s]   /opt/ros/humble/share/ament_cmake_lint_cmake/cmake/ament_lint_cmake.cmake:47 (ament_add_test)
+[5.115s]   /opt/ros/humble/share/ament_cmake_lint_cmake/cmake/ament_cmake_lint_cmake_lint_hook.cmake:21 (ament_lint_cmake)
+[5.119s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:38 (include)
+[5.121s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_package_hook.cmake:21 (ament_execute_extensions)
+[5.122s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:38 (include)
+[5.133s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[5.133s]   CMakeLists.txt:26 (ament_package)
+[5.134s] 
+[5.134s] [0m
+[5.134s] -- Configuring incomplete, errors occurred!
+[5.135s] See also "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/build/structure/CMakeFiles/CMakeOutput.log".
+[5.135s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/build/structure' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble /usr/bin/cmake /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/structure -DCMAKE_INSTALL_PREFIX=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/install/structure

@@ -165,8 +165,8 @@ bool my_mas__action__cargahex__result__convert_from_py(PyObject * _pymsg, void *
     assert(strncmp("my_mas.action._cargahex.Cargahex_Result", full_classname_dest, 39) == 0);
   }
   my_mas__action__Cargahex_Result * ros_message = _ros_message;
-  {  // status
-    PyObject * field = PyObject_GetAttrString(_pymsg, "status");
+  {  // status_final
+    PyObject * field = PyObject_GetAttrString(_pymsg, "status_final");
     if (!field) {
       return false;
     }
@@ -176,7 +176,7 @@ bool my_mas__action__cargahex__result__convert_from_py(PyObject * _pymsg, void *
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->status, PyBytes_AS_STRING(encoded_field));
+    rosidl_runtime_c__String__assign(&ros_message->status_final, PyBytes_AS_STRING(encoded_field));
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
@@ -202,17 +202,17 @@ PyObject * my_mas__action__cargahex__result__convert_to_py(void * raw_ros_messag
     }
   }
   my_mas__action__Cargahex_Result * ros_message = (my_mas__action__Cargahex_Result *)raw_ros_message;
-  {  // status
+  {  // status_final
     PyObject * field = NULL;
     field = PyUnicode_DecodeUTF8(
-      ros_message->status.data,
-      strlen(ros_message->status.data),
+      ros_message->status_final.data,
+      strlen(ros_message->status_final.data),
       "replace");
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "status", field);
+      int rc = PyObject_SetAttrString(_pymessage, "status_final", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -277,8 +277,8 @@ bool my_mas__action__cargahex__feedback__convert_from_py(PyObject * _pymsg, void
     assert(strncmp("my_mas.action._cargahex.Cargahex_Feedback", full_classname_dest, 41) == 0);
   }
   my_mas__action__Cargahex_Feedback * ros_message = _ros_message;
-  {  // status_final
-    PyObject * field = PyObject_GetAttrString(_pymsg, "status_final");
+  {  // status
+    PyObject * field = PyObject_GetAttrString(_pymsg, "status");
     if (!field) {
       return false;
     }
@@ -288,7 +288,7 @@ bool my_mas__action__cargahex__feedback__convert_from_py(PyObject * _pymsg, void
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->status_final, PyBytes_AS_STRING(encoded_field));
+    rosidl_runtime_c__String__assign(&ros_message->status, PyBytes_AS_STRING(encoded_field));
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
@@ -314,17 +314,17 @@ PyObject * my_mas__action__cargahex__feedback__convert_to_py(void * raw_ros_mess
     }
   }
   my_mas__action__Cargahex_Feedback * ros_message = (my_mas__action__Cargahex_Feedback *)raw_ros_message;
-  {  // status_final
+  {  // status
     PyObject * field = NULL;
     field = PyUnicode_DecodeUTF8(
-      ros_message->status_final.data,
-      strlen(ros_message->status_final.data),
+      ros_message->status.data,
+      strlen(ros_message->status.data),
       "replace");
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "status_final", field);
+      int rc = PyObject_SetAttrString(_pymessage, "status", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

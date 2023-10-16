@@ -243,13 +243,21 @@ my_mas__srv__LoadFile_Request__Sequence__copy(
 }
 
 
+// Include directives for member types
+// Member `result`
+#include "rosidl_runtime_c/string_functions.h"
+
 bool
 my_mas__srv__LoadFile_Response__init(my_mas__srv__LoadFile_Response * msg)
 {
   if (!msg) {
     return false;
   }
-  // sum
+  // result
+  if (!rosidl_runtime_c__String__init(&msg->result)) {
+    my_mas__srv__LoadFile_Response__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -259,7 +267,8 @@ my_mas__srv__LoadFile_Response__fini(my_mas__srv__LoadFile_Response * msg)
   if (!msg) {
     return;
   }
-  // sum
+  // result
+  rosidl_runtime_c__String__fini(&msg->result);
 }
 
 bool
@@ -268,8 +277,10 @@ my_mas__srv__LoadFile_Response__are_equal(const my_mas__srv__LoadFile_Response *
   if (!lhs || !rhs) {
     return false;
   }
-  // sum
-  if (lhs->sum != rhs->sum) {
+  // result
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->result), &(rhs->result)))
+  {
     return false;
   }
   return true;
@@ -283,8 +294,12 @@ my_mas__srv__LoadFile_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // sum
-  output->sum = input->sum;
+  // result
+  if (!rosidl_runtime_c__String__copy(
+      &(input->result), &(output->result)))
+  {
+    return false;
+  }
   return true;
 }
 

@@ -63,15 +63,15 @@ namespace action
 namespace builder
 {
 
-class Init_Cargahex_Result_status
+class Init_Cargahex_Result_status_final
 {
 public:
-  Init_Cargahex_Result_status()
+  Init_Cargahex_Result_status_final()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::my_mas::action::Cargahex_Result status(::my_mas::action::Cargahex_Result::_status_type arg)
+  ::my_mas::action::Cargahex_Result status_final(::my_mas::action::Cargahex_Result::_status_final_type arg)
   {
-    msg_.status = std::move(arg);
+    msg_.status_final = std::move(arg);
     return std::move(msg_);
   }
 
@@ -90,7 +90,7 @@ template<>
 inline
 auto build<::my_mas::action::Cargahex_Result>()
 {
-  return my_mas::action::builder::Init_Cargahex_Result_status();
+  return my_mas::action::builder::Init_Cargahex_Result_status_final();
 }
 
 }  // namespace my_mas
@@ -105,15 +105,15 @@ namespace action
 namespace builder
 {
 
-class Init_Cargahex_Feedback_status_final
+class Init_Cargahex_Feedback_status
 {
 public:
-  Init_Cargahex_Feedback_status_final()
+  Init_Cargahex_Feedback_status()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::my_mas::action::Cargahex_Feedback status_final(::my_mas::action::Cargahex_Feedback::_status_final_type arg)
+  ::my_mas::action::Cargahex_Feedback status(::my_mas::action::Cargahex_Feedback::_status_type arg)
   {
-    msg_.status_final = std::move(arg);
+    msg_.status = std::move(arg);
     return std::move(msg_);
   }
 
@@ -132,7 +132,7 @@ template<>
 inline
 auto build<::my_mas::action::Cargahex_Feedback>()
 {
-  return my_mas::action::builder::Init_Cargahex_Feedback_status_final();
+  return my_mas::action::builder::Init_Cargahex_Feedback_status();
 }
 
 }  // namespace my_mas

@@ -238,9 +238,9 @@ extern "C"
 #endif
 
 // already included above
-// #include "rosidl_runtime_c/string.h"  // status
+// #include "rosidl_runtime_c/string.h"  // status_final
 // already included above
-// #include "rosidl_runtime_c/string_functions.h"  // status
+// #include "rosidl_runtime_c/string_functions.h"  // status_final
 
 // forward declare type support functions
 
@@ -256,9 +256,9 @@ static bool _Cargahex_Result__cdr_serialize(
     return false;
   }
   const _Cargahex_Result__ros_msg_type * ros_message = static_cast<const _Cargahex_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: status
+  // Field name: status_final
   {
-    const rosidl_runtime_c__String * str = &ros_message->status;
+    const rosidl_runtime_c__String * str = &ros_message->status_final;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -282,18 +282,18 @@ static bool _Cargahex_Result__cdr_deserialize(
     return false;
   }
   _Cargahex_Result__ros_msg_type * ros_message = static_cast<_Cargahex_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: status
+  // Field name: status_final
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->status.data) {
-      rosidl_runtime_c__String__init(&ros_message->status);
+    if (!ros_message->status_final.data) {
+      rosidl_runtime_c__String__init(&ros_message->status_final);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->status,
+      &ros_message->status_final,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'status'\n");
+      fprintf(stderr, "failed to assign string into field 'status_final'\n");
       return false;
     }
   }
@@ -315,10 +315,10 @@ size_t get_serialized_size_my_mas__action__Cargahex_Result(
   (void)padding;
   (void)wchar_size;
 
-  // field.name status
+  // field.name status_final
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->status.size + 1);
+    (ros_message->status_final.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -346,7 +346,7 @@ size_t max_serialized_size_my_mas__action__Cargahex_Result(
   full_bounded = true;
   is_plain = true;
 
-  // member: status
+  // member: status_final
   {
     size_t array_size = 1;
 
@@ -443,9 +443,9 @@ extern "C"
 #endif
 
 // already included above
-// #include "rosidl_runtime_c/string.h"  // status_final
+// #include "rosidl_runtime_c/string.h"  // status
 // already included above
-// #include "rosidl_runtime_c/string_functions.h"  // status_final
+// #include "rosidl_runtime_c/string_functions.h"  // status
 
 // forward declare type support functions
 
@@ -461,9 +461,9 @@ static bool _Cargahex_Feedback__cdr_serialize(
     return false;
   }
   const _Cargahex_Feedback__ros_msg_type * ros_message = static_cast<const _Cargahex_Feedback__ros_msg_type *>(untyped_ros_message);
-  // Field name: status_final
+  // Field name: status
   {
-    const rosidl_runtime_c__String * str = &ros_message->status_final;
+    const rosidl_runtime_c__String * str = &ros_message->status;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -487,18 +487,18 @@ static bool _Cargahex_Feedback__cdr_deserialize(
     return false;
   }
   _Cargahex_Feedback__ros_msg_type * ros_message = static_cast<_Cargahex_Feedback__ros_msg_type *>(untyped_ros_message);
-  // Field name: status_final
+  // Field name: status
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->status_final.data) {
-      rosidl_runtime_c__String__init(&ros_message->status_final);
+    if (!ros_message->status.data) {
+      rosidl_runtime_c__String__init(&ros_message->status);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->status_final,
+      &ros_message->status,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'status_final'\n");
+      fprintf(stderr, "failed to assign string into field 'status'\n");
       return false;
     }
   }
@@ -520,10 +520,10 @@ size_t get_serialized_size_my_mas__action__Cargahex_Feedback(
   (void)padding;
   (void)wchar_size;
 
-  // field.name status_final
+  // field.name status
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->status_final.size + 1);
+    (ros_message->status.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -551,7 +551,7 @@ size_t max_serialized_size_my_mas__action__Cargahex_Feedback(
   full_bounded = true;
   is_plain = true;
 
-  // member: status_final
+  // member: status
   {
     size_t array_size = 1;
 

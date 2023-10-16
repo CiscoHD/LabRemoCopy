@@ -252,7 +252,7 @@ my_mas__action__Cargahex_Goal__Sequence__copy(
 
 
 // Include directives for member types
-// Member `status`
+// Member `status_final`
 // already included above
 // #include "rosidl_runtime_c/string_functions.h"
 
@@ -262,8 +262,8 @@ my_mas__action__Cargahex_Result__init(my_mas__action__Cargahex_Result * msg)
   if (!msg) {
     return false;
   }
-  // status
-  if (!rosidl_runtime_c__String__init(&msg->status)) {
+  // status_final
+  if (!rosidl_runtime_c__String__init(&msg->status_final)) {
     my_mas__action__Cargahex_Result__fini(msg);
     return false;
   }
@@ -276,8 +276,8 @@ my_mas__action__Cargahex_Result__fini(my_mas__action__Cargahex_Result * msg)
   if (!msg) {
     return;
   }
-  // status
-  rosidl_runtime_c__String__fini(&msg->status);
+  // status_final
+  rosidl_runtime_c__String__fini(&msg->status_final);
 }
 
 bool
@@ -286,9 +286,9 @@ my_mas__action__Cargahex_Result__are_equal(const my_mas__action__Cargahex_Result
   if (!lhs || !rhs) {
     return false;
   }
-  // status
+  // status_final
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->status), &(rhs->status)))
+      &(lhs->status_final), &(rhs->status_final)))
   {
     return false;
   }
@@ -303,9 +303,9 @@ my_mas__action__Cargahex_Result__copy(
   if (!input || !output) {
     return false;
   }
-  // status
+  // status_final
   if (!rosidl_runtime_c__String__copy(
-      &(input->status), &(output->status)))
+      &(input->status_final), &(output->status_final)))
   {
     return false;
   }
@@ -493,7 +493,7 @@ my_mas__action__Cargahex_Result__Sequence__copy(
 
 
 // Include directives for member types
-// Member `status_final`
+// Member `status`
 // already included above
 // #include "rosidl_runtime_c/string_functions.h"
 
@@ -503,8 +503,8 @@ my_mas__action__Cargahex_Feedback__init(my_mas__action__Cargahex_Feedback * msg)
   if (!msg) {
     return false;
   }
-  // status_final
-  if (!rosidl_runtime_c__String__init(&msg->status_final)) {
+  // status
+  if (!rosidl_runtime_c__String__init(&msg->status)) {
     my_mas__action__Cargahex_Feedback__fini(msg);
     return false;
   }
@@ -517,8 +517,8 @@ my_mas__action__Cargahex_Feedback__fini(my_mas__action__Cargahex_Feedback * msg)
   if (!msg) {
     return;
   }
-  // status_final
-  rosidl_runtime_c__String__fini(&msg->status_final);
+  // status
+  rosidl_runtime_c__String__fini(&msg->status);
 }
 
 bool
@@ -527,9 +527,9 @@ my_mas__action__Cargahex_Feedback__are_equal(const my_mas__action__Cargahex_Feed
   if (!lhs || !rhs) {
     return false;
   }
-  // status_final
+  // status
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->status_final), &(rhs->status_final)))
+      &(lhs->status), &(rhs->status)))
   {
     return false;
   }
@@ -544,9 +544,9 @@ my_mas__action__Cargahex_Feedback__copy(
   if (!input || !output) {
     return false;
   }
-  // status_final
+  // status
   if (!rosidl_runtime_c__String__copy(
-      &(input->status_final), &(output->status_final)))
+      &(input->status), &(output->status)))
   {
     return false;
   }

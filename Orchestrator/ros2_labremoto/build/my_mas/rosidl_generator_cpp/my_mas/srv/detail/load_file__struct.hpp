@@ -166,30 +166,30 @@ struct LoadFile_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->sum = 0ll;
+      this->result = "";
     }
   }
 
   explicit LoadFile_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : result(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->sum = 0ll;
+      this->result = "";
     }
   }
 
   // field types and members
-  using _sum_type =
-    int64_t;
-  _sum_type sum;
+  using _result_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _result_type result;
 
   // setters for named parameter idiom
-  Type & set__sum(
-    const int64_t & _arg)
+  Type & set__result(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->sum = _arg;
+    this->result = _arg;
     return *this;
   }
 
@@ -235,7 +235,7 @@ struct LoadFile_Response_
   // comparison operators
   bool operator==(const LoadFile_Response_ & other) const
   {
-    if (this->sum != other.sum) {
+    if (this->result != other.result) {
       return false;
     }
     return true;

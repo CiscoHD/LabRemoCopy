@@ -2,9 +2,15 @@ action/Cargahex.action
 action/Cargahex.idl
 action/Fibonacci.action
 action/Fibonacci.idl
+msg/AuditorMsg.idl
+msg/AuditorMsg.msg
 msg/SensorMeasurment.idl
 msg/SensorMeasurment.msg
 srv/LoadFile.idl
 srv/LoadFile.srv
 srv/LoadFile_Request.msg
 srv/LoadFile_Response.msg
+srv/LoadFiledb.idl
+srv/LoadFiledb.srv
+srv/LoadFiledb_Request.msg
+srv/LoadFiledb_Response.msg

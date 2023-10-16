@@ -79,15 +79,15 @@ namespace srv
 namespace builder
 {
 
-class Init_LoadFile_Response_sum
+class Init_LoadFile_Response_result
 {
 public:
-  Init_LoadFile_Response_sum()
+  Init_LoadFile_Response_result()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::my_mas::srv::LoadFile_Response sum(::my_mas::srv::LoadFile_Response::_sum_type arg)
+  ::my_mas::srv::LoadFile_Response result(::my_mas::srv::LoadFile_Response::_result_type arg)
   {
-    msg_.sum = std::move(arg);
+    msg_.result = std::move(arg);
     return std::move(msg_);
   }
 
@@ -106,7 +106,7 @@ template<>
 inline
 auto build<::my_mas::srv::LoadFile_Response>()
 {
-  return my_mas::srv::builder::Init_LoadFile_Response_sum();
+  return my_mas::srv::builder::Init_LoadFile_Response_result();
 }
 
 }  // namespace my_mas

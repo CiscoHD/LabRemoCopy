@@ -117,6 +117,10 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "my_mas/srv/detail/load_file__struct.h"
 
 
+// Include directives for member types
+// Member `result`
+#include "rosidl_runtime_c/string_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -138,14 +142,14 @@ void my_mas__srv__LoadFile_Response__rosidl_typesupport_introspection_c__LoadFil
 
 static rosidl_typesupport_introspection_c__MessageMember my_mas__srv__LoadFile_Response__rosidl_typesupport_introspection_c__LoadFile_Response_message_member_array[1] = {
   {
-    "sum",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    "result",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_mas__srv__LoadFile_Response, sum),  // bytes offset in struct
+    offsetof(my_mas__srv__LoadFile_Response, result),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

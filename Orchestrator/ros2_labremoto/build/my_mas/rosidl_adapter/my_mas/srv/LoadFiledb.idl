@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_mas/srv/LoadFiledb.srv
+// generated code does not contain a copyright notice
+
+
+module my_mas {
+  module srv {
+    struct LoadFiledb_Request {
+      string id_node;
+
+      string name_node;
+
+      string type_transaction;
+
+      string date_process;
+
+      string id_user;
+
+      string log_process;
+    };
+    struct LoadFiledb_Response {
+      string status;
+    };
+  };
+};

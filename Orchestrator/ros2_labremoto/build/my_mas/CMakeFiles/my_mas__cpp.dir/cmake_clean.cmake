@@ -8,6 +8,10 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/my_mas/action/detail/fibonacci__struct.hpp"
   "rosidl_generator_cpp/my_mas/action/detail/fibonacci__traits.hpp"
   "rosidl_generator_cpp/my_mas/action/fibonacci.hpp"
+  "rosidl_generator_cpp/my_mas/msg/auditor_msg.hpp"
+  "rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__builder.hpp"
+  "rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__struct.hpp"
+  "rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__traits.hpp"
   "rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__builder.hpp"
   "rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__struct.hpp"
   "rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__traits.hpp"
@@ -15,7 +19,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/my_mas/srv/detail/load_file__builder.hpp"
   "rosidl_generator_cpp/my_mas/srv/detail/load_file__struct.hpp"
   "rosidl_generator_cpp/my_mas/srv/detail/load_file__traits.hpp"
+  "rosidl_generator_cpp/my_mas/srv/detail/load_filedb__builder.hpp"
+  "rosidl_generator_cpp/my_mas/srv/detail/load_filedb__struct.hpp"
+  "rosidl_generator_cpp/my_mas/srv/detail/load_filedb__traits.hpp"
   "rosidl_generator_cpp/my_mas/srv/load_file.hpp"
+  "rosidl_generator_cpp/my_mas/srv/load_filedb.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -158,14 +158,14 @@ void Cargahex_Result_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Cargahex_Result_message_member_array[1] = {
   {
-    "status",  // name
+    "status_final",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_mas::action::Cargahex_Result, status),  // bytes offset in struct
+    offsetof(my_mas::action::Cargahex_Result, status_final),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -277,14 +277,14 @@ void Cargahex_Feedback_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Cargahex_Feedback_message_member_array[1] = {
   {
-    "status_final",  // name
+    "status",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_mas::action::Cargahex_Feedback, status_final),  // bytes offset in struct
+    offsetof(my_mas::action::Cargahex_Feedback, status),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

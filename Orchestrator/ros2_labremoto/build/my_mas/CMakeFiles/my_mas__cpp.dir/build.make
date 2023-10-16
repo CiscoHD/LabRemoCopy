@@ -70,6 +70,14 @@ CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__builder.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__struct.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/auditor_msg.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/load_filedb.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__traits.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/load_file.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__builder.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__struct.hpp
@@ -99,6 +107,8 @@ rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/ros
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/SensorMeasurment.idl
+rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/AuditorMsg.idl
+rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/srv/LoadFiledb.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/srv/LoadFile.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/action/Fibonacci.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/action/Cargahex.idl
@@ -180,6 +190,30 @@ rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__struct.hpp: rosidl_gen
 rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__traits.hpp
 
+rosidl_generator_cpp/my_mas/msg/auditor_msg.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/auditor_msg.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__builder.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__builder.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__struct.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__struct.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__traits.hpp
+
+rosidl_generator_cpp/my_mas/srv/load_filedb.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/srv/load_filedb.hpp
+
+rosidl_generator_cpp/my_mas/srv/detail/load_filedb__builder.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/srv/detail/load_filedb__builder.hpp
+
+rosidl_generator_cpp/my_mas/srv/detail/load_filedb__struct.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/srv/detail/load_filedb__struct.hpp
+
+rosidl_generator_cpp/my_mas/srv/detail/load_filedb__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/srv/detail/load_filedb__traits.hpp
+
 rosidl_generator_cpp/my_mas/srv/load_file.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/srv/load_file.hpp
 
@@ -225,6 +259,10 @@ my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/fibonacci.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/auditor_msg.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__traits.hpp
@@ -232,7 +270,11 @@ my_mas__cpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__traits.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/load_file.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/srv/load_filedb.hpp
 my_mas__cpp: CMakeFiles/my_mas__cpp.dir/build.make
 .PHONY : my_mas__cpp
 

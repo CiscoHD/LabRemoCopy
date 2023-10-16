@@ -1,2 +1,2 @@
 
-int64 sum
+string result
