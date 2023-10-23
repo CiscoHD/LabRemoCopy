@@ -1,0 +1,47 @@
+[0.406s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/topics/minimal_subscriber': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed
+[0.553s] running egg_info
+[0.553s] creating ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info
+[0.553s] writing ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/PKG-INFO
+[0.554s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/dependency_links.txt
+[0.554s] writing entry points to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/entry_points.txt
+[0.554s] writing requirements to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/requires.txt
+[0.554s] writing top-level names to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/top_level.txt
+[0.554s] writing manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[0.556s] reading manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[0.556s] writing manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[0.556s] running build
+[0.556s] running build_py
+[0.557s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build
+[0.557s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib
+[0.557s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[0.557s] copying examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[0.557s] copying examples_rclpy_minimal_subscriber/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[0.557s] copying examples_rclpy_minimal_subscriber/subscriber_lambda.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[0.557s] copying examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[0.558s] running install
+[0.558s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.558s]   warnings.warn(
+[0.558s] running install_lib
+[0.559s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[0.559s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[0.559s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[0.559s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_lambda.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[0.559s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[0.560s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/subscriber_old_school.py to subscriber_old_school.cpython-310.pyc
+[0.560s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/__init__.py to __init__.cpython-310.pyc
+[0.560s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/subscriber_lambda.py to subscriber_lambda.cpython-310.pyc
+[0.561s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[0.561s] running install_data
+[0.561s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/share/ament_index
+[0.561s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index
+[0.562s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index/packages
+[0.562s] copying resource/examples_rclpy_minimal_subscriber -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index/packages
+[0.562s] copying package.xml -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber
+[0.562s] running install_egg_info
+[0.563s] Copying ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber-0.15.1-py3.10.egg-info
+[0.564s] running install_scripts
+[0.580s] Installing subscriber_lambda script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[0.580s] Installing subscriber_member_function script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[0.580s] Installing subscriber_old_school script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[0.580s] writing list of installed files to '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/install.log'
+[0.599s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/topics/minimal_subscriber' returned '0': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed

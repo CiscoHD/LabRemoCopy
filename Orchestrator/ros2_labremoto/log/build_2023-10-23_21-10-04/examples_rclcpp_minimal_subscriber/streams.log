@@ -1,0 +1,125 @@
+[0.005s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclcpp/topics/minimal_subscriber -DCMAKE_INSTALL_PREFIX=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber
+[0.042s] -- The C compiler identification is GNU 11.4.0
+[0.079s] -- The CXX compiler identification is GNU 11.4.0
+[0.084s] -- Detecting C compiler ABI info
+[0.128s] -- Detecting C compiler ABI info - done
+[0.133s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.133s] -- Detecting C compile features
+[0.133s] -- Detecting C compile features - done
+[0.135s] -- Detecting CXX compiler ABI info
+[0.188s] -- Detecting CXX compiler ABI info - done
+[0.193s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.193s] -- Detecting CXX compile features
+[0.193s] -- Detecting CXX compile features - done
+[0.195s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.308s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.362s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.390s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.393s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.398s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.407s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.420s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.469s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.471s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.524s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.538s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.567s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.573s] -- Looking for pthread.h
+[0.618s] -- Looking for pthread.h - found
+[0.619s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.668s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.669s] -- Found Threads: TRUE  
+[0.785s] -- Found rclcpp_components: 16.0.5 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.837s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.891s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.892s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.893s] -- Configured cppcheck include dirs: 
+[0.893s] -- Configured cppcheck exclude dirs and/or files: 
+[0.894s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.894s] -- Configured cpplint exclude dirs and/or files: 
+[0.894s] -- Added test 'lint_cmake' to check CMake code style
+[0.895s] -- Added test 'uncrustify' to check C / C++ code style
+[0.895s] -- Configured uncrustify additional arguments: 
+[0.896s] -- Added test 'xmllint' to check XML markup files
+[0.896s] -- Configuring done
+[0.922s] -- Generating done
+[0.924s] -- Build files have been written to: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber
+[0.931s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclcpp/topics/minimal_subscriber -DCMAKE_INSTALL_PREFIX=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber
+[0.932s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --build /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber -- -j1 -l1
+[0.961s] [  4%] [32mBuilding CXX object CMakeFiles/subscriber_lambda.dir/lambda.cpp.o[0m
+[6.309s] [  8%] [32m[1mLinking CXX executable subscriber_lambda[0m
+[6.577s] [  8%] Built target subscriber_lambda
+[6.589s] [ 12%] [32mBuilding CXX object CMakeFiles/subscriber_member_function.dir/member_function.cpp.o[0m
+[11.917s] [ 16%] [32m[1mLinking CXX executable subscriber_member_function[0m
+[12.189s] [ 16%] Built target subscriber_member_function
+[12.202s] [ 20%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_topic_statistics.dir/member_function_with_topic_statistics.cpp.o[0m
+[17.504s] [ 25%] [32m[1mLinking CXX executable subscriber_member_function_with_topic_statistics[0m
+[17.769s] [ 25%] Built target subscriber_member_function_with_topic_statistics
+[17.781s] [ 29%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_type_adapter.dir/member_function_with_type_adapter.cpp.o[0m
+[23.759s] [ 33%] [32m[1mLinking CXX executable subscriber_member_function_with_type_adapter[0m
+[24.082s] [ 33%] Built target subscriber_member_function_with_type_adapter
+[24.097s] [ 37%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/member_function_with_unique_network_flow_endpoints.cpp.o[0m
+[29.554s] [ 41%] [32m[1mLinking CXX executable subscriber_member_function_with_unique_network_flow_endpoints[0m
+[29.822s] [ 41%] Built target subscriber_member_function_with_unique_network_flow_endpoints
+[29.834s] [ 45%] [32mBuilding CXX object CMakeFiles/subscriber_not_composable.dir/not_composable.cpp.o[0m
+[35.131s] [ 50%] [32m[1mLinking CXX executable subscriber_not_composable[0m
+[35.405s] [ 50%] Built target subscriber_not_composable
+[35.419s] [ 54%] [32mBuilding CXX object CMakeFiles/subscriber_content_filtering.dir/content_filtering.cpp.o[0m
+[40.743s] [ 58%] [32m[1mLinking CXX executable subscriber_content_filtering[0m
+[41.001s] [ 58%] Built target subscriber_content_filtering
+[41.015s] [ 62%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/wait_set_subscriber.cpp.o[0m
+[46.886s] [ 66%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/static_wait_set_subscriber.cpp.o[0m
+[52.434s] [ 70%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/time_triggered_wait_set_subscriber.cpp.o[0m
+[58.377s] [ 75%] [32m[1mLinking CXX shared library libwait_set_subscriber_library.so[0m
+[59.005s] [ 75%] Built target wait_set_subscriber_library
+[59.020s] [ 79%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber.dir/rclcpp_components/node_main_wait_set_subscriber.cpp.o[0m
+[61.098s] [ 83%] [32m[1mLinking CXX executable wait_set_subscriber[0m
+[61.185s] [ 83%] Built target wait_set_subscriber
+[61.196s] [ 87%] [32mBuilding CXX object CMakeFiles/static_wait_set_subscriber.dir/rclcpp_components/node_main_static_wait_set_subscriber.cpp.o[0m
+[63.249s] [ 91%] [32m[1mLinking CXX executable static_wait_set_subscriber[0m
+[63.338s] [ 91%] Built target static_wait_set_subscriber
+[63.354s] [ 95%] [32mBuilding CXX object CMakeFiles/time_triggered_wait_set_subscriber.dir/rclcpp_components/node_main_time_triggered_wait_set_subscriber.cpp.o[0m
+[65.417s] [100%] [32m[1mLinking CXX executable time_triggered_wait_set_subscriber[0m
+[65.529s] [100%] Built target time_triggered_wait_set_subscriber
+[65.537s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --build /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber -- -j1 -l1
+[65.578s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --install /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber
+[65.584s] -- Install configuration: ""
+[65.585s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber
+[65.586s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber" to ""
+[65.586s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber
+[65.587s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber" to ""
+[65.587s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber
+[65.587s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber" to ""
+[65.588s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so
+[65.595s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so" to ""
+[65.596s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda
+[65.599s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda" to ""
+[65.599s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function
+[65.603s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function" to ""
+[65.603s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics
+[65.607s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics" to ""
+[65.607s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter
+[65.612s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter" to ""
+[65.612s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints
+[65.616s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints" to ""
+[65.616s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable
+[65.619s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable" to ""
+[65.619s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering
+[65.622s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering" to ""
+[65.623s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_subscriber
+[65.623s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_subscriber
+[65.623s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.sh
+[65.623s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.dsv
+[65.623s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.sh
+[65.623s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.dsv
+[65.624s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.bash
+[65.624s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.sh
+[65.624s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.zsh
+[65.624s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.dsv
+[65.624s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.dsv
+[65.624s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/packages/examples_rclcpp_minimal_subscriber
+[65.624s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_minimal_subscriber
+[65.625s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig.cmake
+[65.625s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig-version.cmake
+[65.625s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.xml
+[65.629s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --install /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_subscriber

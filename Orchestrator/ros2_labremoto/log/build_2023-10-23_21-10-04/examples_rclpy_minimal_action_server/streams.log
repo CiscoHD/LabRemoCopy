@@ -1,0 +1,55 @@
+[0.392s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/actions/minimal_action_server': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_server build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/install.log --single-version-externally-managed
+[0.536s] running egg_info
+[0.537s] creating ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info
+[0.537s] writing ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/PKG-INFO
+[0.537s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/dependency_links.txt
+[0.537s] writing entry points to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/entry_points.txt
+[0.538s] writing requirements to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/requires.txt
+[0.538s] writing top-level names to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/top_level.txt
+[0.538s] writing manifest file '../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/SOURCES.txt'
+[0.539s] reading manifest file '../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/SOURCES.txt'
+[0.540s] writing manifest file '../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/SOURCES.txt'
+[0.540s] running build
+[0.540s] running build_py
+[0.540s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build
+[0.540s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib
+[0.540s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[0.541s] copying examples_rclpy_minimal_action_server/server_single_goal.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[0.541s] copying examples_rclpy_minimal_action_server/server_not_composable.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[0.541s] copying examples_rclpy_minimal_action_server/server_queue_goals.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[0.541s] copying examples_rclpy_minimal_action_server/server.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[0.541s] copying examples_rclpy_minimal_action_server/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[0.541s] copying examples_rclpy_minimal_action_server/server_defer.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[0.542s] running install
+[0.542s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.542s]   warnings.warn(
+[0.542s] running install_lib
+[0.543s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server
+[0.543s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server_single_goal.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server
+[0.543s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server_not_composable.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server
+[0.543s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server_queue_goals.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server
+[0.543s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server
+[0.543s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server
+[0.543s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server_defer.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server
+[0.544s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server/server_single_goal.py to server_single_goal.cpython-310.pyc
+[0.545s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server/server_not_composable.py to server_not_composable.cpython-310.pyc
+[0.545s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server/server_queue_goals.py to server_queue_goals.cpython-310.pyc
+[0.546s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server/server.py to server.cpython-310.pyc
+[0.546s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server/__init__.py to __init__.cpython-310.pyc
+[0.546s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server/server_defer.py to server_defer.cpython-310.pyc
+[0.547s] running install_data
+[0.547s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/share/ament_index
+[0.547s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/share/ament_index/resource_index
+[0.547s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/share/ament_index/resource_index/packages
+[0.548s] copying resource/examples_rclpy_minimal_action_server -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/share/ament_index/resource_index/packages
+[0.548s] copying package.xml -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/share/examples_rclpy_minimal_action_server
+[0.548s] running install_egg_info
+[0.550s] Copying ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server-0.15.1-py3.10.egg-info
+[0.550s] running install_scripts
+[0.566s] Installing server script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[0.566s] Installing server_defer script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[0.566s] Installing server_not_composable script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[0.567s] Installing server_queue_goals script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[0.567s] Installing server_single_goal script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[0.567s] writing list of installed files to '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/install.log'
+[0.585s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/actions/minimal_action_server' returned '0': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_server build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_minimal_action_server/install.log --single-version-externally-managed

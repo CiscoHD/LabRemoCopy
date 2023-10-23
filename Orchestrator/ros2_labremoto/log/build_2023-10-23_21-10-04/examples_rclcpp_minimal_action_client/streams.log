@@ -1,0 +1,88 @@
+[0.006s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclcpp/actions/minimal_action_client -DCMAKE_INSTALL_PREFIX=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client
+[0.043s] -- The C compiler identification is GNU 11.4.0
+[0.081s] -- The CXX compiler identification is GNU 11.4.0
+[0.085s] -- Detecting C compiler ABI info
+[0.130s] -- Detecting C compiler ABI info - done
+[0.135s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.135s] -- Detecting C compile features
+[0.136s] -- Detecting C compile features - done
+[0.138s] -- Detecting CXX compiler ABI info
+[0.191s] -- Detecting CXX compiler ABI info - done
+[0.196s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.197s] -- Detecting CXX compile features
+[0.197s] -- Detecting CXX compile features - done
+[0.199s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.311s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.365s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.388s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.391s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.396s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.405s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.426s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.532s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.577s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.578s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.631s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.646s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.676s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.684s] -- Looking for pthread.h
+[0.741s] -- Looking for pthread.h - found
+[0.742s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.793s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.795s] -- Found Threads: TRUE  
+[0.910s] -- Found rclcpp_action: 16.0.5 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.934s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.986s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.987s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.987s] -- Configured cppcheck include dirs: 
+[0.988s] -- Configured cppcheck exclude dirs and/or files: 
+[0.988s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.988s] -- Configured cpplint exclude dirs and/or files: 
+[0.989s] -- Added test 'lint_cmake' to check CMake code style
+[0.989s] -- Added test 'uncrustify' to check C / C++ code style
+[0.990s] -- Configured uncrustify additional arguments: 
+[0.990s] -- Added test 'xmllint' to check XML markup files
+[0.991s] -- Configuring done
+[1.004s] -- Generating done
+[1.006s] -- Build files have been written to: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client
+[1.013s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclcpp/actions/minimal_action_client -DCMAKE_INSTALL_PREFIX=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client
+[1.014s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --build /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client -- -j1 -l1
+[1.044s] [ 12%] [32mBuilding CXX object CMakeFiles/action_client_member_functions.dir/member_functions.cpp.o[0m
+[3.763s] [ 25%] [32m[1mLinking CXX executable action_client_member_functions[0m
+[3.892s] [ 25%] Built target action_client_member_functions
+[3.906s] [ 37%] [32mBuilding CXX object CMakeFiles/action_client_not_composable.dir/not_composable.cpp.o[0m
+[6.559s] [ 50%] [32m[1mLinking CXX executable action_client_not_composable[0m
+[6.679s] [ 50%] Built target action_client_not_composable
+[6.693s] [ 62%] [32mBuilding CXX object CMakeFiles/action_client_not_composable_with_cancel.dir/not_composable_with_cancel.cpp.o[0m
+[9.444s] [ 75%] [32m[1mLinking CXX executable action_client_not_composable_with_cancel[0m
+[9.569s] [ 75%] Built target action_client_not_composable_with_cancel
+[9.584s] [ 87%] [32mBuilding CXX object CMakeFiles/action_client_not_composable_with_feedback.dir/not_composable_with_feedback.cpp.o[0m
+[12.196s] [100%] [32m[1mLinking CXX executable action_client_not_composable_with_feedback[0m
+[12.318s] [100%] Built target action_client_not_composable_with_feedback
+[12.329s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --build /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client -- -j1 -l1
+[12.348s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --install /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client
+[12.353s] -- Install configuration: ""
+[12.353s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_member_functions
+[12.354s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_member_functions" to ""
+[12.355s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable
+[12.355s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable" to ""
+[12.356s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_cancel
+[12.357s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_cancel" to ""
+[12.357s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_feedback
+[12.358s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_feedback" to ""
+[12.358s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_action_client
+[12.358s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_action_client
+[12.358s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/ament_prefix_path.sh
+[12.358s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/ament_prefix_path.dsv
+[12.359s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/path.sh
+[12.359s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/path.dsv
+[12.359s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.bash
+[12.359s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.sh
+[12.359s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.zsh
+[12.359s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.dsv
+[12.359s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/package.dsv
+[12.360s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/packages/examples_rclcpp_minimal_action_client
+[12.360s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/cmake/examples_rclcpp_minimal_action_clientConfig.cmake
+[12.360s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/cmake/examples_rclcpp_minimal_action_clientConfig-version.cmake
+[12.360s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/package.xml
+[12.364s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --install /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_action_client

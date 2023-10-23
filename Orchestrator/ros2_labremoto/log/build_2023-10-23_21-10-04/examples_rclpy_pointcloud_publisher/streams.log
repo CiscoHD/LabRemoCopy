@@ -1,0 +1,39 @@
+[0.417s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/topics/pointcloud_publisher': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_pointcloud_publisher build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/install.log --single-version-externally-managed
+[0.565s] running egg_info
+[0.565s] creating ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info
+[0.565s] writing ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/PKG-INFO
+[0.566s] writing dependency_links to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/dependency_links.txt
+[0.566s] writing entry points to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/entry_points.txt
+[0.566s] writing requirements to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/requires.txt
+[0.566s] writing top-level names to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/top_level.txt
+[0.566s] writing manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[0.567s] reading manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[0.568s] writing manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[0.568s] running build
+[0.568s] running build_py
+[0.569s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build
+[0.569s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build/lib
+[0.569s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[0.569s] copying examples_rclpy_pointcloud_publisher/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[0.569s] copying examples_rclpy_pointcloud_publisher/pointcloud_publisher.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[0.570s] running install
+[0.570s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.570s]   warnings.warn(
+[0.570s] running install_lib
+[0.571s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[0.571s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[0.571s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher/pointcloud_publisher.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[0.572s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher/__init__.py to __init__.cpython-310.pyc
+[0.572s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher/pointcloud_publisher.py to pointcloud_publisher.cpython-310.pyc
+[0.573s] running install_data
+[0.574s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/share/ament_index
+[0.574s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/share/ament_index/resource_index
+[0.574s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/share/ament_index/resource_index/packages
+[0.574s] copying resource/examples_rclpy_pointcloud_publisher -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/share/ament_index/resource_index/packages
+[0.574s] copying package.xml -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/share/examples_rclpy_pointcloud_publisher
+[0.574s] running install_egg_info
+[0.576s] Copying ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher-0.15.1-py3.10.egg-info
+[0.577s] running install_scripts
+[0.594s] Installing pointcloud_publisher script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/examples_rclpy_pointcloud_publisher
+[0.595s] writing list of installed files to '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/install.log'
+[0.616s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/topics/pointcloud_publisher' returned '0': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_pointcloud_publisher build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_pointcloud_publisher/install.log --single-version-externally-managed
