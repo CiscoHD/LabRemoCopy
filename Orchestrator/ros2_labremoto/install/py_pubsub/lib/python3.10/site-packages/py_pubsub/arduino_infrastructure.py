@@ -21,18 +21,17 @@ class ArduinoActionServer(Node):
         self.get_logger().info('Executing upload to arduino...')
         feedback_msg = Cargahex.Feedback()
 
-  
         dispositivos = json.loads(os.popen("arduino-cli board list --format json").read())
 
         if len(dispositivos)!= 0:
             self.get_logger().info("Looking for file .hex ..." )
-            #try:
             sketch_path = goal_handle.request.path_hex 
             PORT = dispositivos[0]['port']['address']
             FQBN = dispositivos[0]['matching_boards'][0]['fqbn']
             try:
-                copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               
-                upload_r = os.popen(f"arduino-cli -p {PORT} upload {sketch_path}").read()
+                #copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               
+                #upload_r = os.popen(f"arduino-cli -p {PORT} upload {sketch_path}").read()
+                upload_r = os.popen(f"avrdude -c arduino -P {PORT} -b 115200 -p atmega328p -D -U flash:w:{sketch_path}").read()
                 feedback_msg.status = 'update finish'
                 goal_handle.succeed()
                 self.get_logger().info(feedback_msg.status)

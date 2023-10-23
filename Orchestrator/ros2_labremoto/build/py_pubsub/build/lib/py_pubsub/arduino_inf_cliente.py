@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.action import ActionClient
 from rclpy.node import Node
-
+from my_mas.msg import FileHexLoad
 from my_mas.action import Cargahex
 
 
@@ -20,14 +20,34 @@ class ArduinoClient(Node):
         return self._action_client.send_goal_async(goal_msg)
 
 
+class MinimalSubscriber(Node):
+
+    def __init__(self):
+        super().__init__('minimal_subscriber')
+        self.subscription = self.create_subscription(
+            FileHexLoad,
+            'archivos_hex',
+            self.listener_callback,
+            10)
+        self.subscription  
+
+    def listener_callback(self, msg):
+        self.get_logger().info(f'{msg.path_hex}')
+        action_client = ArduinoClient()
+        future = action_client.send_goal(msg.path_hex)
+        rclpy.spin_until_future_complete(action_client, future)
+
+
 def main(args=None):
     rclpy.init(args=args)
 
-    action_client = ArduinoClient()
 
-    future = action_client.send_goal("/home/ffelix07/Documents/Arduino/Prueba")
+    minimal_subscriber = MinimalSubscriber()
 
-    rclpy.spin_until_future_complete(action_client, future)
+    rclpy.spin(minimal_subscriber)
+
+    minimal_subscriber.destroy_node()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':
