@@ -58,14 +58,8 @@ bool my_mas__srv__load_filedb__request__convert_from_py(PyObject * _pymsg, void 
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->id_node, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
+    assert(PyLong_Check(field));
+    ros_message->id_node = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // name_node
@@ -118,14 +112,8 @@ bool my_mas__srv__load_filedb__request__convert_from_py(PyObject * _pymsg, void 
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->id_user, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
+    assert(PyLong_Check(field));
+    ros_message->id_user = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // log_process
@@ -167,13 +155,7 @@ PyObject * my_mas__srv__load_filedb__request__convert_to_py(void * raw_ros_messa
   my_mas__srv__LoadFiledb_Request * ros_message = (my_mas__srv__LoadFiledb_Request *)raw_ros_message;
   {  // id_node
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->id_node.data,
-      strlen(ros_message->id_node.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
+    field = PyLong_FromLong(ros_message->id_node);
     {
       int rc = PyObject_SetAttrString(_pymessage, "id_node", field);
       Py_DECREF(field);
@@ -235,13 +217,7 @@ PyObject * my_mas__srv__load_filedb__request__convert_to_py(void * raw_ros_messa
   }
   {  // id_user
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->id_user.data,
-      strlen(ros_message->id_user.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
+    field = PyLong_FromLong(ros_message->id_user);
     {
       int rc = PyObject_SetAttrString(_pymessage, "id_user", field);
       Py_DECREF(field);

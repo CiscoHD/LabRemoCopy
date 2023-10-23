@@ -21,32 +21,16 @@ namespace msg
 namespace builder
 {
 
-class Init_SensorMeasurment_name
-{
-public:
-  explicit Init_SensorMeasurment_name(::my_mas::msg::SensorMeasurment & msg)
-  : msg_(msg)
-  {}
-  ::my_mas::msg::SensorMeasurment name(::my_mas::msg::SensorMeasurment::_name_type arg)
-  {
-    msg_.name = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::my_mas::msg::SensorMeasurment msg_;
-};
-
 class Init_SensorMeasurment_temperature
 {
 public:
   Init_SensorMeasurment_temperature()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_SensorMeasurment_name temperature(::my_mas::msg::SensorMeasurment::_temperature_type arg)
+  ::my_mas::msg::SensorMeasurment temperature(::my_mas::msg::SensorMeasurment::_temperature_type arg)
   {
     msg_.temperature = std::move(arg);
-    return Init_SensorMeasurment_name(msg_);
+    return std::move(msg_);
   }
 
 private:

@@ -4,6 +4,8 @@ action/Fibonacci.action
 action/Fibonacci.idl
 msg/AuditorMsg.idl
 msg/AuditorMsg.msg
+msg/FileHexLoad.idl
+msg/FileHexLoad.msg
 msg/SensorMeasurment.idl
 msg/SensorMeasurment.msg
 srv/LoadFile.idl

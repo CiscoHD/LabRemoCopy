@@ -12,10 +12,6 @@
 #include "my_mas/msg/detail/sensor_measurment__struct.h"
 
 
-// Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -35,7 +31,7 @@ void my_mas__msg__SensorMeasurment__rosidl_typesupport_introspection_c__SensorMe
   my_mas__msg__SensorMeasurment__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember my_mas__msg__SensorMeasurment__rosidl_typesupport_introspection_c__SensorMeasurment_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember my_mas__msg__SensorMeasurment__rosidl_typesupport_introspection_c__SensorMeasurment_message_member_array[1] = {
   {
     "temperature",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -52,30 +48,13 @@ static rosidl_typesupport_introspection_c__MessageMember my_mas__msg__SensorMeas
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
-  },
-  {
-    "name",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(my_mas__msg__SensorMeasurment, name),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers my_mas__msg__SensorMeasurment__rosidl_typesupport_introspection_c__SensorMeasurment_message_members = {
   "my_mas__msg",  // message namespace
   "SensorMeasurment",  // message name
-  2,  // number of fields
+  1,  // number of fields
   sizeof(my_mas__msg__SensorMeasurment),
   my_mas__msg__SensorMeasurment__rosidl_typesupport_introspection_c__SensorMeasurment_message_member_array,  // message members
   my_mas__msg__SensorMeasurment__rosidl_typesupport_introspection_c__SensorMeasurment_init_function,  // function to initialize message memory (memory has to be allocated)

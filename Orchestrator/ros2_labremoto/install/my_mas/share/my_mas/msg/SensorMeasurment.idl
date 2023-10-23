@@ -7,8 +7,6 @@ module my_mas {
   module msg {
     struct SensorMeasurment {
       float temperature;
-
-      string name;
     };
   };
 };

@@ -37,7 +37,7 @@ void SensorMeasurment_fini_function(void * message_memory)
   typed_message->~SensorMeasurment();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember SensorMeasurment_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember SensorMeasurment_message_member_array[1] = {
   {
     "temperature",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -54,30 +54,13 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SensorMeasurm
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
-  },
-  {
-    "name",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(my_mas::msg::SensorMeasurment, name),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers SensorMeasurment_message_members = {
   "my_mas::msg",  // message namespace
   "SensorMeasurment",  // message name
-  2,  // number of fields
+  1,  // number of fields
   sizeof(my_mas::msg::SensorMeasurment),
   SensorMeasurment_message_member_array,  // message members
   SensorMeasurment_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -17,15 +17,10 @@ extern "C"
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'name'
-#include "rosidl_runtime_c/string.h"
-
 /// Struct defined in msg/SensorMeasurment in the package my_mas.
 typedef struct my_mas__msg__SensorMeasurment
 {
   float temperature;
-  rosidl_runtime_c__String name;
 } my_mas__msg__SensorMeasurment;
 
 // Struct for a sequence of my_mas__msg__SensorMeasurment.

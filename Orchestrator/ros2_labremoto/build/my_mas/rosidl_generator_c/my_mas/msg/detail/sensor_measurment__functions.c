@@ -11,10 +11,6 @@
 #include "rcutils/allocator.h"
 
 
-// Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
-
 bool
 my_mas__msg__SensorMeasurment__init(my_mas__msg__SensorMeasurment * msg)
 {
@@ -22,11 +18,6 @@ my_mas__msg__SensorMeasurment__init(my_mas__msg__SensorMeasurment * msg)
     return false;
   }
   // temperature
-  // name
-  if (!rosidl_runtime_c__String__init(&msg->name)) {
-    my_mas__msg__SensorMeasurment__fini(msg);
-    return false;
-  }
   return true;
 }
 
@@ -37,8 +28,6 @@ my_mas__msg__SensorMeasurment__fini(my_mas__msg__SensorMeasurment * msg)
     return;
   }
   // temperature
-  // name
-  rosidl_runtime_c__String__fini(&msg->name);
 }
 
 bool
@@ -49,12 +38,6 @@ my_mas__msg__SensorMeasurment__are_equal(const my_mas__msg__SensorMeasurment * l
   }
   // temperature
   if (lhs->temperature != rhs->temperature) {
-    return false;
-  }
-  // name
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->name), &(rhs->name)))
-  {
     return false;
   }
   return true;
@@ -70,12 +53,6 @@ my_mas__msg__SensorMeasurment__copy(
   }
   // temperature
   output->temperature = input->temperature;
-  // name
-  if (!rosidl_runtime_c__String__copy(
-      &(input->name), &(output->name)))
-  {
-    return false;
-  }
   return true;
 }
 

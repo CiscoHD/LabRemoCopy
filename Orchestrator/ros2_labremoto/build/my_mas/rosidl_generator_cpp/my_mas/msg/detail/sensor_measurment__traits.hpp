@@ -29,13 +29,6 @@ inline void to_flow_style_yaml(
   {
     out << "temperature: ";
     rosidl_generator_traits::value_to_yaml(msg.temperature, out);
-    out << ", ";
-  }
-
-  // member: name
-  {
-    out << "name: ";
-    rosidl_generator_traits::value_to_yaml(msg.name, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -51,16 +44,6 @@ inline void to_block_style_yaml(
     }
     out << "temperature: ";
     rosidl_generator_traits::value_to_yaml(msg.temperature, out);
-    out << "\n";
-  }
-
-  // member: name
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "name: ";
-    rosidl_generator_traits::value_to_yaml(msg.name, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -111,11 +94,11 @@ inline const char * name<my_mas::msg::SensorMeasurment>()
 
 template<>
 struct has_fixed_size<my_mas::msg::SensorMeasurment>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<my_mas::msg::SensorMeasurment>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<my_mas::msg::SensorMeasurment>

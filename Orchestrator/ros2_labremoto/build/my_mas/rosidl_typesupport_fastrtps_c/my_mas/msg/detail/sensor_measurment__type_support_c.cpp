@@ -34,8 +34,6 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // name
-#include "rosidl_runtime_c/string_functions.h"  // name
 
 // forward declare type support functions
 
@@ -56,20 +54,6 @@ static bool _SensorMeasurment__cdr_serialize(
     cdr << ros_message->temperature;
   }
 
-  // Field name: name
-  {
-    const rosidl_runtime_c__String * str = &ros_message->name;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
   return true;
 }
 
@@ -85,22 +69,6 @@ static bool _SensorMeasurment__cdr_deserialize(
   // Field name: temperature
   {
     cdr >> ros_message->temperature;
-  }
-
-  // Field name: name
-  {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->name.data) {
-      rosidl_runtime_c__String__init(&ros_message->name);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->name,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'name'\n");
-      return false;
-    }
   }
 
   return true;
@@ -126,10 +94,6 @@ size_t get_serialized_size_my_mas__msg__SensorMeasurment(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->name.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -163,18 +127,6 @@ size_t max_serialized_size_my_mas__msg__SensorMeasurment(
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: name
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
   }
 
   return current_alignment - initial_alignment;

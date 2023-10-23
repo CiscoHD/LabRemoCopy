@@ -9,6 +9,7 @@ my_mas/action/_cargahex.py
 my_mas/action/_fibonacci.py
 my_mas/msg/__init__.py
 my_mas/msg/_auditor_msg.py
+my_mas/msg/_file_hex_load.py
 my_mas/msg/_sensor_measurment.py
 my_mas/srv/__init__.py
 my_mas/srv/_load_file.py

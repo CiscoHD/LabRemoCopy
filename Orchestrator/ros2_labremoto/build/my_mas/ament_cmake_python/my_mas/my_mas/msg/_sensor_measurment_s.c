@@ -16,9 +16,6 @@
 #include "my_mas/msg/detail/sensor_measurment__struct.h"
 #include "my_mas/msg/detail/sensor_measurment__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
-
 
 ROSIDL_GENERATOR_C_EXPORT
 bool my_mas__msg__sensor_measurment__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -62,21 +59,6 @@ bool my_mas__msg__sensor_measurment__convert_from_py(PyObject * _pymsg, void * _
     ros_message->temperature = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // name
-    PyObject * field = PyObject_GetAttrString(_pymsg, "name");
-    if (!field) {
-      return false;
-    }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->name, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
 
   return true;
 }
@@ -104,23 +86,6 @@ PyObject * my_mas__msg__sensor_measurment__convert_to_py(void * raw_ros_message)
     field = PyFloat_FromDouble(ros_message->temperature);
     {
       int rc = PyObject_SetAttrString(_pymessage, "temperature", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // name
-    PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->name.data,
-      strlen(ros_message->name.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "name", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

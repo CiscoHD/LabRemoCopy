@@ -58,17 +58,14 @@ class SensorMeasurment(metaclass=Metaclass_SensorMeasurment):
 
     __slots__ = [
         '_temperature',
-        '_name',
     ]
 
     _fields_and_field_types = {
         'temperature': 'float',
-        'name': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -76,7 +73,6 @@ class SensorMeasurment(metaclass=Metaclass_SensorMeasurment):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.temperature = kwargs.get('temperature', float())
-        self.name = kwargs.get('name', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -109,8 +105,6 @@ class SensorMeasurment(metaclass=Metaclass_SensorMeasurment):
             return False
         if self.temperature != other.temperature:
             return False
-        if self.name != other.name:
-            return False
         return True
 
     @classmethod
@@ -132,16 +126,3 @@ class SensorMeasurment(metaclass=Metaclass_SensorMeasurment):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'temperature' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._temperature = value
-
-    @builtins.property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
-
-    @name.setter
-    def name(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value

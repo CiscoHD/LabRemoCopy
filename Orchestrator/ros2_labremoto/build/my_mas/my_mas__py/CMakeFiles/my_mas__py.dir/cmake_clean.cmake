@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/my_mas/msg/__init__.py"
   "../rosidl_generator_py/my_mas/msg/_auditor_msg.py"
   "../rosidl_generator_py/my_mas/msg/_auditor_msg_s.c"
+  "../rosidl_generator_py/my_mas/msg/_file_hex_load.py"
+  "../rosidl_generator_py/my_mas/msg/_file_hex_load_s.c"
   "../rosidl_generator_py/my_mas/msg/_sensor_measurment.py"
   "../rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c"
   "../rosidl_generator_py/my_mas/srv/__init__.py"
