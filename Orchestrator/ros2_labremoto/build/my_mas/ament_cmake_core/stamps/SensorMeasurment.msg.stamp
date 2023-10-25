@@ -1,2 +1,0 @@
-float32 temperature
-string name
