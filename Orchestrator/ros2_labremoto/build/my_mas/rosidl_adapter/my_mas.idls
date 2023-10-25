@@ -1,0 +1,7 @@
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:msg/SensorMeasurment.idl
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:msg/AuditorMsg.idl
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:srv/LoadFiledb.idl
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:srv/LoadFile.idl
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:action/Fibonacci.idl
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:action/Cargahex.idl
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas:msg/FileHexLoad.idl

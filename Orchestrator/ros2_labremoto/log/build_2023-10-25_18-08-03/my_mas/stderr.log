@@ -1,0 +1,8 @@
+In file included from [01m[K/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_cpp/my_mas/action/fibonacci__type_support.cpp:7[m[K:
+[01m[K/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_cpp/my_mas/action/detail/fibonacci__struct.hpp:346:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+  346 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make:221: CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/fibonacci__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

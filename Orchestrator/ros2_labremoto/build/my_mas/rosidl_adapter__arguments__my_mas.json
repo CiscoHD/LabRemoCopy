@@ -1,0 +1,12 @@
+{
+  "package_name": "my_mas",
+  "non_idl_tuples": [
+    "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/SensorMeasurment.msg",
+    "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/AuditorMsg.msg",
+    "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:srv/LoadFiledb.srv",
+    "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:srv/LoadFile.srv",
+    "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:action/Fibonacci.action",
+    "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:action/Cargahex.action",
+    "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/FileHexLoad.msg"
+  ]
+}

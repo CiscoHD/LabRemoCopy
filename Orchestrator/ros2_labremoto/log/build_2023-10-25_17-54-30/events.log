@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000181] (-) JobUnselected: {'identifier': 'examples_rclcpp_async_client'}
+[0.000201] (-) JobUnselected: {'identifier': 'examples_rclcpp_cbg_executor'}
+[0.000214] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.000225] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.000235] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_client'}
+[0.000246] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_composition'}
+[0.000256] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[0.000273] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_service'}
+[0.000284] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[0.000294] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_timer'}
+[0.000304] (-) JobUnselected: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[0.000314] (-) JobUnselected: {'identifier': 'examples_rclcpp_wait_set'}
+[0.000324] (-) JobUnselected: {'identifier': 'examples_rclpy_executors'}
+[0.000334] (-) JobUnselected: {'identifier': 'examples_rclpy_guard_conditions'}
+[0.000344] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.000354] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.000364] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.000374] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.000383] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.000394] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.000404] (-) JobUnselected: {'identifier': 'examples_rclpy_pointcloud_publisher'}
+[0.000414] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.000424] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.000437] (my_mas) JobQueued: {'identifier': 'my_mas', 'dependencies': OrderedDict()}
+[0.000451] (my_mas) JobStarted: {'identifier': 'my_mas'}
+[0.004070] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'cmake'}
+[0.004103] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'build'}
+[0.004118] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas', '--', '-j1', '-l1'], 'cwd': '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'trabajo'), ('SSH_CLIENT', '187.190.166.25 14942 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/trabajo'), ('OLDPWD', '/home/trabajo/LabRemo/Orchestrator'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'trabajo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '149'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/trabajo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '187.190.166.25 14942 10.10.10.20 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.021702] (my_mas) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.095918] (-) TimerEvent: {}
+[0.120349] (my_mas) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.121549] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.123571] (my_mas) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.145766] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.164790] (my_mas) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.195963] (-) TimerEvent: {}
+[0.257157] (my_mas) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[0.257279] (my_mas) StderrLine: {'line': b'  By not providing "Findrosidl_generate_interfaces.cmake" in\n'}
+[0.257346] (my_mas) StderrLine: {'line': b'  CMAKE_MODULE_PATH this project has asked CMake to find a package\n'}
+[0.257408] (my_mas) StderrLine: {'line': b'  configuration file provided by "rosidl_generate_interfaces", but CMake did\n'}
+[0.257469] (my_mas) StderrLine: {'line': b'  not find one.\n'}
+[0.257524] (my_mas) StderrLine: {'line': b'\n'}
+[0.257588] (my_mas) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[0.257647] (my_mas) StderrLine: {'line': b'  "rosidl_generate_interfaces" with any of the following names:\n'}
+[0.257700] (my_mas) StderrLine: {'line': b'\n'}
+[0.257758] (my_mas) StderrLine: {'line': b'    rosidl_generate_interfacesConfig.cmake\n'}
+[0.257816] (my_mas) StderrLine: {'line': b'    rosidl_generate_interfaces-config.cmake\n'}
+[0.257867] (my_mas) StderrLine: {'line': b'\n'}
+[0.257924] (my_mas) StderrLine: {'line': b'  Add the installation prefix of "rosidl_generate_interfaces" to\n'}
+[0.257981] (my_mas) StderrLine: {'line': b'  CMAKE_PREFIX_PATH or set "rosidl_generate_interfaces_DIR" to a directory\n'}
+[0.258038] (my_mas) StderrLine: {'line': b'  containing one of the above files.  If "rosidl_generate_interfaces"\n'}
+[0.258093] (my_mas) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.258149] (my_mas) StderrLine: {'line': b'  installed.\n'}
+[0.258201] (my_mas) StderrLine: {'line': b'\n'}
+[0.258267] (my_mas) StderrLine: {'line': b'\x1b[0m\n'}
+[0.258402] (my_mas) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.258472] (my_mas) StdoutLine: {'line': b'See also "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles/CMakeOutput.log".\n'}
+[0.260785] (my_mas) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[0.262713] (my_mas) CommandEnded: {'returncode': 2}
+[0.286100] (my_mas) JobEnded: {'identifier': 'my_mas', 'rc': 2}
+[0.286884] (-) EventReactorShutdown: {}

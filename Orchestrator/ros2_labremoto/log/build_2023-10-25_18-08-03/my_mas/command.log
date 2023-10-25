@@ -1,0 +1,2 @@
+Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --build /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas -- -j1 -l1
+Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --build /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/my_mas -- -j1 -l1
