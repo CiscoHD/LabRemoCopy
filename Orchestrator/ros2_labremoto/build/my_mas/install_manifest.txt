@@ -1,0 +1,15 @@
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/ament_index/resource_index/package_run_dependencies/my_mas
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/ament_index/resource_index/parent_prefix_path/my_mas
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/ament_prefix_path.sh
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/ament_prefix_path.dsv
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/path.sh
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/environment/path.dsv
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/local_setup.bash
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/local_setup.sh
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/local_setup.zsh
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/local_setup.dsv
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.dsv
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/ament_index/resource_index/packages/my_mas
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_masConfig.cmake
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/cmake/my_masConfig-version.cmake
+/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.xml
