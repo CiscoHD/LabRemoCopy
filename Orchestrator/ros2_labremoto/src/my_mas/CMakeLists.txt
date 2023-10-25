@@ -13,6 +13,7 @@ find_package(geometry_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SensorMeasurment.msg"
   "msg/AuditorMsg.msg"
+  "msg/FileHexLoad.msg"
   "srv/LoadFiledb.srv"
   "srv/LoadFile.srv"
   "action/Fibonacci.action"
