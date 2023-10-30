@@ -31,8 +31,9 @@ class ArduinoActionServer(Node):
             PORT = dispositivos[0]['port']['address']
             FQBN = dispositivos[0]['matching_boards'][0]['fqbn']
             try:
-                copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               
-                upload_r = os.popen(f"arduino-cli -p {PORT} upload {sketch_path}").read()
+                #copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               
+                #upload_r = os.popen(f"arduino-cli -p {PORT} upload {sketch_path}").read()
+                upload_r = os.popen(f"avrdude -c arduino -P {PORT} -b 115200 -p atmega328p -D -U flash:w:{sketch_path}").read()
                 feedback_msg.status = 'update finish'
                 goal_handle.succeed()
                 self.get_logger().info(feedback_msg.status)
