@@ -1,0 +1,25 @@
+[2.956s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hardware build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log --single-version-externally-managed
+[3.880s] running egg_info
+[3.883s] writing ../../build/hardware/hardware.egg-info/PKG-INFO
+[3.884s] writing dependency_links to ../../build/hardware/hardware.egg-info/dependency_links.txt
+[3.885s] writing entry points to ../../build/hardware/hardware.egg-info/entry_points.txt
+[3.886s] writing requirements to ../../build/hardware/hardware.egg-info/requires.txt
+[3.887s] writing top-level names to ../../build/hardware/hardware.egg-info/top_level.txt
+[3.892s] reading manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'
+[3.896s] writing manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'
+[3.896s] running build
+[3.897s] running build_py
+[3.897s] copying hardware/__init__.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build/lib/hardware
+[3.898s] running install
+[3.899s] running install_lib
+[3.901s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build/lib/hardware/__init__.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware
+[3.903s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware/__init__.py to __init__.cpython-310.pyc
+[3.905s] running install_data
+[3.906s] copying resource/hardware -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/share/ament_index/resource_index/packages
+[3.906s] copying package.xml -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/share/hardware
+[3.907s] running install_egg_info
+[3.911s] removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info' (and everything under it)
+[3.912s] Copying ../../build/hardware/hardware.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info
+[3.915s] running install_scripts
+[3.973s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log'
+[4.071s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware' returned '0': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hardware build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log --single-version-externally-managed
