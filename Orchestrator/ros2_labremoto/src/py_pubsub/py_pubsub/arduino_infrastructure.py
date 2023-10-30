@@ -27,7 +27,7 @@ class ArduinoActionServer(Node):
             self.get_logger().info("Looking for file .hex ..." )
             sketch_path = goal_handle.request.path_hex 
             PORT = dispositivos[0]['port']['address']
-            FQBN = dispositivos[0]['matching_boards'][0]['fqbn']
+            #FQBN = dispositivos[0]['matching_boards'][0]['fqbn']
             try:
                 #copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               
                 #upload_r = os.popen(f"arduino-cli -p {PORT} upload {sketch_path}").read()
