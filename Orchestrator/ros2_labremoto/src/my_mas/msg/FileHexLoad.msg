@@ -1,2 +1,1 @@
 string path_hex
-string status
