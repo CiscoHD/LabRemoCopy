@@ -29,11 +29,12 @@ class ArduinoActionServer(Node):
             #try:
             sketch_path = goal_handle.request.path_hex 
             PORT = dispositivos[0]['port']['address']
-            FQBN = dispositivos[0]['matching_boards'][0]['fqbn']
+            #FQBN = dispositivos[0]['matching_boards'][0]['fqbn']
             try:
                 #copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               
                 #upload_r = os.popen(f"arduino-cli -p {PORT} upload {sketch_path}").read()
-                upload_r = os.popen(f"avrdude -c arduino -P {PORT} -b 115200 -p atmega328p -D -U flash:w:{sketch_path}").read()
+                #upload_r = os.popen(f"avrdude -c arduino -P {PORT} -b 115200 -p atmega328p -D -U flash:w:{sketch_path}").read()
+                upload_r = os.popen(f"esptool --chip esp8266 --port {PORT} --baud 115200 --before default_reset --after hard_reset write_flash 0x0 {sketch_path}").read() #SP
                 feedback_msg.status = 'update finish'
                 goal_handle.succeed()
                 self.get_logger().info(feedback_msg.status)
