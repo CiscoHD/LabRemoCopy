@@ -104,3 +104,17 @@ StudentLabSessionDetailSerializer = GenericGeneratorSerializer(StudentLabSession
 
 ActivityListCreateSerializer = GenericGeneratorSerializer(Activity,serializers.ModelSerializer)
 ActivityDetailSerializer = GenericGeneratorSerializer(Activity,serializers.ModelSerializer)
+
+
+class UploadSerializer(serializers.Serializer):
+    file = serializers.FileField()
+
+    class Meta:
+        fields = ['id','file']
+
+class userInfoSerializer(serializers.Serializer):
+    class Meta:
+        model = User
+        fields = ['id','username','email','password','isAvailable','userType']
+
+    

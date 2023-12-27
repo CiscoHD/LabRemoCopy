@@ -1,6 +1,9 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+from datetime import datetime
+from datetime import date
+
 
 # Create your models here.
 
@@ -99,7 +102,20 @@ class User(AbstractUser):
     username = models.CharField(max_length=45,unique=True)
     email = models.CharField(max_length=45,unique=True)
     password = models.CharField(max_length=200)
-    isAvailable = models.SmallIntegerField(default=1)
+    #isAvailable = models.SmallIntegerField(default=1)
+
+    ON = 1
+    OFF = 0
+    CHOICES = (
+        (ON, 'Available'),
+        (OFF, 'Unavailable'),
+    )
+
+    isAvailable = models.CharField(
+        max_length=2,
+        choices=CHOICES,
+        default=OFF,
+    )
 
     userType = models.ForeignKey(
         UserType,
@@ -114,10 +130,10 @@ class User(AbstractUser):
     #REQUIRED_FIELDS = []
 
 #####################################################
-####   NOTA:
-####   Comentar que es probable que sea necesario 
-####   crear una APP independiente que controle 
-####   el laboratorio virtual
+####   NOTA:                                       **
+####   Comentar que es probable que sea necesario  **
+####   crear una APP independiente que controle    **
+####   el laboratorio virtual                      **
 #####################################################
 class AuthorLabSessions(modelBase):
     name = None
@@ -155,13 +171,13 @@ class LabSessions(modelBase):
 
 
 #####################################################
-####   NOTA:
-####   Los siguientes se pueden ver como extensión
-####   del modelo User, ya que un prof, alumno, 
-####   es User
-# 
-# 
-#            PENDIENTE MEJORAR ESTA ZONA
+####   NOTA:                                       **
+####   Los siguientes se pueden ver como extensión **
+####   del modelo User, ya que un prof, alumno,    **
+####   es User                                     **
+#                                                  **
+#                                                  **
+#            PENDIENTE MEJORAR ESTA ZONA           **
 #####################################################
 
 class Student(modelBase):
@@ -188,14 +204,12 @@ class Professor(modelBase):
 ######################################################
 
 
-
-
-#####################################################
-#            PENDIENTE MEJORAR ESTA ZONA
-#    Probablemente se necesite una app que
-#    se encargue de manejar cursos. 
-#       AÚN POR DEFINIR
-#####################################################
+######################################################
+#            PENDIENTE MEJORAR ESTA ZONA            **
+#    Probablemente se necesite una app que          **
+#    se encargue de manejar cursos.                 **
+#       AÚN POR DEFINIR                             **
+######################################################
 class Course(modelBase):
     name = None
     semesterId = models.CharField(max_length=45)
@@ -216,7 +230,7 @@ class Course(modelBase):
         #null=True,
         default=1,
     )
-        
+    
     #created = Datetype
 
 class Roster(modelBase):
@@ -259,3 +273,8 @@ class StudentLabSession(modelBase):
         #null=True,
         default=1,
     )
+
+class DuinoFile(models.Model):
+    #date_time = date.today()
+    date_time = datetime.now()
+    file = models.FileField(upload_to='user_{0}/{1}'.format(1,date_time.strftime("%m-%d-%Y-%H:%M:%S/")), max_length=100)

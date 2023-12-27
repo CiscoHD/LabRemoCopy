@@ -34,6 +34,7 @@ urlpatterns = [
 
     #Users api
     path('api/',include('users.urls')),
+    path('api/',include('workspace.urls')),
     
     
     # DOCUMENTATION API

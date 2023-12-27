@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
 
     'users',
+    'workspace',
 ]
 
 MIDDLEWARE = [
@@ -59,9 +61,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
+#CORS_ALLOW_ALL_ORIGINS = True # If this is used then `CORS_ALLOWED_ORIGINS` will not have any effect
+#CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
-  'http://172.17.0.2:3000',
+  #'http://172.17.0.2:3000',
+  #'http://172.17.0.4:3000',
 )
 
 
@@ -132,6 +137,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_ROOT = 'arduino/'
+ROOT_MEDIA = os.path.join(BASE_DIR, MEDIA_ROOT)
 
 AUTH_USER_MODEL = 'users.User'
 
@@ -148,6 +155,7 @@ REST_FRAMEWORK = {
 }
 
 OAUTH2_PROVIDER = {
+    #"OIDC_ENABLED": True,
     # this is the list of available scopes
     'SCOPES': {'read': 'Read scope', 'write': 'Write scope', 'groups': 'Access to your groups'}
 }

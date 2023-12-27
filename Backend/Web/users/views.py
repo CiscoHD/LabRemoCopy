@@ -1,10 +1,15 @@
 #from django.shortcuts import render
 from django.db import models
-from labRemoto.settings import DEBUG
+from labRemoto.settings import DEBUG, ROOT_MEDIA
+
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import exceptions,generics, serializers
+from rest_framework.viewsets import ViewSet
+
+from .models import DuinoFile
 
 
 from .serializers import (
@@ -12,6 +17,7 @@ from .serializers import (
     CountriesDetailSerializer, CountriesListCreateSerializer, CourseDetailSerializer, CourseListCreateSerializer, LabSessionsDetailSerializer, LabSessionsListCreateSerializer, ProfessorDetailSerializer, ProfessorListCreateSerializer, RosterDetailSerializer, RosterListCreateSerializer, SchoolsDetailSerializer, SchoolsListCreateSerializer, StudentDetailSerializer, StudentLabSessionDetailSerializer, StudentLabSessionListCreateSerializer, StudentListCreateSerializer,
     SubjectDetailSerializer, SubjectListCreateSerializer, UniversitiesDetailSerializer, UniversitiesListCreateSerializer, 
     UserListSerializer,UserDetailSerializer, UserTypeDetailSerializer, UserTypeListCreateSerializer,
+    UploadSerializer,userInfoSerializer,
     )
 
 from .models import Activity, AuthorLabSessions, Careers, Country, Course, LabSessions, Professor, Roster, Schools, Student, StudentLabSession, Subject, Universities, User, UserType
@@ -147,3 +153,44 @@ ActivityListCreateView = GenericGeneratorAPIView(Activity, ActivityListCreateSer
 ActivityRetrieveAPIView = GenericGeneratorAPIView(Activity,ActivityDetailSerializer,generics.RetrieveAPIView)
 ActivityRetrieveUpdateAPIView = GenericGeneratorAPIView(Activity,ActivityDetailSerializer,generics.RetrieveUpdateAPIView)
 ActivityDestroyAPIView = GenericGeneratorAPIView(Activity,ActivityDetailSerializer,generics.DestroyAPIView)
+
+
+class UploadViewSet(generics.ListCreateAPIView):
+    queryset = DuinoFile.objects.all()
+    serializer_class = UploadSerializer
+
+    """def list(self, request):
+        return Response("GET API")"""
+
+    def create(self, request):
+        file_uploaded = request.FILES.get('file')
+        content_type = file_uploaded.content_type
+        with open(ROOT_MEDIA+'{}'.format(up_file.name,'wb')) as destination:
+            for chunk in up_file.chunks():
+                destination.write(chunk)
+        response = "POST API and you have uploaded a {} file".format(content_type)
+        return Response(response)
+
+    """def post(self,request):
+        up_file = request.FILES['file_uploaded']
+        with open('/{}'.format(up_file.name,'wb')) as destination:
+            for chunk in up_file.chunks():
+                destination.write(chunk)
+            #destination.close()
+
+        return Response(up_file.name, status.HTTP_201_CREATED)"""
+
+
+class userDetail(generics.ListAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserListSerializer
+    
+    def list(self,request):
+        if request.user.is_anonymous != True:
+            queryset = User.objects.filter(id=request.user.id)
+            response = UserListSerializer(queryset,many=True)
+            #return Response('{}'.format(request.user.id))
+            response = response.data
+        else:
+            response = "User not authenticated, please login!!"
+        return Response(response)

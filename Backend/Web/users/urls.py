@@ -10,7 +10,10 @@ from .views import (
     CareersRetrieveUpdateAPIView,
     ### API Countries
     CountryDestroyAPIView, CountryListCreateView, CountryRetrieveAPIView,
-    CountryRetrieveUpdateAPIView, UserTypeDestroyAPIView, UserTypeListCreateView, UserTypeRetrieveAPIView, UserTypeRetrieveUpdateAPIView, 
+    CountryRetrieveUpdateAPIView, UserTypeDestroyAPIView, UserTypeListCreateView, UserTypeRetrieveAPIView, UserTypeRetrieveUpdateAPIView,
+
+    UploadViewSet,
+    userDetail
 )
 
 str_users = 'users/'
@@ -152,5 +155,11 @@ urlpatterns = [
     path(    str_activity+'<str:id>/',ActivityRetrieveAPIView.as_view(),name='subject_detail'),
     path(    str_activity+'update/<str:id>/', ActivityRetrieveUpdateAPIView.as_view(),name='subject_update'),
     path(    str_activity+'delete/<str:id>', ActivityDestroyAPIView.as_view(),name='subject_destroy'),
+
+
+    path('upload', UploadViewSet.as_view(), name="upload"),
+
+
+    path('userInfo/',userDetail.as_view(), name="user_info"),
 
 ]
