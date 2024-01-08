@@ -1,0 +1,2 @@
+bool estado
+string stad

@@ -1,0 +1,2 @@
+string nombre
+uint8 no_maqueta

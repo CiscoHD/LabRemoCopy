@@ -1,1 +1,2 @@
 string path_hex
+string puerto_usb
