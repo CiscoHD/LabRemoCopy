@@ -11,7 +11,7 @@ from .serializers import (ComponentSerializer,
                             MainBoardSerializer)
 
 
-DEBUG = True
+DEBUG = False
 PERMISSIONS_ADMIN = [] if DEBUG else [IsAdminUser]
 PERMISSIONS_AUTHEN = [] if DEBUG else [IsAuthenticated]
 
