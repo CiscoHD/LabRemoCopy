@@ -278,3 +278,11 @@ class DuinoFile(models.Model):
     #date_time = date.today()
     date_time = datetime.now()
     file = models.FileField(upload_to='user_{0}/{1}'.format(1,date_time.strftime("%m-%d-%Y-%H:%M:%S/")), max_length=100)
+
+
+class UploadedFile(models.Model):
+    file = models.FileField()
+    uploaded_on = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.uploaded_on.date()

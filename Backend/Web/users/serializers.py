@@ -1,5 +1,5 @@
 from rest_framework import serializers, generics
-from .models import (Activity, AuthorLabSessions, Country, LabSessions, Professor, Student, StudentLabSession, Subject, User, Careers,
+from .models import (Activity, AuthorLabSessions, Country, DuinoFile, LabSessions, Professor, Student, StudentLabSession, Subject, UploadedFile, User, Careers,
                      Universities,Schools,Course,Roster, UserType)
 
 
@@ -110,11 +110,17 @@ class UploadSerializer(serializers.Serializer):
     file = serializers.FileField()
 
     class Meta:
-        fields = ['id','file']
+        model = DuinoFile
+        fields = '__all__'
+
 
 class userInfoSerializer(serializers.Serializer):
     class Meta:
         model = User
         fields = ['id','username','email','password','isAvailable','userType']
 
-    
+
+class FileUploadSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UploadedFile
+        fields = ('file','uploaded_on',)

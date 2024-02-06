@@ -1,6 +1,6 @@
 from django.urls import path, include
 from .views import (
-    ActivityDestroyAPIView, ActivityListCreateView, ActivityRetrieveAPIView, ActivityRetrieveUpdateAPIView, AuthorLabSessionsDestroyAPIView, AuthorLabSessionsListCreateView, AuthorLabSessionsRetrieveAPIView, AuthorLabSessionsRetrieveUpdateAPIView, CourseDestroyAPIView, CourseListCreateView, CourseRetrieveAPIView, CourseRetrieveUpdateAPIView, LabSessionsDestroyAPIView, LabSessionsListCreateView, LabSessionsRetrieveAPIView, LabSessionsRetrieveUpdateAPIView, ProfessorDestroyAPIView, ProfessorListCreateView, ProfessorRetrieveAPIView, ProfessorRetrieveUpdateAPIView, RosterDestroyAPIView, RosterListCreateView, RosterRetrieveAPIView, RosterRetrieveUpdateAPIView, SchoolsDestroyAPIView, SchoolsListCreateView, SchoolsRetrieveAPIView, SchoolsRetrieveUpdateAPIView, StudentDestroyAPIView, StudentLabSessionDestroyAPIView, StudentLabSessionListCreateView, StudentLabSessionRetrieveAPIView, StudentLabSessionRetrieveUpdateAPIView, StudentListCreateView, StudentRetrieveAPIView, StudentRetrieveUpdateAPIView, UniversitiesDestroyAPIView, UniversitiesListCreateView, UniversitiesRetrieveAPIView, UniversitiesRetrieveUpdateAPIView, UserDestroyAPIView, UserRetrieveAPIView, 
+    ActivityDestroyAPIView, ActivityListCreateView, ActivityRetrieveAPIView, ActivityRetrieveUpdateAPIView, AuthorLabSessionsDestroyAPIView, AuthorLabSessionsListCreateView, AuthorLabSessionsRetrieveAPIView, AuthorLabSessionsRetrieveUpdateAPIView, CourseDestroyAPIView, CourseListCreateView, CourseRetrieveAPIView, CourseRetrieveUpdateAPIView, FileUploadAPIView, LabSessionsDestroyAPIView, LabSessionsListCreateView, LabSessionsRetrieveAPIView, LabSessionsRetrieveUpdateAPIView, ProfessorDestroyAPIView, ProfessorListCreateView, ProfessorRetrieveAPIView, ProfessorRetrieveUpdateAPIView, RosterDestroyAPIView, RosterListCreateView, RosterRetrieveAPIView, RosterRetrieveUpdateAPIView, SchoolsDestroyAPIView, SchoolsListCreateView, SchoolsRetrieveAPIView, SchoolsRetrieveUpdateAPIView, StudentDestroyAPIView, StudentLabSessionDestroyAPIView, StudentLabSessionListCreateView, StudentLabSessionRetrieveAPIView, StudentLabSessionRetrieveUpdateAPIView, StudentListCreateView, StudentRetrieveAPIView, StudentRetrieveUpdateAPIView, UniversitiesDestroyAPIView, UniversitiesListCreateView, UniversitiesRetrieveAPIView, UniversitiesRetrieveUpdateAPIView, UserDestroyAPIView, UserRetrieveAPIView, 
     UserListCreateView, UserRetrieveUpdateView,
     ### API Subject
     SubjectListCreateView,SubjectRetrieveAPIView, 
@@ -158,6 +158,7 @@ urlpatterns = [
 
 
     path('upload', UploadViewSet.as_view(), name="upload"),
+    path('upload2', FileUploadAPIView.as_view(), name="upload-file"),
 
 
     path('userInfo/',userDetail.as_view(), name="user_info"),
