@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000554] (-) JobUnselected: {'identifier': 'hardware'}
+[0.000673] (-) JobUnselected: {'identifier': 'my_mas'}
+[0.000741] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.000801] (-) EventReactorShutdown: {}

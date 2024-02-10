@@ -3,25 +3,23 @@ from rclpy.node import Node
 
 from std_msgs.msg import String
 from my_mas.msg import SensorMeasurment
-from my_mas.msg import FileHexLoad
+from my_mas.msg import CreateBitStream
 import random
 
 class MinimalPublisher(Node):
 
     def __init__(self):
-        super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(FileHexLoad, 'archivos_hex', 10)
+        super().__init__('publicador_info')
+        self.publisher_ = self.create_publisher(CreateBitStream, 'Admin_tran', 10)
         self.timer_callback()
-        #timer_period = 0.5  # seconds
-        #self.timer = self.create_timer(timer_period, self.timer_callback)
-        #self.i = 0
 
     def timer_callback(self):
-        msg = FileHexLoad()
-        msg.path_hex =  "/home/ffelix07/Documents/Arduino/DCmotorx2/build/arduino.avr.uno/DCmotorx2.ino.hex"
-       
+        msg = CreateBitStream()
+        msg.path_vhdl =  "/home/ffelix07"
+        msg.path_constrains = 'w'
+
         self.publisher_.publish(msg)
-        self.get_logger().info(f'Publishing: {msg.path_hex} ')
+        self.get_logger().info(f'Publishing: {msg.path_vhdl} {msg.path_constrains} ')
 
 
 def main(args=None):

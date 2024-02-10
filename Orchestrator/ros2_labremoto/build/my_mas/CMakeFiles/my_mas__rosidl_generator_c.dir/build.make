@@ -85,10 +85,15 @@ rosidl_generator_c/my_mas/msg/sensor_measurment.h: /opt/ros/humble/share/rosidl_
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/msg/SensorMeasurment.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/msg/AuditorMsg.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/msg/FileHexLoad.idl
+rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/msg/TransGlobal.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/srv/LoadFiledb.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/srv/LoadFile.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/action/Fibonacci.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/action/Cargahex.idl
+rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/action/CargaBit.idl
+rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/action/Tranformvhdlbit.idl
+rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/msg/BitLoad.idl
+rosidl_generator_c/my_mas/msg/sensor_measurment.h: rosidl_adapter/my_mas/msg/CreateBitStream.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/my_mas/msg/sensor_measurment.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -191,6 +196,18 @@ rosidl_generator_c/my_mas/msg/detail/file_hex_load__struct.h: rosidl_generator_c
 rosidl_generator_c/my_mas/msg/detail/file_hex_load__type_support.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/file_hex_load__type_support.h
 
+rosidl_generator_c/my_mas/msg/trans_global.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/trans_global.h
+
+rosidl_generator_c/my_mas/msg/detail/trans_global__functions.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/trans_global__functions.h
+
+rosidl_generator_c/my_mas/msg/detail/trans_global__struct.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/trans_global__struct.h
+
+rosidl_generator_c/my_mas/msg/detail/trans_global__type_support.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/trans_global__type_support.h
+
 rosidl_generator_c/my_mas/srv/load_filedb.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/srv/load_filedb.h
 
@@ -239,6 +256,54 @@ rosidl_generator_c/my_mas/action/detail/cargahex__struct.h: rosidl_generator_c/m
 rosidl_generator_c/my_mas/action/detail/cargahex__type_support.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/cargahex__type_support.h
 
+rosidl_generator_c/my_mas/action/carga_bit.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/carga_bit.h
+
+rosidl_generator_c/my_mas/action/detail/carga_bit__functions.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/carga_bit__functions.h
+
+rosidl_generator_c/my_mas/action/detail/carga_bit__struct.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/carga_bit__struct.h
+
+rosidl_generator_c/my_mas/action/detail/carga_bit__type_support.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/carga_bit__type_support.h
+
+rosidl_generator_c/my_mas/action/tranformvhdlbit.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/tranformvhdlbit.h
+
+rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.h
+
+rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__struct.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__struct.h
+
+rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__type_support.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__type_support.h
+
+rosidl_generator_c/my_mas/msg/bit_load.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/bit_load.h
+
+rosidl_generator_c/my_mas/msg/detail/bit_load__functions.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/bit_load__functions.h
+
+rosidl_generator_c/my_mas/msg/detail/bit_load__struct.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/bit_load__struct.h
+
+rosidl_generator_c/my_mas/msg/detail/bit_load__type_support.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/bit_load__type_support.h
+
+rosidl_generator_c/my_mas/msg/create_bit_stream.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/create_bit_stream.h
+
+rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.h
+
+rosidl_generator_c/my_mas/msg/detail/create_bit_stream__struct.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/create_bit_stream__struct.h
+
+rosidl_generator_c/my_mas/msg/detail/create_bit_stream__type_support.h: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/create_bit_stream__type_support.h
+
 rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c
 
@@ -247,6 +312,9 @@ rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c: rosidl_generator_
 
 rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c
+
+rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c
 
 rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c
@@ -259,6 +327,18 @@ rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c: rosidl_generator
 
 rosidl_generator_c/my_mas/action/detail/cargahex__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/cargahex__functions.c
+
+rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c
+
+rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c
+
+rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c
+
+rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c
 
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c.o: rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c
@@ -302,10 +382,24 @@ CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.s
 
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o: rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c > CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.i
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.s
+
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o: rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c
 
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.i: cmake_force
@@ -319,7 +413,7 @@ CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/l
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o: rosidl_generator_c/my_mas/srv/detail/load_file__functions.c
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c
 
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.i: cmake_force
@@ -333,7 +427,7 @@ CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/l
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o: rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c
 
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.i: cmake_force
@@ -347,7 +441,7 @@ CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detai
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o: rosidl_generator_c/my_mas/action/detail/cargahex__functions.c
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c
 
 CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.i: cmake_force
@@ -358,15 +452,76 @@ CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detai
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.s
 
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o: rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c > CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.i
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.s
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o: rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c > CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.i
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.s
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o: rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c > CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.i
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.s
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o: rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o: CMakeFiles/my_mas__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o -MF CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o.d -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c > CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.i
+
+CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c -o CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.s
+
 # Object files for target my_mas__rosidl_generator_c
 my_mas__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c.o" \
 "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.o" \
 "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o" \
 "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o" \
 "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o" \
 "CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o" \
-"CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o"
+"CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o"
 
 # External object files for target my_mas__rosidl_generator_c
 my_mas__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -374,10 +529,15 @@ my_mas__rosidl_generator_c_EXTERNAL_OBJECTS =
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c.o
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.o
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.o
+libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o
+libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o
+libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o
+libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o
+libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/build.make
 libmy_mas__rosidl_generator_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 libmy_mas__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -387,7 +547,7 @@ libmy_mas__rosidl_generator_c.so: /opt/ros/humble/lib/libunique_identifier_msgs_
 libmy_mas__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_mas__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libmy_mas__rosidl_generator_c.so: CMakeFiles/my_mas__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C shared library libmy_mas__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library libmy_mas__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_mas__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -398,7 +558,12 @@ CMakeFiles/my_mas__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/my_mas__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/my_mas__rosidl_generator_c.dir/clean
 
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/carga_bit.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/cargahex.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/carga_bit__functions.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/carga_bit__struct.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/carga_bit__type_support.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/cargahex__functions.c
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/cargahex__functions.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/cargahex__struct.h
@@ -407,12 +572,27 @@ CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/acti
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/fibonacci__functions.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/fibonacci__struct.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/fibonacci__type_support.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__struct.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__type_support.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/fibonacci.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/action/tranformvhdlbit.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/auditor_msg.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/bit_load.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/create_bit_stream.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/auditor_msg__struct.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/auditor_msg__type_support.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/bit_load__functions.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/bit_load__struct.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/bit_load__type_support.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/create_bit_stream__struct.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/create_bit_stream__type_support.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/file_hex_load__struct.h
@@ -421,8 +601,13 @@ CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/sensor_measurment__struct.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/sensor_measurment__type_support.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/trans_global__functions.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/trans_global__struct.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/detail/trans_global__type_support.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/file_hex_load.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/sensor_measurment.h
+CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/msg/trans_global.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/srv/detail/load_file__functions.c
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/srv/detail/load_file__functions.h
 CMakeFiles/my_mas__rosidl_generator_c.dir/depend: rosidl_generator_c/my_mas/srv/detail/load_file__struct.h

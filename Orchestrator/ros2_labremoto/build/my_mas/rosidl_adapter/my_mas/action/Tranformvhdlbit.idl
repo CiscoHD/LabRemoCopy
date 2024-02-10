@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_mas/action/Tranformvhdlbit.action
+// generated code does not contain a copyright notice
+
+
+module my_mas {
+  module action {
+    struct Tranformvhdlbit_Goal {
+      string path_vhdl;
+
+      string path_constrains;
+    };
+    struct Tranformvhdlbit_Result {
+      string status_final;
+    };
+    struct Tranformvhdlbit_Feedback {
+      string status;
+    };
+  };
+};

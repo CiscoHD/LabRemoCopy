@@ -1,0 +1,174 @@
+[0.000000] (-) TimerEvent: {}
+[0.000537] (-) JobUnselected: {'identifier': 'hardware'}
+[0.000679] (-) JobUnselected: {'identifier': 'my_mas'}
+[0.000777] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('my_mas', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas')])}
+[0.000878] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.123040] (-) TimerEvent: {}
+[0.225170] (-) TimerEvent: {}
+[0.326132] (-) TimerEvent: {}
+[0.426819] (-) TimerEvent: {}
+[0.527470] (-) TimerEvent: {}
+[0.628270] (-) TimerEvent: {}
+[0.730111] (-) TimerEvent: {}
+[0.831259] (-) TimerEvent: {}
+[0.931915] (-) TimerEvent: {}
+[1.032529] (-) TimerEvent: {}
+[1.133103] (-) TimerEvent: {}
+[1.233670] (-) TimerEvent: {}
+[1.334293] (-) TimerEvent: {}
+[1.434921] (-) TimerEvent: {}
+[1.535569] (-) TimerEvent: {}
+[1.636228] (-) TimerEvent: {}
+[1.736985] (-) TimerEvent: {}
+[1.837537] (-) TimerEvent: {}
+[1.938262] (-) TimerEvent: {}
+[2.039114] (-) TimerEvent: {}
+[2.152238] (-) TimerEvent: {}
+[2.253459] (-) TimerEvent: {}
+[2.354730] (-) TimerEvent: {}
+[2.455478] (-) TimerEvent: {}
+[2.563653] (-) TimerEvent: {}
+[2.664325] (-) TimerEvent: {}
+[2.765170] (-) TimerEvent: {}
+[2.865861] (-) TimerEvent: {}
+[2.966424] (-) TimerEvent: {}
+[3.067564] (-) TimerEvent: {}
+[3.168277] (-) TimerEvent: {}
+[3.269689] (-) TimerEvent: {}
+[3.370304] (-) TimerEvent: {}
+[3.470939] (-) TimerEvent: {}
+[3.571898] (-) TimerEvent: {}
+[3.672653] (-) TimerEvent: {}
+[3.773350] (-) TimerEvent: {}
+[3.874228] (-) TimerEvent: {}
+[3.975117] (-) TimerEvent: {}
+[4.075738] (-) TimerEvent: {}
+[4.176306] (-) TimerEvent: {}
+[4.276871] (-) TimerEvent: {}
+[4.377482] (-) TimerEvent: {}
+[4.478210] (-) TimerEvent: {}
+[4.578822] (-) TimerEvent: {}
+[4.679553] (-) TimerEvent: {}
+[4.780197] (-) TimerEvent: {}
+[4.880846] (-) TimerEvent: {}
+[4.981495] (-) TimerEvent: {}
+[5.082432] (-) TimerEvent: {}
+[5.183072] (-) TimerEvent: {}
+[5.283793] (-) TimerEvent: {}
+[5.384475] (-) TimerEvent: {}
+[5.485271] (-) TimerEvent: {}
+[5.585950] (-) TimerEvent: {}
+[5.686832] (-) TimerEvent: {}
+[5.788275] (-) TimerEvent: {}
+[5.888980] (-) TimerEvent: {}
+[5.989638] (-) TimerEvent: {}
+[6.090371] (-) TimerEvent: {}
+[6.193883] (-) TimerEvent: {}
+[6.294612] (-) TimerEvent: {}
+[6.395532] (-) TimerEvent: {}
+[6.496348] (-) TimerEvent: {}
+[6.596955] (-) TimerEvent: {}
+[6.695071] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build', 'install', '--record', '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'ffelix07', 'GIO_MODULE_DIR': '/home/ffelix07/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/149/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ffelix07', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'CONDA_SHLVL': '1', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.86.1', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/151/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/ffelix07/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/149/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/149/usr/share/code/code', 'MANAGERPID': '2019', 'SYSTEMD_EXEC_PID': '2225', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7215', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ffelix07', 'JOURNAL_STREAM': '8:33746', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'ffelix07', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ffelix07/.local/bin:/home/ffelix07/bin:/home/ffelix07/miniconda3/bin:/home/ffelix07/miniconda3/condabin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/bin:/opt/ros/humble/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ffelix07-X541NA:@/tmp/.ICE-unix/2175,unix/ffelix07-X541NA:/tmp/.ICE-unix/2175', 'GTK_EXE_PREFIX': '/snap/code/151/usr', 'INVOCATION_ID': '2aab62090a934fa69910a7138611861b', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/151/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.TNZ2I2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-633a52c682.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/ffelix07/snap/code/151/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/ffelix07/miniconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'CONDA_DEFAULT_ENV': 'base', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '--ms-enable-electron-run-as-node', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/ffelix07/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/home/ffelix07/snap/code/151/.local/share:/home/ffelix07/snap/code/151:/snap/code/151/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/ffelix07/miniconda3', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core'}, 'shell': False}
+[6.700895] (-) TimerEvent: {}
+[6.802578] (-) TimerEvent: {}
+[6.903941] (-) TimerEvent: {}
+[7.004741] (-) TimerEvent: {}
+[7.106235] (-) TimerEvent: {}
+[7.207087] (-) TimerEvent: {}
+[7.307790] (-) TimerEvent: {}
+[7.408480] (-) TimerEvent: {}
+[7.509201] (-) TimerEvent: {}
+[7.609850] (-) TimerEvent: {}
+[7.710462] (-) TimerEvent: {}
+[7.811160] (-) TimerEvent: {}
+[7.911753] (-) TimerEvent: {}
+[8.012401] (-) TimerEvent: {}
+[8.113449] (-) TimerEvent: {}
+[8.214477] (-) TimerEvent: {}
+[8.242133] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[8.315820] (-) TimerEvent: {}
+[8.353111] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[8.355128] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[8.356703] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[8.358160] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[8.360698] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[8.416002] (-) TimerEvent: {}
+[8.516640] (-) TimerEvent: {}
+[8.617344] (-) TimerEvent: {}
+[8.698376] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[8.706827] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[8.707804] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[8.708389] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[8.710280] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/service_member_function.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.711702] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/arduino_infrastructure.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.714016] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/carga_bit.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.717400] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/arduino_inf_cliente.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.718332] (-) TimerEvent: {}
+[8.722557] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/supervisor.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.723122] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/transform_vhdl_bit.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.723888] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publicador_prueba.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.724398] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/action_cliente_server.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.726645] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/sesiones.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.727187] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/SendTran_Service.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.730110] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_member_function.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[8.730922] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[8.734018] (py_pubsub) StderrLine: {'line': b'/home/ffelix07/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[8.734728] (py_pubsub) StderrLine: {'line': b'!!\n'}
+[8.735159] (py_pubsub) StderrLine: {'line': b'\n'}
+[8.735569] (py_pubsub) StderrLine: {'line': b'        ********************************************************************************\n'}
+[8.736216] (py_pubsub) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[8.736819] (py_pubsub) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[8.742930] (py_pubsub) StderrLine: {'line': b'        standards-based tools.\n'}
+[8.743588] (py_pubsub) StderrLine: {'line': b'\n'}
+[8.744122] (py_pubsub) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[8.744611] (py_pubsub) StderrLine: {'line': b'        ********************************************************************************\n'}
+[8.745170] (py_pubsub) StderrLine: {'line': b'\n'}
+[8.745618] (py_pubsub) StderrLine: {'line': b'!!\n'}
+[8.746162] (py_pubsub) StderrLine: {'line': b'  self.initialize_options()\n'}
+[8.760095] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[8.818514] (-) TimerEvent: {}
+[8.910084] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[8.915043] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-310.pyc\n'}
+[8.917308] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[8.918636] (-) TimerEvent: {}
+[9.019295] (-) TimerEvent: {}
+[9.039469] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub\n'}
+[9.040679] (py_pubsub) StdoutLine: {'line': b'copying launch/inicio.launch.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub\n'}
+[9.042162] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.119568] (-) TimerEvent: {}
+[9.183086] (py_pubsub) StdoutLine: {'line': b"removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[9.185150] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info\n'}
+[9.191296] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[9.219861] (-) TimerEvent: {}
+[9.320693] (-) TimerEvent: {}
+[9.421328] (-) TimerEvent: {}
+[9.522002] (-) TimerEvent: {}
+[9.622652] (-) TimerEvent: {}
+[9.723414] (-) TimerEvent: {}
+[9.824145] (-) TimerEvent: {}
+[9.925633] (-) TimerEvent: {}
+[10.026322] (-) TimerEvent: {}
+[10.127379] (-) TimerEvent: {}
+[10.228650] (-) TimerEvent: {}
+[10.270334] (py_pubsub) StdoutLine: {'line': b'Installing action_cliente_server script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.271546] (py_pubsub) StdoutLine: {'line': b'Installing arduino_inf_cliente script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.272789] (py_pubsub) StdoutLine: {'line': b'Installing arduino_infrastructure script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.275133] (py_pubsub) StdoutLine: {'line': b'Installing carga_bit script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.275587] (py_pubsub) StdoutLine: {'line': b'Installing client_member_function script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.276165] (py_pubsub) StdoutLine: {'line': b'Installing fibonacci_action_server script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.276888] (py_pubsub) StdoutLine: {'line': b'Installing publicador_prueba script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.279083] (py_pubsub) StdoutLine: {'line': b'Installing publis1her_member_function script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.279526] (py_pubsub) StdoutLine: {'line': b'Installing service_member_function script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.280727] (py_pubsub) StdoutLine: {'line': b'Installing subscriber_member_function script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.281274] (py_pubsub) StdoutLine: {'line': b'Installing supervisor script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.283073] (py_pubsub) StdoutLine: {'line': b'Installing transform_vhdl_bit script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[10.284295] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log'\n"}
+[10.328636] (-) TimerEvent: {}
+[10.408929] (py_pubsub) CommandEnded: {'returncode': 0}
+[10.430635] (-) TimerEvent: {}
+[10.533420] (-) TimerEvent: {}
+[10.634673] (-) TimerEvent: {}
+[10.737861] (-) TimerEvent: {}
+[10.838663] (-) TimerEvent: {}
+[10.885056] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[10.888410] (-) EventReactorShutdown: {}

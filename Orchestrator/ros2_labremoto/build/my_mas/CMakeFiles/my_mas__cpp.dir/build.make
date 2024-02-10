@@ -78,6 +78,10 @@ CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/file_hex_load.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__builder.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__struct.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/trans_global.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__traits.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/load_filedb.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__builder.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__struct.hpp
@@ -94,6 +98,22 @@ CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/cargahex.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__builder.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__struct.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/carga_bit.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/carga_bit__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/carga_bit__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/carga_bit__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/tranformvhdlbit.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/bit_load.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/bit_load__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/bit_load__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/bit_load__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/create_bit_stream.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__traits.hpp
 
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -113,10 +133,15 @@ rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/ros
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/SensorMeasurment.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/AuditorMsg.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/FileHexLoad.idl
+rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/TransGlobal.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/srv/LoadFiledb.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/srv/LoadFile.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/action/Fibonacci.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/action/Cargahex.idl
+rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/action/CargaBit.idl
+rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/action/Tranformvhdlbit.idl
+rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/BitLoad.idl
+rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: rosidl_adapter/my_mas/msg/CreateBitStream.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -219,6 +244,18 @@ rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__struct.hpp: rosidl_generat
 rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__traits.hpp
 
+rosidl_generator_cpp/my_mas/msg/trans_global.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/trans_global.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/trans_global__builder.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/trans_global__builder.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/trans_global__struct.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/trans_global__struct.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/trans_global__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/trans_global__traits.hpp
+
 rosidl_generator_cpp/my_mas/srv/load_filedb.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/srv/load_filedb.hpp
 
@@ -267,27 +304,95 @@ rosidl_generator_cpp/my_mas/action/detail/cargahex__struct.hpp: rosidl_generator
 rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp
 
+rosidl_generator_cpp/my_mas/action/carga_bit.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/carga_bit.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/carga_bit__builder.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/carga_bit__builder.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/carga_bit__struct.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/carga_bit__struct.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/carga_bit__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/carga_bit__traits.hpp
+
+rosidl_generator_cpp/my_mas/action/tranformvhdlbit.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/tranformvhdlbit.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__builder.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__builder.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__struct.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__struct.hpp
+
+rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__traits.hpp
+
+rosidl_generator_cpp/my_mas/msg/bit_load.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/bit_load.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/bit_load__builder.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/bit_load__builder.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/bit_load__struct.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/bit_load__struct.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/bit_load__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/bit_load__traits.hpp
+
+rosidl_generator_cpp/my_mas/msg/create_bit_stream.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/create_bit_stream.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__builder.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__builder.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__struct.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__struct.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__traits.hpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__traits.hpp
+
 my_mas__cpp: CMakeFiles/my_mas__cpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/carga_bit.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/cargahex.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/carga_bit__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/carga_bit__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/carga_bit__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/cargahex__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/fibonacci__traits.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/detail/tranformvhdlbit__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/action/fibonacci.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/action/tranformvhdlbit.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/auditor_msg.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/bit_load.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/create_bit_stream.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/auditor_msg__traits.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/bit_load__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/bit_load__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/bit_load__traits.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__traits.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/file_hex_load.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/trans_global.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__traits.hpp

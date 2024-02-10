@@ -37,7 +37,6 @@ class MinimalSubscriber(Node):
         future = action_client.send_goal(msg.path_hex)
         rclpy.spin_until_future_complete(action_client, future)
 
-
 def main(args=None):
     rclpy.init(args=args)
 

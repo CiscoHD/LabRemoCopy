@@ -15,10 +15,15 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SensorMeasurment.msg"
   "msg/AuditorMsg.msg"
   "msg/FileHexLoad.msg"
+  "msg/TransGlobal.msg"
   "srv/LoadFiledb.srv"
   "srv/LoadFile.srv"
   "action/Fibonacci.action"
   "action/Cargahex.action"
+  "action/CargaBit.action"
+  "action/Tranformvhdlbit.action"
+  "msg/BitLoad.msg"
+  "msg/CreateBitStream.msg"
   DEPENDENCIES geometry_msgs
 )
 

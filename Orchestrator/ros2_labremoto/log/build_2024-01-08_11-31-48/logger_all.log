@@ -1,0 +1,239 @@
+[3.515s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.516s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8e7a69eda0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8e7a64fd00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8e7a64fd00>>)
+[3.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.673s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto'
+[3.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.710s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.710s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.710s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.711s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.711s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.711s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['ignore', 'ignore_ament_install']
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ignore'
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ignore_ament_install'
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['colcon_pkg']
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'colcon_pkg'
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['colcon_meta']
+[3.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'colcon_meta'
+[3.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['ros']
+[3.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ros'
+[3.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['cmake', 'python']
+[3.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'cmake'
+[3.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'python'
+[3.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['python_setup_py']
+[3.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'python_setup_py'
+[3.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['ignore', 'ignore_ament_install']
+[3.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'ignore'
+[3.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'ignore_ament_install'
+[3.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['colcon_pkg']
+[3.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'colcon_pkg'
+[3.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['colcon_meta']
+[3.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'colcon_meta'
+[3.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['ros']
+[3.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'ros'
+[3.725s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hardware' with type 'ros.ament_python' and name 'hardware'
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[3.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[3.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[3.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extensions ['ignore', 'ignore_ament_install']
+[3.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'ignore'
+[3.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'ignore_ament_install'
+[3.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extensions ['colcon_pkg']
+[3.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'colcon_pkg'
+[3.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extensions ['colcon_meta']
+[3.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'colcon_meta'
+[3.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extensions ['ros']
+[3.729s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'ros'
+[3.731s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_mas' with type 'ros.ament_cmake' and name 'my_mas'
+[3.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[3.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore'
+[3.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore_ament_install'
+[3.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_pkg']
+[3.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_pkg'
+[3.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_meta']
+[3.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_meta'
+[3.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ros']
+[3.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ros'
+[3.735s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_pubsub' with type 'ros.ament_python' and name 'py_pubsub'
+[3.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.735s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.159s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install
+[4.219s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 185 installed packages in /opt/ros/humble
+[4.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.456s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'py_pubsub' is in: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding py_pubsub
+
+This may be promoted to an error in a future release of colcon-override-check.
+[4.510s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'cmake_args' from command line to 'None'
+[4.510s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'cmake_target' from command line to 'None'
+[4.510s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.510s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[4.510s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'cmake_clean_first' from command line to 'False'
+[4.510s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'cmake_force_configure' from command line to 'False'
+[4.510s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'ament_cmake_args' from command line to 'None'
+[4.511s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[4.511s] Level 5:colcon.colcon_core.verb:set package 'hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.511s] DEBUG:colcon.colcon_core.verb:Building package 'hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware', 'merge_install': False, 'path': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware', 'symlink_install': False, 'test_result_base': None}
+[4.570s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_args' from command line to 'None'
+[4.571s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_target' from command line to 'None'
+[4.571s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.571s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_clean_cache' from command line to 'False'
+[4.571s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_clean_first' from command line to 'False'
+[4.571s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_force_configure' from command line to 'False'
+[4.572s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'ament_cmake_args' from command line to 'None'
+[4.572s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'catkin_cmake_args' from command line to 'None'
+[4.572s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.572s] DEBUG:colcon.colcon_core.verb:Building package 'my_mas' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas', 'merge_install': False, 'path': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas', 'symlink_install': False, 'test_result_base': None}
+[4.627s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_args' from command line to 'None'
+[4.627s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target' from command line to 'None'
+[4.627s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.627s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.628s] DEBUG:colcon.colcon_core.verb:Building package 'py_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub', 'merge_install': False, 'path': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub', 'symlink_install': False, 'test_result_base': None}
+[4.678s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.745s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.746s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas' with build type 'ament_cmake'
+[4.747s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas'
+[4.823s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.823s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.824s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.054s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware' with build type 'ament_python'
+[5.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('hardware', 'ament_prefix_path')
+[5.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/share/hardware/hook/ament_prefix_path.ps1'
+[5.136s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/share/hardware/hook/ament_prefix_path.dsv'
+[5.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/share/hardware/hook/ament_prefix_path.sh'
+[5.235s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.235s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas -- -j4 -l4
+[6.952s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware'
+[7.050s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.051s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas -- -j4 -l4
+[8.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble /usr/bin/cmake --install /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas
+[8.421s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_mas)
+[8.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble /usr/bin/cmake --install /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas
+[8.550s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas' for CMake module files
+[8.554s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas' for CMake config files
+[8.556s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_mas', 'cmake_prefix_path')
+[8.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/cmake_prefix_path.ps1'
+[8.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/cmake_prefix_path.dsv'
+[8.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/cmake_prefix_path.sh'
+[8.678s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib'
+[8.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_mas', 'ld_library_path_lib')
+[8.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/ld_library_path_lib.ps1'
+[8.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/ld_library_path_lib.dsv'
+[8.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/ld_library_path_lib.sh'
+[8.764s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/bin'
+[8.764s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/pkgconfig/my_mas.pc'
+[8.765s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/python3.10/site-packages'
+[8.766s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/bin'
+[8.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.ps1'
+[8.869s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.dsv'
+[8.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.sh'
+[8.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.bash'
+[8.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.zsh'
+[8.882s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/colcon-core/packages/my_mas)
+[9.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware': PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hardware build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log --single-version-externally-managed
+[9.826s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_mas)
+[9.962s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas' for CMake module files
+[9.975s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas' for CMake config files
+[9.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_mas', 'cmake_prefix_path')
+[10.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/cmake_prefix_path.ps1'
+[10.106s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/cmake_prefix_path.dsv'
+[10.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/cmake_prefix_path.sh'
+[10.110s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib'
+[10.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_mas', 'ld_library_path_lib')
+[10.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/ld_library_path_lib.ps1'
+[10.208s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/ld_library_path_lib.dsv'
+[10.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/hook/ld_library_path_lib.sh'
+[10.212s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/bin'
+[10.213s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/pkgconfig/my_mas.pc'
+[10.214s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib/python3.10/site-packages'
+[10.216s] Level 1:colcon.colcon_core.environment:checking '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/bin'
+[10.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.ps1'
+[10.327s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.dsv'
+[10.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.sh'
+[10.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.bash'
+[10.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/my_mas/package.zsh'
+[10.336s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/share/colcon-core/packages/my_mas)
+[10.338s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub' with build type 'ament_python'
+[10.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'ament_prefix_path')
+[10.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.ps1'
+[10.444s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.dsv'
+[10.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.sh'
+[10.537s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.537s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.267s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.268s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.268s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with 'Command '['/usr/bin/python3', '-c', 'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))']' returned non-zero exit status 1.'
+[12.269s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.385s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.386s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.386s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.443s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.537s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/local_setup.ps1'
+[12.540s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/_local_setup_util_ps1.py'
+[12.545s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/setup.ps1'
+[12.618s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/local_setup.sh'
+[12.620s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/_local_setup_util_sh.py'
+[12.622s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/setup.sh'
+[12.686s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/local_setup.bash'
+[12.688s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/setup.bash'
+[12.745s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/local_setup.zsh'
+[12.747s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/setup.zsh'

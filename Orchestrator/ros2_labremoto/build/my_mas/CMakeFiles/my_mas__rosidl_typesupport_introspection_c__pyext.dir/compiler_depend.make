@@ -254,6 +254,9 @@ CMakeFiles/my_mas__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generato
   rosidl_generator_c/my_mas/msg/detail/file_hex_load__type_support.h \
   rosidl_generator_c/my_mas/msg/detail/file_hex_load__struct.h \
   rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.h \
+  rosidl_generator_c/my_mas/msg/detail/trans_global__type_support.h \
+  rosidl_generator_c/my_mas/msg/detail/trans_global__struct.h \
+  rosidl_generator_c/my_mas/msg/detail/trans_global__functions.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__type_support.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h \
@@ -281,6 +284,12 @@ rosidl_generator_c/my_mas/action/detail/fibonacci__struct.h:
 rosidl_generator_c/my_mas/srv/detail/load_file__functions.h:
 
 rosidl_generator_c/my_mas/srv/detail/load_file__struct.h:
+
+rosidl_generator_c/my_mas/srv/detail/load_file__type_support.h:
+
+rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h:
+
+rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -538,8 +547,6 @@ rosidl_generator_c/my_mas/srv/detail/load_filedb__type_support.h:
 
 /usr/include/python3.10/cpython/pytime.h:
 
-rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/linux/errno.h:
@@ -608,6 +615,8 @@ rosidl_generator_c/my_mas/action/detail/cargahex__functions.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
+rosidl_generator_c/my_mas/msg/detail/trans_global__functions.h:
+
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
 /usr/include/python3.10/fileobject.h:
@@ -628,8 +637,6 @@ rosidl_generator_c/my_mas/action/detail/cargahex__functions.h:
 
 /usr/include/python3.10/pyhash.h:
 
-rosidl_generator_c/my_mas/srv/detail/load_file__type_support.h:
-
 /usr/include/python3.10/object.h:
 
 /usr/include/python3.10/cpython/bytearrayobject.h:
@@ -643,8 +650,6 @@ rosidl_generator_c/my_mas/srv/detail/load_file__type_support.h:
 /usr/include/python3.10/cpython/methodobject.h:
 
 /usr/include/python3.10/pylifecycle.h:
-
-rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -717,6 +722,8 @@ rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_introspection_c.c:
 /usr/include/python3.10/cpython/pylifecycle.h:
 
 rosidl_generator_c/my_mas/msg/rosidl_generator_c__visibility_control.h:
+
+rosidl_generator_c/my_mas/msg/detail/trans_global__struct.h:
 
 /usr/include/python3.10/floatobject.h:
 
@@ -793,6 +800,8 @@ rosidl_generator_c/my_mas/msg/detail/sensor_measurment__type_support.h:
 /usr/include/python3.10/cpython/dictobject.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+
+rosidl_generator_c/my_mas/msg/detail/trans_global__type_support.h:
 
 rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.h:
 
