@@ -30,6 +30,11 @@ setup(
                 'fibonacci_action_server = py_pubsub.fibonacci_action_server:main',
                 'arduino_infrastructure = py_pubsub.arduino_infrastructure:main',
                 'arduino_inf_cliente= py_pubsub.arduino_inf_cliente:main',
+                'supervisor = py_pubsub.supervisor:main',
+                'publicador_prueba = py_pubsub.publicador_prueba:main',
+                'carga_bit= py_pubsub.carga_bit:main',
+                'transform_vhdl_bit = py_pubsub.transform_vhdl_bit: main',
+                'action_cliente_server = py_pubsub.action_cliente_server:main'
         ],
 },
 )
