@@ -1,0 +1,57 @@
+[0.415s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/executors': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_executors build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/install.log --single-version-externally-managed
+[0.570s] running egg_info
+[0.571s] creating ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info
+[0.571s] writing ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/PKG-INFO
+[0.571s] writing dependency_links to ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/dependency_links.txt
+[0.571s] writing entry points to ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/entry_points.txt
+[0.572s] writing requirements to ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/requires.txt
+[0.572s] writing top-level names to ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/top_level.txt
+[0.572s] writing manifest file '../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/SOURCES.txt'
+[0.573s] reading manifest file '../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/SOURCES.txt'
+[0.574s] writing manifest file '../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/SOURCES.txt'
+[0.574s] running build
+[0.574s] running build_py
+[0.574s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build
+[0.575s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib
+[0.575s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors
+[0.575s] copying examples_rclpy_executors/composed.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors
+[0.575s] copying examples_rclpy_executors/talker.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors
+[0.575s] copying examples_rclpy_executors/callback_group.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors
+[0.575s] copying examples_rclpy_executors/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors
+[0.575s] copying examples_rclpy_executors/custom_callback_group.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors
+[0.575s] copying examples_rclpy_executors/custom_executor.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors
+[0.576s] copying examples_rclpy_executors/listener.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors
+[0.576s] running install
+[0.576s] running install_lib
+[0.577s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors
+[0.577s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors/composed.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors
+[0.577s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors/talker.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors
+[0.577s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors/callback_group.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors
+[0.577s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors
+[0.577s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors/custom_callback_group.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors
+[0.577s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors/custom_executor.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors
+[0.578s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build/lib/examples_rclpy_executors/listener.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors
+[0.578s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors/composed.py to composed.cpython-310.pyc
+[0.578s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors/talker.py to talker.cpython-310.pyc
+[0.579s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors/callback_group.py to callback_group.cpython-310.pyc
+[0.579s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors/__init__.py to __init__.cpython-310.pyc
+[0.579s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors/custom_callback_group.py to custom_callback_group.cpython-310.pyc
+[0.580s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors/custom_executor.py to custom_executor.cpython-310.pyc
+[0.580s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors/listener.py to listener.cpython-310.pyc
+[0.581s] running install_data
+[0.581s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/share/ament_index
+[0.581s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/share/ament_index/resource_index
+[0.581s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/share/ament_index/resource_index/packages
+[0.582s] copying resource/examples_rclpy_executors -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/share/ament_index/resource_index/packages
+[0.582s] copying package.xml -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/share/examples_rclpy_executors
+[0.582s] running install_egg_info
+[0.583s] Copying ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors-0.15.1-py3.10.egg-info
+[0.584s] running install_scripts
+[0.597s] Installing callback_group script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[0.597s] Installing composed script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[0.597s] Installing custom_callback_group script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[0.597s] Installing custom_executor script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[0.597s] Installing listener script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[0.597s] Installing talker script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[0.598s] writing list of installed files to '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/install.log'
+[0.618s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/executors' returned '0': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_executors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_executors build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_executors/install.log --single-version-externally-managed
