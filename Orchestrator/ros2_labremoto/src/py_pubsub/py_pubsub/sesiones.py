@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import requests
 
 class Maqueta():
@@ -46,4 +47,17 @@ class Transaccion():
         self.id_user = ""
         self.log_process = ""
 
+=======
+class usuario():
+    def __init__(self, name, token,permiso):
+        self.user_name = name
+        self.token = token
+        self.type_permiso = permiso
+
+class maqueta():
+    def __init__(self, name, token,permiso):
+        self.user_name = name
+        self.token = token
+        self.type_permiso = permiso
+>>>>>>> eda9fc121838586ec005c5848adcc78c7c093deb
 

@@ -1,0 +1,96 @@
+[0.005s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclcpp/topics/minimal_publisher -DCMAKE_INSTALL_PREFIX=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher
+[0.039s] -- The C compiler identification is GNU 11.4.0
+[0.079s] -- The CXX compiler identification is GNU 11.4.0
+[0.084s] -- Detecting C compiler ABI info
+[0.127s] -- Detecting C compiler ABI info - done
+[0.132s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.132s] -- Detecting C compile features
+[0.133s] -- Detecting C compile features - done
+[0.135s] -- Detecting CXX compiler ABI info
+[0.186s] -- Detecting CXX compiler ABI info - done
+[0.191s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.191s] -- Detecting CXX compile features
+[0.192s] -- Detecting CXX compile features - done
+[0.193s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.304s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.359s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.384s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.387s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.392s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.401s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.415s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.462s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.464s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.516s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.531s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.558s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.564s] -- Looking for pthread.h
+[0.613s] -- Looking for pthread.h - found
+[0.614s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.661s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.662s] -- Found Threads: TRUE  
+[0.785s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.837s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.838s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.839s] -- Configured cppcheck include dirs: 
+[0.839s] -- Configured cppcheck exclude dirs and/or files: 
+[0.839s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.839s] -- Configured cpplint exclude dirs and/or files: 
+[0.840s] -- Added test 'lint_cmake' to check CMake code style
+[0.841s] -- Added test 'uncrustify' to check C / C++ code style
+[0.841s] -- Configured uncrustify additional arguments: 
+[0.841s] -- Added test 'xmllint' to check XML markup files
+[0.842s] -- Configuring done
+[0.858s] -- Generating done
+[0.860s] -- Build files have been written to: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher
+[0.868s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclcpp/topics/minimal_publisher -DCMAKE_INSTALL_PREFIX=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher
+[0.868s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --build /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher -- -j1 -l1
+[0.897s] [  8%] [32mBuilding CXX object CMakeFiles/publisher_lambda.dir/lambda.cpp.o[0m
+[3.694s] [ 16%] [32m[1mLinking CXX executable publisher_lambda[0m
+[3.821s] [ 16%] Built target publisher_lambda
+[3.835s] [ 25%] [32mBuilding CXX object CMakeFiles/publisher_member_function.dir/member_function.cpp.o[0m
+[6.608s] [ 33%] [32m[1mLinking CXX executable publisher_member_function[0m
+[6.736s] [ 33%] Built target publisher_member_function
+[6.748s] [ 41%] [32mBuilding CXX object CMakeFiles/publisher_member_function_with_type_adapter.dir/member_function_with_type_adapter.cpp.o[0m
+[9.583s] [ 50%] [32m[1mLinking CXX executable publisher_member_function_with_type_adapter[0m
+[9.711s] [ 50%] Built target publisher_member_function_with_type_adapter
+[9.723s] [ 58%] [32mBuilding CXX object CMakeFiles/publisher_member_function_with_unique_network_flow_endpoints.dir/member_function_with_unique_network_flow_endpoints.cpp.o[0m
+[12.586s] [ 66%] [32m[1mLinking CXX executable publisher_member_function_with_unique_network_flow_endpoints[0m
+[12.717s] [ 66%] Built target publisher_member_function_with_unique_network_flow_endpoints
+[12.732s] [ 75%] [32mBuilding CXX object CMakeFiles/publisher_wait_for_all_acked.dir/member_function_with_wait_for_all_acked.cpp.o[0m
+[15.548s] [ 83%] [32m[1mLinking CXX executable publisher_wait_for_all_acked[0m
+[15.683s] [ 83%] Built target publisher_wait_for_all_acked
+[15.696s] [ 91%] [32mBuilding CXX object CMakeFiles/publisher_not_composable.dir/not_composable.cpp.o[0m
+[18.465s] [100%] [32m[1mLinking CXX executable publisher_not_composable[0m
+[18.589s] [100%] Built target publisher_not_composable
+[18.599s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --build /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher -- -j1 -l1
+[18.619s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --install /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher
+[18.624s] -- Install configuration: ""
+[18.624s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_lambda
+[18.626s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_lambda" to ""
+[18.626s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function
+[18.627s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function" to ""
+[18.627s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function_with_type_adapter
+[18.628s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function_with_type_adapter" to ""
+[18.628s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function_with_unique_network_flow_endpoints
+[18.630s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function_with_unique_network_flow_endpoints" to ""
+[18.630s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_wait_for_all_acked
+[18.631s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_wait_for_all_acked" to ""
+[18.631s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_not_composable
+[18.632s] -- Set runtime path of "/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_not_composable" to ""
+[18.632s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_publisher
+[18.633s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_publisher
+[18.633s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/ament_prefix_path.sh
+[18.633s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/ament_prefix_path.dsv
+[18.633s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/path.sh
+[18.633s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/path.dsv
+[18.633s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.bash
+[18.634s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.sh
+[18.634s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.zsh
+[18.634s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.dsv
+[18.634s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/package.dsv
+[18.634s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/packages/examples_rclcpp_minimal_publisher
+[18.634s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/cmake/examples_rclcpp_minimal_publisherConfig.cmake
+[18.635s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/cmake/examples_rclcpp_minimal_publisherConfig-version.cmake
+[18.635s] -- Installing: /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/package.xml
+[18.637s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble LANG=en_US.UTF-8 /usr/bin/cmake --install /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclcpp_minimal_publisher

@@ -1,0 +1,37 @@
+[0.427s] Invoking command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/guard_conditions': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_guard_conditions build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/install.log --single-version-externally-managed
+[0.592s] running egg_info
+[0.593s] creating ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info
+[0.593s] writing ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/PKG-INFO
+[0.593s] writing dependency_links to ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/dependency_links.txt
+[0.593s] writing entry points to ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/entry_points.txt
+[0.594s] writing requirements to ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/requires.txt
+[0.594s] writing top-level names to ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/top_level.txt
+[0.594s] writing manifest file '../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/SOURCES.txt'
+[0.596s] reading manifest file '../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/SOURCES.txt'
+[0.596s] writing manifest file '../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/SOURCES.txt'
+[0.596s] running build
+[0.596s] running build_py
+[0.597s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build
+[0.597s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build/lib
+[0.597s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build/lib/examples_rclpy_guard_conditions
+[0.597s] copying examples_rclpy_guard_conditions/trigger_guard_condition.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build/lib/examples_rclpy_guard_conditions
+[0.597s] copying examples_rclpy_guard_conditions/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build/lib/examples_rclpy_guard_conditions
+[0.598s] running install
+[0.598s] running install_lib
+[0.599s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages/examples_rclpy_guard_conditions
+[0.599s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build/lib/examples_rclpy_guard_conditions/trigger_guard_condition.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages/examples_rclpy_guard_conditions
+[0.599s] copying /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build/lib/examples_rclpy_guard_conditions/__init__.py -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages/examples_rclpy_guard_conditions
+[0.599s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages/examples_rclpy_guard_conditions/trigger_guard_condition.py to trigger_guard_condition.cpython-310.pyc
+[0.600s] byte-compiling /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages/examples_rclpy_guard_conditions/__init__.py to __init__.cpython-310.pyc
+[0.600s] running install_data
+[0.601s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/share/ament_index
+[0.601s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/share/ament_index/resource_index
+[0.601s] creating /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/share/ament_index/resource_index/packages
+[0.601s] copying resource/examples_rclpy_guard_conditions -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/share/ament_index/resource_index/packages
+[0.601s] copying package.xml -> /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/share/examples_rclpy_guard_conditions
+[0.601s] running install_egg_info
+[0.603s] Copying ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages/examples_rclpy_guard_conditions-0.15.1-py3.10.egg-info
+[0.604s] running install_scripts
+[0.619s] Installing trigger_guard_condition script to /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/examples_rclpy_guard_conditions
+[0.620s] writing list of installed files to '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/install.log'
+[0.640s] Invoked command in '/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/src/examples/rclpy/guard_conditions' returned '0': LANG=en_US.UTF-8 PYTHONPATH=/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/prefix_override:/home/trabajo/LabRemo/Orchestrator/ros2_labremoto/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_guard_conditions build --build-base /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/build install --record /home/trabajo/LabRemo/Orchestrator/ros2_labremoto/build/examples_rclpy_guard_conditions/install.log --single-version-externally-managed
