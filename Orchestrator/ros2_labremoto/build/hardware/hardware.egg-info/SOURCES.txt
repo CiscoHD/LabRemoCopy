@@ -4,7 +4,6 @@ setup.py
 ../../build/hardware/hardware.egg-info/PKG-INFO
 ../../build/hardware/hardware.egg-info/SOURCES.txt
 ../../build/hardware/hardware.egg-info/dependency_links.txt
-../../build/hardware/hardware.egg-info/entry_points.txt
 ../../build/hardware/hardware.egg-info/requires.txt
 ../../build/hardware/hardware.egg-info/top_level.txt
 ../../build/hardware/hardware.egg-info/zip-safe

@@ -257,6 +257,12 @@ CMakeFiles/my_mas__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_mas/_m
   rosidl_generator_c/my_mas/msg/detail/trans_global__type_support.h \
   rosidl_generator_c/my_mas/msg/detail/trans_global__struct.h \
   rosidl_generator_c/my_mas/msg/detail/trans_global__functions.h \
+  rosidl_generator_c/my_mas/msg/detail/bit_load__type_support.h \
+  rosidl_generator_c/my_mas/msg/detail/bit_load__struct.h \
+  rosidl_generator_c/my_mas/msg/detail/bit_load__functions.h \
+  rosidl_generator_c/my_mas/msg/detail/create_bit_stream__type_support.h \
+  rosidl_generator_c/my_mas/msg/detail/create_bit_stream__struct.h \
+  rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__type_support.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h \
@@ -270,8 +276,24 @@ CMakeFiles/my_mas__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_mas/_m
   rosidl_generator_c/my_mas/action/detail/fibonacci__functions.h \
   rosidl_generator_c/my_mas/action/detail/cargahex__type_support.h \
   rosidl_generator_c/my_mas/action/detail/cargahex__struct.h \
-  rosidl_generator_c/my_mas/action/detail/cargahex__functions.h
+  rosidl_generator_c/my_mas/action/detail/cargahex__functions.h \
+  rosidl_generator_c/my_mas/action/detail/carga_bit__type_support.h \
+  rosidl_generator_c/my_mas/action/detail/carga_bit__struct.h \
+  rosidl_generator_c/my_mas/action/detail/carga_bit__functions.h \
+  rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__type_support.h \
+  rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__struct.h \
+  rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.h
 
+
+rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.h:
+
+rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__type_support.h:
+
+rosidl_generator_c/my_mas/action/detail/carga_bit__functions.h:
+
+rosidl_generator_c/my_mas/action/detail/carga_bit__struct.h:
+
+rosidl_generator_c/my_mas/action/detail/carga_bit__type_support.h:
 
 rosidl_generator_c/my_mas/action/detail/cargahex__type_support.h:
 
@@ -290,6 +312,14 @@ rosidl_generator_c/my_mas/srv/detail/load_file__type_support.h:
 rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h:
 
 rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h:
+
+rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.h:
+
+rosidl_generator_c/my_mas/msg/detail/create_bit_stream__type_support.h:
+
+rosidl_generator_c/my_mas/msg/detail/bit_load__functions.h:
+
+rosidl_generator_c/my_mas/msg/detail/bit_load__struct.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -324,6 +354,8 @@ rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h:
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -546,6 +578,8 @@ rosidl_generator_c/my_mas/srv/detail/load_filedb__type_support.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/features-time64.h:
+
+rosidl_generator_c/my_mas/msg/detail/create_bit_stream__struct.h:
 
 /usr/include/python3.10/cpython/pytime.h:
 
@@ -812,3 +846,5 @@ rosidl_generator_c/my_mas/msg/detail/file_hex_load__type_support.h:
 rosidl_generator_c/my_mas/msg/detail/file_hex_load__struct.h:
 
 rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.h:
+
+rosidl_generator_c/my_mas/msg/detail/bit_load__type_support.h:

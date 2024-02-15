@@ -5,10 +5,14 @@ my_mas.egg-info/SOURCES.txt
 my_mas.egg-info/dependency_links.txt
 my_mas.egg-info/top_level.txt
 my_mas/action/__init__.py
+my_mas/action/_carga_bit.py
 my_mas/action/_cargahex.py
 my_mas/action/_fibonacci.py
+my_mas/action/_tranformvhdlbit.py
 my_mas/msg/__init__.py
 my_mas/msg/_auditor_msg.py
+my_mas/msg/_bit_load.py
+my_mas/msg/_create_bit_stream.py
 my_mas/msg/_file_hex_load.py
 my_mas/msg/_sensor_measurment.py
 my_mas/msg/_trans_global.py

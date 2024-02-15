@@ -135,6 +135,8 @@ size_t max_serialized_size_my_mas__action__Cargahex_Goal(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -154,7 +156,20 @@ size_t max_serialized_size_my_mas__action__Cargahex_Goal(
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = my_mas__action__Cargahex_Goal;
+    is_plain =
+      (
+      offsetof(DataType, path_hex) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _Cargahex_Goal__max_serialized_size(char & bounds_info)
@@ -340,6 +355,8 @@ size_t max_serialized_size_my_mas__action__Cargahex_Result(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -359,7 +376,20 @@ size_t max_serialized_size_my_mas__action__Cargahex_Result(
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = my_mas__action__Cargahex_Result;
+    is_plain =
+      (
+      offsetof(DataType, status_final) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _Cargahex_Result__max_serialized_size(char & bounds_info)
@@ -545,6 +575,8 @@ size_t max_serialized_size_my_mas__action__Cargahex_Feedback(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -564,7 +596,20 @@ size_t max_serialized_size_my_mas__action__Cargahex_Feedback(
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = my_mas__action__Cargahex_Feedback;
+    is_plain =
+      (
+      offsetof(DataType, status) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _Cargahex_Feedback__max_serialized_size(char & bounds_info)
@@ -804,6 +849,8 @@ size_t max_serialized_size_my_mas__action__Cargahex_SendGoal_Request(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -815,12 +862,16 @@ size_t max_serialized_size_my_mas__action__Cargahex_SendGoal_Request(
     size_t array_size = 1;
 
 
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
       bool inner_is_plain;
-      current_alignment +=
+      size_t inner_size;
+      inner_size =
         max_serialized_size_unique_identifier_msgs__msg__UUID(
         inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
     }
@@ -830,18 +881,35 @@ size_t max_serialized_size_my_mas__action__Cargahex_SendGoal_Request(
     size_t array_size = 1;
 
 
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
       bool inner_is_plain;
-      current_alignment +=
+      size_t inner_size;
+      inner_size =
         max_serialized_size_my_mas__action__Cargahex_Goal(
         inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = my_mas__action__Cargahex_SendGoal_Request;
+    is_plain =
+      (
+      offsetof(DataType, goal) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _Cargahex_SendGoal_Request__max_serialized_size(char & bounds_info)
@@ -1054,6 +1122,8 @@ size_t max_serialized_size_my_mas__action__Cargahex_SendGoal_Response(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -1064,6 +1134,7 @@ size_t max_serialized_size_my_mas__action__Cargahex_SendGoal_Response(
   {
     size_t array_size = 1;
 
+    last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
   // member: stamp
@@ -1071,18 +1142,35 @@ size_t max_serialized_size_my_mas__action__Cargahex_SendGoal_Response(
     size_t array_size = 1;
 
 
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
       bool inner_is_plain;
-      current_alignment +=
+      size_t inner_size;
+      inner_size =
         max_serialized_size_builtin_interfaces__msg__Time(
         inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = my_mas__action__Cargahex_SendGoal_Response;
+    is_plain =
+      (
+      offsetof(DataType, stamp) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _Cargahex_SendGoal_Response__max_serialized_size(char & bounds_info)
@@ -1313,6 +1401,8 @@ size_t max_serialized_size_my_mas__action__Cargahex_GetResult_Request(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -1324,18 +1414,35 @@ size_t max_serialized_size_my_mas__action__Cargahex_GetResult_Request(
     size_t array_size = 1;
 
 
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
       bool inner_is_plain;
-      current_alignment +=
+      size_t inner_size;
+      inner_size =
         max_serialized_size_unique_identifier_msgs__msg__UUID(
         inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = my_mas__action__Cargahex_GetResult_Request;
+    is_plain =
+      (
+      offsetof(DataType, goal_id) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _Cargahex_GetResult_Request__max_serialized_size(char & bounds_info)
@@ -1544,6 +1651,8 @@ size_t max_serialized_size_my_mas__action__Cargahex_GetResult_Response(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -1554,6 +1663,7 @@ size_t max_serialized_size_my_mas__action__Cargahex_GetResult_Response(
   {
     size_t array_size = 1;
 
+    last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
   // member: result
@@ -1561,18 +1671,35 @@ size_t max_serialized_size_my_mas__action__Cargahex_GetResult_Response(
     size_t array_size = 1;
 
 
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
       bool inner_is_plain;
-      current_alignment +=
+      size_t inner_size;
+      inner_size =
         max_serialized_size_my_mas__action__Cargahex_Result(
         inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = my_mas__action__Cargahex_GetResult_Response;
+    is_plain =
+      (
+      offsetof(DataType, result) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _Cargahex_GetResult_Response__max_serialized_size(char & bounds_info)
@@ -1851,6 +1978,8 @@ size_t max_serialized_size_my_mas__action__Cargahex_FeedbackMessage(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -1862,12 +1991,16 @@ size_t max_serialized_size_my_mas__action__Cargahex_FeedbackMessage(
     size_t array_size = 1;
 
 
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
       bool inner_is_plain;
-      current_alignment +=
+      size_t inner_size;
+      inner_size =
         max_serialized_size_unique_identifier_msgs__msg__UUID(
         inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
     }
@@ -1877,18 +2010,35 @@ size_t max_serialized_size_my_mas__action__Cargahex_FeedbackMessage(
     size_t array_size = 1;
 
 
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
       bool inner_is_plain;
-      current_alignment +=
+      size_t inner_size;
+      inner_size =
         max_serialized_size_my_mas__action__Cargahex_Feedback(
         inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = my_mas__action__Cargahex_FeedbackMessage;
+    is_plain =
+      (
+      offsetof(DataType, feedback) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _Cargahex_FeedbackMessage__max_serialized_size(char & bounds_info)

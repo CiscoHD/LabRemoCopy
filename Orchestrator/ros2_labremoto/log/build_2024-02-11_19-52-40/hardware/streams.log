@@ -1,0 +1,38 @@
+[7.952s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hardware build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log --single-version-externally-managed
+[9.603s] running egg_info
+[9.708s] writing ../../build/hardware/hardware.egg-info/PKG-INFO
+[9.710s] writing dependency_links to ../../build/hardware/hardware.egg-info/dependency_links.txt
+[9.711s] deleting ../../build/hardware/hardware.egg-info/entry_points.txt
+[9.711s] writing requirements to ../../build/hardware/hardware.egg-info/requires.txt
+[9.712s] writing top-level names to ../../build/hardware/hardware.egg-info/top_level.txt
+[9.904s] reading manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'
+[9.909s] writing manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'
+[9.909s] running build
+[9.910s] running build_py
+[9.910s] copying hardware/__init__.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build/lib/hardware
+[9.916s] running install
+[9.918s] /home/ffelix07/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[9.919s] !!
+[9.919s] 
+[9.920s]         ********************************************************************************
+[9.920s]         Please avoid running ``setup.py`` directly.
+[9.921s]         Instead, use pypa/build, pypa/installer or other
+[9.921s]         standards-based tools.
+[9.933s] 
+[9.934s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[9.934s]         ********************************************************************************
+[9.934s] 
+[9.935s] !!
+[9.935s]   self.initialize_options()
+[9.950s] running install_lib
+[10.049s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build/lib/hardware/__init__.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware
+[10.054s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware/__init__.py to __init__.cpython-310.pyc
+[10.055s] running install_data
+[10.151s] copying resource/hardware -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/share/ament_index/resource_index/packages
+[10.152s] copying package.xml -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/share/hardware
+[10.154s] running install_egg_info
+[10.279s] removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info' (and everything under it)
+[10.280s] Copying ../../build/hardware/hardware.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info
+[10.284s] running install_scripts
+[11.108s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log'
+[11.230s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/hardware' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hardware build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/hardware/install.log --single-version-externally-managed

@@ -3,6 +3,14 @@
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
 : ${AMENT_CURRENT_PREFIX:="/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas"}
+if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
+  if [ -z "$COLCON_CURRENT_PREFIX" ]; then
+    echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \
+      "exist. Consider sourcing a different extension than '.sh'." 1>&2
+  else
+    AMENT_CURRENT_PREFIX="$COLCON_CURRENT_PREFIX"
+  fi
+fi
 
 # function to append values to environment variables
 # using colons as separators and avoiding leading separators
@@ -28,6 +36,57 @@ ament_append_value() {
     IFS=$_ament_append_value_IFS
     unset _ament_append_value_IFS
   fi
+  unset _values
+
+  unset _value
+  unset _listname
+}
+
+# function to append non-duplicate values to environment variables
+# using colons as separators and avoiding leading separators
+ament_append_unique_value() {
+  # arguments
+  _listname=$1
+  _value=$2
+  #echo "listname $_listname"
+  #eval echo "list value \$$_listname"
+  #echo "value $_value"
+
+  # check if the list contains the value
+  eval _values=\$$_listname
+  _duplicate=
+  _ament_append_unique_value_IFS=$IFS
+  IFS=":"
+  if [ "$AMENT_SHELL" = "zsh" ]; then
+    ament_zsh_to_array _values
+  fi
+  for _item in $_values; do
+    # ignore empty strings
+    if [ -z "$_item" ]; then
+      continue
+    fi
+    if [ $_item = $_value ]; then
+      _duplicate=1
+    fi
+  done
+  unset _item
+
+  # append only non-duplicates
+  if [ -z "$_duplicate" ]; then
+    # avoid leading separator
+    if [ -z "$_values" ]; then
+      eval $_listname=\"$_value\"
+      #eval echo "set list \$$_listname"
+    else
+      # field separator must not be a colon
+      unset IFS
+      eval $_listname=\"\$$_listname:$_value\"
+      #eval echo "append list \$$_listname"
+    fi
+  fi
+  IFS=$_ament_append_unique_value_IFS
+  unset _ament_append_unique_value_IFS
+  unset _duplicate
   unset _values
 
   unset _value
@@ -111,7 +170,7 @@ if [ -z "$AMENT_RETURN_ENVIRONMENT_HOOKS" ]; then
       IFS=$_package_local_setup_IFS
       # trace output
       if [ -n "$AMENT_TRACE_SETUP_FILES" ]; then
-        echo ". \"$_hook\""
+        echo "# . \"$_hook\""
       fi
       . "$_hook"
     fi
