@@ -1,0 +1,4 @@
+source;share/my_mas/local_setup.bash
+source;share/my_mas/local_setup.dsv
+source;share/my_mas/local_setup.sh
+source;share/my_mas/local_setup.zsh
