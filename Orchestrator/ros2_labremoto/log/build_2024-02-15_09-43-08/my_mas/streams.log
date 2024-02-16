@@ -1,0 +1,52 @@
+[0.944s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas -- -j4 -l4
+[1.012s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.185s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.204s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.297s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.383s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.507s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[3.508s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name my_mas
+[3.508s]   --arguments-file
+[3.508s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter__arguments__my_mas.json
+[3.509s]   --output-dir
+[3.509s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas
+[3.509s]   --output-file
+[3.509s]   /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_adapter/my_mas.idls)
+[3.510s]   returned error code 1:
+[3.510s] 
+[3.510s]   Error processing 'int64 IdNode' of 'my_mas/Auditor': ''IdNode' is an
+[3.510s]   invalid field name.  It should have the pattern
+[3.511s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[3.511s] 
+[3.512s]   Traceback (most recent call last):
+[3.517s] 
+[3.518s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[3.518s]       return _run_code(code, main_globals, None,
+[3.518s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[3.519s]       exec(code, run_globals)
+[3.519s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[3.519s]       sys.exit(main())
+[3.520s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[3.520s]       abs_idl_file = convert_to_idl(
+[3.521s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[3.521s]       return convert_msg_to_idl(
+[3.522s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[3.522s]       msg = parse_message_string(package_name, input_file.stem, content)
+[3.523s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string
+[3.523s]       fields.append(Field(
+[3.524s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__
+[3.524s]       raise NameError(
+[3.524s] 
+[3.527s]   NameError: 'IdNode' is an invalid field name.  It should have the pattern
+[3.528s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[3.528s] 
+[3.528s] Call Stack (most recent call first):
+[3.529s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[3.529s]   CMakeLists.txt:35 (rosidl_generate_interfaces)
+[3.530s] 
+[3.530s] [0m
+[3.530s] -- Configuring incomplete, errors occurred!
+[3.530s] See also "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles/CMakeOutput.log".
+[3.534s] gmake: *** [Makefile:3123: cmake_check_build_system] Error 1
+[3.539s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas -- -j4 -l4

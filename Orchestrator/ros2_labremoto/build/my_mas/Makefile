@@ -501,29 +501,29 @@ rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.s
 .PHONY : rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.s
 
-rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.o: rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.o
-.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.o
+rosidl_generator_c/my_mas/msg/detail/auditor__functions.o: rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.o
+.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor__functions.o
 
 # target to build an object file
-rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.o
-.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.o
+rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.o
+.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.o
 
-rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.i: rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.i
-.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.i
+rosidl_generator_c/my_mas/msg/detail/auditor__functions.i: rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.i
+.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor__functions.i
 
 # target to preprocess a source file
-rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.i
-.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.i
+rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.i
+.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.i
 
-rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.s: rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.s
-.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.s
+rosidl_generator_c/my_mas/msg/detail/auditor__functions.s: rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.s
+.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor__functions.s
 
 # target to generate assembly for a file
-rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.s
-.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.c.s
+rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.s
+.PHONY : rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.s
 
 rosidl_generator_c/my_mas/msg/detail/bit_load__functions.o: rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o
 .PHONY : rosidl_generator_c/my_mas/msg/detail/bit_load__functions.o
@@ -548,6 +548,30 @@ rosidl_generator_c/my_mas/msg/detail/bit_load__functions.s: rosidl_generator_c/m
 rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.s
 .PHONY : rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.s
+
+rosidl_generator_c/my_mas/msg/detail/contrato__functions.o: rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.o
+.PHONY : rosidl_generator_c/my_mas/msg/detail/contrato__functions.o
+
+# target to build an object file
+rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.o
+.PHONY : rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.o
+
+rosidl_generator_c/my_mas/msg/detail/contrato__functions.i: rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.i
+.PHONY : rosidl_generator_c/my_mas/msg/detail/contrato__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.i
+.PHONY : rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.i
+
+rosidl_generator_c/my_mas/msg/detail/contrato__functions.s: rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.s
+.PHONY : rosidl_generator_c/my_mas/msg/detail/contrato__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.s
+.PHONY : rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.s
 
 rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.o: rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o
 .PHONY : rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.o
@@ -596,6 +620,30 @@ rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.s: rosidl_generato
 rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.s
 .PHONY : rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.s
+
+rosidl_generator_c/my_mas/msg/detail/operacion__functions.o: rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.o
+.PHONY : rosidl_generator_c/my_mas/msg/detail/operacion__functions.o
+
+# target to build an object file
+rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.o
+.PHONY : rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.o
+
+rosidl_generator_c/my_mas/msg/detail/operacion__functions.i: rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.i
+.PHONY : rosidl_generator_c/my_mas/msg/detail/operacion__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.i
+.PHONY : rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.i
+
+rosidl_generator_c/my_mas/msg/detail/operacion__functions.s: rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.s
+.PHONY : rosidl_generator_c/my_mas/msg/detail/operacion__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_c.dir/build.make CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.s
+.PHONY : rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.s
 
 rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.o: rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c.o
 .PHONY : rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.o
@@ -861,29 +909,29 @@ rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.s
 .PHONY : rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.s
 
-rosidl_generator_py/my_mas/msg/_auditor_msg_s.o: rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.o
-.PHONY : rosidl_generator_py/my_mas/msg/_auditor_msg_s.o
+rosidl_generator_py/my_mas/msg/_auditor_s.o: rosidl_generator_py/my_mas/msg/_auditor_s.c.o
+.PHONY : rosidl_generator_py/my_mas/msg/_auditor_s.o
 
 # target to build an object file
-rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.o
-.PHONY : rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.o
+rosidl_generator_py/my_mas/msg/_auditor_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o
+.PHONY : rosidl_generator_py/my_mas/msg/_auditor_s.c.o
 
-rosidl_generator_py/my_mas/msg/_auditor_msg_s.i: rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.i
-.PHONY : rosidl_generator_py/my_mas/msg/_auditor_msg_s.i
+rosidl_generator_py/my_mas/msg/_auditor_s.i: rosidl_generator_py/my_mas/msg/_auditor_s.c.i
+.PHONY : rosidl_generator_py/my_mas/msg/_auditor_s.i
 
 # target to preprocess a source file
-rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.i
-.PHONY : rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.i
+rosidl_generator_py/my_mas/msg/_auditor_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.i
+.PHONY : rosidl_generator_py/my_mas/msg/_auditor_s.c.i
 
-rosidl_generator_py/my_mas/msg/_auditor_msg_s.s: rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.s
-.PHONY : rosidl_generator_py/my_mas/msg/_auditor_msg_s.s
+rosidl_generator_py/my_mas/msg/_auditor_s.s: rosidl_generator_py/my_mas/msg/_auditor_s.c.s
+.PHONY : rosidl_generator_py/my_mas/msg/_auditor_s.s
 
 # target to generate assembly for a file
-rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.s
-.PHONY : rosidl_generator_py/my_mas/msg/_auditor_msg_s.c.s
+rosidl_generator_py/my_mas/msg/_auditor_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.s
+.PHONY : rosidl_generator_py/my_mas/msg/_auditor_s.c.s
 
 rosidl_generator_py/my_mas/msg/_bit_load_s.o: rosidl_generator_py/my_mas/msg/_bit_load_s.c.o
 .PHONY : rosidl_generator_py/my_mas/msg/_bit_load_s.o
@@ -908,6 +956,30 @@ rosidl_generator_py/my_mas/msg/_bit_load_s.s: rosidl_generator_py/my_mas/msg/_bi
 rosidl_generator_py/my_mas/msg/_bit_load_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.s
 .PHONY : rosidl_generator_py/my_mas/msg/_bit_load_s.c.s
+
+rosidl_generator_py/my_mas/msg/_contrato_s.o: rosidl_generator_py/my_mas/msg/_contrato_s.c.o
+.PHONY : rosidl_generator_py/my_mas/msg/_contrato_s.o
+
+# target to build an object file
+rosidl_generator_py/my_mas/msg/_contrato_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o
+.PHONY : rosidl_generator_py/my_mas/msg/_contrato_s.c.o
+
+rosidl_generator_py/my_mas/msg/_contrato_s.i: rosidl_generator_py/my_mas/msg/_contrato_s.c.i
+.PHONY : rosidl_generator_py/my_mas/msg/_contrato_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/my_mas/msg/_contrato_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.i
+.PHONY : rosidl_generator_py/my_mas/msg/_contrato_s.c.i
+
+rosidl_generator_py/my_mas/msg/_contrato_s.s: rosidl_generator_py/my_mas/msg/_contrato_s.c.s
+.PHONY : rosidl_generator_py/my_mas/msg/_contrato_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/my_mas/msg/_contrato_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.s
+.PHONY : rosidl_generator_py/my_mas/msg/_contrato_s.c.s
 
 rosidl_generator_py/my_mas/msg/_create_bit_stream_s.o: rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o
 .PHONY : rosidl_generator_py/my_mas/msg/_create_bit_stream_s.o
@@ -956,6 +1028,30 @@ rosidl_generator_py/my_mas/msg/_file_hex_load_s.s: rosidl_generator_py/my_mas/ms
 rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.s
 .PHONY : rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.s
+
+rosidl_generator_py/my_mas/msg/_operacion_s.o: rosidl_generator_py/my_mas/msg/_operacion_s.c.o
+.PHONY : rosidl_generator_py/my_mas/msg/_operacion_s.o
+
+# target to build an object file
+rosidl_generator_py/my_mas/msg/_operacion_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o
+.PHONY : rosidl_generator_py/my_mas/msg/_operacion_s.c.o
+
+rosidl_generator_py/my_mas/msg/_operacion_s.i: rosidl_generator_py/my_mas/msg/_operacion_s.c.i
+.PHONY : rosidl_generator_py/my_mas/msg/_operacion_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/my_mas/msg/_operacion_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.i
+.PHONY : rosidl_generator_py/my_mas/msg/_operacion_s.c.i
+
+rosidl_generator_py/my_mas/msg/_operacion_s.s: rosidl_generator_py/my_mas/msg/_operacion_s.c.s
+.PHONY : rosidl_generator_py/my_mas/msg/_operacion_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/my_mas/msg/_operacion_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_generator_py.dir/build.make CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.s
+.PHONY : rosidl_generator_py/my_mas/msg/_operacion_s.c.s
 
 rosidl_generator_py/my_mas/msg/_sensor_measurment_s.o: rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o
 .PHONY : rosidl_generator_py/my_mas/msg/_sensor_measurment_s.o
@@ -1149,29 +1245,29 @@ rosidl_typesupport_c/my_mas/action/tranformvhdlbit__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/tranformvhdlbit__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/my_mas/action/tranformvhdlbit__type_support.cpp.s
 
-rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.o: rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.o
+rosidl_typesupport_c/my_mas/msg/auditor__type_support.o: rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/my_mas/msg/auditor__type_support.o
 
 # target to build an object file
-rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.o
+rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.o
 
-rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.i: rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.i
+rosidl_typesupport_c/my_mas/msg/auditor__type_support.i: rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/my_mas/msg/auditor__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.i
+rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.i
 
-rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.s: rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.s
+rosidl_typesupport_c/my_mas/msg/auditor__type_support.s: rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/my_mas/msg/auditor__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.cpp.s
+rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.s
 
 rosidl_typesupport_c/my_mas/msg/bit_load__type_support.o: rosidl_typesupport_c/my_mas/msg/bit_load__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/my_mas/msg/bit_load__type_support.o
@@ -1196,6 +1292,30 @@ rosidl_typesupport_c/my_mas/msg/bit_load__type_support.s: rosidl_typesupport_c/m
 rosidl_typesupport_c/my_mas/msg/bit_load__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/bit_load__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/my_mas/msg/bit_load__type_support.cpp.s
+
+rosidl_typesupport_c/my_mas/msg/contrato__type_support.o: rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/my_mas/msg/contrato__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.o
+
+rosidl_typesupport_c/my_mas/msg/contrato__type_support.i: rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/my_mas/msg/contrato__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.i
+
+rosidl_typesupport_c/my_mas/msg/contrato__type_support.s: rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/my_mas/msg/contrato__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.s
 
 rosidl_typesupport_c/my_mas/msg/create_bit_stream__type_support.o: rosidl_typesupport_c/my_mas/msg/create_bit_stream__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/my_mas/msg/create_bit_stream__type_support.o
@@ -1244,6 +1364,30 @@ rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.s: rosidl_typesuppor
 rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.cpp.s
+
+rosidl_typesupport_c/my_mas/msg/operacion__type_support.o: rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/my_mas/msg/operacion__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.o
+
+rosidl_typesupport_c/my_mas/msg/operacion__type_support.i: rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/my_mas/msg/operacion__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.i
+
+rosidl_typesupport_c/my_mas/msg/operacion__type_support.s: rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/my_mas/msg/operacion__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.s
 
 rosidl_typesupport_c/my_mas/msg/sensor_measurment__type_support.o: rosidl_typesupport_c/my_mas/msg/sensor_measurment__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/my_mas/msg/sensor_measurment__type_support.o
@@ -1437,29 +1581,29 @@ rosidl_typesupport_cpp/my_mas/action/tranformvhdlbit__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/tranformvhdlbit__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/my_mas/action/tranformvhdlbit__type_support.cpp.s
 
-rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.o: rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.o
+rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.o: rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.o
 
 # target to build an object file
-rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.o
+rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.o
 
-rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.i: rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.i
+rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.i: rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.i
+rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.i
 
-rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.s: rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.s
+rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.s: rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.cpp.s
+rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.s
 
 rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.o: rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.o
@@ -1484,6 +1628,30 @@ rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.s: rosidl_typesupport_c
 rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.cpp.s
+
+rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.o: rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.o
+
+rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.i: rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.i
+
+rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.s: rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.s
 
 rosidl_typesupport_cpp/my_mas/msg/create_bit_stream__type_support.o: rosidl_typesupport_cpp/my_mas/msg/create_bit_stream__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/my_mas/msg/create_bit_stream__type_support.o
@@ -1532,6 +1700,30 @@ rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.s: rosidl_typesupp
 rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.cpp.s
+
+rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.o: rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.o
+
+rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.i: rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.i
+
+rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.s: rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.s
 
 rosidl_typesupport_cpp/my_mas/msg/sensor_measurment__type_support.o: rosidl_typesupport_cpp/my_mas/msg/sensor_measurment__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/my_mas/msg/sensor_measurment__type_support.o
@@ -1725,29 +1917,29 @@ rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.o
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.o
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.o
 
-rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.i: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.i
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.i: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.i
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.i
 
-rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.s: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.s
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.s: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.cpp.s
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.o
@@ -1772,6 +1964,30 @@ rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.s: rosi
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.i: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.s: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.o
@@ -1820,6 +2036,30 @@ rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.s:
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.i: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.s: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.o
@@ -2013,29 +2253,29 @@ rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/tranformvhdlbi
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/tranformvhdlbit__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/tranformvhdlbit__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.o: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.o
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.o: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.o
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.o
 
-rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.i: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.i
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.i: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.i
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.i
 
-rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.s: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.s
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.s: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.cpp.s
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.o: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.o
@@ -2060,6 +2300,30 @@ rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_su
 rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.o: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.i: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.s: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/create_bit_stream__type_support.o: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/create_bit_stream__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/create_bit_stream__type_support.o
@@ -2108,6 +2372,30 @@ rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__ty
 rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.o: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.i: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.s: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/sensor_measurment__type_support.o: rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/sensor_measurment__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/sensor_measurment__type_support.o
@@ -2301,29 +2589,29 @@ rosidl_typesupport_introspection_c/my_mas/action/detail/tranformvhdlbit__type_su
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/tranformvhdlbit__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/my_mas/action/detail/tranformvhdlbit__type_support.c.s
 
-rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.o: rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.o
+rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.o: rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.o
+rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.o
 
-rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.i: rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.i
+rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.i: rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.i
+rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.i
 
-rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.s: rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.s
+rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.s: rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.c.s
+rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.s
 
 rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.o: rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.o
@@ -2348,6 +2636,30 @@ rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.s: r
 rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.c.s
+
+rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.o: rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.o
+
+rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.i: rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.i
+
+rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.s: rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.s
 
 rosidl_typesupport_introspection_c/my_mas/msg/detail/create_bit_stream__type_support.o: rosidl_typesupport_introspection_c/my_mas/msg/detail/create_bit_stream__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/create_bit_stream__type_support.o
@@ -2396,6 +2708,30 @@ rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support
 rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support.c.s
+
+rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.o: rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.o
+
+rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.i: rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.i
+
+rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.s: rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.s
 
 rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.o: rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.o
@@ -2589,29 +2925,29 @@ rosidl_typesupport_introspection_cpp/my_mas/action/detail/tranformvhdlbit__type_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/tranformvhdlbit__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/my_mas/action/detail/tranformvhdlbit__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.o: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.o
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.o: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.o
 
-rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.i: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.i
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.i: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.i
 
-rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.s: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.s
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.s: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.o: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.o
@@ -2636,6 +2972,30 @@ rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.s:
 rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.o: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.i: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.s: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/my_mas/msg/detail/create_bit_stream__type_support.o: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/create_bit_stream__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/create_bit_stream__type_support.o
@@ -2684,6 +3044,30 @@ rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_suppo
 rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.o: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.i: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.s: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/my_mas/msg/detail/sensor_measurment__type_support.o: rosidl_typesupport_introspection_cpp/my_mas/msg/detail/sensor_measurment__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/my_mas/msg/detail/sensor_measurment__type_support.o
@@ -2824,18 +3208,24 @@ help:
 	@echo "... rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.o"
 	@echo "... rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.i"
 	@echo "... rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.s"
-	@echo "... rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.o"
-	@echo "... rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.i"
-	@echo "... rosidl_generator_c/my_mas/msg/detail/auditor_msg__functions.s"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/auditor__functions.o"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/auditor__functions.i"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/auditor__functions.s"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/bit_load__functions.o"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/bit_load__functions.i"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/bit_load__functions.s"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/contrato__functions.o"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/contrato__functions.i"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/contrato__functions.s"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.o"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.i"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.s"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.o"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.i"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.s"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/operacion__functions.o"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/operacion__functions.i"
+	@echo "... rosidl_generator_c/my_mas/msg/detail/operacion__functions.s"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.o"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.i"
 	@echo "... rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.s"
@@ -2869,18 +3259,24 @@ help:
 	@echo "... rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.o"
 	@echo "... rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.i"
 	@echo "... rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.s"
-	@echo "... rosidl_generator_py/my_mas/msg/_auditor_msg_s.o"
-	@echo "... rosidl_generator_py/my_mas/msg/_auditor_msg_s.i"
-	@echo "... rosidl_generator_py/my_mas/msg/_auditor_msg_s.s"
+	@echo "... rosidl_generator_py/my_mas/msg/_auditor_s.o"
+	@echo "... rosidl_generator_py/my_mas/msg/_auditor_s.i"
+	@echo "... rosidl_generator_py/my_mas/msg/_auditor_s.s"
 	@echo "... rosidl_generator_py/my_mas/msg/_bit_load_s.o"
 	@echo "... rosidl_generator_py/my_mas/msg/_bit_load_s.i"
 	@echo "... rosidl_generator_py/my_mas/msg/_bit_load_s.s"
+	@echo "... rosidl_generator_py/my_mas/msg/_contrato_s.o"
+	@echo "... rosidl_generator_py/my_mas/msg/_contrato_s.i"
+	@echo "... rosidl_generator_py/my_mas/msg/_contrato_s.s"
 	@echo "... rosidl_generator_py/my_mas/msg/_create_bit_stream_s.o"
 	@echo "... rosidl_generator_py/my_mas/msg/_create_bit_stream_s.i"
 	@echo "... rosidl_generator_py/my_mas/msg/_create_bit_stream_s.s"
 	@echo "... rosidl_generator_py/my_mas/msg/_file_hex_load_s.o"
 	@echo "... rosidl_generator_py/my_mas/msg/_file_hex_load_s.i"
 	@echo "... rosidl_generator_py/my_mas/msg/_file_hex_load_s.s"
+	@echo "... rosidl_generator_py/my_mas/msg/_operacion_s.o"
+	@echo "... rosidl_generator_py/my_mas/msg/_operacion_s.i"
+	@echo "... rosidl_generator_py/my_mas/msg/_operacion_s.s"
 	@echo "... rosidl_generator_py/my_mas/msg/_sensor_measurment_s.o"
 	@echo "... rosidl_generator_py/my_mas/msg/_sensor_measurment_s.i"
 	@echo "... rosidl_generator_py/my_mas/msg/_sensor_measurment_s.s"
@@ -2905,18 +3301,24 @@ help:
 	@echo "... rosidl_typesupport_c/my_mas/action/tranformvhdlbit__type_support.o"
 	@echo "... rosidl_typesupport_c/my_mas/action/tranformvhdlbit__type_support.i"
 	@echo "... rosidl_typesupport_c/my_mas/action/tranformvhdlbit__type_support.s"
-	@echo "... rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.o"
-	@echo "... rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.i"
-	@echo "... rosidl_typesupport_c/my_mas/msg/auditor_msg__type_support.s"
+	@echo "... rosidl_typesupport_c/my_mas/msg/auditor__type_support.o"
+	@echo "... rosidl_typesupport_c/my_mas/msg/auditor__type_support.i"
+	@echo "... rosidl_typesupport_c/my_mas/msg/auditor__type_support.s"
 	@echo "... rosidl_typesupport_c/my_mas/msg/bit_load__type_support.o"
 	@echo "... rosidl_typesupport_c/my_mas/msg/bit_load__type_support.i"
 	@echo "... rosidl_typesupport_c/my_mas/msg/bit_load__type_support.s"
+	@echo "... rosidl_typesupport_c/my_mas/msg/contrato__type_support.o"
+	@echo "... rosidl_typesupport_c/my_mas/msg/contrato__type_support.i"
+	@echo "... rosidl_typesupport_c/my_mas/msg/contrato__type_support.s"
 	@echo "... rosidl_typesupport_c/my_mas/msg/create_bit_stream__type_support.o"
 	@echo "... rosidl_typesupport_c/my_mas/msg/create_bit_stream__type_support.i"
 	@echo "... rosidl_typesupport_c/my_mas/msg/create_bit_stream__type_support.s"
 	@echo "... rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.o"
 	@echo "... rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.i"
 	@echo "... rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.s"
+	@echo "... rosidl_typesupport_c/my_mas/msg/operacion__type_support.o"
+	@echo "... rosidl_typesupport_c/my_mas/msg/operacion__type_support.i"
+	@echo "... rosidl_typesupport_c/my_mas/msg/operacion__type_support.s"
 	@echo "... rosidl_typesupport_c/my_mas/msg/sensor_measurment__type_support.o"
 	@echo "... rosidl_typesupport_c/my_mas/msg/sensor_measurment__type_support.i"
 	@echo "... rosidl_typesupport_c/my_mas/msg/sensor_measurment__type_support.s"
@@ -2941,18 +3343,24 @@ help:
 	@echo "... rosidl_typesupport_cpp/my_mas/action/tranformvhdlbit__type_support.o"
 	@echo "... rosidl_typesupport_cpp/my_mas/action/tranformvhdlbit__type_support.i"
 	@echo "... rosidl_typesupport_cpp/my_mas/action/tranformvhdlbit__type_support.s"
-	@echo "... rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.o"
-	@echo "... rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.i"
-	@echo "... rosidl_typesupport_cpp/my_mas/msg/auditor_msg__type_support.s"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.o"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.i"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.s"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.o"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.i"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.s"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.o"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.i"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.s"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/create_bit_stream__type_support.o"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/create_bit_stream__type_support.i"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/create_bit_stream__type_support.s"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.o"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.i"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.s"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.o"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.i"
+	@echo "... rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.s"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/sensor_measurment__type_support.o"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/sensor_measurment__type_support.i"
 	@echo "... rosidl_typesupport_cpp/my_mas/msg/sensor_measurment__type_support.s"
@@ -2977,18 +3385,24 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor_msg__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.s"
@@ -3013,18 +3427,24 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/tranformvhdlbit__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/tranformvhdlbit__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/tranformvhdlbit__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor_msg__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/create_bit_stream__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/create_bit_stream__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/create_bit_stream__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/sensor_measurment__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/sensor_measurment__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/sensor_measurment__type_support.s"
@@ -3049,18 +3469,24 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/my_mas/action/detail/tranformvhdlbit__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/action/detail/tranformvhdlbit__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/action/detail/tranformvhdlbit__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor_msg__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/create_bit_stream__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/create_bit_stream__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/create_bit_stream__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.s"
@@ -3085,18 +3511,24 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/action/detail/tranformvhdlbit__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/action/detail/tranformvhdlbit__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/action/detail/tranformvhdlbit__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor_msg__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/create_bit_stream__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/create_bit_stream__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/create_bit_stream__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/sensor_measurment__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/sensor_measurment__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/my_mas/msg/detail/sensor_measurment__type_support.s"

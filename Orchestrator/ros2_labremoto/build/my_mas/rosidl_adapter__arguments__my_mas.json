@@ -1,17 +1,19 @@
 {
   "package_name": "my_mas",
   "non_idl_tuples": [
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/Operacion.msg",
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/BitLoad.msg",
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/CreateBitStream.msg",
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/Auditor.msg",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/SensorMeasurment.msg",
-    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/AuditorMsg.msg",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/FileHexLoad.msg",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/TransGlobal.msg",
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/Contrato.msg",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:srv/LoadFiledb.srv",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:srv/LoadFile.srv",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:action/Fibonacci.action",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:action/Cargahex.action",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:action/CargaBit.action",
-    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:action/Tranformvhdlbit.action",
-    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/BitLoad.msg",
-    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/CreateBitStream.msg"
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:action/Tranformvhdlbit.action"
   ]
 }

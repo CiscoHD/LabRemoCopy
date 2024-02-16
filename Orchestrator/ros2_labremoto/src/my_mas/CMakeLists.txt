@@ -11,19 +11,33 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/SensorMeasurment.msg"
-  "msg/AuditorMsg.msg"
-  "msg/FileHexLoad.msg"
-  "msg/TransGlobal.msg"
-  "srv/LoadFiledb.srv"
-  "srv/LoadFile.srv"
+set(msg_files
+"msg/Operacion.msg"
+"msg/BitLoad.msg"
+"msg/CreateBitStream.msg"
+"msg/Auditor.msg"
+"msg/SensorMeasurment.msg"
+"msg/FileHexLoad.msg"
+"msg/TransGlobal.msg"
+"msg/Contrato.msg"
+  )
+
+set(srv_files
+"srv/LoadFiledb.srv"
+"srv/LoadFile.srv"
+  )
+  set(action_files
   "action/Fibonacci.action"
   "action/Cargahex.action"
   "action/CargaBit.action"
   "action/Tranformvhdlbit.action"
-  "msg/BitLoad.msg"
-  "msg/CreateBitStream.msg"
+  )
+
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+${msg_files}
+${srv_files}
+${action_files}
   DEPENDENCIES geometry_msgs
 )
 

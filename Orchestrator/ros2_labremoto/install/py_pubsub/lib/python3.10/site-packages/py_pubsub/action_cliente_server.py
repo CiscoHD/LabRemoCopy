@@ -5,7 +5,7 @@ from my_mas.msg import CreateBitStream
 from my_mas.action import Tranformvhdlbit
 
 
-class ArduinoClient(Node):
+class TransformVhdlBIT(Node):
 
     def __init__(self):
         super().__init__('Arduino_action_client')
@@ -34,7 +34,7 @@ class MinimalSubscriber(Node):
 
     def listener_callback(self, msg):
         self.get_logger().info(f'{msg.path_constrains}, {msg.path_vhdl}')
-        action_client = ArduinoClient()
+        action_client = TransformVhdlBIT()
         future = action_client.send_goal(msg.path_constrains,msg.path_vhdl)
         rclpy.spin_until_future_complete(action_client, future)
 

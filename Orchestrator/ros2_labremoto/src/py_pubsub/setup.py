@@ -34,7 +34,9 @@ setup(
                 'publicador_prueba = py_pubsub.publicador_prueba:main',
                 'carga_bit= py_pubsub.carga_bit:main',
                 'transform_vhdl_bit = py_pubsub.transform_vhdl_bit: main',
-                'action_cliente_server = py_pubsub.action_cliente_server:main'
+                'action_cliente_server = py_pubsub.action_cliente_server:main',
+                'supervisor_operaciones = py_pubsub.supervisor_operaciones:main',
+                'publisher_prueba=py_pubsub.publisher_prueba:main',
         ],
 },
 )

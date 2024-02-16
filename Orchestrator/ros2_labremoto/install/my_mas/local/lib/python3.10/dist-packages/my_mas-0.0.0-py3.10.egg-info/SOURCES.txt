@@ -10,10 +10,12 @@ my_mas/action/_cargahex.py
 my_mas/action/_fibonacci.py
 my_mas/action/_tranformvhdlbit.py
 my_mas/msg/__init__.py
+my_mas/msg/_auditor.py
 my_mas/msg/_auditor_msg.py
 my_mas/msg/_bit_load.py
 my_mas/msg/_create_bit_stream.py
 my_mas/msg/_file_hex_load.py
+my_mas/msg/_operacion.py
 my_mas/msg/_sensor_measurment.py
 my_mas/msg/_trans_global.py
 my_mas/srv/__init__.py
