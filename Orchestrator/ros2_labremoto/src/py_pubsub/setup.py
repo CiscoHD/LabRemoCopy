@@ -23,20 +23,11 @@ setup(
     
     entry_points={
         'console_scripts': [
-                'publisher_member_function = py_pubsub.publisher_member_function:main',
-                'subscriber_member_function = py_pubsub.subscriber_member_function:main',
-                'service_member_function = py_pubsub.service_member_function:main',
-                'client_member_function = py_pubsub.client_member_function:main',
-                'fibonacci_action_server = py_pubsub.fibonacci_action_server:main',
-                'arduino_infrastructure = py_pubsub.arduino_infrastructure:main',
-                'arduino_inf_cliente= py_pubsub.arduino_inf_cliente:main',
-                'supervisor = py_pubsub.supervisor:main',
-                'publicador_prueba = py_pubsub.publicador_prueba:main',
-                'carga_bit= py_pubsub.carga_bit:main',
-                'transform_vhdl_bit = py_pubsub.transform_vhdl_bit: main',
-                'action_cliente_server = py_pubsub.action_cliente_server:main',
                 'supervisor_operaciones = py_pubsub.supervisor_operaciones:main',
-                'publisher_prueba=py_pubsub.publisher_prueba:main',
+                'auditor_transacciones = py_pubsub.auditor_transacciones:main',
+                'publisher_prueba = py_pubsub.publisher_prueba:main',
+                'admin_contratos = py_pubsub.admin_contratos: main',
+                'admin_transacciones = py_pubsub.admin_transacciones:main'
         ],
 },
 )

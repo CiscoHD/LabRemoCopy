@@ -1,0 +1,200 @@
+[0.000000] (-) TimerEvent: {}
+[0.000539] (-) JobUnselected: {'identifier': 'hardware'}
+[0.000640] (-) JobUnselected: {'identifier': 'my_mas'}
+[0.001135] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('my_mas', '/home/ffelix07/Documents/LabRemo/install/my_mas')])}
+[0.001257] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.097336] (-) TimerEvent: {}
+[0.197957] (-) TimerEvent: {}
+[0.298530] (-) TimerEvent: {}
+[0.399125] (-) TimerEvent: {}
+[0.500120] (-) TimerEvent: {}
+[0.601799] (-) TimerEvent: {}
+[0.702303] (-) TimerEvent: {}
+[0.802920] (-) TimerEvent: {}
+[0.903530] (-) TimerEvent: {}
+[1.004126] (-) TimerEvent: {}
+[1.104855] (-) TimerEvent: {}
+[1.205463] (-) TimerEvent: {}
+[1.306020] (-) TimerEvent: {}
+[1.406589] (-) TimerEvent: {}
+[1.507141] (-) TimerEvent: {}
+[1.607759] (-) TimerEvent: {}
+[1.709050] (-) TimerEvent: {}
+[1.809938] (-) TimerEvent: {}
+[1.910759] (-) TimerEvent: {}
+[2.012151] (-) TimerEvent: {}
+[2.112976] (-) TimerEvent: {}
+[2.213559] (-) TimerEvent: {}
+[2.314076] (-) TimerEvent: {}
+[2.414720] (-) TimerEvent: {}
+[2.515330] (-) TimerEvent: {}
+[2.615939] (-) TimerEvent: {}
+[2.718149] (-) TimerEvent: {}
+[2.818849] (-) TimerEvent: {}
+[2.919446] (-) TimerEvent: {}
+[3.020061] (-) TimerEvent: {}
+[3.120668] (-) TimerEvent: {}
+[3.221318] (-) TimerEvent: {}
+[3.321910] (-) TimerEvent: {}
+[3.422475] (-) TimerEvent: {}
+[3.523065] (-) TimerEvent: {}
+[3.623670] (-) TimerEvent: {}
+[3.724251] (-) TimerEvent: {}
+[3.824968] (-) TimerEvent: {}
+[3.925543] (-) TimerEvent: {}
+[4.026145] (-) TimerEvent: {}
+[4.126710] (-) TimerEvent: {}
+[4.227262] (-) TimerEvent: {}
+[4.329916] (-) TimerEvent: {}
+[4.430518] (-) TimerEvent: {}
+[4.531121] (-) TimerEvent: {}
+[4.631718] (-) TimerEvent: {}
+[4.732247] (-) TimerEvent: {}
+[4.832830] (-) TimerEvent: {}
+[4.933361] (-) TimerEvent: {}
+[5.034043] (-) TimerEvent: {}
+[5.082319] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../../build/py_pubsub', 'build', '--build-base', '/home/ffelix07/Documents/LabRemo/build/py_pubsub/build', 'install', '--record', '/home/ffelix07/Documents/LabRemo/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'ffelix07', 'GIO_MODULE_DIR': '/home/ffelix07/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/lib:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ffelix07', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'CONDA_SHLVL': '1', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/ffelix07/Documents/LabRemo/Orchestrator', 'TERM_PROGRAM_VERSION': '1.86.2', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/ffelix07/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/152/usr/share/code/code', 'MANAGERPID': '2179', 'SYSTEMD_EXEC_PID': '2375', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4748', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ffelix07', 'JOURNAL_STREAM': '8:34429', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'ffelix07', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ffelix07/.local/bin:/home/ffelix07/bin:/home/ffelix07/miniconda3/bin:/home/ffelix07/miniconda3/condabin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/bin:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/bin:/opt/ros/humble/bin:/home/ffelix07/.local/bin:/home/ffelix07/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ffelix07-X541NA:@/tmp/.ICE-unix/2331,unix/ffelix07-X541NA:/tmp/.ICE-unix/2331', 'GTK_EXE_PREFIX': '/snap/code/152/usr', 'INVOCATION_ID': '0d67c0e536834db5b50f895743b9c839', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/152/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.KLGZI2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d9e4104142.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/ffelix07/snap/code/152/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/ffelix07/miniconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'CONDA_DEFAULT_ENV': 'base', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ffelix07/Documents/LabRemo/build/py_pubsub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/ffelix07/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/home/ffelix07/snap/code/152/.local/share:/home/ffelix07/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ffelix07/Documents/LabRemo/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/launchstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas/local/lib/python3.10/dist-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/lstructure/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/hardware/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_pep257/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_package/lib/python3.10/site-packages:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_flake8/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/ffelix07/miniconda3', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/my_mas:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/fastcdr:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/ament_cmake_core'}, 'shell': False}
+[5.134283] (-) TimerEvent: {}
+[5.235376] (-) TimerEvent: {}
+[5.335903] (-) TimerEvent: {}
+[5.436512] (-) TimerEvent: {}
+[5.537026] (-) TimerEvent: {}
+[5.637576] (-) TimerEvent: {}
+[5.738147] (-) TimerEvent: {}
+[5.838710] (-) TimerEvent: {}
+[5.939242] (-) TimerEvent: {}
+[6.039773] (-) TimerEvent: {}
+[6.110431] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[6.111461] (py_pubsub) StdoutLine: {'line': b'creating ../../../../build/py_pubsub/py_pubsub.egg-info\n'}
+[6.139960] (-) TimerEvent: {}
+[6.197702] (py_pubsub) StdoutLine: {'line': b'writing ../../../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[6.199174] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[6.200032] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[6.200763] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[6.201542] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[6.202143] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[6.240188] (-) TimerEvent: {}
+[6.340744] (-) TimerEvent: {}
+[6.399652] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[6.402682] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[6.403381] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[6.403749] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[6.404463] (py_pubsub) StdoutLine: {'line': b'creating /home/ffelix07/Documents/LabRemo/build/py_pubsub/build\n'}
+[6.405217] (py_pubsub) StdoutLine: {'line': b'creating /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib\n'}
+[6.405631] (py_pubsub) StdoutLine: {'line': b'creating /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.406077] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/fibonacci_action_server.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.406925] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/service_member_function.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.408061] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_prueba.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.409344] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/auditor_transacciones.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.409857] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/arduino_infrastructure.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.411295] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/subscriber_member_function.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.412218] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/__init__.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.412839] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/carga_bit.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.414219] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/arduino.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.415346] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/arduino_inf_cliente.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.416531] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/transform_vhdl_bit.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.417606] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_transacciones.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.418654] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/SendTran_Cliente.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.419614] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/supervisor_operaciones.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.420471] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publicador_prueba.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.421492] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/action_cliente_server.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.422519] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/client_member_function.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.423419] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/sesiones.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.424532] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/SendTran_Service.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.425684] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_member_function.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.426622] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_contratos.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub\n'}
+[6.428863] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[6.430388] (py_pubsub) StderrLine: {'line': b'/home/ffelix07/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[6.430829] (py_pubsub) StderrLine: {'line': b'!!\n'}
+[6.431114] (py_pubsub) StderrLine: {'line': b'\n'}
+[6.431424] (py_pubsub) StderrLine: {'line': b'        ********************************************************************************\n'}
+[6.431706] (py_pubsub) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[6.431973] (py_pubsub) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[6.432241] (py_pubsub) StderrLine: {'line': b'        standards-based tools.\n'}
+[6.432581] (py_pubsub) StderrLine: {'line': b'\n'}
+[6.432869] (py_pubsub) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[6.433156] (py_pubsub) StderrLine: {'line': b'        ********************************************************************************\n'}
+[6.433392] (py_pubsub) StderrLine: {'line': b'\n'}
+[6.433608] (py_pubsub) StderrLine: {'line': b'!!\n'}
+[6.433806] (py_pubsub) StderrLine: {'line': b'  self.initialize_options()\n'}
+[6.440918] (-) TimerEvent: {}
+[6.447531] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[6.538371] (py_pubsub) StdoutLine: {'line': b'creating /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.539004] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/fibonacci_action_server.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.539716] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/service_member_function.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.540184] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/publisher_prueba.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.540915] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/auditor_transacciones.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.541371] (-) TimerEvent: {}
+[6.541873] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/arduino_infrastructure.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.542532] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.543280] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.543669] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/carga_bit.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.544216] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/arduino.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.544778] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/arduino_inf_cliente.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.545466] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/transform_vhdl_bit.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.546062] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/admin_transacciones.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.546809] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/SendTran_Cliente.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.547411] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/supervisor_operaciones.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.548063] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/publicador_prueba.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.548704] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/action_cliente_server.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.549307] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/client_member_function.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.549834] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/sesiones.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.550567] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/SendTran_Service.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.551168] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.551878] (py_pubsub) StdoutLine: {'line': b'copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/admin_contratos.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[6.554181] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/fibonacci_action_server.py to fibonacci_action_server.cpython-310.pyc\n'}
+[6.555967] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/service_member_function.py to service_member_function.cpython-310.pyc\n'}
+[6.557380] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_prueba.py to publisher_prueba.cpython-310.pyc\n'}
+[6.559002] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/auditor_transacciones.py to auditor_transacciones.cpython-310.pyc\n'}
+[6.568264] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino_infrastructure.py to arduino_infrastructure.cpython-310.pyc\n'}
+[6.568865] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc\n'}
+[6.569293] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/__init__.py to __init__.cpython-310.pyc\n'}
+[6.572870] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/carga_bit.py to carga_bit.cpython-310.pyc\n'}
+[6.573349] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino.py to arduino.cpython-310.pyc\n'}
+[6.573792] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino_inf_cliente.py to arduino_inf_cliente.cpython-310.pyc\n'}
+[6.574450] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/transform_vhdl_bit.py to transform_vhdl_bit.cpython-310.pyc\n'}
+[6.576655] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_transacciones.py to admin_transacciones.cpython-310.pyc\n'}
+[6.578586] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/SendTran_Cliente.py to SendTran_Cliente.cpython-310.pyc\n'}
+[6.580284] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/supervisor_operaciones.py to supervisor_operaciones.cpython-310.pyc\n'}
+[6.583892] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publicador_prueba.py to publicador_prueba.cpython-310.pyc\n'}
+[6.584458] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/action_cliente_server.py to action_cliente_server.cpython-310.pyc\n'}
+[6.586255] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/client_member_function.py to client_member_function.cpython-310.pyc\n'}
+[6.588015] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/sesiones.py to sesiones.cpython-310.pyc\n'}
+[6.589340] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/SendTran_Service.py to SendTran_Service.cpython-310.pyc\n'}
+[6.590920] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-310.pyc\n'}
+[6.592344] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_contratos.py to admin_contratos.cpython-310.pyc\n'}
+[6.593895] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[6.641538] (-) TimerEvent: {}
+[6.682506] (py_pubsub) StdoutLine: {'line': b'creating /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/ament_index\n'}
+[6.683045] (py_pubsub) StdoutLine: {'line': b'creating /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/ament_index/resource_index\n'}
+[6.683300] (py_pubsub) StdoutLine: {'line': b'creating /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[6.683505] (py_pubsub) StdoutLine: {'line': b'copying resource/py_pubsub -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[6.684401] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/py_pubsub\n'}
+[6.685303] (py_pubsub) StdoutLine: {'line': b'copying launch/inicio.launch.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/py_pubsub\n'}
+[6.686156] (py_pubsub) StdoutLine: {'line': b'copying launch/partes.launch.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/py_pubsub\n'}
+[6.687364] (py_pubsub) StdoutLine: {'line': b'copying launch/action.launch.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/py_pubsub\n'}
+[6.688551] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.741726] (-) TimerEvent: {}
+[6.778773] (py_pubsub) StdoutLine: {'line': b'Copying ../../../../build/py_pubsub/py_pubsub.egg-info to /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info\n'}
+[6.783040] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[6.841882] (-) TimerEvent: {}
+[6.942459] (-) TimerEvent: {}
+[7.043104] (-) TimerEvent: {}
+[7.143675] (-) TimerEvent: {}
+[7.244329] (-) TimerEvent: {}
+[7.344990] (-) TimerEvent: {}
+[7.445599] (-) TimerEvent: {}
+[7.546192] (-) TimerEvent: {}
+[7.636871] (py_pubsub) StdoutLine: {'line': b'Installing admin_transacciones script to /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/py_pubsub\n'}
+[7.637568] (py_pubsub) StdoutLine: {'line': b'Installing auditor_transacciones script to /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/py_pubsub\n'}
+[7.638196] (py_pubsub) StdoutLine: {'line': b'Installing supervisor_operaciones script to /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/py_pubsub\n'}
+[7.640562] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/ffelix07/Documents/LabRemo/build/py_pubsub/install.log'\n"}
+[7.646409] (-) TimerEvent: {}
+[7.740633] (py_pubsub) CommandEnded: {'returncode': 0}
+[7.746923] (-) TimerEvent: {}
+[7.849120] (-) TimerEvent: {}
+[7.949644] (-) TimerEvent: {}
+[8.051725] (-) TimerEvent: {}
+[8.152395] (-) TimerEvent: {}
+[8.208215] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[8.211049] (-) EventReactorShutdown: {}

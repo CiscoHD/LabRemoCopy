@@ -1,0 +1,112 @@
+[5.088s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ffelix07/Documents/LabRemo/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/py_pubsub build --build-base /home/ffelix07/Documents/LabRemo/build/py_pubsub/build install --record /home/ffelix07/Documents/LabRemo/build/py_pubsub/install.log --single-version-externally-managed
+[6.110s] running egg_info
+[6.110s] creating ../../../../build/py_pubsub/py_pubsub.egg-info
+[6.197s] writing ../../../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[6.198s] writing dependency_links to ../../../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[6.199s] writing entry points to ../../../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[6.200s] writing requirements to ../../../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[6.201s] writing top-level names to ../../../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[6.201s] writing manifest file '../../../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[6.399s] reading manifest file '../../../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[6.402s] writing manifest file '../../../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[6.402s] running build
+[6.403s] running build_py
+[6.403s] creating /home/ffelix07/Documents/LabRemo/build/py_pubsub/build
+[6.404s] creating /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib
+[6.405s] creating /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.405s] copying py_pubsub/fibonacci_action_server.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.406s] copying py_pubsub/service_member_function.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.407s] copying py_pubsub/publisher_prueba.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.408s] copying py_pubsub/auditor_transacciones.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.409s] copying py_pubsub/arduino_infrastructure.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.410s] copying py_pubsub/subscriber_member_function.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.411s] copying py_pubsub/__init__.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.412s] copying py_pubsub/carga_bit.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.413s] copying py_pubsub/arduino.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.414s] copying py_pubsub/arduino_inf_cliente.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.416s] copying py_pubsub/transform_vhdl_bit.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.417s] copying py_pubsub/admin_transacciones.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.418s] copying py_pubsub/SendTran_Cliente.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.419s] copying py_pubsub/supervisor_operaciones.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.419s] copying py_pubsub/publicador_prueba.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.420s] copying py_pubsub/action_cliente_server.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.422s] copying py_pubsub/client_member_function.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.422s] copying py_pubsub/sesiones.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.424s] copying py_pubsub/SendTran_Service.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.425s] copying py_pubsub/publisher_member_function.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.426s] copying py_pubsub/admin_contratos.py -> /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub
+[6.428s] running install
+[6.429s] /home/ffelix07/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[6.430s] !!
+[6.430s] 
+[6.430s]         ********************************************************************************
+[6.431s]         Please avoid running ``setup.py`` directly.
+[6.431s]         Instead, use pypa/build, pypa/installer or other
+[6.431s]         standards-based tools.
+[6.431s] 
+[6.432s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[6.432s]         ********************************************************************************
+[6.432s] 
+[6.432s] !!
+[6.433s]   self.initialize_options()
+[6.447s] running install_lib
+[6.537s] creating /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.538s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/fibonacci_action_server.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.539s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/service_member_function.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.539s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/publisher_prueba.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.540s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/auditor_transacciones.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.541s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/arduino_infrastructure.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.542s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.542s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.543s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/carga_bit.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.543s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/arduino.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.544s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/arduino_inf_cliente.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.544s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/transform_vhdl_bit.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.545s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/admin_transacciones.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.546s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/SendTran_Cliente.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.546s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/supervisor_operaciones.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.547s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/publicador_prueba.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.548s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/action_cliente_server.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.548s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/client_member_function.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.549s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/sesiones.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.550s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/SendTran_Service.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.550s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.551s] copying /home/ffelix07/Documents/LabRemo/build/py_pubsub/build/lib/py_pubsub/admin_contratos.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.553s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/fibonacci_action_server.py to fibonacci_action_server.cpython-310.pyc
+[6.555s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/service_member_function.py to service_member_function.cpython-310.pyc
+[6.556s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_prueba.py to publisher_prueba.cpython-310.pyc
+[6.558s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/auditor_transacciones.py to auditor_transacciones.cpython-310.pyc
+[6.567s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino_infrastructure.py to arduino_infrastructure.cpython-310.pyc
+[6.568s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[6.568s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/__init__.py to __init__.cpython-310.pyc
+[6.572s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/carga_bit.py to carga_bit.cpython-310.pyc
+[6.572s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino.py to arduino.cpython-310.pyc
+[6.573s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino_inf_cliente.py to arduino_inf_cliente.cpython-310.pyc
+[6.574s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/transform_vhdl_bit.py to transform_vhdl_bit.cpython-310.pyc
+[6.576s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_transacciones.py to admin_transacciones.cpython-310.pyc
+[6.578s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/SendTran_Cliente.py to SendTran_Cliente.cpython-310.pyc
+[6.579s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/supervisor_operaciones.py to supervisor_operaciones.cpython-310.pyc
+[6.583s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publicador_prueba.py to publicador_prueba.cpython-310.pyc
+[6.583s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/action_cliente_server.py to action_cliente_server.cpython-310.pyc
+[6.585s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/client_member_function.py to client_member_function.cpython-310.pyc
+[6.587s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/sesiones.py to sesiones.cpython-310.pyc
+[6.588s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/SendTran_Service.py to SendTran_Service.cpython-310.pyc
+[6.590s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-310.pyc
+[6.591s] byte-compiling /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_contratos.py to admin_contratos.cpython-310.pyc
+[6.593s] running install_data
+[6.682s] creating /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/ament_index
+[6.682s] creating /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/ament_index/resource_index
+[6.682s] creating /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/ament_index/resource_index/packages
+[6.682s] copying resource/py_pubsub -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/ament_index/resource_index/packages
+[6.683s] copying package.xml -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/py_pubsub
+[6.684s] copying launch/inicio.launch.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/py_pubsub
+[6.685s] copying launch/partes.launch.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/py_pubsub
+[6.686s] copying launch/action.launch.py -> /home/ffelix07/Documents/LabRemo/install/py_pubsub/share/py_pubsub
+[6.688s] running install_egg_info
+[6.778s] Copying ../../../../build/py_pubsub/py_pubsub.egg-info to /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info
+[6.782s] running install_scripts
+[7.636s] Installing admin_transacciones script to /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/py_pubsub
+[7.637s] Installing auditor_transacciones script to /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/py_pubsub
+[7.637s] Installing supervisor_operaciones script to /home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/py_pubsub
+[7.640s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/build/py_pubsub/install.log'
+[7.740s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ffelix07/Documents/LabRemo/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/py_pubsub build --build-base /home/ffelix07/Documents/LabRemo/build/py_pubsub/build install --record /home/ffelix07/Documents/LabRemo/build/py_pubsub/install.log --single-version-externally-managed
