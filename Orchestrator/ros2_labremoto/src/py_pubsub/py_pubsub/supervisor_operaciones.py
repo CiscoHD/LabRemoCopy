@@ -8,25 +8,18 @@ import json
 
 
 
-class SupervidorOPeraciones(Node):
+class SupervisorOperaciones(Node):
 
     def __init__(self):
         super().__init__('supervisor_operaciones')
         self.subscription = self.create_subscription(
             Operacion,
             'top_supervisor_operaciones',
-            self.listener_callback, 10)
+            self.listener_callback, 100)
         self.subscription  # prevent unused variable warning
 
-        inicio = False
-        if not inicio:
-             self.publish_inicio_nodo()
-             inicio = True
-
-    
-    def publish_inicio_nodo(self):
-            self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
-            self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
+        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
 
     def create_operacion_msg(self):
@@ -57,11 +50,12 @@ class SupervidorOPeraciones(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    supervidor_operaciones = SupervidorOPeraciones()
-    rclpy.spin(supervidor_operaciones)
-
-    supervidor_operaciones.destroy_node()
+    supervisor_operaciones = SupervisorOperaciones()
+    rclpy.spin(supervisor_operaciones)
+    supervisor_operaciones.destroy_node()
     rclpy.shutdown()
+
+
 
 if __name__ == '__main__':
     main()

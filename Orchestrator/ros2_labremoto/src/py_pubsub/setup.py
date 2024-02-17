@@ -27,7 +27,11 @@ setup(
                 'auditor_transacciones = py_pubsub.auditor_transacciones:main',
                 'publisher_prueba = py_pubsub.publisher_prueba:main',
                 'admin_contratos = py_pubsub.admin_contratos: main',
-                'admin_transacciones = py_pubsub.admin_transacciones:main'
+                'admin_transacciones = py_pubsub.admin_transacciones:main',
+                'arduino_infrastructure = py_pubsub.arduino_infrastructure:main',
+                'arduino_inf_cliente = py_pubsub.arduino_inf_cliente:main',
+                'transform_vhdl_bit = py_pubsub.transform_vhdl_bit:main',
+                'action_cliente_server = py_pubsub.action_cliente_server:main'
         ],
 },
 )

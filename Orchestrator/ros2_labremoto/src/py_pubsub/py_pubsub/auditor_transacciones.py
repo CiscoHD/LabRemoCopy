@@ -15,16 +15,9 @@ class AuditorNode(Node):
             'top_auditor_transacciones',
             self.listener_callback, 10)
         self.subscription  # prevent unused variable warning
-        
-        inicio = False
-        if not inicio:
-             self.publish_inicio_nodo()
-             inicio = True
 
-    
-    def publish_inicio_nodo(self):
-            self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
-            self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
+        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
 
     def create_operacion_msg(self):

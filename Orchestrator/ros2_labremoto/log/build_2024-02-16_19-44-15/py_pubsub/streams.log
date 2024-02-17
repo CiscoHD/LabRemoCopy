@@ -1,0 +1,59 @@
+[5.147s] Invoking command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log --single-version-externally-managed
+[6.462s] running egg_info
+[6.554s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[6.557s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[6.559s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[6.560s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[6.560s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[6.753s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[6.761s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[6.761s] running build
+[6.762s] running build_py
+[6.763s] copying py_pubsub/service_member_function.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.765s] copying py_pubsub/publisher_prueba.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.767s] copying py_pubsub/auditor_transacciones.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.769s] copying py_pubsub/arduino_infrastructure.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.772s] copying py_pubsub/arduino_inf_cliente.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.773s] copying py_pubsub/transform_vhdl_bit.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.775s] copying py_pubsub/admin_transacciones.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.776s] copying py_pubsub/supervisor_operaciones.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.779s] copying py_pubsub/action_cliente_server.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.782s] copying py_pubsub/sesiones.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.784s] copying py_pubsub/admin_contratos.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub
+[6.786s] running install
+[6.790s] /home/ffelix07/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[6.791s] !!
+[6.791s] 
+[6.791s]         ********************************************************************************
+[6.792s]         Please avoid running ``setup.py`` directly.
+[6.792s]         Instead, use pypa/build, pypa/installer or other
+[6.793s]         standards-based tools.
+[6.793s] 
+[6.793s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[6.793s]         ********************************************************************************
+[6.793s] 
+[6.794s] !!
+[6.795s]   self.initialize_options()
+[6.807s] running install_lib
+[6.949s] copying /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build/lib/py_pubsub/supervisor_operaciones.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[6.955s] byte-compiling /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/supervisor_operaciones.py to supervisor_operaciones.cpython-310.pyc
+[6.959s] running install_data
+[7.108s] copying package.xml -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub
+[7.109s] copying launch/inicio.launch.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub
+[7.111s] copying launch/partes.launch.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub
+[7.112s] copying launch/action.launch.py -> /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/share/py_pubsub
+[7.113s] running install_egg_info
+[7.242s] removing '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[7.247s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info
+[7.251s] running install_scripts
+[8.113s] Installing action_cliente_server script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.114s] Installing admin_contratos script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.115s] Installing admin_transacciones script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.117s] Installing arduino_inf_cliente script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.119s] Installing arduino_infrastructure script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.120s] Installing auditor_transacciones script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.121s] Installing publisher_prueba script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.123s] Installing supervisor_operaciones script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.124s] Installing transform_vhdl_bit script to /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/py_pubsub
+[8.127s] writing list of installed files to '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log'
+[8.224s] Invoked command in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/py_pubsub' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/prefix_override:/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/build install --record /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/py_pubsub/install.log --single-version-externally-managed

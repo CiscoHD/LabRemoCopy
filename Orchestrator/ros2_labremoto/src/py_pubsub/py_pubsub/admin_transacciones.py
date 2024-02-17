@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from my_mas.msg import Operacion,Auditor,TransGlobal
+from my_mas.msg import Operacion,Auditor,TransGlobal,FileHexLoad,CreateBitStream
 
 import sqlite3
 from datetime import datetime
@@ -19,15 +19,14 @@ class AdminTransacciones(Node):
 
         self.subscription  # prevent unused variable warning
 
-        inicio = False
-        if not inicio:
-             self.publish_inicio_nodo()
-             inicio = True
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
+        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
-    
-    def publish_inicio_nodo(self):
-            self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
-            self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
+
+        self.publisherarduino_ = self.create_publisher(Operacion, 'archivos_hex', 10)
+        self.publisherbit_ = self.create_publisher(CreateBitStream, 'create_bit', 10)
+
+
 
 
     def create_operacion_msg(self):
@@ -41,10 +40,19 @@ class AdminTransacciones(Node):
 
     def listener_callback(self, msg):
         self.get_logger().info(f'Transaccion recibida: {msg.name_node}')
+        if msg.name_node == '':
+             msgtransaccion = FileHexLoad()
+             msgtransaccion.path_hex = ''
+             self.publisherarduino_.publish(msgtransaccion)
+        else:
+             msgtransaccion = CreateBitStream()
+             msgtransaccion.path_bit = ''
+             self.publisherbit_ .publish(msgtransaccion)     
         
 
 def main(args=None):
     rclpy.init(args=args)
+
 
     admin_transacciones = AdminTransacciones()
 

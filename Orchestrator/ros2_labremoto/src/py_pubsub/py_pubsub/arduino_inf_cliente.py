@@ -1,8 +1,12 @@
 import rclpy
 from rclpy.action import ActionClient
 from rclpy.node import Node
-from my_mas.msg import FileHexLoad
+
 from my_mas.action import Cargahex
+from my_mas.msg import FileHexLoad,Operacion,Auditor
+
+from datetime import datetime
+
 
 
 class ArduinoClient(Node):
@@ -11,6 +15,25 @@ class ArduinoClient(Node):
         super().__init__('Arduino_action_client')
         self._action_client = ActionClient(self, Cargahex, 'arduino_inf')
 
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
+        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
+
+    def create_operacion_msg(self):
+        msg = Operacion()
+        msg.nameoperacion =  "Inicio Nodo"
+        msg.descoperacion = f"{self.get_name()}"
+        msg.estatusoperacion = "Publicado"
+        msg.fechaoperacion = f"{datetime.now()}"
+        
+        return msg
+
+    def create_auditor_msg(self):
+        msg = Auditor()
+        msg.namenode = self.get_name()
+        msg.fechatransaccion = f"{datetime.now()}"
+        
+        return msg
+
     def send_goal(self, path_hex):
         goal_msg = Cargahex.Goal()
         goal_msg.path_hex = path_hex
@@ -18,12 +41,14 @@ class ArduinoClient(Node):
         self._action_client.wait_for_server()
 
         return self._action_client.send_goal_async(goal_msg)
+    
+
 
 
 class MinimalSubscriber(Node):
 
     def __init__(self):
-        super().__init__('minimal_subscriber')
+        super().__init__('cliente_arduino')
         self.subscription = self.create_subscription(
             FileHexLoad,
             'archivos_hex',
