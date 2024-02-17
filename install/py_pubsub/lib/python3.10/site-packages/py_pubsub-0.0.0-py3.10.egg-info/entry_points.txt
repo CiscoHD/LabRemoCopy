@@ -1,3 +1,0 @@
-[console_scripts]
-auditor_transacciones = py_pubsub.auditor_transacciones:main
-supervisor_operaciones = py_pubsub.supervisor_operaciones:main
