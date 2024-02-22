@@ -1,0 +1,28 @@
+.App {
+    text-align: center;
+    background: #DFE0DC;
+}
+body {
+    color: #908264;   
+}
+p {
+    color:  #DFE0DC;
+}
+.columna {    
+    text-align: left;
+    border-style: dotted;
+    border-radius: 1%;
+    margin: 1%;
+}
+.titleCol {
+    color: #1A6874;
+}
+.innerCol {
+    padding-left: 4%;
+}
+.secondary-text { 
+    color : #3C887E;
+}
+Button {
+    margin: 2%;
+}
