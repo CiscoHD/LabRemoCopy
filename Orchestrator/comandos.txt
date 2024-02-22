@@ -1,9 +1,10 @@
  unset GTK_PATH
  rqt
 
+ ros2 launch py_pubsub inicio.launch.py
  ros2 launch py_pubsub partes.launch.py
  ros2 run py_pubsub supervisor_operaciones
  colcon build --packages-select py_pubsub --allow-overriding py_pubsub
 
 
- troyanos a
+ 
