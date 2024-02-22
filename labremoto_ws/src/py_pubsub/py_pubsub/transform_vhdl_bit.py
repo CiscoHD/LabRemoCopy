@@ -1,12 +1,12 @@
 from my_mas.action import Tranformvhdlbit
-import datetime as dt 
+from datetime import datetime
 import rclpy
 from rclpy.action import ActionServer
 from rclpy.node import Node
 import os
 import json
-from my_mas.msg import TransGlobal
-from my_mas.msg import CreateBitStream
+from datetime import datetime
+from my_mas.msg import Operacion,Auditor
 import os
 
 class TanformVHDLBit(Node):
@@ -16,19 +16,34 @@ class TanformVHDLBit(Node):
         self._action_server = ActionServer(
             self,
             Tranformvhdlbit,
-            'Admin_transacciones',
+            'transformar_bit',
             self.execute_callback)
         
-        self.publisher_ = self.create_publisher(TransGlobal, 'supervisor', 10)
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
+        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
 
+        self.publisherauditor_  = self.create_publisher(Auditor, 'top_auditor_transacciones', 10)
+
+    def create_operacion_msg(self):
+        msg = Operacion()
+        msg.nameoperacion =  "Inicio Nodo"
+        msg.descoperacion = f"{self.get_name()}"
+        msg.estatusoperacion = "Publicado"
+        msg.fechaoperacion = f"{datetime.now()}"
+        
+        return msg
+
+    def create_auditor_msg(self):
+        msg = Auditor()
+        msg.namenode = self.get_name()
+        msg.fechatransaccion = f"{datetime.now()}"
+        
+        return msg
 
     def execute_callback(self, goal_handle):
         self.get_logger().info('Executing transform...')
         feedback_msg = Tranformvhdlbit.Feedback()
-        msg = TransGlobal()
-        msg.fecha = str(dt.datetime.now())
-        msg._name_node = str(self.get_name())
 
 
         self.get_logger().info("Looking for file .vhdl and contains ..." )
@@ -48,12 +63,12 @@ class TanformVHDLBit(Node):
 
                 result = Tranformvhdlbit.Result()
                 result.status_final = upload_r 
-                
-                msg.resultado = feedback_msg.status 
-                self.publisher_.publish(msg)
-
-                
+                msg_auditor = self.create_auditor_msg()
+                msg_auditor.logproceso = result.status_final
+                self.publisherauditor_.publish(msg_auditor)
+                    
                 return result
+            
             except:
                 feedback_msg.status = 'Error Tranform file'
                 goal_handle.abort()
@@ -61,10 +76,11 @@ class TanformVHDLBit(Node):
                 result = Tranformvhdlbit.Result()
                 result.status_final = feedback_msg.status
 
-                msg.resultado = feedback_msg.status
-                self.publisher_.publish(msg)
-
                 self.get_logger().info(result.status_final)
+                msg_auditor = self.create_auditor_msg()
+                msg_auditor.logproceso = result.status_final
+                self.publisherauditor_.publish(msg_auditor)
+
                 return result
 
         else:
@@ -75,11 +91,12 @@ class TanformVHDLBit(Node):
         
             result = Tranformvhdlbit.Result()
             result.status_final = feedback_msg.status
-
-            msg.resultado = feedback_msg.status
-            self.publisher_.publish(msg)
-
             self.get_logger().info(result.status_final)
+
+            msg_auditor = self.create_auditor_msg()
+            msg_auditor.logproceso = result.status_final
+            self.publisherauditor_.publish(msg_auditor)
+            
             return result
 
 def main(args=None):
