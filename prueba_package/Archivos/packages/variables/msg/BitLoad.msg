@@ -1,1 +1,0 @@
-string path_bit
