@@ -31,7 +31,10 @@ setup(
                 'arduino_infrastructure = py_pubsub.arduino_infrastructure:main',
                 'arduino_inf_cliente = py_pubsub.arduino_inf_cliente:main',
                 'transform_vhdl_bit = py_pubsub.transform_vhdl_bit:main',
-                'action_cliente_server = py_pubsub.action_cliente_server:main'
+                'vhdlbit_cliente = py_pubsub.vhdlbit_cliente:main',
+                'publisher_transentrada = py_pubsub.publisher_transentrada:main',
+                'admin_transacciones_entrada = py_pubsub.admin_transacciones_entrada:main',
+                'admin_log_salida = py_pubsub.admin_log_salida:main'
         ],
 },
 )

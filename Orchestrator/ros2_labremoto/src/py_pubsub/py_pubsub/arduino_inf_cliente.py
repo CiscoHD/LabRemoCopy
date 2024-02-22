@@ -14,9 +14,14 @@ class ArduinoClient(Node):
     def __init__(self):
         super().__init__('Arduino_action_client')
         self._action_client = ActionClient(self, Cargahex, 'arduino_inf')
+        self.subscription = self.create_subscription(FileHexLoad,'top_archivos_hex',self.listener_callback,10)
+        self.subscription 
 
-        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
+        self.publisherauditor_ = self.create_publisher(Auditor, 'top_auditot_transacciones', 10)
+
         self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
+
 
     def create_operacion_msg(self):
         msg = Operacion()
@@ -42,35 +47,29 @@ class ArduinoClient(Node):
 
         return self._action_client.send_goal_async(goal_msg)
     
-
-
-
-class MinimalSubscriber(Node):
-
-    def __init__(self):
-        super().__init__('cliente_arduino')
-        self.subscription = self.create_subscription(
-            FileHexLoad,
-            'archivos_hex',
-            self.listener_callback,
-            10)
-        self.subscription  
-
     def listener_callback(self, msg):
+
+    
         self.get_logger().info(f'{msg.path_hex}')
         action_client = ArduinoClient()
         future = action_client.send_goal(msg.path_hex)
         rclpy.spin_until_future_complete(action_client, future)
 
+        self.get_logger().info(f'Goal enviado from {self.get_name()} to {action_client.get_name()}')
+        msg_auditor = self.create_auditor_msg()
+        msg_auditor.tipotransaccion = "Send Goal"
+        msg_auditor.logproceso = f"Goal enviado from {self.get_name()} to {action_client.get_name()}"
+        self.publisherauditor_.publish(msg_auditor)
+
 def main(args=None):
     rclpy.init(args=args)
 
 
-    minimal_subscriber = MinimalSubscriber()
+    arduino_client = ArduinoClient()
 
-    rclpy.spin(minimal_subscriber)
+    rclpy.spin(arduino_client)
 
-    minimal_subscriber.destroy_node()
+    arduino_client.destroy_node()
     rclpy.shutdown()
 
 

@@ -74,6 +74,8 @@ CMakeFiles/my_mas: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/
 CMakeFiles/my_mas: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas/msg/FileHexLoad.msg
 CMakeFiles/my_mas: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas/msg/TransGlobal.msg
 CMakeFiles/my_mas: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas/msg/Contrato.msg
+CMakeFiles/my_mas: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas/msg/TransEntrada.msg
+CMakeFiles/my_mas: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas/msg/LogSalida.msg
 CMakeFiles/my_mas: /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas/srv/LoadFiledb.srv
 CMakeFiles/my_mas: rosidl_cmake/srv/LoadFiledb_Request.msg
 CMakeFiles/my_mas: rosidl_cmake/srv/LoadFiledb_Response.msg

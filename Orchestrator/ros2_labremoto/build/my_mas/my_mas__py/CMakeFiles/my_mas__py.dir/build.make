@@ -77,6 +77,8 @@ my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_sensor_measurm
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_file_hex_load.py
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_trans_global.py
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_contrato.py
+my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_trans_entrada.py
+my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_log_salida.py
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/srv/_load_filedb.py
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/srv/_load_file.py
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/action/_fibonacci.py
@@ -94,6 +96,8 @@ my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_sensor_measurm
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_file_hex_load_s.c
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_trans_global_s.c
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_contrato_s.c
+my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_trans_entrada_s.c
+my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/msg/_log_salida_s.c
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/srv/_load_filedb_s.c
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/srv/_load_file_s.c
 my_mas__py/CMakeFiles/my_mas__py: rosidl_generator_py/my_mas/action/_fibonacci_s.c
@@ -122,6 +126,8 @@ rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_
 rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_mas/msg/FileHexLoad.idl
 rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_mas/msg/TransGlobal.idl
 rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_mas/msg/Contrato.idl
+rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_mas/msg/TransEntrada.idl
+rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_mas/msg/LogSalida.idl
 rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_mas/srv/LoadFiledb.idl
 rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_mas/srv/LoadFile.idl
 rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_mas/action/Fibonacci.idl
@@ -227,6 +233,12 @@ rosidl_generator_py/my_mas/msg/_trans_global.py: rosidl_generator_py/my_mas/_my_
 rosidl_generator_py/my_mas/msg/_contrato.py: rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_mas/msg/_contrato.py
 
+rosidl_generator_py/my_mas/msg/_trans_entrada.py: rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_mas/msg/_trans_entrada.py
+
+rosidl_generator_py/my_mas/msg/_log_salida.py: rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_mas/msg/_log_salida.py
+
 rosidl_generator_py/my_mas/srv/_load_filedb.py: rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_mas/srv/_load_filedb.py
 
@@ -278,6 +290,12 @@ rosidl_generator_py/my_mas/msg/_trans_global_s.c: rosidl_generator_py/my_mas/_my
 rosidl_generator_py/my_mas/msg/_contrato_s.c: rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_mas/msg/_contrato_s.c
 
+rosidl_generator_py/my_mas/msg/_trans_entrada_s.c: rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_mas/msg/_trans_entrada_s.c
+
+rosidl_generator_py/my_mas/msg/_log_salida_s.c: rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_mas/msg/_log_salida_s.c
+
 rosidl_generator_py/my_mas/srv/_load_filedb_s.c: rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_mas/srv/_load_filedb_s.c
 
@@ -320,10 +338,14 @@ my_mas__py: rosidl_generator_py/my_mas/msg/_create_bit_stream.py
 my_mas__py: rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c
 my_mas__py: rosidl_generator_py/my_mas/msg/_file_hex_load.py
 my_mas__py: rosidl_generator_py/my_mas/msg/_file_hex_load_s.c
+my_mas__py: rosidl_generator_py/my_mas/msg/_log_salida.py
+my_mas__py: rosidl_generator_py/my_mas/msg/_log_salida_s.c
 my_mas__py: rosidl_generator_py/my_mas/msg/_operacion.py
 my_mas__py: rosidl_generator_py/my_mas/msg/_operacion_s.c
 my_mas__py: rosidl_generator_py/my_mas/msg/_sensor_measurment.py
 my_mas__py: rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c
+my_mas__py: rosidl_generator_py/my_mas/msg/_trans_entrada.py
+my_mas__py: rosidl_generator_py/my_mas/msg/_trans_entrada_s.c
 my_mas__py: rosidl_generator_py/my_mas/msg/_trans_global.py
 my_mas__py: rosidl_generator_py/my_mas/msg/_trans_global_s.c
 my_mas__py: rosidl_generator_py/my_mas/srv/__init__.py

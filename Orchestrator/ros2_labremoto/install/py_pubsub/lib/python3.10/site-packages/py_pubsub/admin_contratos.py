@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 import sqlite3
-from my_mas.msg import Contrato,Operacion,Auditor,TransGlobal
+from my_mas.msg import Contrato,LogSalida,Operacion,Auditor,TransGlobal
 
 import sqlite3
 from datetime import datetime
@@ -13,16 +13,16 @@ class AdminContratos(Node):
         super().__init__('administrador_contratos')
         self.subscription = self.create_subscription(
             Contrato,
-            'top_transacciones_entrada',
+            'top_transacciones',
             self.listener_callback,
             10)
         
         self.publisherauditor_  = self.create_publisher(Auditor, 'top_auditor_transacciones', 10)
         self.publisheradmintransaccion_  = self.create_publisher(Auditor, 'top_transacciones_aceptadas', 10)
-
+        self.publisherconsola_ = self.create_publisher(LogSalida,'top_consola',10)
         self.subscription  # prevent unused variable warning
 
-
+        
         self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
         self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
@@ -42,19 +42,11 @@ class AdminContratos(Node):
         msg.fechatransaccion = f"{datetime.now()}"
         
         return msg
-    
-    def create_transaccion_msg(self):
-        msg = TransGlobal()
-        msg.resultado = ""
-        msg.status = ""
-        msg.name_node = ""
-        msg.fecha = f"{datetime.now()}"
-        msg.folio = ""
-        
-        return msg
+
 
     def listener_callback(self, msg):
 
+    
 
         
         self.get_logger().info(f'Solicitud recibida para contrato {msg.idcontrato}')
@@ -84,6 +76,12 @@ class AdminContratos(Node):
                  msg_auditor = self.create_auditor_msg()
                  msg_auditor.logproceso = "Transaccion no  aceptada"
                  self.publisherauditor_.publish(self.create_transaccion_msg())
+                                 
+                 msg_log =  LogSalida()
+                 msg_log.logsalida = "Transaccion no  aceptada"
+                 self.publisherconsola_.publish(msg_log)
+  
+
         
         else:
              self.get_logger().info(f'Contrato {msg.idcontrato} no encontrado ')

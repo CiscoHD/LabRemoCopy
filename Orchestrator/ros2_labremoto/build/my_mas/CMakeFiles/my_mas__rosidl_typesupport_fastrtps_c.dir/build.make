@@ -85,6 +85,8 @@ rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fa
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/my_mas/msg/FileHexLoad.idl
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/my_mas/msg/TransGlobal.idl
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/my_mas/msg/Contrato.idl
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/my_mas/msg/TransEntrada.idl
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/my_mas/msg/LogSalida.idl
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/my_mas/srv/LoadFiledb.idl
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/my_mas/srv/LoadFile.idl
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/my_mas/action/Fibonacci.idl
@@ -204,6 +206,18 @@ rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__rosidl_typesupport_fas
 
 rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__rosidl_typesupport_fastrtps_c.h
@@ -353,10 +367,38 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.s
 
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o -MF CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o.d -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp
+
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp > CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.i
+
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.s
+
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o -MF CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o.d -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp
+
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp > CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.i
+
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.s
+
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o -MF CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o.d -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp
 
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.i: cmake_force
@@ -370,7 +412,7 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o -MF CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o.d -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp
 
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.i: cmake_force
@@ -384,7 +426,7 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o -MF CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o.d -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp
 
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.i: cmake_force
@@ -398,7 +440,7 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o -MF CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o.d -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp
 
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.i: cmake_force
@@ -412,7 +454,7 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o -MF CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o.d -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp
 
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.i: cmake_force
@@ -426,7 +468,7 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o -MF CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o.d -o CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o -c /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp
 
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.i: cmake_force
@@ -447,6 +489,8 @@ my_mas__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.cpp.o" \
 "CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_global__type_support_c.cpp.o" \
 "CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.o" \
+"CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o" \
+"CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o" \
 "CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o" \
 "CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o" \
 "CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o" \
@@ -465,6 +509,8 @@ libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesuppo
 libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.cpp.o
 libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_global__type_support_c.cpp.o
 libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.o
+libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o
+libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o
 libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o
 libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o
 libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o
@@ -490,7 +536,7 @@ libmy_mas__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libunique_ident
 libmy_mas__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_mas__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libmy_mas__rosidl_typesupport_fastrtps_c.so: CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library libmy_mas__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library libmy_mas__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -519,10 +565,14 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.cpp
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.cpp
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_global__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_global__type_support_c.cpp
 CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_c.h

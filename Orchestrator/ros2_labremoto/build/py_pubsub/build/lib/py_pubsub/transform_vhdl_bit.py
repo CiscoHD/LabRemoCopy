@@ -63,9 +63,12 @@ class TanformVHDLBit(Node):
 
                 result = Tranformvhdlbit.Result()
                 result.status_final = upload_r 
-                
-                
+                msg_auditor = self.create_auditor_msg()
+                msg_auditor.logproceso = result.status_final
+                self.publisherauditor_.publish(msg_auditor)
+                    
                 return result
+            
             except:
                 feedback_msg.status = 'Error Tranform file'
                 goal_handle.abort()
@@ -74,6 +77,10 @@ class TanformVHDLBit(Node):
                 result.status_final = feedback_msg.status
 
                 self.get_logger().info(result.status_final)
+                msg_auditor = self.create_auditor_msg()
+                msg_auditor.logproceso = result.status_final
+                self.publisherauditor_.publish(msg_auditor)
+
                 return result
 
         else:

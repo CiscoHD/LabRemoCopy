@@ -266,6 +266,12 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/
   rosidl_generator_c/my_mas/msg/detail/trans_global__type_support.h \
   rosidl_generator_c/my_mas/msg/detail/trans_global__struct.h \
   rosidl_generator_c/my_mas/msg/detail/trans_global__functions.h \
+  rosidl_generator_c/my_mas/msg/detail/contrato__type_support.h \
+  rosidl_generator_c/my_mas/msg/detail/contrato__struct.h \
+  rosidl_generator_c/my_mas/msg/detail/contrato__functions.h \
+  rosidl_generator_c/my_mas/msg/detail/trans_entrada__type_support.h \
+  rosidl_generator_c/my_mas/msg/detail/trans_entrada__struct.h \
+  rosidl_generator_c/my_mas/msg/detail/trans_entrada__functions.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__type_support.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h \
@@ -290,8 +296,6 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/
 
 rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.h:
 
-rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__type_support.h:
-
 rosidl_generator_c/my_mas/action/detail/carga_bit__functions.h:
 
 rosidl_generator_c/my_mas/action/detail/carga_bit__struct.h:
@@ -315,6 +319,16 @@ rosidl_generator_c/my_mas/srv/detail/load_file__type_support.h:
 rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h:
 
 rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h:
+
+rosidl_generator_c/my_mas/msg/detail/trans_entrada__functions.h:
+
+rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__type_support.h:
+
+rosidl_generator_c/my_mas/msg/detail/trans_entrada__type_support.h:
+
+rosidl_generator_c/my_mas/msg/detail/contrato__functions.h:
+
+rosidl_generator_c/my_mas/msg/detail/contrato__type_support.h:
 
 rosidl_generator_c/my_mas/msg/detail/trans_global__struct.h:
 
@@ -405,6 +419,8 @@ rosidl_generator_c/my_mas/action/detail/cargahex__struct.h:
 /usr/include/alloca.h:
 
 /usr/include/python3.10/cpython/pyerrors.h:
+
+rosidl_generator_c/my_mas/msg/detail/contrato__struct.h:
 
 /usr/include/strings.h:
 
@@ -769,6 +785,8 @@ rosidl_generator_c/my_mas/msg/rosidl_generator_c__visibility_control.h:
 /usr/include/python3.10/floatobject.h:
 
 /usr/include/python3.10/pythonrun.h:
+
+rosidl_generator_c/my_mas/msg/detail/trans_entrada__struct.h:
 
 /usr/include/python3.10/descrobject.h:
 

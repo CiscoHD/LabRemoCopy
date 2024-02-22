@@ -20,6 +20,8 @@ set(msg_files
 "msg/FileHexLoad.msg"
 "msg/TransGlobal.msg"
 "msg/Contrato.msg"
+"msg/TransEntrada.msg"
+"msg/LogSalida.msg"
   )
 
 set(srv_files

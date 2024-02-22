@@ -228,6 +228,12 @@ CMakeFiles/my_mas__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generato
  /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/contrato__type_support.h \
  /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/contrato__struct.h \
  /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/contrato__functions.h \
+ /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/trans_entrada__type_support.h \
+ /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/trans_entrada__struct.h \
+ /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/trans_entrada__functions.h \
+ /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/log_salida__type_support.h \
+ /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/log_salida__struct.h \
+ /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/msg/detail/log_salida__functions.h \
  /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/srv/detail/load_filedb__type_support.h \
  /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h \
  /home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/build/my_mas/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h \

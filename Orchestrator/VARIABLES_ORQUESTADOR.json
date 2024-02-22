@@ -1,1 +1,5 @@
-{"path_database": "/home/ffelix07/Documents/LabRemo/Orchestrator/LABREMODB.db"}
+{
+    "path_database": "/home/ffelix07/Documents/LabRemo/Orchestrator/LABREMODB.db",
+    "archivo_hex":"/home/ffelix07/Documents/LabRemo/Orchestrator/DCmotorx2.ino.hex",
+    "estructura_db_excel":"/home/ffelix07/Documents/LabRemo/Orchestrator/Base de datos.xlsx"
+}

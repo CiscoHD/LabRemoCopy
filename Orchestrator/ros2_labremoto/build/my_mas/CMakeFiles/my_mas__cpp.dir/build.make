@@ -98,6 +98,14 @@ CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/contrato.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/contrato__builder.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/contrato__struct.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/contrato__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/trans_entrada.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__traits.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/log_salida.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/log_salida__builder.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/log_salida__struct.hpp
+CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/log_salida__traits.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/load_filedb.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__builder.hpp
 CMakeFiles/my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_filedb__struct.hpp
@@ -146,6 +154,8 @@ rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/msg/SensorM
 rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/msg/FileHexLoad.idl
 rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/msg/TransGlobal.idl
 rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/msg/Contrato.idl
+rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/msg/TransEntrada.idl
+rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/msg/LogSalida.idl
 rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/srv/LoadFiledb.idl
 rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/srv/LoadFile.idl
 rosidl_generator_cpp/my_mas/msg/operacion.hpp: rosidl_adapter/my_mas/action/Fibonacci.idl
@@ -314,6 +324,30 @@ rosidl_generator_cpp/my_mas/msg/detail/contrato__struct.hpp: rosidl_generator_cp
 rosidl_generator_cpp/my_mas/msg/detail/contrato__traits.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/contrato__traits.hpp
 
+rosidl_generator_cpp/my_mas/msg/trans_entrada.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/trans_entrada.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__builder.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__builder.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__struct.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__struct.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__traits.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__traits.hpp
+
+rosidl_generator_cpp/my_mas/msg/log_salida.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/log_salida.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/log_salida__builder.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/log_salida__builder.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/log_salida__struct.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/log_salida__struct.hpp
+
+rosidl_generator_cpp/my_mas/msg/detail/log_salida__traits.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/msg/detail/log_salida__traits.hpp
+
 rosidl_generator_cpp/my_mas/srv/load_filedb.hpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_mas/srv/load_filedb.hpp
 
@@ -422,18 +456,26 @@ my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/create_bit_stream__traits.hp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/file_hex_load__traits.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/log_salida__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/log_salida__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/log_salida__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/operacion__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/operacion__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/operacion__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/sensor_measurment__traits.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__builder.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__struct.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_entrada__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__struct.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/detail/trans_global__traits.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/file_hex_load.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/log_salida.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/operacion.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/sensor_measurment.hpp
+my_mas__cpp: rosidl_generator_cpp/my_mas/msg/trans_entrada.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/msg/trans_global.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__builder.hpp
 my_mas__cpp: rosidl_generator_cpp/my_mas/srv/detail/load_file__struct.hpp

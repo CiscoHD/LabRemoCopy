@@ -51,7 +51,7 @@ class ArduinoActionServer(Node):
             sketch_path = goal_handle.request.path_hex 
             PORT = dispositivos[0]['port']['address']
             #FQBN = dispositivos[0]['matching_boards'][0]['fqbn']
-            try:
+            if os.path.exists(sketch_path):
                 #copil = os.popen(f"arduino-cli compile --fqbn {FQBN} {sketch_path}").read()               
                 #upload_r = os.popen(f"arduino-cli -p {PORT} upload {sketch_path}").read()
                 upload_r = os.popen(f"avrdude -c arduino -P {PORT} -b 115200 -p atmega328p -D -U flash:w:{sketch_path}").read()
@@ -60,13 +60,15 @@ class ArduinoActionServer(Node):
                 self.get_logger().info(feedback_msg.status)
 
                 result = Cargahex.Result()
-                result.status_final = upload_r 
+                result.status_final = feedback_msg.status 
     
-
+                msg_auditor = self.create_auditor_msg()
+                msg_auditor.logproceso = result.status_final
+                self.publisherauditor_.publish(msg_auditor)
                 
                 return result
 
-            except:
+            else:
                 feedback_msg.status = 'File no found'
                 goal_handle.abort()
                 result = Cargahex.Result()
@@ -74,7 +76,9 @@ class ArduinoActionServer(Node):
 
                 self.get_logger().info(result.status_final)
 
-
+                msg_auditor = self.create_auditor_msg()
+                msg_auditor.logproceso = result.status_final
+                self.publisherauditor_.publish(msg_auditor)
                 
                 return result
 
@@ -95,10 +99,9 @@ class ArduinoActionServer(Node):
 
 
 def main(args=None):
+
     rclpy.init(args=args)
-
     action_server = ArduinoActionServer()
-
     rclpy.spin(action_server)
 
 

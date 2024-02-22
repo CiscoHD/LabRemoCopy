@@ -9,6 +9,8 @@
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/FileHexLoad.msg",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/TransGlobal.msg",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/Contrato.msg",
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/TransEntrada.msg",
+    "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:msg/LogSalida.msg",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:srv/LoadFiledb.srv",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:srv/LoadFile.srv",
     "/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/src/my_mas:action/Fibonacci.action",
