@@ -15,11 +15,37 @@ find_package(geometry_msgs REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-
 set(msg_files
-	"msg/SensorMeasurment.msg"
-)
+"msg/Operacion.msg"
+"msg/BitLoad.msg"
+"msg/CreateBitStream.msg"
+"msg/Auditor.msg"
+"msg/SensorMeasurment.msg"
+"msg/FileHexLoad.msg"
+"msg/TransGlobal.msg"
+"msg/Contrato.msg"
+"msg/TransEntrada.msg"
+"msg/LogSalida.msg"
+  )
 
+set(srv_files
+"srv/LoadFiledb.srv"
+"srv/LoadFile.srv"
+  )
+  set(action_files
+  "action/Fibonacci.action"
+  "action/Cargahex.action"
+  "action/CargaBit.action"
+  "action/Tranformvhdlbit.action"
+  )
+
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+${msg_files}
+${srv_files}
+${action_files}
+  DEPENDENCIES geometry_msgs
+)
 
 rosidl_generate_interfaces( ${PROJECT_NAME}
  ${msg_files}
