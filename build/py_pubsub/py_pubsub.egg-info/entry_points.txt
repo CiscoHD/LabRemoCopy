@@ -1,9 +1,0 @@
-[console_scripts]
-arduino_inf_cliente = py_pubsub.arduino_inf_cliente:main
-arduino_infrastructure = py_pubsub.arduino_infrastructure:main
-client_member_function = py_pubsub.client_member_function:main
-fibonacci_action_server = py_pubsub.fibonacci_action_server:main
-publisher_member_function = py_pubsub.publisher_member_function:main
-service_member_function = py_pubsub.service_member_function:main
-subscriber_member_function = py_pubsub.subscriber_member_function:main
-
