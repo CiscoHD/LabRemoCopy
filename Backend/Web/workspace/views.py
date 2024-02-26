@@ -5,10 +5,14 @@ from rest_framework.permissions import IsAdminUser, IsAuthenticated
 
 from .models import (Component,
                      ComponentList,
-                     MainBoard)
+                     MainBoard,Contratos,
+                     TransaccionesAuditor)
 from .serializers import (ComponentSerializer,
                             ComponentListSerializer,
-                            MainBoardSerializer)
+                            MainBoardSerializer,
+                            ContratosSerializer,
+                            TransaccionesSerializer,
+                            )
 
 
 DEBUG = True
@@ -122,3 +126,39 @@ class MainBoardDestroyAPIView(generics.DestroyAPIView):
     lookup_field = 'id'
     queryset = MainBoard.objects.all()
     serializer_class = MainBoardSerializer
+
+###############################################################
+####    Contratos 
+###############################################################
+
+class ContratosListCreateView(generics.ListCreateAPIView):
+    """API endpoint for listing and creating Contratos"""
+    #permission_classes = PERMISSIONS_ADMIN
+    queryset = Contratos.objects.all()
+    serializer_class = ContratosSerializer
+
+    def get_permissions(self):
+        self.permission_classes = PERMISSIONS_ADMIN
+        if self.request.method == 'GET':
+            self.permission_classes = PERMISSIONS_AUTHEN
+        return super(ContratosListCreateView,self).get_permissions()
+    
+class ContratosRetrieveAPIView(generics.RetrieveAPIView):
+    """API endpoint for listing detailed users"""
+    permission_classes = PERMISSIONS_ADMIN
+    lookup_field = 'id'
+    queryset = Contratos.objects.all()
+    serializer_class = ContratosSerializer
+
+class ContratosRetrieveUpdateView(generics.RetrieveUpdateAPIView):
+    """API endpoint for updating detailed users"""
+    permission_classes = PERMISSIONS_ADMIN
+    lookup_field = 'id'
+    queryset = Contratos.objects.all()
+    serializer_class = ContratosSerializer
+
+class ContratosDestroyAPIView(generics.DestroyAPIView):
+    permission_classes = PERMISSIONS_ADMIN
+    lookup_field = 'id'
+    queryset = Contratos.objects.all()
+    serializer_class = ContratosSerializer
