@@ -40,23 +40,11 @@ set(srv_files
   "action/Tranformvhdlbit.action"
   )
 
-
 rosidl_generate_interfaces(${PROJECT_NAME}
 ${msg_files}
 ${srv_files}
 ${action_files}
   DEPENDENCIES geometry_msgs
-)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-${msg_files}
-${srv_files}
-${action_files}
-  DEPENDENCIES geometry_msgs
-)
-
-rosidl_generate_interfaces( ${PROJECT_NAME}
- ${msg_files}
   DEPENDENCIES builtin_interfaces
  )
 
