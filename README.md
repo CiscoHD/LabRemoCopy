@@ -24,7 +24,7 @@ Remote Laboratory by IMMAS is a project where it will be implemented a way to ma
 ## Software and Hardware
 
 | Name | Description | Version |
-|--- |--- |
+|--- |--- | --- |
 | [ROS](https://www.ros.org/) | The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. | Humble |
 | [Python](https://www.python.org/) |Python is a programming language that lets you work quickly and integrate systems more effectively. | 3.8 |
 |[Django](https://www.djangoproject.com/) | Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. | |
