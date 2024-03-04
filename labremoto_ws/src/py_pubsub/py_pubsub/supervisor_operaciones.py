@@ -56,7 +56,7 @@ class SupervisorOperaciones(Node):
                 int: mensaje resultante de la operacion
             """
 
-            path_database= json.load(open('/home/ffelix07/Documents/LabRemo/Orchestrator/VARIABLES_ORQUESTADOR.json'))['path_database']
+            path_database= json.load(open('/home/trabajo/LabRemo/VARIABLES_ORQUESTADOR.json'))['path_database']
             query =  f""" INSERT INTO SUPERVISOROPERACIONES (
                 nameoperacion,DescOperacion,EstatusOperacion,EstatusOperacion,FechaOperacion) VALUES 
                 {(msg.nameoperacion,msg.descoperacion,msg.estatusoperacion, msg.estatusoperacion,msg.fechaoperacion)};"""
