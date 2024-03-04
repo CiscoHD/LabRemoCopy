@@ -1,4 +1,4 @@
-<img src="https://www.iimas.unam.mx/wp-content/uploads/2023/11/Logo-pagina-ok.png" alt="IIMAS Logo"> 
+<img src="IIMASLogo.png" alt="IIMAS Logo"> 
 
 # Remote Laboratory by IMASS
 
