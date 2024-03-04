@@ -15,6 +15,7 @@ find_package(geometry_msgs REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+
 set(msg_files
 "msg/Operacion.msg"
 "msg/BitLoad.msg"
@@ -39,6 +40,13 @@ set(srv_files
   "action/Tranformvhdlbit.action"
   )
 
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+${msg_files}
+${srv_files}
+${action_files}
+  DEPENDENCIES geometry_msgs
+)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
 ${msg_files}
