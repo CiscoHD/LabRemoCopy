@@ -37,10 +37,18 @@ Remote Laboratory by IMMAS is a project where it will be implemented a way to ma
 
 ## Authors
 
-- r
-- t
-- t
-- t
-- t
-- t
+- Humberto Gómez
+- Ricardo Villarreal
+- Roberto Tovar
+- Victor Lomas
+- Abner Maya
+- Felix Nieto
+- Gaspar Lorenzo Collado Santes
+- Axel Montiel
+- Ausubel Maurico Chavez Martinez
+- José Espinosa
+- Ramos Espinoza Abril
+- Emma Reyes López
+- Isaac
+
 ## Gratefulness
