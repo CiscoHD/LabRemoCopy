@@ -16,10 +16,10 @@ from .views import (
     MainBoardRetrieveUpdateView,
     MainBoardDestroyAPIView,
     ### Contratos VIEWS
-    ContratosListCreateView,
-    ContratosRetrieveAPIView,
-    ContratosRetrieveUpdateView,
-    ContratosDestroyAPIView,
+    # ContratosListCreateView,
+    # ContratosRetrieveAPIView,
+    # ContratosRetrieveUpdateView,
+    # ContratosDestroyAPIView,
 )
 
 component = 'component/'
@@ -52,9 +52,9 @@ urlpatterns = [
     ##############################################################
     ### Contratos API
     ##############################################################
-    path(contratos+'',ContratosListCreateView.as_view()),
-    path(contratos+'<str:id>/',ContratosRetrieveAPIView.as_view(),name='mainboard_detail'),
-    path(contratos+'update/<str:id>/', ContratosRetrieveUpdateView.as_view(),name='mainboard_update'),
-    path(contratos+'delete/<str:id>', ContratosDestroyAPIView.as_view(),name='mainboard_destroy'),
+    # path(contratos+'',ContratosListCreateView.as_view()),
+    # path(contratos+'<str:id>/',ContratosRetrieveAPIView.as_view(),name='mainboard_detail'),
+    # path(contratos+'update/<str:id>/', ContratosRetrieveUpdateView.as_view(),name='mainboard_update'),
+    # path(contratos+'delete/<str:id>', ContratosDestroyAPIView.as_view(),name='mainboard_destroy'),
 
 ]

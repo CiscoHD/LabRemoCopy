@@ -22,27 +22,6 @@ class modelBase(models.Model):
     class Meta:
         abstract = True
 
-class Contratos(modelBase):
-    id_contrato = models.AutoField(primary_key=True)
-    nombre_contrato = models.CharField(max_length=128,unique=True)
-    tipo_contrato = models.CharField(max_length=128,unique=True)
-    contrato = models.CharField(max_length=128,unique=True)
-    consideraciones = models.TextField()
-
-class TransaccionesAuditor(modelBase):
-    id_node = models.AutoField(primary_key=True)
-    name_node = models.CharField(max_length=128,unique=True)
-    type_transaction = models.CharField(max_length=128)
-    date_process = models.DateField(auto_now=True)
-    id_user = models.ForeignKey(
-        User,
-        related_name='contratos_user',
-        on_delete=models.CASCADE,
-    )
-
-    log_process = models.TextField()
-
-
 class ComponentList(modelBase):
     pass
 
@@ -88,3 +67,30 @@ class MainBoard(modelBase):
         choices=boardStatus,
         default=TESTING,
     )
+
+class Contratos(modelBase):
+    #id_contrato = models.AutoField(primary_key=True)
+    nombre_contrato = models.CharField(max_length=128,unique=True)
+    tipo_contrato = models.CharField(max_length=128,unique=True)
+    contrato = models.CharField(max_length=128,unique=True)
+    consideraciones = models.CharField(max_length=4096)
+
+# class Contratos2(modelBase):
+#     #id_contrato = models.AutoField(primary_key=True)
+#     nombre_contrato = models.CharField(max_length=128,unique=True)
+#     tipo_contrato = models.CharField(max_length=128,unique=True)
+#     contrato = models.CharField(max_length=128,unique=True)
+#     consideraciones = models.CharField(max_length=4096)
+
+class TransaccionesAuditor(modelBase):
+    #id_node = models.AutoField(primary_key=True)
+    name_node = models.CharField(max_length=128,unique=True)
+    type_transaction = models.CharField(max_length=128)
+    date_process = models.DateField(auto_now=True)
+    id_user = models.ForeignKey(
+        User,
+        related_name='contratos_user',
+        on_delete=models.CASCADE,
+    )
+
+    log_process = models.CharField(max_length=1024)

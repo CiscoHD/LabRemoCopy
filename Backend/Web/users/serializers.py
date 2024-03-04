@@ -123,4 +123,10 @@ class userInfoSerializer(serializers.Serializer):
 class FileUploadSerializer(serializers.ModelSerializer):
     class Meta:
         model = UploadedFile
-        fields = ('file','uploaded_on',)
+        fields = ('file',
+                  'uploaded_on',
+                  'id_estudiante',
+                  'id_practica',
+                  'id_session',
+                  )
+        # fields = '__all__'

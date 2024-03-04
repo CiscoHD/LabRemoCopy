@@ -19,8 +19,8 @@ class modelBase(models.Model):
         (OFF, 'Unavailable'),
     )
 
-    isAvailable = models.CharField(
-        max_length=2,
+    isAvailable = models.IntegerField(
+        # max_length=2,
         choices=CHOICES,
         default=OFF,
     )
@@ -127,6 +127,10 @@ class User(AbstractUser):
         null=True,
         #default=1,
     )
+
+    @property
+    def getId(self):
+        return self.id
 
     #USERNAME_FIELD = 'email'
     #REQUIRED_FIELDS = []
@@ -283,22 +287,44 @@ class DuinoFile(models.Model):
 
 
 class UploadedFile(models.Model):
-    file = models.FileField()
+
     uploaded_on = models.DateTimeField(auto_now_add=True)
 
-    path_archivo = models.CharField(max_length=128)
+    path_archivo = models.CharField(max_length=1024)
     
     id_estudiante = models.ForeignKey(
         User,
         related_name='archivos_estudiante',
         on_delete = models.CASCADE,
+        default=1,
     )
     id_practica = models.ForeignKey(
         Activity,
         related_name='archivos_practica',
         on_delete=models.CASCADE,
+        default=1,
     )
+    id_session = models.ForeignKey(
+        LabSessions,
+        related_name='archivos_session',
+        on_delete=models.CASCADE,
+        default=1
+    )
+    
 
+    def get_path(instance,filename):
+        return 'u{0}a{1}s{2}.{3}'.format(instance.id_estudiante.id,
+                                     instance.id_practica.id,
+                                     instance.id_session.id,
+                                     filename.split('.')[-1])
+    
+    file = models.FileField(upload_to=get_path)
+
+
+    
+    # def save(self,*args,**kwargs):
+    #     # self.path_archivo =self.get_path()
+    #     super(UploadedFile,self).save(*args,**kwargs)
     
     def __str__(self):
         return str(self.uploaded_on.date())
