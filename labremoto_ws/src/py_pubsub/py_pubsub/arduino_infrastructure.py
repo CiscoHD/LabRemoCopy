@@ -11,26 +11,33 @@ from my_mas.msg import Operacion,Auditor
 class ArduinoActionServer(Node):
 
     def __init__(self):
-        super().__init__('Carga_arduino_hex')
+        super().__init__('carga_arduino_hex')
         self._action_server = ActionServer(
-            self,
-            Cargahex,
-            'arduino_inf',
-            self.execute_callback)
-
-        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
-        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
+            self,Cargahex,'arduino_inf',self.execute_callback)
+        self.msg_inicio_node()
 
         self.publisherauditor_  = self.create_publisher(Auditor, 'top_auditor_transacciones', 10)
 
-    def create_operacion_msg(self):
-        msg = Operacion()
-        msg.nameoperacion =  "Inicio Nodo"
-        msg.descoperacion = f"{self.get_name()}"
-        msg.estatusoperacion = "Publicado"
-        msg.fechaoperacion = f"{datetime.now()}"
+        self.msg_inicio_node()
+
+    def msg_inicio_node(self):
+        """
+        Funcion para publicar el inicio del nodo.
         
-        return msg
+        Args:
+            none
+
+        Returns:
+            none
+        """
+        msg_operacion = Operacion()
+        msg_operacion.nameoperacion =  "Inicio Nodo"
+        msg_operacion.descoperacion = f"{self.get_name()}"
+        msg_operacion.estatusoperacion = "Iniciado"
+        msg_operacion.fechaoperacion = f"{datetime.now()}"
+    
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(msg_operacion)
+        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
     def create_auditor_msg(self):
         msg = Auditor()

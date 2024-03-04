@@ -8,33 +8,47 @@ from datetime import datetime
 import json
 
 class AdminContratos(Node):
+    """
+    Administrador de contratos, encargado revisar la transaccion entrante
+    y verificar que cumple las restricciones de acuerdo al tipo de transaccion.
+
+    Attributes:
+        subscription (subscriptor): Esucha las transacciones de entrada
+        publisherauditor_ (publisher): Publica el resultado del nodo
+        publisheradmintransaccion_ (publisher): publica la transaccion aceptada
+        publisherconsola_ (publisher): Publica los log en la consola
+    """
 
     def __init__(self):
         super().__init__('administrador_contratos')
         self.subscription = self.create_subscription(
-            Contrato,
-            'top_transacciones',
-            self.listener_callback,
-            10)
+            Contrato,'top_transacciones',self.listener_callback,10)
+        self.subscription  
+        self.msg_inicio_node()
         
         self.publisherauditor_  = self.create_publisher(Auditor, 'top_auditor_transacciones', 10)
-        self.publisheradmintransaccion_  = self.create_publisher(Auditor, 'top_transacciones_aceptadas', 10)
+        self.publisheradmintransaccion_  = self.create_publisher(TransGlobal, 'top_transacciones_aceptadas', 10)
         self.publisherconsola_ = self.create_publisher(LogSalida,'top_consola',10)
-        self.subscription  # prevent unused variable warning
+ 
 
+    def msg_inicio_node(self):
+        """
+        Funcion para publicar el inicio del nodo.
         
-        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
+        Args:
+            none
+
+        Returns:
+            none
+        """
+        msg_operacion = Operacion()
+        msg_operacion.nameoperacion =  "Inicio Nodo"
+        msg_operacion.descoperacion = f"{self.get_name()}"
+        msg_operacion.estatusoperacion = "Iniciado"
+        msg_operacion.fechaoperacion = f"{datetime.now()}"
+    
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(msg_operacion)
         self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
-
-
-    def create_operacion_msg(self):
-        msg = Operacion()
-        msg.nameoperacion =  "Inicio Nodo"
-        msg.descoperacion = f"{self.get_name()}"
-        msg.estatusoperacion = "Publicado"
-        msg.fechaoperacion = f"{datetime.now()}"
-        
-        return msg
 
     def create_auditor_msg(self):
         msg = Auditor()
@@ -46,9 +60,7 @@ class AdminContratos(Node):
 
     def listener_callback(self, msg):
 
-    
 
-        
         self.get_logger().info(f'Solicitud recibida para contrato {msg.idcontrato}')
 
         path_database= json.load(open('/home/ffelix07/Documents/LabRemo/Orchestrator/VARIABLES_ORQUESTADOR.json'))['path_database']
@@ -80,8 +92,6 @@ class AdminContratos(Node):
                  msg_log =  LogSalida()
                  msg_log.logsalida = "Transaccion no  aceptada"
                  self.publisherconsola_.publish(msg_log)
-  
-
         
         else:
              self.get_logger().info(f'Contrato {msg.idcontrato} no encontrado ')
@@ -89,10 +99,9 @@ class AdminContratos(Node):
 
 
 def main(args=None):
+
     rclpy.init(args=args)
-
     Admin_contrato = AdminContratos()
-
     rclpy.spin(Admin_contrato)
     Admin_contrato.destroy_node()
     rclpy.shutdown()
