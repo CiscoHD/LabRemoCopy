@@ -34,4 +34,13 @@ Remote Laboratory by IMMAS is a project where it will be implemented a way to ma
 |[Vivado](https://www.xilinx.com/products/design-tools/vivado.html) |Vivado is the design software for AMD adaptive SoCs and FPGAs.  | |
 |[Ise xilinx](https://www.xilinx.com/products/design-tools/ise-design-suite.html) |ISE™ WebPACK™ design software is the industry´s only FREE, fully featured front-to-back FPGA design solution f| |
 
+
+## Authors
+
+- r
+- t
+- t
+- t
+- t
+- t
 ## Gratefulness
