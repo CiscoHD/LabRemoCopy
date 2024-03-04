@@ -56,13 +56,16 @@ class LogSalida(metaclass=Metaclass_LogSalida):
 
     __slots__ = [
         '_logsalida',
+        '_status',
     ]
 
     _fields_and_field_types = {
         'logsalida': 'string',
+        'status': 'string',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
@@ -71,6 +74,7 @@ class LogSalida(metaclass=Metaclass_LogSalida):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.logsalida = kwargs.get('logsalida', str())
+        self.status = kwargs.get('status', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -103,6 +107,8 @@ class LogSalida(metaclass=Metaclass_LogSalida):
             return False
         if self.logsalida != other.logsalida:
             return False
+        if self.status != other.status:
+            return False
         return True
 
     @classmethod
@@ -122,3 +128,16 @@ class LogSalida(metaclass=Metaclass_LogSalida):
                 isinstance(value, str), \
                 "The 'logsalida' field must be of type 'str'"
         self._logsalida = value
+
+    @builtins.property
+    def status(self):
+        """Message field 'status'."""
+        return self._status
+
+    @status.setter
+    def status(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'status' field must be of type 'str'"
+        self._status = value

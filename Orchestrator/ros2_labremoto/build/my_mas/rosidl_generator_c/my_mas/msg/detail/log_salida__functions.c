@@ -13,6 +13,7 @@
 
 // Include directives for member types
 // Member `logsalida`
+// Member `status`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -23,6 +24,11 @@ my_mas__msg__LogSalida__init(my_mas__msg__LogSalida * msg)
   }
   // logsalida
   if (!rosidl_runtime_c__String__init(&msg->logsalida)) {
+    my_mas__msg__LogSalida__fini(msg);
+    return false;
+  }
+  // status
+  if (!rosidl_runtime_c__String__init(&msg->status)) {
     my_mas__msg__LogSalida__fini(msg);
     return false;
   }
@@ -37,6 +43,8 @@ my_mas__msg__LogSalida__fini(my_mas__msg__LogSalida * msg)
   }
   // logsalida
   rosidl_runtime_c__String__fini(&msg->logsalida);
+  // status
+  rosidl_runtime_c__String__fini(&msg->status);
 }
 
 bool
@@ -48,6 +56,12 @@ my_mas__msg__LogSalida__are_equal(const my_mas__msg__LogSalida * lhs, const my_m
   // logsalida
   if (!rosidl_runtime_c__String__are_equal(
       &(lhs->logsalida), &(rhs->logsalida)))
+  {
+    return false;
+  }
+  // status
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->status), &(rhs->status)))
   {
     return false;
   }
@@ -65,6 +79,12 @@ my_mas__msg__LogSalida__copy(
   // logsalida
   if (!rosidl_runtime_c__String__copy(
       &(input->logsalida), &(output->logsalida)))
+  {
+    return false;
+  }
+  // status
+  if (!rosidl_runtime_c__String__copy(
+      &(input->status), &(output->status)))
   {
     return false;
   }

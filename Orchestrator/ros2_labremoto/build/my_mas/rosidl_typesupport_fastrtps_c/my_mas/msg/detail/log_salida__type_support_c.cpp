@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // logsalida
-#include "rosidl_runtime_c/string_functions.h"  // logsalida
+#include "rosidl_runtime_c/string.h"  // logsalida, status
+#include "rosidl_runtime_c/string_functions.h"  // logsalida, status
 
 // forward declare type support functions
 
@@ -54,6 +54,20 @@ static bool _LogSalida__cdr_serialize(
   // Field name: logsalida
   {
     const rosidl_runtime_c__String * str = &ros_message->logsalida;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: status
+  {
+    const rosidl_runtime_c__String * str = &ros_message->status;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -93,6 +107,22 @@ static bool _LogSalida__cdr_deserialize(
     }
   }
 
+  // Field name: status
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->status.data) {
+      rosidl_runtime_c__String__init(&ros_message->status);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->status,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'status'\n");
+      return false;
+    }
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -114,6 +144,10 @@ size_t get_serialized_size_my_mas__msg__LogSalida(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->logsalida.size + 1);
+  // field.name status
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->status.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -155,6 +189,18 @@ size_t max_serialized_size_my_mas__msg__LogSalida(
         1;
     }
   }
+  // member: status
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -164,7 +210,7 @@ size_t max_serialized_size_my_mas__msg__LogSalida(
     using DataType = my_mas__msg__LogSalida;
     is_plain =
       (
-      offsetof(DataType, logsalida) +
+      offsetof(DataType, status) +
       last_member_size
       ) == ret_val;
   }

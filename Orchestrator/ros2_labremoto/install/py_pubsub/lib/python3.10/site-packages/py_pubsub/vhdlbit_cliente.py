@@ -8,25 +8,34 @@ from datetime import datetime
 class ClienteTransformVhdlBIT(Node):
 
     def __init__(self):
-        super().__init__('Arduino_action_client')
+        super().__init__('vhdlbit_transform_client')
         self._action_client = ActionClient(self, Tranformvhdlbit, 'transformar_bit')
         self.subscription = self.create_subscription(CreateBitStream,'top_create_bit',self.listener_callback,10)
         self.subscription  
+        self.msg_inicio_node()
 
         self.publisherauditor_ = self.create_publisher(Auditor, 'top_auditot_transacciones', 10)
 
-        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
-        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
 
-    def create_operacion_msg(self):
-        msg = Operacion()
-        msg.nameoperacion =  "Inicio Nodo"
-        msg.descoperacion = f"{self.get_name()}"
-        msg.estatusoperacion = "Publicado"
-        msg.fechaoperacion = f"{datetime.now()}"
+    def msg_inicio_node(self):
+        """
+        Funcion para publicar el inicio del nodo.
         
-        return msg
+        Args:
+            none
+
+        Returns:
+            none
+        """
+        msg_operacion = Operacion()
+        msg_operacion.nameoperacion =  "Inicio Nodo"
+        msg_operacion.descoperacion = f"{self.get_name()}"
+        msg_operacion.estatusoperacion = "Iniciado"
+        msg_operacion.fechaoperacion = f"{datetime.now()}"
+    
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(msg_operacion)
+        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
     
     def create_auditor_msg(self):
         msg = Auditor()
@@ -59,14 +68,11 @@ class ClienteTransformVhdlBIT(Node):
 
 
 def main(args=None):
+    
     rclpy.init(args=args)
-
-
-    minimal_subscriber = ClienteTransformVhdlBIT()
-
-    rclpy.spin(minimal_subscriber)
-
-    minimal_subscriber.destroy_node()
+    tranform_vhdlbit = ClienteTransformVhdlBIT()
+    rclpy.spin(tranform_vhdlbit)
+    tranform_vhdlbit.destroy_node()
     rclpy.shutdown()
 
 

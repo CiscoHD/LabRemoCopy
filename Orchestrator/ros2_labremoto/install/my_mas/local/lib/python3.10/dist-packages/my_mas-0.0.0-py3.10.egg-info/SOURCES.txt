@@ -16,6 +16,7 @@ my_mas/msg/_bit_load.py
 my_mas/msg/_contrato.py
 my_mas/msg/_create_bit_stream.py
 my_mas/msg/_file_hex_load.py
+my_mas/msg/_log_salida.py
 my_mas/msg/_operacion.py
 my_mas/msg/_sensor_measurment.py
 my_mas/msg/_trans_entrada.py

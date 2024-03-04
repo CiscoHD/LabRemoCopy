@@ -272,6 +272,9 @@ CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/
   rosidl_generator_c/my_mas/msg/detail/trans_entrada__type_support.h \
   rosidl_generator_c/my_mas/msg/detail/trans_entrada__struct.h \
   rosidl_generator_c/my_mas/msg/detail/trans_entrada__functions.h \
+  rosidl_generator_c/my_mas/msg/detail/log_salida__type_support.h \
+  rosidl_generator_c/my_mas/msg/detail/log_salida__struct.h \
+  rosidl_generator_c/my_mas/msg/detail/log_salida__functions.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__type_support.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h \
   rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h \
@@ -319,6 +322,8 @@ rosidl_generator_c/my_mas/srv/detail/load_file__type_support.h:
 rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.h:
 
 rosidl_generator_c/my_mas/srv/detail/load_filedb__struct.h:
+
+rosidl_generator_c/my_mas/msg/detail/log_salida__struct.h:
 
 rosidl_generator_c/my_mas/msg/detail/trans_entrada__functions.h:
 
@@ -459,6 +464,8 @@ rosidl_generator_c/my_mas/msg/detail/bit_load__functions.h:
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h:
+
+rosidl_generator_c/my_mas/msg/detail/log_salida__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -801,6 +808,8 @@ rosidl_generator_c/my_mas/msg/detail/trans_entrada__struct.h:
 /usr/include/python3.10/pyerrors.h:
 
 rosidl_generator_c/my_mas/msg/detail/bit_load__struct.h:
+
+rosidl_generator_c/my_mas/msg/detail/log_salida__type_support.h:
 
 /usr/include/pthread.h:
 

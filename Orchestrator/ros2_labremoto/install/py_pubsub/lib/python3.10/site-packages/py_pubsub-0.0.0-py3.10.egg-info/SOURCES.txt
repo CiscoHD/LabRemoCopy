@@ -23,6 +23,7 @@ py_pubsub/arduino_inf_cliente.py
 py_pubsub/arduino_infrastructure.py
 py_pubsub/auditor_transacciones.py
 py_pubsub/carga_bit.py
+py_pubsub/carga_bit_cliente.py
 py_pubsub/client_member_function.py
 py_pubsub/fibonacci_action_server.py
 py_pubsub/publicador_prueba.py

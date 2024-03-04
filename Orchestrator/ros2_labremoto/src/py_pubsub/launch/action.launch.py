@@ -18,7 +18,7 @@ def generate_launch_description():
             output='screen'),
         Node(
             package='py_pubsub',
-            executable='action_cliente_server',
+            executable='vhdlbit_cliente',
             output='screen')
     ])
  

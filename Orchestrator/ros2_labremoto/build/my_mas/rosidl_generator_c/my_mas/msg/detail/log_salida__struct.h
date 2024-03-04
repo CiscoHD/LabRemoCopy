@@ -19,12 +19,14 @@ extern "C"
 
 // Include directives for member types
 // Member 'logsalida'
+// Member 'status'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in msg/LogSalida in the package my_mas.
 typedef struct my_mas__msg__LogSalida
 {
   rosidl_runtime_c__String logsalida;
+  rosidl_runtime_c__String status;
 } my_mas__msg__LogSalida;
 
 // Struct for a sequence of my_mas__msg__LogSalida.

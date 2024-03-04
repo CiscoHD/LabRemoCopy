@@ -34,6 +34,8 @@ cdr_serialize(
 {
   // Member: logsalida
   cdr << ros_message.logsalida;
+  // Member: status
+  cdr << ros_message.status;
   return true;
 }
 
@@ -45,6 +47,9 @@ cdr_deserialize(
 {
   // Member: logsalida
   cdr >> ros_message.logsalida;
+
+  // Member: status
+  cdr >> ros_message.status;
 
   return true;
 }
@@ -66,6 +71,10 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.logsalida.size() + 1);
+  // Member: status
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.status.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -103,6 +112,19 @@ max_serialized_size_LogSalida(
     }
   }
 
+  // Member: status
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -111,7 +133,7 @@ max_serialized_size_LogSalida(
     using DataType = my_mas::msg::LogSalida;
     is_plain =
       (
-      offsetof(DataType, logsalida) +
+      offsetof(DataType, status) +
       last_member_size
       ) == ret_val;
   }

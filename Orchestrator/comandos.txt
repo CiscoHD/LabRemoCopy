@@ -1,3 +1,4 @@
+cd.
  unset GTK_PATH
  rqt
 

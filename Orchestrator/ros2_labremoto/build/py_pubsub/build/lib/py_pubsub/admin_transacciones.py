@@ -12,31 +12,32 @@ class AdminTransacciones(Node):
     def __init__(self):
         super().__init__('administrador_transacciones')
         self.subscription = self.create_subscription(
-            TransGlobal,
-            'top_transacciones_aceptadas',
-            self.listener_callback,
-            10)
-
+            TransGlobal,'top_transacciones_aceptadas',self.listener_callback,10)
         self.subscription  # prevent unused variable warning
+        self.msg_inicio_node()
 
-        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(self.create_operacion_msg())
-        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
-
-
-        self.publisherarduino_ = self.create_publisher(Operacion, 'archivos_hex', 10)
+        self.publisherarduino_ = self.create_publisher(FileHexLoad, 'archivos_hex', 10)
         self.publisherbit_ = self.create_publisher(CreateBitStream, 'create_bit', 10)
 
 
-
-
-    def create_operacion_msg(self):
-        msg = Operacion()
-        msg.nameoperacion =  "Inicio Nodo"
-        msg.descoperacion = f"{self.get_name()}"
-        msg.estatusoperacion = "Publicado"
-        msg.fechaoperacion = f"{datetime.now()}"
+    def msg_inicio_node(self):
+        """
+        Funcion para publicar el inicio del nodo.
         
-        return msg
+        Args:
+            none
+
+        Returns:
+            none
+        """
+        msg_operacion = Operacion()
+        msg_operacion.nameoperacion =  "Inicio Nodo"
+        msg_operacion.descoperacion = f"{self.get_name()}"
+        msg_operacion.estatusoperacion = "Iniciado"
+        msg_operacion.fechaoperacion = f"{datetime.now()}"
+    
+        self.create_publisher(Operacion, 'top_supervisor_operaciones', 10).publish(msg_operacion)
+        self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
     def listener_callback(self, msg):
         self.get_logger().info(f'Transaccion recibida: {msg.name_node}')
@@ -51,11 +52,9 @@ class AdminTransacciones(Node):
         
 
 def main(args=None):
+    
     rclpy.init(args=args)
-
-
     admin_transacciones = AdminTransacciones()
-
     rclpy.spin(admin_transacciones)
     admin_transacciones.destroy_node()
     rclpy.shutdown()

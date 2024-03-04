@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_LogSalida_status
+{
+public:
+  explicit Init_LogSalida_status(::my_mas::msg::LogSalida & msg)
+  : msg_(msg)
+  {}
+  ::my_mas::msg::LogSalida status(::my_mas::msg::LogSalida::_status_type arg)
+  {
+    msg_.status = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::my_mas::msg::LogSalida msg_;
+};
+
 class Init_LogSalida_logsalida
 {
 public:
   Init_LogSalida_logsalida()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::my_mas::msg::LogSalida logsalida(::my_mas::msg::LogSalida::_logsalida_type arg)
+  Init_LogSalida_status logsalida(::my_mas::msg::LogSalida::_logsalida_type arg)
   {
     msg_.logsalida = std::move(arg);
-    return std::move(msg_);
+    return Init_LogSalida_status(msg_);
   }
 
 private:

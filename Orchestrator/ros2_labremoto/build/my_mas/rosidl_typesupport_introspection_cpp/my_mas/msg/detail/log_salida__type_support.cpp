@@ -37,7 +37,7 @@ void LogSalida_fini_function(void * message_memory)
   typed_message->~LogSalida();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember LogSalida_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember LogSalida_message_member_array[2] = {
   {
     "logsalida",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -54,13 +54,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember LogSalida_mes
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "status",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_mas::msg::LogSalida, status),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers LogSalida_message_members = {
   "my_mas::msg",  // message namespace
   "LogSalida",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(my_mas::msg::LogSalida),
   LogSalida_message_member_array,  // message members
   LogSalida_init_function,  // function to initialize message memory (memory has to be allocated)
