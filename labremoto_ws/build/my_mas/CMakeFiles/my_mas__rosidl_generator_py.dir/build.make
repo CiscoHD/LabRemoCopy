@@ -69,10 +69,66 @@ include CMakeFiles/my_mas__rosidl_generator_py.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
 
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o: rosidl_generator_py/my_mas/msg/_operacion_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_operacion_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_operacion_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_operacion_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o: rosidl_generator_py/my_mas/msg/_bit_load_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_bit_load_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_bit_load_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_bit_load_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o: rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o: rosidl_generator_py/my_mas/msg/_auditor_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_auditor_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_auditor_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_auditor_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.s
+
 CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
 CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o: rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c
 CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c
 
 CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.i: cmake_force
@@ -83,26 +139,222 @@ CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_senso
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.s
 
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o: rosidl_generator_py/my_mas/msg/_file_hex_load_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o: rosidl_generator_py/my_mas/msg/_trans_global_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_trans_global_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_trans_global_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_trans_global_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o: rosidl_generator_py/my_mas/msg/_contrato_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_contrato_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_contrato_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_contrato_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o: rosidl_generator_py/my_mas/msg/_trans_entrada_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o: rosidl_generator_py/my_mas/msg/_log_salida_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_log_salida_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_log_salida_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/msg/_log_salida_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o: rosidl_generator_py/my_mas/srv/_load_filedb_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/srv/_load_filedb_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/srv/_load_filedb_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/srv/_load_filedb_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o: rosidl_generator_py/my_mas/srv/_load_file_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/srv/_load_file_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/srv/_load_file_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/srv/_load_file_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o: rosidl_generator_py/my_mas/action/_fibonacci_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_fibonacci_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_fibonacci_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_fibonacci_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o: rosidl_generator_py/my_mas/action/_cargahex_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_cargahex_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_cargahex_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_cargahex_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o: rosidl_generator_py/my_mas/action/_carga_bit_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_carga_bit_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_carga_bit_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_carga_bit_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.s
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/flags.make
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o: rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o: CMakeFiles/my_mas__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o -MF CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o.d -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o -c /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c > CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.i
+
+CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c -o CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.s
+
 # Object files for target my_mas__rosidl_generator_py
 my_mas__rosidl_generator_py_OBJECTS = \
-"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o"
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o" \
+"CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o"
 
 # External object files for target my_mas__rosidl_generator_py
 my_mas__rosidl_generator_py_EXTERNAL_OBJECTS =
 
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/build.make
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: libmy_mas__rosidl_typesupport_c.so
-rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: libmy_mas__rosidl_generator_c.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so: CMakeFiles/my_mas__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/trabajo/LabRemo/labremoto_ws/build/my_mas/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C shared library rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_mas__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

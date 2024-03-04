@@ -356,11 +356,147 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/Operacion.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/BitLoad.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/CreateBitStream.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/Auditor.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/SensorMeasurment.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/FileHexLoad.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/TransGlobal.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/Contrato.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/TransEntrada.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/msg/LogSalida.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/srv" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/srv/LoadFiledb.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/srv" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/srv/LoadFile.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/action" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/action/Fibonacci.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/action" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/action/Cargahex.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/action" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/action/CargaBit.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/action" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_adapter/my_mas/action/Tranformvhdlbit.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/Operacion.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/BitLoad.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/CreateBitStream.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/Auditor.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/SensorMeasurment.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/FileHexLoad.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/TransGlobal.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/Contrato.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/TransEntrada.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/msg" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/msg/LogSalida.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/srv" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/srv/LoadFiledb.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/srv" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_cmake/srv/LoadFiledb_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/srv" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_cmake/srv/LoadFiledb_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/srv" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/srv/LoadFile.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/srv" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_cmake/srv/LoadFile_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/srv" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/build/my_mas/rosidl_cmake/srv/LoadFile_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/action" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/action/Fibonacci.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/action" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/action/Cargahex.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/action" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/action/CargaBit.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_mas/action" TYPE FILE FILES "/home/trabajo/LabRemo/labremoto_ws/src/my_mas/action/Tranformvhdlbit.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

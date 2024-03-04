@@ -1,18 +1,14 @@
 [console_scripts]
-SendTran_Cliente = py_pubsub.SendTran_Cliente.py:main
-SendTran_Service = py_pubsub.SendTran_Service.py:main
-action_cliente_server = py_pubsub.action_cliente_server.py:main
-arduino = py_pubsub.arduino.py:main
-arduino_inf_cliente = py_pubsub.arduino_inf_cliente.py:main
-arduino_infrastructure = py_pubsub.arduino_infrastructure.py:main
-carga_bit = py_pubsub.carga_bit.py:main
-client_member_function = py_pubsub.client_member_function.py:main
-fibonacci_action_server = py_pubsub.fibonacci_action_server.py:main
-publicador_prueba = py_pubsub.publicador_prueba.py:main
-publisher_member_function = py_pubsub.publisher_member_function.py:main
-service_member_function = py_pubsub.service_member_function.py:main
-sesiones = py_pubsub.sesiones.py:main
-subscriber_member_function = py_pubsub.subscriber_member_function.py:main
-supervisor = py_pubsub.supervisor.py:main
-transform_vhdl_bit = py_pubsub.transform_vhdl_bit.py:main
+admin_contratos = py_pubsub.admin_contratos:main
+admin_log_salida = py_pubsub.admin_log_salida:main
+admin_transacciones = py_pubsub.admin_transacciones:main
+admin_transacciones_entrada = py_pubsub.admin_transacciones_entrada:main
+arduino_inf_cliente = py_pubsub.arduino_inf_cliente:main
+arduino_infrastructure = py_pubsub.arduino_infrastructure:main
+auditor_transacciones = py_pubsub.auditor_transacciones:main
+publisher_prueba = py_pubsub.publisher_prueba:main
+publisher_transentrada = py_pubsub.publisher_transentrada:main
+supervisor_operaciones = py_pubsub.supervisor_operaciones:main
+transform_vhdl_bit = py_pubsub.transform_vhdl_bit:main
+vhdlbit_cliente = py_pubsub.vhdlbit_cliente:main
 

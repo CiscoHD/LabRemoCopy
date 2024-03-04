@@ -1,0 +1,198 @@
+[0.608s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.608s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fbd56ee2440>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbd56f13d00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbd56f13d00>>)
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.645s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/trabajo/LabRemo/labremoto_ws'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extensions ['ignore', 'ignore_ament_install']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'ignore'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'ignore_ament_install'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extensions ['colcon_pkg']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'colcon_pkg'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extensions ['colcon_meta']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'colcon_meta'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extensions ['ros']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_mas) by extension 'ros'
+[0.660s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_mas' with type 'ros.ament_cmake' and name 'my_mas'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore_ament_install'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_pkg']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_pkg'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_meta']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_meta'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ros']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ros'
+[0.661s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_pubsub' with type 'ros.ament_python' and name 'py_pubsub'
+[0.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.751s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 180 installed packages in /opt/ros/humble
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_target' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_clean_cache' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_clean_first' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'cmake_force_configure' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'ament_cmake_args' from command line to 'None'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'catkin_cmake_args' from command line to 'None'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'my_mas' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.803s] DEBUG:colcon.colcon_core.verb:Building package 'my_mas' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/trabajo/LabRemo/labremoto_ws/build/my_mas', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/trabajo/LabRemo/labremoto_ws/install/my_mas', 'merge_install': False, 'path': '/home/trabajo/LabRemo/labremoto_ws/src/my_mas', 'symlink_install': False, 'test_result_base': None}
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_args' from command line to 'None'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target' from command line to 'None'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.811s] DEBUG:colcon.colcon_core.verb:Building package 'py_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub', 'merge_install': False, 'path': '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub', 'symlink_install': False, 'test_result_base': None}
+[0.820s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.828s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.828s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/trabajo/LabRemo/labremoto_ws/src/my_mas' with build type 'ament_cmake'
+[0.828s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/trabajo/LabRemo/labremoto_ws/src/my_mas'
+[0.839s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.839s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.839s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/trabajo/LabRemo/labremoto_ws/build/my_mas': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trabajo/LabRemo/labremoto_ws/build/my_mas -- -j3 -l3
+[15.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/trabajo/LabRemo/labremoto_ws/build/my_mas' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trabajo/LabRemo/labremoto_ws/build/my_mas -- -j3 -l3
+[15.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/trabajo/LabRemo/labremoto_ws/build/my_mas': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trabajo/LabRemo/labremoto_ws/build/my_mas
+[15.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_mas)
+[15.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/trabajo/LabRemo/labremoto_ws/build/my_mas' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trabajo/LabRemo/labremoto_ws/build/my_mas
+[15.589s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas' for CMake module files
+[15.589s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas' for CMake config files
+[15.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_mas', 'cmake_prefix_path')
+[15.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/cmake_prefix_path.ps1'
+[15.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/cmake_prefix_path.dsv'
+[15.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/cmake_prefix_path.sh'
+[15.599s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib'
+[15.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_mas', 'ld_library_path_lib')
+[15.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/ld_library_path_lib.ps1'
+[15.609s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/ld_library_path_lib.dsv'
+[15.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/ld_library_path_lib.sh'
+[15.610s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/bin'
+[15.610s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/pkgconfig/my_mas.pc'
+[15.610s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/python3.10/site-packages'
+[15.610s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/bin'
+[15.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.ps1'
+[15.621s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.dsv'
+[15.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.sh'
+[15.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.bash'
+[15.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.zsh'
+[15.622s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/colcon-core/packages/my_mas)
+[15.846s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_mas)
+[15.854s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas' for CMake module files
+[15.855s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas' for CMake config files
+[15.855s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_mas', 'cmake_prefix_path')
+[15.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/cmake_prefix_path.ps1'
+[15.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/cmake_prefix_path.dsv'
+[15.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/cmake_prefix_path.sh'
+[15.866s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib'
+[15.866s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_mas', 'ld_library_path_lib')
+[15.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/ld_library_path_lib.ps1'
+[15.876s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/ld_library_path_lib.dsv'
+[15.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/hook/ld_library_path_lib.sh'
+[15.877s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/bin'
+[15.877s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/pkgconfig/my_mas.pc'
+[15.877s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/python3.10/site-packages'
+[15.877s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/bin'
+[15.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.ps1'
+[15.887s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.dsv'
+[15.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.sh'
+[15.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.bash'
+[15.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.zsh'
+[15.889s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/colcon-core/packages/my_mas)
+[15.889s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub' with build type 'ament_python'
+[15.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'ament_prefix_path')
+[15.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.ps1'
+[15.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.dsv'
+[15.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.sh'
+[15.910s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.910s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.113s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub'
+[16.123s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.123s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub': AMENT_PREFIX_PATH=/home/trabajo/LabRemo/labremoto_ws/install/my_mas:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/trabajo/LabRemo/labremoto_ws/install/my_mas LD_LIBRARY_PATH=/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/prefix_override:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build install --record /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log --single-version-externally-managed
+[16.602s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub' returned '0': AMENT_PREFIX_PATH=/home/trabajo/LabRemo/labremoto_ws/install/my_mas:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/trabajo/LabRemo/labremoto_ws/install/my_mas LD_LIBRARY_PATH=/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/prefix_override:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build install --record /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log --single-version-externally-managed
+[16.610s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub' for CMake module files
+[16.610s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub' for CMake config files
+[16.611s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib'
+[16.611s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/bin'
+[16.611s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/pkgconfig/py_pubsub.pc'
+[16.611s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages'
+[16.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'pythonpath')
+[16.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.ps1'
+[16.619s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.dsv'
+[16.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.sh'
+[16.620s] Level 1:colcon.colcon_core.environment:checking '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/bin'
+[16.620s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_pubsub)
+[16.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/package.ps1'
+[16.630s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/package.dsv'
+[16.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/package.sh'
+[16.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/package.bash'
+[16.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/py_pubsub/package.zsh'
+[16.631s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/share/colcon-core/packages/py_pubsub)
+[16.631s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.632s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.632s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.632s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.647s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.647s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.647s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.652s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.661s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/trabajo/LabRemo/labremoto_ws/install/local_setup.ps1'
+[16.662s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/trabajo/LabRemo/labremoto_ws/install/_local_setup_util_ps1.py'
+[16.663s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/trabajo/LabRemo/labremoto_ws/install/setup.ps1'
+[16.673s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/trabajo/LabRemo/labremoto_ws/install/local_setup.sh'
+[16.674s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/trabajo/LabRemo/labremoto_ws/install/_local_setup_util_sh.py'
+[16.674s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/trabajo/LabRemo/labremoto_ws/install/setup.sh'
+[16.685s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/trabajo/LabRemo/labremoto_ws/install/local_setup.bash'
+[16.685s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/trabajo/LabRemo/labremoto_ws/install/setup.bash'
+[16.695s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/trabajo/LabRemo/labremoto_ws/install/local_setup.zsh'
+[16.696s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/trabajo/LabRemo/labremoto_ws/install/setup.zsh'
