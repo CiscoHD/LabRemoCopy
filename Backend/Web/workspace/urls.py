@@ -16,16 +16,21 @@ from .views import (
     MainBoardRetrieveUpdateView,
     MainBoardDestroyAPIView,
     ### Contratos VIEWS
-    # ContratosListCreateView,
-    # ContratosRetrieveAPIView,
-    # ContratosRetrieveUpdateView,
-    # ContratosDestroyAPIView,
+    ContratosListCreateView,
+    ContratosRetrieveAPIView,
+    ContratosRetrieveUpdateView,
+    ContratosDestroyAPIView,
+    TransaccionesDestroyAPIView,
+    TransaccionesListCreateView,
+    TransaccionesRetrieveAPIView,
+    TransaccionesRetrieveUpdateView,
 )
 
 component = 'component/'
 componentList = 'component_list/'
 mainboard = 'mainboard/'
 contratos = 'contratos/'
+transacciones = 'transacciones/'
 
 urlpatterns = [
     ##############################################################
@@ -52,9 +57,15 @@ urlpatterns = [
     ##############################################################
     ### Contratos API
     ##############################################################
-    # path(contratos+'',ContratosListCreateView.as_view()),
-    # path(contratos+'<str:id>/',ContratosRetrieveAPIView.as_view(),name='mainboard_detail'),
-    # path(contratos+'update/<str:id>/', ContratosRetrieveUpdateView.as_view(),name='mainboard_update'),
-    # path(contratos+'delete/<str:id>', ContratosDestroyAPIView.as_view(),name='mainboard_destroy'),
-
+    path(contratos+'',ContratosListCreateView.as_view()),
+    path(contratos+'<str:id>/',ContratosRetrieveAPIView.as_view(),name='contratos_detail'),
+    path(contratos+'update/<str:id>/', ContratosRetrieveUpdateView.as_view(),name='contratos_update'),
+    path(contratos+'delete/<str:id>', ContratosDestroyAPIView.as_view(),name='contratos_destroy'),
+   ##############################################################
+    ### TransaccionesAuditor API
+    ##############################################################
+    path(transacciones+'',TransaccionesListCreateView.as_view()),
+    path(transacciones+'<str:id>/',TransaccionesRetrieveAPIView.as_view(),name='transacciones_detail'),
+    path(transacciones+'update/<str:id>/', TransaccionesRetrieveUpdateView.as_view(),name='transacciones_update'),
+    path(transacciones+'delete/<str:id>', TransaccionesDestroyAPIView.as_view(),name='transacciones_destroy'),
 ]

@@ -1,6 +1,6 @@
 from rest_framework import serializers, generics
 from .models import (Component, ComponentList, MainBoard,
-                    #  Contratos,TransaccionesAuditor
+                     Contratos,TransaccionesAuditor
                      )
         
 class ComponentSerializer(serializers.ModelSerializer):
@@ -27,12 +27,12 @@ def GenericGeneratorSerializer(modell,cerealizer,fieldss='__all__'):
     return GenericSerializer
 
 
-# class ContratosSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Contratos
-#         fields = '__all__'
+class ContratosSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Contratos
+        fields = '__all__'
 
-# class TransaccionesSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = TransaccionesAuditor
-#         fields = '__all__'    
+class TransaccionesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransaccionesAuditor
+        fields = '__all__'    
