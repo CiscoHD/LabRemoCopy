@@ -38,7 +38,7 @@ class AuditorTransacciones(Node):
 
         self.get_logger().info(f"Mensaje leido: {msg.namenode} {msg.tipotransaccion} ")
 
-        path_database= json.load(open('/home/trabajo/LabRemo/VARIABLES_ORQUESTADOR.json'))['path_database']
+        path_database= json.load(open('/home/ffelix07/Documents/LabRemo/Orchestrator/VARIABLES_ORQUESTADOR.json'))['path_database']
        
         query =  f""" INSERT INTO TRANSACCIONESAUDITOR (IdNode,NameNode,TipoTransaccion,
         FechaTransaccion,IdUser,LogProceso) VALUES 

@@ -3,7 +3,7 @@ from rclpy.action import ActionClient
 from rclpy.node import Node
 
 from my_mas.action import Cargahex
-from my_mas.msg import FileBitLoad,Operacion,Auditor
+from my_mas.msg import FileHexLoad,Operacion,Auditor
 
 from datetime import datetime
 
@@ -15,7 +15,7 @@ class ArduinoClient(Node):
         super().__init__('arduino_action_client')
         self._action_client = ActionClient(self, Cargahex, 'arduino_inf')
         self.subscription = self.create_subscription(
-            FileBitLoad,'top_archivos_bit',self.listener_callback,10)
+            FileHexLoad,'top_archivos_hex',self.listener_callback,10)
         self.subscription 
         self.msg_inicio_node()
 

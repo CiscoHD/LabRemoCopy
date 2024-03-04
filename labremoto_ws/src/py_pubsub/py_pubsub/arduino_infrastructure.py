@@ -18,8 +18,6 @@ class ArduinoActionServer(Node):
 
         self.publisherauditor_  = self.create_publisher(Auditor, 'top_auditor_transacciones', 10)
 
-        self.msg_inicio_node()
-
     def msg_inicio_node(self):
         """
         Funcion para publicar el inicio del nodo.

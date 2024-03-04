@@ -106,7 +106,7 @@ class TansformVHDLBit(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    action_server = TanformVHDLBit()
+    action_server = TansformVHDLBit()
 
     rclpy.spin(action_server)
 
