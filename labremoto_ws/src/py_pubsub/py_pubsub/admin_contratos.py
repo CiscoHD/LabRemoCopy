@@ -63,7 +63,7 @@ class AdminContratos(Node):
 
         self.get_logger().info(f'Solicitud recibida para contrato {msg.idcontrato}')
 
-        path_database= json.load(open('/home/ffelix07/Documents/LabRemo/Orchestrator/VARIABLES_ORQUESTADOR.json'))['path_database']
+        path_database= json.load(open('/home/trabajo/LabRemo/VARIABLES_ORQUESTADOR.json'))['path_database']
 
         conexion = sqlite3.connect(path_database)
         cursor = conexion.cursor()
