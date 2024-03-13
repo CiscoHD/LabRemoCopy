@@ -15,7 +15,7 @@ class ArduinoClient(Node):
         super().__init__('arduino_action_client')
         self._action_client = ActionClient(self, Cargahex, 'arduino_inf')
         self.subscription = self.create_subscription(
-            FileHexLoad,'top_archivos_hex',self.listener_callback,10)
+            FileHexLoad,'archivos_hex',self.listener_callback,10)
         self.subscription 
         self.msg_inicio_node()
 
@@ -57,7 +57,6 @@ class ArduinoClient(Node):
         return self._action_client.send_goal_async(goal_msg)
     
     def listener_callback(self, msg):
-
     
         self.get_logger().info(f'{msg.path_hex}')
         action_client = ArduinoClient()

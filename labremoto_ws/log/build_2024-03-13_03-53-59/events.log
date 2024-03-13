@@ -1,0 +1,544 @@
+[0.000000] (-) TimerEvent: {}
+[0.000546] (my_mas) JobQueued: {'identifier': 'my_mas', 'dependencies': OrderedDict()}
+[0.000580] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('my_mas', '/home/trabajo/LabRemo/labremoto_ws/install/my_mas')])}
+[0.000602] (my_mas) JobStarted: {'identifier': 'my_mas'}
+[0.051771] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'cmake'}
+[0.052830] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'build'}
+[0.053390] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/trabajo/LabRemo/labremoto_ws/build/my_mas', '--', '-j3', '-l3'], 'cwd': '/home/trabajo/LabRemo/labremoto_ws/build/my_mas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'trabajo'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/trabajo'), ('OLDPWD', '/home/trabajo/LabRemo'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'es_ES.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/trabajo/LabRemo/labremoto_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'trabajo'), ('WINDOWID', '77595032'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/trabajo/arduino/bin:/media/programs/tools/Xilinx/ISE/14.7/ISE_DS/ISE/bin/lin64/:/media/programs/tools/Xilinx/Vivado/2023.2/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vivado:@/tmp/.ICE-unix/28255,unix/vivado:/tmp/.ICE-unix/28255'), ('GDM_LANG', 'en'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session3'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/trabajo/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/trabajo'), ('AMENT_PREFIX_PATH', '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub:/home/trabajo/LabRemo/labremoto_ws/install/my_mas:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('XDG_VTNR', '7'), ('PWD', '/home/trabajo/LabRemo/labremoto_ws/build/my_mas'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/xfce4:/usr/share/xubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/trabajo/LabRemo/labremoto_ws/install/my_mas:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub:/opt/ros/humble')]), 'shell': False}
+[0.099585] (-) TimerEvent: {}
+[0.145714] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_generator_c\x1b[0m\n'}
+[0.145990] (my_mas) StdoutLine: {'line': b'[  0%] Built target my_mas__cpp\n'}
+[0.162498] (my_mas) StdoutLine: {'line': b'[ 12%] Built target my_mas__rosidl_generator_c\n'}
+[0.164335] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.176301] (my_mas) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_my_mas\n'}
+[0.181367] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.194838] (my_mas) StdoutLine: {'line': b'[ 24%] Built target my_mas__rosidl_typesupport_cpp\n'}
+[0.197148] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.199672] (-) TimerEvent: {}
+[0.207012] (my_mas) StdoutLine: {'line': b'[ 36%] Built target my_mas__rosidl_typesupport_fastrtps_cpp\n'}
+[0.223062] (my_mas) StdoutLine: {'line': b'[ 48%] Built target my_mas__rosidl_typesupport_introspection_cpp\n'}
+[0.227189] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.244915] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.255355] (my_mas) StdoutLine: {'line': b'[ 60%] Built target my_mas__rosidl_typesupport_fastrtps_c\n'}
+[0.262170] (my_mas) StdoutLine: {'line': b'[ 72%] Built target my_mas__rosidl_typesupport_introspection_c\n'}
+[0.270213] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_c\x1b[0m\n'}
+[0.284612] (my_mas) StdoutLine: {'line': b'[ 84%] Built target my_mas__rosidl_typesupport_c\n'}
+[0.299785] (-) TimerEvent: {}
+[0.302559] (my_mas) StdoutLine: {'line': b'[ 84%] Built target my_mas\n'}
+[0.322003] (my_mas) StdoutLine: {'line': b'[ 85%] Built target my_mas__py\n'}
+[0.340918] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_generator_py\x1b[0m\n'}
+[0.368092] (my_mas) StdoutLine: {'line': b'[ 96%] Built target my_mas__rosidl_generator_py\n'}
+[0.379193] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[0.379625] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[0.391888] (my_mas) StdoutLine: {'line': b'[ 98%] Built target my_mas__rosidl_typesupport_introspection_c__pyext\n'}
+[0.392498] (my_mas) StdoutLine: {'line': b'[ 99%] Built target my_mas__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.399884] (-) TimerEvent: {}
+[0.402666] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[0.415178] (my_mas) StdoutLine: {'line': b'[100%] Built target my_mas__rosidl_typesupport_c__pyext\n'}
+[0.428983] (my_mas) StdoutLine: {'line': b'running egg_info\n'}
+[0.429515] (my_mas) StdoutLine: {'line': b'writing my_mas.egg-info/PKG-INFO\n'}
+[0.429747] (my_mas) StdoutLine: {'line': b'writing dependency_links to my_mas.egg-info/dependency_links.txt\n'}
+[0.429923] (my_mas) StdoutLine: {'line': b'writing top-level names to my_mas.egg-info/top_level.txt\n'}
+[0.432605] (my_mas) StdoutLine: {'line': b"reading manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[0.433443] (my_mas) StdoutLine: {'line': b"writing manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[0.456181] (my_mas) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_my_mas_egg\n'}
+[0.465111] (my_mas) CommandEnded: {'returncode': 0}
+[0.499974] (-) TimerEvent: {}
+[0.600214] (-) TimerEvent: {}
+[0.692648] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'install'}
+[0.698869] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/trabajo/LabRemo/labremoto_ws/build/my_mas'], 'cwd': '/home/trabajo/LabRemo/labremoto_ws/build/my_mas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'trabajo'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/trabajo'), ('OLDPWD', '/home/trabajo/LabRemo'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'es_ES.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/trabajo/LabRemo/labremoto_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'trabajo'), ('WINDOWID', '77595032'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/trabajo/arduino/bin:/media/programs/tools/Xilinx/ISE/14.7/ISE_DS/ISE/bin/lin64/:/media/programs/tools/Xilinx/Vivado/2023.2/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vivado:@/tmp/.ICE-unix/28255,unix/vivado:/tmp/.ICE-unix/28255'), ('GDM_LANG', 'en'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session3'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/trabajo/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/trabajo'), ('AMENT_PREFIX_PATH', '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub:/home/trabajo/LabRemo/labremoto_ws/install/my_mas:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('XDG_VTNR', '7'), ('PWD', '/home/trabajo/LabRemo/labremoto_ws/build/my_mas'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/xfce4:/usr/share/xubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/trabajo/LabRemo/labremoto_ws/install/my_mas:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub:/opt/ros/humble')]), 'shell': False}
+[0.700291] (-) TimerEvent: {}
+[0.713995] (my_mas) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.714291] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/ament_index/resource_index/rosidl_interfaces/my_mas\n'}
+[0.714462] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[0.714539] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[0.714601] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[0.714720] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__struct.h\n'}
+[0.714984] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.h\n'}
+[0.715105] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__functions.h\n'}
+[0.715229] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__struct.h\n'}
+[0.715297] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__functions.c\n'}
+[0.715369] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__functions.c\n'}
+[0.715437] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.h\n'}
+[0.715526] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__functions.h\n'}
+[0.715726] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/load_filedb.h\n'}
+[0.715799] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/load_file.h\n'}
+[0.715959] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[0.716034] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/fibonacci.h\n'}
+[0.716096] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/tranformvhdlbit.h\n'}
+[0.716170] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[0.716230] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.h\n'}
+[0.716289] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.h\n'}
+[0.716347] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__functions.c\n'}
+[0.716411] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__struct.h\n'}
+[0.716480] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__functions.h\n'}
+[0.716539] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__functions.c\n'}
+[0.716599] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__functions.c\n'}
+[0.716657] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.h\n'}
+[0.716715] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__functions.c\n'}
+[0.716772] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__functions.h\n'}
+[0.716829] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__struct.h\n'}
+[0.716886] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.h\n'}
+[0.716944] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__functions.h\n'}
+[0.717001] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__struct.h\n'}
+[0.717056] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__struct.h\n'}
+[0.717112] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__functions.h\n'}
+[0.717168] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/cargahex.h\n'}
+[0.717228] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/carga_bit.h\n'}
+[0.717285] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[0.717341] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/trans_global.h\n'}
+[0.717398] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/trans_entrada.h\n'}
+[0.717457] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/create_bit_stream.h\n'}
+[0.717515] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.717577] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/log_salida.h\n'}
+[0.717822] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[0.717948] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__struct.h\n'}
+[0.718026] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__functions.h\n'}
+[0.718153] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.h\n'}
+[0.718263] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__functions.c\n'}
+[0.718397] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.h\n'}
+[0.718513] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__struct.h\n'}
+[0.718620] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__functions.h\n'}
+[0.718687] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__functions.h\n'}
+[0.718843] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__functions.h\n'}
+[0.718904] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.h\n'}
+[0.718963] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__functions.c\n'}
+[0.719020] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__functions.c\n'}
+[0.719087] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__functions.c\n'}
+[0.719156] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__struct.h\n'}
+[0.719224] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__struct.h\n'}
+[0.719338] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.h\n'}
+[0.719407] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__functions.c\n'}
+[0.719548] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__functions.h\n'}
+[0.719619] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__functions.h\n'}
+[0.719784] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__struct.h\n'}
+[0.719921] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__struct.h\n'}
+[0.719993] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__functions.c\n'}
+[0.720063] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__struct.h\n'}
+[0.720218] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__struct.h\n'}
+[0.720341] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__struct.h\n'}
+[0.720470] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__functions.c\n'}
+[0.720535] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.h\n'}
+[0.720605] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__struct.h\n'}
+[0.720666] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__functions.h\n'}
+[0.720764] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__functions.c\n'}
+[0.720825] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__functions.h\n'}
+[0.720884] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.h\n'}
+[0.720942] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.h\n'}
+[0.720998] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.h\n'}
+[0.721056] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__functions.c\n'}
+[0.721123] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.h\n'}
+[0.721190] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__functions.c\n'}
+[0.721256] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__functions.h\n'}
+[0.721379] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__functions.h\n'}
+[0.721461] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.h\n'}
+[0.721528] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/operacion.h\n'}
+[0.721680] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/contrato.h\n'}
+[0.721770] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/bit_load.h\n'}
+[0.721838] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/sensor_measurment.h\n'}
+[0.722010] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/file_hex_load.h\n'}
+[0.722081] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/auditor.h\n'}
+[0.722223] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/library_path.sh\n'}
+[0.722367] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/library_path.dsv\n'}
+[0.722477] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_generator_c.so\n'}
+[0.722610] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[0.722740] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[0.722809] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[0.722877] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_fastrtps_c.h\n'}
+[0.722944] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_c.h\n'}
+[0.723009] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[0.723073] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[0.723138] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_fastrtps_c.h\n'}
+[0.723204] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[0.723269] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_fastrtps_c.h\n'}
+[0.723334] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_fastrtps_c.h\n'}
+[0.723527] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[0.723650] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.723770] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[0.723884] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_fastrtps_c.h\n'}
+[0.723969] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724042] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724182] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724254] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724321] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724389] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724456] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724524] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724591] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_fastrtps_c.h\n'}
+[0.724689] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_c.so\n'}
+[0.724749] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[0.724828] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[0.724887] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[0.724948] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.c\n'}
+[0.725017] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_introspection_c.h\n'}
+[0.725087] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_introspection_c.h\n'}
+[0.725153] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.c\n'}
+[0.725219] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[0.725334] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[0.725403] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_c.h\n'}
+[0.725708] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[0.725834] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.c\n'}
+[0.725906] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_introspection_c.h\n'}
+[0.726071] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.c\n'}
+[0.726155] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.c\n'}
+[0.726224] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_introspection_c.h\n'}
+[0.726285] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.c\n'}
+[0.726345] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[0.726415] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.726476] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[0.726549] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_introspection_c.h\n'}
+[0.726698] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_introspection_c.h\n'}
+[0.726780] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_introspection_c.h\n'}
+[0.726843] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_introspection_c.h\n'}
+[0.726903] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_c.h\n'}
+[0.726963] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_introspection_c.h\n'}
+[0.727021] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.c\n'}
+[0.727080] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.c\n'}
+[0.727151] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_introspection_c.h\n'}
+[0.727238] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.c\n'}
+[0.727299] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_introspection_c.h\n'}
+[0.727359] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.c\n'}
+[0.727459] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.c\n'}
+[0.727526] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.c\n'}
+[0.727587] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.c\n'}
+[0.727645] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.c\n'}
+[0.727703] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_introspection_c.h\n'}
+[0.727762] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_introspection_c.h\n'}
+[0.727831] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.c\n'}
+[0.727893] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.c\n'}
+[0.727951] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_c.so\n'}
+[0.728011] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_c.so\n'}
+[0.728072] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[0.728170] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[0.728235] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/load_file.hpp\n'}
+[0.728303] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[0.728406] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__struct.hpp\n'}
+[0.728512] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__struct.hpp\n'}
+[0.728640] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__builder.hpp\n'}
+[0.728741] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__traits.hpp\n'}
+[0.728839] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__traits.hpp\n'}
+[0.728905] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__builder.hpp\n'}
+[0.729003] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/load_filedb.hpp\n'}
+[0.729128] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[0.729206] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/carga_bit.hpp\n'}
+[0.729354] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/cargahex.hpp\n'}
+[0.729426] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[0.729648] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__struct.hpp\n'}
+[0.729807] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__builder.hpp\n'}
+[0.729954] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__struct.hpp\n'}
+[0.730156] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__builder.hpp\n'}
+[0.730324] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__struct.hpp\n'}
+[0.730518] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__traits.hpp\n'}
+[0.730617] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__traits.hpp\n'}
+[0.730685] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__builder.hpp\n'}
+[0.730752] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__builder.hpp\n'}
+[0.730818] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__traits.hpp\n'}
+[0.730903] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__struct.hpp\n'}
+[0.730970] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__traits.hpp\n'}
+[0.731036] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/tranformvhdlbit.hpp\n'}
+[0.731103] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/fibonacci.hpp\n'}
+[0.731169] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[0.731236] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/create_bit_stream.hpp\n'}
+[0.731298] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/sensor_measurment.hpp\n'}
+[0.731362] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/log_salida.hpp\n'}
+[0.731427] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/auditor.hpp\n'}
+[0.731551] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/contrato.hpp\n'}
+[0.731628] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/bit_load.hpp\n'}
+[0.731728] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/trans_global.hpp\n'}
+[0.731891] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/trans_entrada.hpp\n'}
+[0.731953] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[0.732015] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__traits.hpp\n'}
+[0.732078] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__struct.hpp\n'}
+[0.732139] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__builder.hpp\n'}
+[0.732197] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__struct.hpp\n'}
+[0.732254] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__struct.hpp\n'}
+[0.732313] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__traits.hpp\n'}
+[0.732370] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__traits.hpp\n'}
+[0.732428] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__struct.hpp\n'}
+[0.732498] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__builder.hpp\n'}
+[0.732557] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__builder.hpp\n'}
+[0.732616] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__traits.hpp\n'}
+[0.732673] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__traits.hpp\n'}
+[0.732731] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__struct.hpp\n'}
+[0.732788] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__traits.hpp\n'}
+[0.732847] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__builder.hpp\n'}
+[0.732907] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__traits.hpp\n'}
+[0.732965] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__builder.hpp\n'}
+[0.733022] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__struct.hpp\n'}
+[0.733078] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__builder.hpp\n'}
+[0.733135] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__traits.hpp\n'}
+[0.733193] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__traits.hpp\n'}
+[0.733268] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__builder.hpp\n'}
+[0.733329] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__builder.hpp\n'}
+[0.733388] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__struct.hpp\n'}
+[0.733446] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__struct.hpp\n'}
+[0.733504] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__builder.hpp\n'}
+[0.733562] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__builder.hpp\n'}
+[0.733621] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__traits.hpp\n'}
+[0.733679] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__struct.hpp\n'}
+[0.733748] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__struct.hpp\n'}
+[0.733810] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/file_hex_load.hpp\n'}
+[0.733869] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/operacion.hpp\n'}
+[0.733940] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[0.733999] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[0.734058] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[0.734113] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.734172] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.734231] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/dds_fastrtps\n'}
+[0.734290] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[0.734349] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[0.734424] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.734483] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.734541] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/dds_fastrtps\n'}
+[0.734599] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.734656] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.734714] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[0.734773] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.734959] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[0.735019] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735078] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735138] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735200] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735261] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735319] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735403] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/dds_fastrtps\n'}
+[0.735488] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735550] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735610] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735681] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.735751] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.735814] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[0.735873] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[0.735933] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[0.735992] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.cpp\n'}
+[0.736051] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.736109] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.cpp\n'}
+[0.736166] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.736223] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[0.736281] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[0.736338] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.cpp\n'}
+[0.736396] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.cpp\n'}
+[0.736453] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.736509] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.736566] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.736624] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.736681] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.cpp\n'}
+[0.736738] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.cpp\n'}
+[0.736794] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[0.736851] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[0.736921] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.cpp\n'}
+[0.736980] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737040] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737099] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.cpp\n'}
+[0.737158] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.cpp\n'}
+[0.737214] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.cpp\n'}
+[0.737271] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.cpp\n'}
+[0.737348] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737409] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.cpp\n'}
+[0.737467] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.cpp\n'}
+[0.737533] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737593] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737652] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737710] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737768] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737825] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737884] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.737942] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.cpp\n'}
+[0.737999] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.cpp\n'}
+[0.738056] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.cpp\n'}
+[0.738112] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_cpp.so\n'}
+[0.738168] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_cpp.so\n'}
+[0.738238] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/pythonpath.sh\n'}
+[0.738298] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/pythonpath.dsv\n'}
+[0.738406] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info\n'}
+[0.738680] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.738751] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.738817] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.738880] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.738941] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas\n'}
+[0.739001] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.739061] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_c.c\n'}
+[0.739121] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv\n'}
+[0.739180] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_filedb.py\n'}
+[0.739237] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file_s.c\n'}
+[0.739295] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/__init__.py\n'}
+[0.739352] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file.py\n'}
+[0.739475] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_filedb_s.c\n'}
+[0.739560] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.739623] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/libmy_mas__rosidl_generator_py.so\n'}
+[0.739683] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/__init__.py\n'}
+[0.739742] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.739800] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.739860] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action\n'}
+[0.739919] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci.py\n'}
+[0.739989] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex.py\n'}
+[0.740049] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/__init__.py\n'}
+[0.740106] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci_s.c\n'}
+[0.740164] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_carga_bit.py\n'}
+[0.740222] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_tranformvhdlbit_s.c\n'}
+[0.740281] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_tranformvhdlbit.py\n'}
+[0.740340] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_carga_bit_s.c\n'}
+[0.740397] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex_s.c\n'}
+[0.740454] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg\n'}
+[0.740512] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_log_salida.py\n'}
+[0.740570] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_bit_load_s.c\n'}
+[0.740629] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment_s.c\n'}
+[0.740688] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_log_salida_s.c\n'}
+[0.740745] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment.py\n'}
+[0.740804] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_file_hex_load_s.c\n'}
+[0.740861] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_contrato_s.c\n'}
+[0.740918] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_entrada_s.c\n'}
+[0.740974] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/__init__.py\n'}
+[0.741030] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_operacion.py\n'}
+[0.741087] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_create_bit_stream.py\n'}
+[0.741144] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor.py\n'}
+[0.741201] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_global_s.c\n'}
+[0.741257] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_file_hex_load.py\n'}
+[0.741351] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_entrada.py\n'}
+[0.741412] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_global.py\n'}
+[0.741471] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor_s.c\n'}
+[0.741530] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_operacion_s.c\n'}
+[0.741589] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_contrato.py\n'}
+[0.741648] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_bit_load.py\n'}
+[0.741705] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_create_bit_stream_s.c\n'}
+[0.741764] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.759778] (my_mas) StdoutLine: {'line': b"Listing '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas'...\n"}
+[0.759952] (my_mas) StdoutLine: {'line': b"Listing '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action'...\n"}
+[0.760016] (my_mas) StdoutLine: {'line': b"Listing '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg'...\n"}
+[0.760076] (my_mas) StdoutLine: {'line': b"Listing '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv'...\n"}
+[0.764119] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.764902] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.765339] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.765833] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_generator_py.so\n'}
+[0.766131] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Operacion.idl\n'}
+[0.766271] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/BitLoad.idl\n'}
+[0.766346] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/CreateBitStream.idl\n'}
+[0.766462] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Auditor.idl\n'}
+[0.766533] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/SensorMeasurment.idl\n'}
+[0.766633] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/FileHexLoad.idl\n'}
+[0.766705] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/TransGlobal.idl\n'}
+[0.766774] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Contrato.idl\n'}
+[0.766881] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/TransEntrada.idl\n'}
+[0.766950] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/LogSalida.idl\n'}
+[0.767054] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFiledb.idl\n'}
+[0.767123] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFile.idl\n'}
+[0.767244] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Fibonacci.idl\n'}
+[0.767312] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Cargahex.idl\n'}
+[0.767413] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/CargaBit.idl\n'}
+[0.767527] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Tranformvhdlbit.idl\n'}
+[0.767601] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Operacion.msg\n'}
+[0.767668] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/BitLoad.msg\n'}
+[0.767809] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/CreateBitStream.msg\n'}
+[0.767879] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Auditor.msg\n'}
+[0.767954] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/SensorMeasurment.msg\n'}
+[0.768019] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/FileHexLoad.msg\n'}
+[0.768155] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/TransGlobal.msg\n'}
+[0.768249] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Contrato.msg\n'}
+[0.768319] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/TransEntrada.msg\n'}
+[0.768385] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/LogSalida.msg\n'}
+[0.768452] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFiledb.srv\n'}
+[0.768519] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFiledb_Request.msg\n'}
+[0.768625] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFiledb_Response.msg\n'}
+[0.768702] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFile.srv\n'}
+[0.768762] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFile_Request.msg\n'}
+[0.768821] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFile_Response.msg\n'}
+[0.768887] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Fibonacci.action\n'}
+[0.769017] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Cargahex.action\n'}
+[0.769126] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/CargaBit.action\n'}
+[0.769195] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Tranformvhdlbit.action\n'}
+[0.769271] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/ament_index/resource_index/package_run_dependencies/my_mas\n'}
+[0.769333] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/ament_index/resource_index/parent_prefix_path/my_mas\n'}
+[0.769392] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/ament_prefix_path.sh\n'}
+[0.769484] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/ament_prefix_path.dsv\n'}
+[0.769543] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/path.sh\n'}
+[0.769601] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/path.dsv\n'}
+[0.769660] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/local_setup.bash\n'}
+[0.769720] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/local_setup.sh\n'}
+[0.769779] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/local_setup.zsh\n'}
+[0.769836] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/local_setup.dsv\n'}
+[0.769893] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.dsv\n'}
+[0.769950] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/ament_index/resource_index/packages/my_mas\n'}
+[0.770066] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport.cmake\n'}
+[0.770317] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.770466] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.770611] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.770820] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.770946] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.771143] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport.cmake\n'}
+[0.771286] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.771482] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cppExport.cmake\n'}
+[0.771806] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.771945] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.772152] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.772306] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.772519] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport.cmake\n'}
+[0.772657] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.772874] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport.cmake\n'}
+[0.773027] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.773131] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/rosidl_cmake-extras.cmake\n'}
+[0.773229] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.773301] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.773372] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.773494] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.773557] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.773616] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.773675] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_masConfig.cmake\n'}
+[0.773732] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_masConfig-version.cmake\n'}
+[0.773789] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.xml\n'}
+[0.776310] (my_mas) CommandEnded: {'returncode': 0}
+[0.800386] (-) TimerEvent: {}
+[0.900650] (-) TimerEvent: {}
+[1.000943] (-) TimerEvent: {}
+[1.101464] (-) TimerEvent: {}
+[1.144686] (my_mas) JobEnded: {'identifier': 'my_mas', 'rc': 0}
+[1.146014] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[1.201704] (-) TimerEvent: {}
+[1.302237] (-) TimerEvent: {}
+[1.402596] (-) TimerEvent: {}
+[1.502921] (-) TimerEvent: {}
+[1.603257] (-) TimerEvent: {}
+[1.703587] (-) TimerEvent: {}
+[1.803925] (-) TimerEvent: {}
+[1.863016] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build', 'install', '--record', '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'trabajo', 'LC_TIME': 'es_ES.UTF-8', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/trabajo', 'OLDPWD': '/home/trabajo/LabRemo', 'DESKTOP_SESSION': 'xubuntu', 'ROS_PYTHON_VERSION': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_MONETARY': 'es_ES.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/trabajo/LabRemo/labremoto_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'trabajo', 'WINDOWID': '77595032', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'CLUTTER_BACKEND': 'x11', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/trabajo/arduino/bin:/media/programs/tools/Xilinx/ISE/14.7/ISE_DS/ISE/bin/lin64/:/media/programs/tools/Xilinx/Vivado/2023.2/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/vivado:@/tmp/.ICE-unix/28255,unix/vivado:/tmp/.ICE-unix/28255', 'GDM_LANG': 'en', 'PAPERSIZE': 'a4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session3', 'XDG_MENU_PREFIX': 'xfce-', 'LC_ADDRESS': 'es_ES.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LC_TELEPHONE': 'es_ES.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'xubuntu', 'XAUTHORITY': '/home/trabajo/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/trabajo', 'AMENT_PREFIX_PATH': '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub:/home/trabajo/LabRemo/labremoto_ws/install/my_mas:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_ES.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'xubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'QT_IM_MODULE': 'ibus', 'XDG_VTNR': '7', 'PWD': '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg', 'CLUTTER_IM_MODULE': 'ibus', 'XDG_DATA_DIRS': '/usr/share/xfce4:/usr/share/xubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'PYTHONPATH': '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/prefix_override:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_ES.UTF-8', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/trabajo/LabRemo/labremoto_ws/install/my_mas'}, 'shell': False}
+[1.904011] (-) TimerEvent: {}
+[2.004258] (-) TimerEvent: {}
+[2.040604] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[2.040974] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[2.041650] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[2.041859] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[2.042072] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[2.042126] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[2.043830] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[2.044484] (py_pubsub) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.045259] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[2.045384] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[2.045451] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[2.046112] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_transacciones_entrada.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[2.047641] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[2.047814] (py_pubsub) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.047901] (py_pubsub) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.048095] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[2.048892] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/admin_transacciones_entrada.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[2.050411] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_transacciones_entrada.py to admin_transacciones_entrada.cpython-310.pyc\n'}
+[2.051747] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[2.052216] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.053661] (py_pubsub) StdoutLine: {'line': b"removing '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.053946] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info\n'}
+[2.055090] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[2.073504] (py_pubsub) StdoutLine: {'line': b'Installing admin_contratos script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.073721] (py_pubsub) StdoutLine: {'line': b'Installing admin_log_salida script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.073791] (py_pubsub) StdoutLine: {'line': b'Installing admin_transacciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.073894] (py_pubsub) StdoutLine: {'line': b'Installing admin_transacciones_entrada script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.073997] (py_pubsub) StdoutLine: {'line': b'Installing arduino_inf_cliente script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.074116] (py_pubsub) StdoutLine: {'line': b'Installing arduino_infrastructure script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.074181] (py_pubsub) StdoutLine: {'line': b'Installing auditor_transacciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.074290] (py_pubsub) StdoutLine: {'line': b'Installing publisher_prueba script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.074419] (py_pubsub) StdoutLine: {'line': b'Installing publisher_transentrada script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.074536] (py_pubsub) StdoutLine: {'line': b'Installing supervisor_operaciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.074624] (py_pubsub) StdoutLine: {'line': b'Installing transform_vhdl_bit script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.074686] (py_pubsub) StdoutLine: {'line': b'Installing vhdlbit_cliente script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.075314] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log'\n"}
+[2.097148] (py_pubsub) CommandEnded: {'returncode': 0}
+[2.104407] (-) TimerEvent: {}
+[2.135820] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[2.136879] (-) EventReactorShutdown: {}

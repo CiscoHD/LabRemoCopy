@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from my_mas.msg import Operacion,LogSalida,TransGlobal,TransEntrada,Contrato
+from rclpy import qos
 
 import sqlite3
 from datetime import datetime
@@ -18,10 +19,10 @@ class AdminLogSalida(Node):
 
     def __init__(self):
         super().__init__('administrador_log_salida')
-        self.subscription = self.create_subscription(
-            LogSalida, 'top_log_salida', self.listener_callback,10)
+        self.subscription = self.create_subscription(LogSalida, 'top_log_salida', self.listener_callback,10)
         self.subscription  # prevent unused variable warning
         self.msg_inicio_node()
+        self.publisherconsola_ = self.create_subscription(LogSalida, 'top_consola',10)
 
     def msg_inicio_node(self):
         """
@@ -43,9 +44,10 @@ class AdminLogSalida(Node):
         self.get_logger().info(f"{self.get_name()} node created: {datetime.now()}")
 
     def listener_callback(self, msg):
-
+        msg_log = LogSalida()
+        msg_log.logsalida = msg.logsalida
         self.get_logger().info(f'salida a consola')
-        self.publisherconsola_.publish(f'{msg.logsalida}')
+        self.publisherconsola_.publish(msg_log)
         
             
 def main(args=None):

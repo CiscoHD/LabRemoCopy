@@ -1,0 +1,39 @@
+[0.587s] Invoking command in '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub': PYTHONPATH=/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/prefix_override:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build install --record /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log --single-version-externally-managed
+[0.764s] running egg_info
+[0.765s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[0.765s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[0.765s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[0.765s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[0.765s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[0.767s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.767s] adding license file 'LICENSE'
+[0.768s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.768s] running build
+[0.768s] running build_py
+[0.769s] copying py_pubsub/admin_log_salida.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub
+[0.770s] running install
+[0.770s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.770s]   warnings.warn(
+[0.771s] running install_lib
+[0.772s] copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/admin_log_salida.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[0.773s] byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_log_salida.py to admin_log_salida.cpython-310.pyc
+[0.773s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (admin_log_salida.py, line 24)
+[0.773s] running install_data
+[0.774s] running install_egg_info
+[0.775s] removing '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[0.776s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info
+[0.776s] running install_scripts
+[0.793s] Installing admin_contratos script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.793s] Installing admin_log_salida script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.793s] Installing admin_transacciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.793s] Installing admin_transacciones_entrada script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.793s] Installing arduino_inf_cliente script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.793s] Installing arduino_infrastructure script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.793s] Installing auditor_transacciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.794s] Installing publisher_prueba script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.794s] Installing publisher_transentrada script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.794s] Installing supervisor_operaciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.794s] Installing transform_vhdl_bit script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.794s] Installing vhdlbit_cliente script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub
+[0.794s] writing list of installed files to '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log'
+[0.817s] Invoked command in '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/prefix_override:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build install --record /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log --single-version-externally-managed

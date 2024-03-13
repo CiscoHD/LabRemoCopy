@@ -29,10 +29,10 @@ def generate_launch_description():
             package='py_pubsub',
             executable='transform_vhdl_bit',
             output='screen'),
-        Node(
-            package='py_pubsub',
-            executable='admin_log_salida',
-            output='screen'),
+        #Node(
+        #    package='py_pubsub',
+        #    executable='admin_log_salida',
+        #    output='screen'),
        Node(
             package='py_pubsub',
             executable='admin_transacciones_entrada',

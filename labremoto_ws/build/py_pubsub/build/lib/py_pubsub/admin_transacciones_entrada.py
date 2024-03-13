@@ -25,7 +25,7 @@ class AdminTransaccionesEntrada(Node):
         self.subscription  
         self.msg_inicio_node()
 
-        self.publisherconsola_ = self.create_publisher(LogSalida,'top_log_salida',10)
+        self.publisherconsola_ = self.create_publisher(LogSalida,'top_consola',10)
         self.publishercontrato_ = self.create_publisher(Contrato, 'top_transacciones', 10)
 
 
@@ -52,7 +52,7 @@ class AdminTransaccionesEntrada(Node):
     def listener_callback(self, msg):
 
         self.get_logger().info(f'Transaccion entrada recibida: {msg}')
-        path_database= json.load(open('/home/ffelix07/Documents/LabRemo/Orchestrator/VARIABLES_ORQUESTADOR.json'))['path_database']
+        path_database= json.load(open('/home/trabajo/LabRemo/VARIABLES_ORQUESTADOR.json'))['path_database']
         conexion = sqlite3.connect(path_database)
         cursor = conexion.cursor()
         query =  f""" SELECT * FROM USUARIOS WHERE Id = {msg.idestudiante}"""

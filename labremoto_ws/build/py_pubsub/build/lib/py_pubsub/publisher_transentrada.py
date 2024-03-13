@@ -8,17 +8,13 @@ class MinimalPublisher(Node):
  
     def __init__(self):
         super().__init__('publicador_transaccion_entrada')
-        self.publisher_ = self.create_publisher(TransEntrada, 'top_transacciones_entrada', 10)
+        self.publisher_ = self.create_publisher(FileHexLoad, 'archivos_hex', 10)
         self.timer_callback()
 
     def timer_callback(self):
-        msg = TransEntrada()
+        msg = FileHexLoad()
 
-        msg.tipotransaccion = 'CargaHex'
-        msg.status = 'Peticion'
-        msg.idestudiante = '1'
-        msg.idsesion = '1'
-        msg.descripcion = ''
+        msg.path_hex = "/ae/e.hex"
     
         self.publisher_.publish(msg)
         self.get_logger().info(f'Publishing: {msg}')
