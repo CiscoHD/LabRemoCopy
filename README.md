@@ -7,12 +7,10 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#folderstructure ">Folder Structure </a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#softwareandhardware">Software and Hardware</a></li>
+    <li><a href="#authors">Authors</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -71,5 +69,7 @@ The physical setup, equipped with various actuators, sensors, and a 6-degree-of-
 - Oscar Gabriel Hernández Armenta
 - Abraham Ramírez Hernández
 
-<!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
+
+The support to the Project Support Programa de Apoyo a Proyectos para Innovar y Mejorar la Educación (PAPIME), perteneciente a la Dirección General de Asuntos del Personal Académico (DGAPA), de la Universidad Nacional Autónoma de México (UNAM), is appreciated through financing the project with code PE111223
