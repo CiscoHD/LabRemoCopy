@@ -2,24 +2,46 @@
 
 # Remote Laboratory by IMASS
 
-Remote Laboratory by IMMAS is a project where it will be implemented a way to make laboratory experiments from your house through internet, futhermore using real hardware.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+## About The Project
+The project is about the implementation and structure of an innovative remote laboratory designed for students. The project enables users to interact with real components and systems through an online platform, providing a practical educational experience without the geographical limitations of a traditional physical lab. Comprising three main elements—the user interface, server, and physical setup—the lab offers an interactive interface allowing students to add and remove components such as actuators, sensors, microprocessors, SoCs, and FPGAs. Users can make connections, program cards, view real-time behavior, load practice templates provided by instructors, save progress, and share circuit links.
+
+The server plays a crucial role in synchronizing activities, providing web services, data storage, ROS node orchestration, and infrastructure management, ensuring a seamless and accessible learning experience with access to high-quality educational resources.
+
+The physical setup, equipped with various actuators, sensors, and a 6-degree-of-freedom cobot, serves as the practical component for conducting experiments. This setup allows students to design, program, and experiment with real systems, enhancing learning in key engineering and technology areas. The integration of these elements makes the lab a powerful educational tool, offering a comprehensive practical and theoretical experience, fostering the development of essential skills and knowledge for engineering and computer science students in a remote and accessible environment.
+
 
 ## Folder Structure 
 
 1. Frontend
- -  Web
- - Workspace
+   -  Web
+   - Workspace
 2. Backend
- - Web
- - Database
- - Orchestrator 
+   - Web
+   - Database
+   - Orchestrator 
 3. Hardware
- - Boards
- - Actuators
- - Lights
- - Sensors
- - Power
- - Net
+   - Boards
+   - Actuators
+   - Lights
+   - Sensors
+   - Power
+   - Net
 
 ## Software and Hardware
 
@@ -37,18 +59,17 @@ Remote Laboratory by IMMAS is a project where it will be implemented a way to ma
 
 ## Authors
 
-- Humberto Gómez
+- Victor M. Lomas Barrie
+- Humberto Gómez naranjo
 - Ricardo Villarreal
-- Roberto Tovar
-- Victor Lomas
-- Abner Maya
-- Felix Nieto
+- Roberto Tovar Medina
+- Tamara Iskra Alcántara Concepción
 - Gaspar Lorenzo Collado Santes
-- Axel Montiel
-- Ausubel Maurico Chavez Martinez
-- José Espinosa
-- Ramos Espinoza Abril
-- Emma Reyes López
-- Isaac
+- Félix Alberto Nieto García
+- Abner Maya Vergara
+- Jorge Alejandro Sobrevilla Zarazúa
+- Oscar Gabriel Hernández Armenta
+- Abraham Ramírez Hernández
 
-## Gratefulness
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
