@@ -1,0 +1,5 @@
+int64 idcontrato
+string nombrecontrato
+string tipocontrato
+string desccontrato	
+string especificacioncontrato

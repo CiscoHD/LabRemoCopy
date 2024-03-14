@@ -1,0 +1,2 @@
+string logsalida
+string status

@@ -1,0 +1,21 @@
+{
+  "package_name": "my_mas",
+  "non_idl_tuples": [
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/Operacion.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/BitLoad.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/CreateBitStream.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/Auditor.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/SensorMeasurment.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/FileHexLoad.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/TransGlobal.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/Contrato.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/TransEntrada.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:msg/LogSalida.msg",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:srv/LoadFiledb.srv",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:srv/LoadFile.srv",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:action/Fibonacci.action",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:action/Cargahex.action",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:action/CargaBit.action",
+    "/home/trabajo/LabRemo/labremoto_ws/src/my_mas:action/Tranformvhdlbit.action"
+  ]
+}

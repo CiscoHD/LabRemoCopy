@@ -1,0 +1,914 @@
+[0.000000] (-) TimerEvent: {}
+[0.000159] (my_mas) JobQueued: {'identifier': 'my_mas', 'dependencies': OrderedDict()}
+[0.000185] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('my_mas', '/home/trabajo/LabRemo/labremoto_ws/install/my_mas')])}
+[0.000206] (my_mas) JobStarted: {'identifier': 'my_mas'}
+[0.031006] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'cmake'}
+[0.031516] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'build'}
+[0.032022] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/trabajo/LabRemo/labremoto_ws/build/my_mas', '--', '-j3', '-l3'], 'cwd': '/home/trabajo/LabRemo/labremoto_ws/build/my_mas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'trabajo'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/trabajo'), ('OLDPWD', '/home/trabajo/LabRemo'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'es_ES.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'trabajo'), ('WINDOWID', '77594627'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/trabajo/arduino/bin:/media/programs/tools/Xilinx/ISE/14.7/ISE_DS/ISE/bin/lin64/:/media/programs/tools/Xilinx/Vivado/2023.2/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vivado:@/tmp/.ICE-unix/1337,unix/vivado:/tmp/.ICE-unix/1337'), ('GDM_LANG', 'en'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/trabajo/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/trabajo'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('XDG_VTNR', '7'), ('PWD', '/home/trabajo/LabRemo/labremoto_ws/build/my_mas'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/xfce4:/usr/share/xubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.054148] (my_mas) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.054333] (my_mas) StdoutLine: {'line': b'-- Found ament_cmake_core: 1.3.7 (/opt/ros/humble/share/ament_cmake_core/cmake)\n'}
+[0.099365] (-) TimerEvent: {}
+[0.163198] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.166195] (my_mas) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.194787] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199423] (-) TimerEvent: {}
+[0.215376] (my_mas) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.229684] (my_mas) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.299510] (-) TimerEvent: {}
+[0.399735] (-) TimerEvent: {}
+[0.500017] (-) TimerEvent: {}
+[0.600286] (-) TimerEvent: {}
+[0.634320] (my_mas) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.700378] (-) TimerEvent: {}
+[0.800632] (-) TimerEvent: {}
+[0.840225] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.900723] (-) TimerEvent: {}
+[1.000977] (-) TimerEvent: {}
+[1.092615] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101047] (-) TimerEvent: {}
+[1.109294] (my_mas) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.125357] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.125483] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.125531] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.163333] (my_mas) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.201148] (-) TimerEvent: {}
+[1.215316] (my_mas) StdoutLine: {'line': b'-- Generating done\n'}
+[1.217396] (my_mas) StdoutLine: {'line': b'-- Build files have been written to: /home/trabajo/LabRemo/labremoto_ws/build/my_mas\n'}
+[1.238752] (my_mas) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.246951] (my_mas) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.251827] (my_mas) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_my_mas\n'}
+[1.301257] (-) TimerEvent: {}
+[1.401547] (-) TimerEvent: {}
+[1.412027] (my_mas) StdoutLine: {'line': b'running egg_info\n'}
+[1.412549] (my_mas) StdoutLine: {'line': b'writing my_mas.egg-info/PKG-INFO\n'}
+[1.412809] (my_mas) StdoutLine: {'line': b'writing dependency_links to my_mas.egg-info/dependency_links.txt\n'}
+[1.412951] (my_mas) StdoutLine: {'line': b'writing top-level names to my_mas.egg-info/top_level.txt\n'}
+[1.414756] (my_mas) StdoutLine: {'line': b"reading manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[1.415232] (my_mas) StdoutLine: {'line': b"writing manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[1.437684] (my_mas) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_my_mas_egg\n'}
+[1.501644] (-) TimerEvent: {}
+[1.601892] (-) TimerEvent: {}
+[1.702155] (-) TimerEvent: {}
+[1.802405] (-) TimerEvent: {}
+[1.902676] (-) TimerEvent: {}
+[2.002931] (-) TimerEvent: {}
+[2.103177] (-) TimerEvent: {}
+[2.203438] (-) TimerEvent: {}
+[2.303720] (-) TimerEvent: {}
+[2.404174] (-) TimerEvent: {}
+[2.487980] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_generator_c\x1b[0m\n'}
+[2.497913] (my_mas) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.o\x1b[0m\n'}
+[2.504289] (-) TimerEvent: {}
+[2.509136] (my_mas) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o\x1b[0m\n'}
+[2.511649] (my_mas) StdoutLine: {'line': b'[  2%] Built target my_mas__cpp\n'}
+[2.518679] (my_mas) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.541091] (my_mas) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o\x1b[0m\n'}
+[2.547637] (my_mas) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.o\x1b[0m\n'}
+[2.580952] (my_mas) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c.o\x1b[0m\n'}
+[2.587233] (my_mas) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.o\x1b[0m\n'}
+[2.604387] (-) TimerEvent: {}
+[2.619222] (my_mas) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o\x1b[0m\n'}
+[2.625392] (my_mas) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.o\x1b[0m\n'}
+[2.659370] (my_mas) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_entrada__functions.c.o\x1b[0m\n'}
+[2.661048] (my_mas) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/log_salida__functions.c.o\x1b[0m\n'}
+[2.699198] (my_mas) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o\x1b[0m\n'}
+[2.699431] (my_mas) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o\x1b[0m\n'}
+[2.704468] (-) TimerEvent: {}
+[2.742972] (my_mas) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o\x1b[0m\n'}
+[2.743832] (my_mas) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o\x1b[0m\n'}
+[2.804570] (-) TimerEvent: {}
+[2.842577] (my_mas) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o\x1b[0m\n'}
+[2.842796] (my_mas) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o\x1b[0m\n'}
+[2.904666] (-) TimerEvent: {}
+[2.936629] (my_mas) StdoutLine: {'line': b'[ 13%] \x1b[32m\x1b[1mLinking C shared library libmy_mas__rosidl_generator_c.so\x1b[0m\n'}
+[2.939538] (my_mas) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.974727] (my_mas) StdoutLine: {'line': b'[ 14%] Built target my_mas__rosidl_generator_c\n'}
+[2.983694] (my_mas) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.004778] (-) TimerEvent: {}
+[3.092765] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.102405] (my_mas) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.o\x1b[0m\n'}
+[3.104842] (-) TimerEvent: {}
+[3.205058] (-) TimerEvent: {}
+[3.305328] (-) TimerEvent: {}
+[3.318523] (my_mas) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.cpp.o\x1b[0m\n'}
+[3.405427] (-) TimerEvent: {}
+[3.505718] (-) TimerEvent: {}
+[3.525851] (my_mas) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/create_bit_stream__type_support.cpp.o\x1b[0m\n'}
+[3.605817] (-) TimerEvent: {}
+[3.706112] (-) TimerEvent: {}
+[3.731618] (my_mas) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.o\x1b[0m\n'}
+[3.806219] (-) TimerEvent: {}
+[3.845721] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.856514] (my_mas) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.o\x1b[0m\n'}
+[3.906339] (-) TimerEvent: {}
+[3.940042] (my_mas) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/sensor_measurment__type_support.cpp.o\x1b[0m\n'}
+[4.006457] (-) TimerEvent: {}
+[4.030741] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.042021] (my_mas) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.o\x1b[0m\n'}
+[4.106591] (-) TimerEvent: {}
+[4.155338] (my_mas) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.cpp.o\x1b[0m\n'}
+[4.157157] (my_mas) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.cpp.o\x1b[0m\n'}
+[4.206710] (-) TimerEvent: {}
+[4.307034] (-) TimerEvent: {}
+[4.341984] (my_mas) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.cpp.o\x1b[0m\n'}
+[4.363282] (my_mas) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/trans_global__type_support.cpp.o\x1b[0m\n'}
+[4.407149] (-) TimerEvent: {}
+[4.448554] (my_mas) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/create_bit_stream__type_support.cpp.o\x1b[0m\n'}
+[4.507273] (-) TimerEvent: {}
+[4.564732] (my_mas) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.o\x1b[0m\n'}
+[4.607392] (-) TimerEvent: {}
+[4.637128] (my_mas) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/create_bit_stream__type_support.cpp.o\x1b[0m\n'}
+[4.707515] (-) TimerEvent: {}
+[4.739368] (my_mas) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.o\x1b[0m\n'}
+[4.768815] (my_mas) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/trans_entrada__type_support.cpp.o\x1b[0m\n'}
+[4.807633] (-) TimerEvent: {}
+[4.907942] (-) TimerEvent: {}
+[4.941422] (my_mas) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.o\x1b[0m\n'}
+[4.974983] (my_mas) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/log_salida__type_support.cpp.o\x1b[0m\n'}
+[5.008061] (-) TimerEvent: {}
+[5.032803] (my_mas) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/sensor_measurment__type_support.cpp.o\x1b[0m\n'}
+[5.108183] (-) TimerEvent: {}
+[5.180263] (my_mas) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/srv/load_filedb__type_support.cpp.o\x1b[0m\n'}
+[5.208305] (-) TimerEvent: {}
+[5.246956] (my_mas) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/sensor_measurment__type_support.cpp.o\x1b[0m\n'}
+[5.308416] (-) TimerEvent: {}
+[5.321931] (my_mas) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_support.cpp.o\x1b[0m\n'}
+[5.390030] (my_mas) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/srv/load_file__type_support.cpp.o\x1b[0m\n'}
+[5.408543] (-) TimerEvent: {}
+[5.508827] (-) TimerEvent: {}
+[5.555080] (my_mas) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__type_support.cpp.o\x1b[0m\n'}
+[5.598782] (my_mas) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[5.608949] (-) TimerEvent: {}
+[5.619055] (my_mas) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/trans_global__type_support.cpp.o\x1b[0m\n'}
+[5.709071] (-) TimerEvent: {}
+[5.809434] (-) TimerEvent: {}
+[5.869383] (my_mas) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/trans_global__type_support.cpp.o\x1b[0m\n'}
+[5.909557] (-) TimerEvent: {}
+[5.917535] (my_mas) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.o\x1b[0m\n'}
+[5.951864] (my_mas) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/cargahex__type_support.cpp.o\x1b[0m\n'}
+[6.009677] (-) TimerEvent: {}
+[6.109996] (-) TimerEvent: {}
+[6.176740] (my_mas) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.o\x1b[0m\n'}
+[6.208920] (my_mas) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/trans_entrada__type_support.cpp.o\x1b[0m\n'}
+[6.210056] (-) TimerEvent: {}
+[6.296598] (my_mas) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/carga_bit__type_support.cpp.o\x1b[0m\n'}
+[6.310182] (-) TimerEvent: {}
+[6.410505] (-) TimerEvent: {}
+[6.489010] (my_mas) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/trans_entrada__type_support.cpp.o\x1b[0m\n'}
+[6.505755] (my_mas) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/log_salida__type_support.cpp.o\x1b[0m\n'}
+[6.510566] (-) TimerEvent: {}
+[6.610899] (-) TimerEvent: {}
+[6.639792] (my_mas) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/tranformvhdlbit__type_support.cpp.o\x1b[0m\n'}
+[6.711015] (-) TimerEvent: {}
+[6.789627] (my_mas) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/srv/detail/load_filedb__type_support.cpp.o\x1b[0m\n'}
+[6.800384] (my_mas) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/log_salida__type_support.cpp.o\x1b[0m\n'}
+[6.811131] (-) TimerEvent: {}
+[6.911532] (-) TimerEvent: {}
+[6.998050] (my_mas) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.011650] (-) TimerEvent: {}
+[7.035079] (my_mas) StdoutLine: {'line': b'[ 40%] Built target my_mas__rosidl_typesupport_cpp\n'}
+[7.043820] (my_mas) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.096800] (my_mas) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/srv/detail/load_file__type_support.cpp.o\x1b[0m\n'}
+[7.111758] (-) TimerEvent: {}
+[7.124221] (my_mas) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/srv/detail/dds_fastrtps/load_filedb__type_support.cpp.o\x1b[0m\n'}
+[7.211875] (-) TimerEvent: {}
+[7.312176] (-) TimerEvent: {}
+[7.385207] (my_mas) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[7.412290] (-) TimerEvent: {}
+[7.448040] (my_mas) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/srv/detail/dds_fastrtps/load_file__type_support.cpp.o\x1b[0m\n'}
+[7.512398] (-) TimerEvent: {}
+[7.612712] (-) TimerEvent: {}
+[7.713013] (-) TimerEvent: {}
+[7.759932] (my_mas) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[7.813124] (-) TimerEvent: {}
+[7.861069] (my_mas) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/cargahex__type_support.cpp.o\x1b[0m\n'}
+[7.913263] (-) TimerEvent: {}
+[8.013598] (-) TimerEvent: {}
+[8.081101] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[8.091255] (my_mas) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.o\x1b[0m\n'}
+[8.113711] (-) TimerEvent: {}
+[8.214129] (-) TimerEvent: {}
+[8.238615] (my_mas) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/cargahex__type_support.cpp.o\x1b[0m\n'}
+[8.303178] (my_mas) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/carga_bit__type_support.cpp.o\x1b[0m\n'}
+[8.314225] (-) TimerEvent: {}
+[8.357398] (my_mas) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.cpp.o\x1b[0m\n'}
+[8.414341] (-) TimerEvent: {}
+[8.514733] (-) TimerEvent: {}
+[8.615056] (-) TimerEvent: {}
+[8.625585] (my_mas) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.cpp.o\x1b[0m\n'}
+[8.693018] (my_mas) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/carga_bit__type_support.cpp.o\x1b[0m\n'}
+[8.715176] (-) TimerEvent: {}
+[8.768091] (my_mas) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/tranformvhdlbit__type_support.cpp.o\x1b[0m\n'}
+[8.815299] (-) TimerEvent: {}
+[8.901024] (my_mas) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.o\x1b[0m\n'}
+[8.915410] (-) TimerEvent: {}
+[9.015736] (-) TimerEvent: {}
+[9.116072] (-) TimerEvent: {}
+[9.132732] (my_mas) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/tranformvhdlbit__type_support.cpp.o\x1b[0m\n'}
+[9.171773] (my_mas) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.cpp.o\x1b[0m\n'}
+[9.216188] (-) TimerEvent: {}
+[9.222130] (my_mas) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.291008] (my_mas) StdoutLine: {'line': b'[ 52%] Built target my_mas__rosidl_typesupport_introspection_cpp\n'}
+[9.299701] (my_mas) StdoutLine: {'line': b'[ 53%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.316292] (-) TimerEvent: {}
+[9.416668] (-) TimerEvent: {}
+[9.429457] (my_mas) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.cpp.o\x1b[0m\n'}
+[9.516769] (-) TimerEvent: {}
+[9.560178] (my_mas) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[9.616878] (-) TimerEvent: {}
+[9.632864] (my_mas) StdoutLine: {'line': b'[ 54%] Built target my_mas__rosidl_typesupport_fastrtps_cpp\n'}
+[9.641182] (my_mas) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.695538] (my_mas) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_global__type_support_c.cpp.o\x1b[0m\n'}
+[9.716968] (-) TimerEvent: {}
+[9.817217] (-) TimerEvent: {}
+[9.917518] (-) TimerEvent: {}
+[9.963100] (my_mas) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.o\x1b[0m\n'}
+[10.017617] (-) TimerEvent: {}
+[10.117909] (-) TimerEvent: {}
+[10.218218] (-) TimerEvent: {}
+[10.229909] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_c\x1b[0m\n'}
+[10.238753] (my_mas) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.o\x1b[0m\n'}
+[10.241990] (my_mas) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o\x1b[0m\n'}
+[10.264575] (my_mas) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/bit_load__type_support.cpp.o\x1b[0m\n'}
+[10.274235] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[10.283247] (my_mas) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.o\x1b[0m\n'}
+[10.289205] (my_mas) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/create_bit_stream__type_support.cpp.o\x1b[0m\n'}
+[10.314215] (my_mas) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.c.o\x1b[0m\n'}
+[10.314684] (my_mas) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.o\x1b[0m\n'}
+[10.318300] (-) TimerEvent: {}
+[10.339189] (my_mas) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/sensor_measurment__type_support.cpp.o\x1b[0m\n'}
+[10.341162] (my_mas) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/create_bit_stream__type_support.c.o\x1b[0m\n'}
+[10.364796] (my_mas) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.cpp.o\x1b[0m\n'}
+[10.369975] (my_mas) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.o\x1b[0m\n'}
+[10.391109] (my_mas) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/trans_global__type_support.cpp.o\x1b[0m\n'}
+[10.399589] (my_mas) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.c.o\x1b[0m\n'}
+[10.417892] (my_mas) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.o\x1b[0m\n'}
+[10.418369] (-) TimerEvent: {}
+[10.429062] (my_mas) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support.c.o\x1b[0m\n'}
+[10.444348] (my_mas) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/trans_entrada__type_support.cpp.o\x1b[0m\n'}
+[10.457708] (my_mas) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/trans_global__type_support.c.o\x1b[0m\n'}
+[10.469130] (my_mas) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/log_salida__type_support.cpp.o\x1b[0m\n'}
+[10.486219] (my_mas) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.o\x1b[0m\n'}
+[10.493826] (my_mas) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/srv/load_filedb__type_support.cpp.o\x1b[0m\n'}
+[10.515563] (my_mas) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/trans_entrada__type_support.c.o\x1b[0m\n'}
+[10.518476] (-) TimerEvent: {}
+[10.519432] (my_mas) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/srv/load_file__type_support.cpp.o\x1b[0m\n'}
+[10.531525] (my_mas) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o\x1b[0m\n'}
+[10.545061] (my_mas) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/log_salida__type_support.c.o\x1b[0m\n'}
+[10.545627] (my_mas) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[10.571547] (my_mas) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/srv/detail/load_filedb__type_support.c.o\x1b[0m\n'}
+[10.583725] (my_mas) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/cargahex__type_support.cpp.o\x1b[0m\n'}
+[10.602662] (my_mas) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/srv/detail/load_file__type_support.c.o\x1b[0m\n'}
+[10.618593] (-) TimerEvent: {}
+[10.624534] (my_mas) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/carga_bit__type_support.cpp.o\x1b[0m\n'}
+[10.633290] (my_mas) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[10.663101] (my_mas) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/tranformvhdlbit__type_support.cpp.o\x1b[0m\n'}
+[10.674724] (my_mas) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/cargahex__type_support.c.o\x1b[0m\n'}
+[10.703590] (my_mas) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.712904] (my_mas) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/carga_bit__type_support.c.o\x1b[0m\n'}
+[10.718693] (-) TimerEvent: {}
+[10.743383] (my_mas) StdoutLine: {'line': b'[ 78%] Built target my_mas__rosidl_typesupport_c\n'}
+[10.750144] (my_mas) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/tranformvhdlbit__type_support.c.o\x1b[0m\n'}
+[10.754095] (my_mas) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o\x1b[0m\n'}
+[10.790042] (my_mas) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library libmy_mas__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.818645] (my_mas) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o\x1b[0m\n'}
+[10.818831] (-) TimerEvent: {}
+[10.820667] (my_mas) StdoutLine: {'line': b'[ 81%] Built target my_mas__rosidl_typesupport_introspection_c\n'}
+[10.827126] (my_mas) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o\x1b[0m\n'}
+[10.918963] (-) TimerEvent: {}
+[11.019356] (-) TimerEvent: {}
+[11.020916] (my_mas) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o\x1b[0m\n'}
+[11.080958] (my_mas) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o\x1b[0m\n'}
+[11.110146] (my_mas) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o\x1b[0m\n'}
+[11.119447] (-) TimerEvent: {}
+[11.219824] (-) TimerEvent: {}
+[11.320139] (-) TimerEvent: {}
+[11.402635] (my_mas) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.420268] (-) TimerEvent: {}
+[11.470135] (my_mas) StdoutLine: {'line': b'[ 84%] Built target my_mas__rosidl_typesupport_fastrtps_c\n'}
+[11.485496] (my_mas) StdoutLine: {'line': b'[ 84%] Built target my_mas\n'}
+[11.501260] (my_mas) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[11.520384] (-) TimerEvent: {}
+[11.620704] (-) TimerEvent: {}
+[11.721006] (-) TimerEvent: {}
+[11.821299] (-) TimerEvent: {}
+[11.921580] (-) TimerEvent: {}
+[12.021864] (-) TimerEvent: {}
+[12.122145] (-) TimerEvent: {}
+[12.222420] (-) TimerEvent: {}
+[12.322698] (-) TimerEvent: {}
+[12.422997] (-) TimerEvent: {}
+[12.523252] (-) TimerEvent: {}
+[12.623488] (-) TimerEvent: {}
+[12.723728] (-) TimerEvent: {}
+[12.823981] (-) TimerEvent: {}
+[12.924247] (-) TimerEvent: {}
+[13.024514] (-) TimerEvent: {}
+[13.124769] (-) TimerEvent: {}
+[13.224999] (-) TimerEvent: {}
+[13.325229] (-) TimerEvent: {}
+[13.425490] (-) TimerEvent: {}
+[13.525759] (-) TimerEvent: {}
+[13.531062] (my_mas) StdoutLine: {'line': b'[ 85%] Built target my_mas__py\n'}
+[13.539181] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_generator_py\x1b[0m\n'}
+[13.547803] (my_mas) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o\x1b[0m\n'}
+[13.548799] (my_mas) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o\x1b[0m\n'}
+[13.548959] (my_mas) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o\x1b[0m\n'}
+[13.625875] (-) TimerEvent: {}
+[13.637868] (my_mas) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o\x1b[0m\n'}
+[13.640726] (my_mas) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o\x1b[0m\n'}
+[13.640974] (my_mas) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o\x1b[0m\n'}
+[13.725986] (-) TimerEvent: {}
+[13.727156] (my_mas) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o\x1b[0m\n'}
+[13.729668] (my_mas) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o\x1b[0m\n'}
+[13.732165] (my_mas) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o\x1b[0m\n'}
+[13.815445] (my_mas) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o\x1b[0m\n'}
+[13.815632] (my_mas) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o\x1b[0m\n'}
+[13.816257] (my_mas) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o\x1b[0m\n'}
+[13.826080] (-) TimerEvent: {}
+[13.899307] (my_mas) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o\x1b[0m\n'}
+[13.902499] (my_mas) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o\x1b[0m\n'}
+[13.909388] (my_mas) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o\x1b[0m\n'}
+[13.926175] (-) TimerEvent: {}
+[14.018394] (my_mas) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o\x1b[0m\n'}
+[14.026294] (-) TimerEvent: {}
+[14.126598] (-) TimerEvent: {}
+[14.134978] (my_mas) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so\x1b[0m\n'}
+[14.174889] (my_mas) StdoutLine: {'line': b'[ 96%] Built target my_mas__rosidl_generator_py\n'}
+[14.183236] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[14.184898] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[14.185090] (my_mas) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_mas__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[14.194060] (my_mas) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.196235] (my_mas) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.196630] (my_mas) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.226709] (-) TimerEvent: {}
+[14.327131] (-) TimerEvent: {}
+[14.374095] (my_mas) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.375825] (my_mas) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.375980] (my_mas) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.415400] (my_mas) StdoutLine: {'line': b'[100%] Built target my_mas__rosidl_typesupport_introspection_c__pyext\n'}
+[14.415825] (my_mas) StdoutLine: {'line': b'[100%] Built target my_mas__rosidl_typesupport_fastrtps_c__pyext\n'}
+[14.416045] (my_mas) StdoutLine: {'line': b'[100%] Built target my_mas__rosidl_typesupport_c__pyext\n'}
+[14.424958] (my_mas) CommandEnded: {'returncode': 0}
+[14.427200] (-) TimerEvent: {}
+[14.527408] (-) TimerEvent: {}
+[14.626885] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'install'}
+[14.627474] (-) TimerEvent: {}
+[14.632297] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/trabajo/LabRemo/labremoto_ws/build/my_mas'], 'cwd': '/home/trabajo/LabRemo/labremoto_ws/build/my_mas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'trabajo'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/trabajo'), ('OLDPWD', '/home/trabajo/LabRemo'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'es_ES.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'trabajo'), ('WINDOWID', '77594627'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/trabajo/arduino/bin:/media/programs/tools/Xilinx/ISE/14.7/ISE_DS/ISE/bin/lin64/:/media/programs/tools/Xilinx/Vivado/2023.2/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/vivado:@/tmp/.ICE-unix/1337,unix/vivado:/tmp/.ICE-unix/1337'), ('GDM_LANG', 'en'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/trabajo/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/trabajo'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('XDG_VTNR', '7'), ('PWD', '/home/trabajo/LabRemo/labremoto_ws/build/my_mas'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/xfce4:/usr/share/xubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.638410] (my_mas) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.638608] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/ament_index/resource_index/rosidl_interfaces/my_mas\n'}
+[14.638725] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[14.638792] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[14.638901] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[14.638967] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__struct.h\n'}
+[14.639064] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.h\n'}
+[14.639161] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__functions.h\n'}
+[14.639266] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__struct.h\n'}
+[14.639358] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__functions.c\n'}
+[14.639459] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__functions.c\n'}
+[14.639566] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.h\n'}
+[14.639664] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__functions.h\n'}
+[14.639752] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/load_filedb.h\n'}
+[14.639851] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/load_file.h\n'}
+[14.639966] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[14.640074] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/fibonacci.h\n'}
+[14.640137] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/tranformvhdlbit.h\n'}
+[14.640232] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[14.640339] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.h\n'}
+[14.640401] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.h\n'}
+[14.640514] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__functions.c\n'}
+[14.640721] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__struct.h\n'}
+[14.640868] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__functions.h\n'}
+[14.640951] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__functions.c\n'}
+[14.641090] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__functions.c\n'}
+[14.641258] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.h\n'}
+[14.641356] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__functions.c\n'}
+[14.641494] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__functions.h\n'}
+[14.641640] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__struct.h\n'}
+[14.641747] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.h\n'}
+[14.641851] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__functions.h\n'}
+[14.641982] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__struct.h\n'}
+[14.642094] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__struct.h\n'}
+[14.642174] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__functions.h\n'}
+[14.642290] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/cargahex.h\n'}
+[14.642422] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/carga_bit.h\n'}
+[14.642538] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[14.642632] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/trans_global.h\n'}
+[14.642694] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/trans_entrada.h\n'}
+[14.642792] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/create_bit_stream.h\n'}
+[14.642885] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.642982] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/log_salida.h\n'}
+[14.643054] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[14.643183] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__struct.h\n'}
+[14.643246] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__functions.h\n'}
+[14.643336] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.h\n'}
+[14.643427] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__functions.c\n'}
+[14.643507] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.h\n'}
+[14.643638] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__struct.h\n'}
+[14.643722] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__functions.h\n'}
+[14.643844] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__functions.h\n'}
+[14.643972] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__functions.h\n'}
+[14.644103] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.h\n'}
+[14.644233] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__functions.c\n'}
+[14.644342] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__functions.c\n'}
+[14.644468] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__functions.c\n'}
+[14.644660] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__struct.h\n'}
+[14.644743] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__struct.h\n'}
+[14.644871] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.h\n'}
+[14.645012] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__functions.c\n'}
+[14.645162] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__functions.h\n'}
+[14.645246] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__functions.h\n'}
+[14.645377] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__struct.h\n'}
+[14.645509] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__struct.h\n'}
+[14.645626] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__functions.c\n'}
+[14.645750] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__struct.h\n'}
+[14.645866] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__struct.h\n'}
+[14.645988] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__struct.h\n'}
+[14.646115] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__functions.c\n'}
+[14.646239] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.h\n'}
+[14.646368] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__struct.h\n'}
+[14.646492] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__functions.h\n'}
+[14.646616] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__functions.c\n'}
+[14.646737] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__functions.h\n'}
+[14.646855] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.h\n'}
+[14.647007] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.h\n'}
+[14.647196] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.h\n'}
+[14.647318] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__functions.c\n'}
+[14.647458] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.h\n'}
+[14.647538] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__functions.c\n'}
+[14.647660] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__functions.h\n'}
+[14.647790] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__functions.h\n'}
+[14.647918] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.h\n'}
+[14.648051] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/operacion.h\n'}
+[14.648162] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/contrato.h\n'}
+[14.648285] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/bit_load.h\n'}
+[14.648418] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/sensor_measurment.h\n'}
+[14.648561] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/file_hex_load.h\n'}
+[14.648698] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/auditor.h\n'}
+[14.648827] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/library_path.sh\n'}
+[14.649004] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/library_path.dsv\n'}
+[14.649316] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_generator_c.so\n'}
+[14.650037] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_generator_c.so" to ""\n'}
+[14.650142] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[14.650248] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[14.650341] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[14.650438] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_fastrtps_c.h\n'}
+[14.650605] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_c.h\n'}
+[14.650771] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[14.650854] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[14.650948] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_fastrtps_c.h\n'}
+[14.651035] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[14.651192] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_fastrtps_c.h\n'}
+[14.651294] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_fastrtps_c.h\n'}
+[14.651379] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[14.651464] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.651621] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[14.651710] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_fastrtps_c.h\n'}
+[14.651832] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_c.h\n'}
+[14.651922] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_fastrtps_c.h\n'}
+[14.652006] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_fastrtps_c.h\n'}
+[14.652090] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_fastrtps_c.h\n'}
+[14.652219] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h\n'}
+[14.652330] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_c.h\n'}
+[14.652410] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_c.h\n'}
+[14.652496] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_fastrtps_c.h\n'}
+[14.652640] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_fastrtps_c.h\n'}
+[14.652870] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_c.so\n'}
+[14.654247] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.654380] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[14.654468] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[14.654553] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[14.654638] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.c\n'}
+[14.654731] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_introspection_c.h\n'}
+[14.654814] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_introspection_c.h\n'}
+[14.654910] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.c\n'}
+[14.654991] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[14.655074] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[14.655263] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_c.h\n'}
+[14.655350] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[14.655425] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.c\n'}
+[14.655561] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_introspection_c.h\n'}
+[14.655636] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.c\n'}
+[14.655711] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.c\n'}
+[14.655784] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_introspection_c.h\n'}
+[14.655862] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.c\n'}
+[14.656069] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[14.656182] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.656262] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[14.656344] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_introspection_c.h\n'}
+[14.656427] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_introspection_c.h\n'}
+[14.656563] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_introspection_c.h\n'}
+[14.656652] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_introspection_c.h\n'}
+[14.656737] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_c.h\n'}
+[14.656827] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_introspection_c.h\n'}
+[14.656952] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.c\n'}
+[14.657027] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.c\n'}
+[14.657110] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_introspection_c.h\n'}
+[14.657192] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.c\n'}
+[14.657354] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_introspection_c.h\n'}
+[14.657438] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.c\n'}
+[14.657526] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.c\n'}
+[14.657652] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.c\n'}
+[14.657740] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.c\n'}
+[14.657887] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.c\n'}
+[14.658002] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_introspection_c.h\n'}
+[14.658080] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_introspection_c.h\n'}
+[14.658208] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.c\n'}
+[14.658346] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.c\n'}
+[14.658635] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_c.so\n'}
+[14.659199] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.659395] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_c.so\n'}
+[14.659917] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_c.so" to ""\n'}
+[14.660073] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[14.660259] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[14.660345] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/load_file.hpp\n'}
+[14.660429] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[14.660557] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__struct.hpp\n'}
+[14.660773] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__struct.hpp\n'}
+[14.660869] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__builder.hpp\n'}
+[14.660954] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__traits.hpp\n'}
+[14.661044] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__traits.hpp\n'}
+[14.661205] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__builder.hpp\n'}
+[14.661309] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/load_filedb.hpp\n'}
+[14.661405] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[14.661497] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/carga_bit.hpp\n'}
+[14.661580] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/cargahex.hpp\n'}
+[14.661671] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[14.661758] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__struct.hpp\n'}
+[14.661887] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__builder.hpp\n'}
+[14.662053] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__struct.hpp\n'}
+[14.662149] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__builder.hpp\n'}
+[14.662235] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__struct.hpp\n'}
+[14.662352] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__traits.hpp\n'}
+[14.662427] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__traits.hpp\n'}
+[14.662508] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__builder.hpp\n'}
+[14.662565] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__builder.hpp\n'}
+[14.662625] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__traits.hpp\n'}
+[14.662695] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__struct.hpp\n'}
+[14.662800] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__traits.hpp\n'}
+[14.662887] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/tranformvhdlbit.hpp\n'}
+[14.662978] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/fibonacci.hpp\n'}
+[14.663055] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[14.663138] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/create_bit_stream.hpp\n'}
+[14.663232] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/sensor_measurment.hpp\n'}
+[14.663363] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/log_salida.hpp\n'}
+[14.663469] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/auditor.hpp\n'}
+[14.663557] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/contrato.hpp\n'}
+[14.663643] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/bit_load.hpp\n'}
+[14.663728] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/trans_global.hpp\n'}
+[14.663811] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/trans_entrada.hpp\n'}
+[14.663980] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[14.664069] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__traits.hpp\n'}
+[14.664158] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__struct.hpp\n'}
+[14.664242] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__builder.hpp\n'}
+[14.664328] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__struct.hpp\n'}
+[14.664417] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__struct.hpp\n'}
+[14.664502] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__traits.hpp\n'}
+[14.664612] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__traits.hpp\n'}
+[14.664738] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__struct.hpp\n'}
+[14.664800] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__builder.hpp\n'}
+[14.664863] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__builder.hpp\n'}
+[14.664923] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__traits.hpp\n'}
+[14.664975] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__traits.hpp\n'}
+[14.665035] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__struct.hpp\n'}
+[14.665094] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__traits.hpp\n'}
+[14.665147] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__builder.hpp\n'}
+[14.665275] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__traits.hpp\n'}
+[14.665411] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__builder.hpp\n'}
+[14.665493] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__struct.hpp\n'}
+[14.665576] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__builder.hpp\n'}
+[14.665665] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__traits.hpp\n'}
+[14.665750] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__traits.hpp\n'}
+[14.665837] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__builder.hpp\n'}
+[14.665922] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__builder.hpp\n'}
+[14.666080] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__struct.hpp\n'}
+[14.666152] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__struct.hpp\n'}
+[14.666213] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__builder.hpp\n'}
+[14.666265] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__builder.hpp\n'}
+[14.666331] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__traits.hpp\n'}
+[14.666404] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__struct.hpp\n'}
+[14.666456] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__struct.hpp\n'}
+[14.666570] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/file_hex_load.hpp\n'}
+[14.666634] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/operacion.hpp\n'}
+[14.666705] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[14.666762] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[14.666823] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[14.666875] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.666936] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.667047] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/dds_fastrtps\n'}
+[14.667142] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[14.667232] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[14.667321] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.667407] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.667484] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/dds_fastrtps\n'}
+[14.667569] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.667700] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.667861] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[14.667935] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.668000] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[14.668060] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668120] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668178] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668230] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668281] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668333] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668390] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/dds_fastrtps\n'}
+[14.668502] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668581] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668640] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668692] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.668746] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.669224] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.669402] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas\n'}
+[14.669494] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv\n'}
+[14.669567] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[14.669653] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.cpp\n'}
+[14.669795] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.669880] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.cpp\n'}
+[14.669997] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.670060] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action\n'}
+[14.670144] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[14.670255] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.cpp\n'}
+[14.670337] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.cpp\n'}
+[14.670449] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.670519] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.670563] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.670648] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.670743] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.cpp\n'}
+[14.670797] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.cpp\n'}
+[14.670888] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg\n'}
+[14.670947] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[14.671023] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.cpp\n'}
+[14.671101] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.671196] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.671268] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.cpp\n'}
+[14.671339] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.cpp\n'}
+[14.671412] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.cpp\n'}
+[14.671520] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.cpp\n'}
+[14.671608] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.671683] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.cpp\n'}
+[14.671780] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.cpp\n'}
+[14.671844] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.671914] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.671989] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.672082] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.672124] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.672170] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.672233] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.672318] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.cpp\n'}
+[14.672360] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.cpp\n'}
+[14.672404] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.cpp\n'}
+[14.672443] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_cpp.so\n'}
+[14.672719] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.672862] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_cpp.so\n'}
+[14.673282] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_typesupport_cpp.so" to ""\n'}
+[14.673489] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/pythonpath.sh\n'}
+[14.673610] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/pythonpath.dsv\n'}
+[14.673694] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info\n'}
+[14.673815] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[14.673888] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[14.673994] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[14.674064] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[14.674144] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas\n'}
+[14.674263] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.674310] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_c.c\n'}
+[14.674468] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv\n'}
+[14.674554] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_filedb.py\n'}
+[14.674630] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file_s.c\n'}
+[14.674748] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/__init__.py\n'}
+[14.674817] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file.py\n'}
+[14.674864] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_filedb_s.c\n'}
+[14.674988] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.675180] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/libmy_mas__rosidl_generator_py.so\n'}
+[14.675407] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/__init__.py\n'}
+[14.675477] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.675668] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.675945] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action\n'}
+[14.676051] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci.py\n'}
+[14.676162] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex.py\n'}
+[14.676285] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/__init__.py\n'}
+[14.676330] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci_s.c\n'}
+[14.676460] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_carga_bit.py\n'}
+[14.676513] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_tranformvhdlbit_s.c\n'}
+[14.676628] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_tranformvhdlbit.py\n'}
+[14.676757] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_carga_bit_s.c\n'}
+[14.676808] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex_s.c\n'}
+[14.676924] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg\n'}
+[14.677059] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_log_salida.py\n'}
+[14.677120] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_bit_load_s.c\n'}
+[14.677177] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment_s.c\n'}
+[14.677314] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_log_salida_s.c\n'}
+[14.677385] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment.py\n'}
+[14.677488] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_file_hex_load_s.c\n'}
+[14.677566] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_contrato_s.c\n'}
+[14.677673] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_entrada_s.c\n'}
+[14.677745] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/__init__.py\n'}
+[14.677851] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_operacion.py\n'}
+[14.677934] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_create_bit_stream.py\n'}
+[14.678003] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor.py\n'}
+[14.678083] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_global_s.c\n'}
+[14.678184] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_file_hex_load.py\n'}
+[14.678245] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_entrada.py\n'}
+[14.678341] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_global.py\n'}
+[14.678385] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor_s.c\n'}
+[14.678425] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_operacion_s.c\n'}
+[14.678465] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_contrato.py\n'}
+[14.678503] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_bit_load.py\n'}
+[14.678541] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_create_bit_stream_s.c\n'}
+[14.678578] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.727618] (-) TimerEvent: {}
+[14.733202] (my_mas) StdoutLine: {'line': b"Listing '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas'...\n"}
+[14.733406] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/__init__.py'...\n"}
+[14.733503] (my_mas) StdoutLine: {'line': b"Listing '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action'...\n"}
+[14.733583] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/__init__.py'...\n"}
+[14.733660] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_carga_bit.py'...\n"}
+[14.733734] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex.py'...\n"}
+[14.733816] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci.py'...\n"}
+[14.733887] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_tranformvhdlbit.py'...\n"}
+[14.733959] (my_mas) StdoutLine: {'line': b"Listing '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg'...\n"}
+[14.734035] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/__init__.py'...\n"}
+[14.734126] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor.py'...\n"}
+[14.734201] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_bit_load.py'...\n"}
+[14.734277] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_contrato.py'...\n"}
+[14.734348] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_create_bit_stream.py'...\n"}
+[14.734426] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_file_hex_load.py'...\n"}
+[14.734502] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_log_salida.py'...\n"}
+[14.734577] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_operacion.py'...\n"}
+[14.734654] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment.py'...\n"}
+[14.734729] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_entrada.py'...\n"}
+[14.734803] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_global.py'...\n"}
+[14.734873] (my_mas) StdoutLine: {'line': b"Listing '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv'...\n"}
+[14.734943] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/__init__.py'...\n"}
+[14.735026] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file.py'...\n"}
+[14.735102] (my_mas) StdoutLine: {'line': b"Compiling '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_filedb.py'...\n"}
+[14.737928] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.738674] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.738866] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.739288] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.739472] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.739886] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[14.740045] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_generator_py.so\n'}
+[14.740519] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib/libmy_mas__rosidl_generator_py.so" to ""\n'}
+[14.740596] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Operacion.idl\n'}
+[14.740699] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/BitLoad.idl\n'}
+[14.740823] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/CreateBitStream.idl\n'}
+[14.740871] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Auditor.idl\n'}
+[14.740989] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/SensorMeasurment.idl\n'}
+[14.741069] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/FileHexLoad.idl\n'}
+[14.741176] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/TransGlobal.idl\n'}
+[14.741322] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Contrato.idl\n'}
+[14.741371] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/TransEntrada.idl\n'}
+[14.741437] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/LogSalida.idl\n'}
+[14.741505] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFiledb.idl\n'}
+[14.741624] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFile.idl\n'}
+[14.741708] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Fibonacci.idl\n'}
+[14.741842] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Cargahex.idl\n'}
+[14.741890] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/CargaBit.idl\n'}
+[14.741971] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Tranformvhdlbit.idl\n'}
+[14.742091] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Operacion.msg\n'}
+[14.742149] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/BitLoad.msg\n'}
+[14.742217] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/CreateBitStream.msg\n'}
+[14.742343] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Auditor.msg\n'}
+[14.742396] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/SensorMeasurment.msg\n'}
+[14.742463] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/FileHexLoad.msg\n'}
+[14.742503] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/TransGlobal.msg\n'}
+[14.742569] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/Contrato.msg\n'}
+[14.742701] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/TransEntrada.msg\n'}
+[14.742765] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/msg/LogSalida.msg\n'}
+[14.742832] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFiledb.srv\n'}
+[14.742956] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFiledb_Request.msg\n'}
+[14.743013] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFiledb_Response.msg\n'}
+[14.743083] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFile.srv\n'}
+[14.743207] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFile_Request.msg\n'}
+[14.743272] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/srv/LoadFile_Response.msg\n'}
+[14.743362] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Fibonacci.action\n'}
+[14.743419] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Cargahex.action\n'}
+[14.743522] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/CargaBit.action\n'}
+[14.743600] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/action/Tranformvhdlbit.action\n'}
+[14.743695] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/ament_index/resource_index/package_run_dependencies/my_mas\n'}
+[14.743741] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/ament_index/resource_index/parent_prefix_path/my_mas\n'}
+[14.743815] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/ament_prefix_path.sh\n'}
+[14.743904] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/ament_prefix_path.dsv\n'}
+[14.744024] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/path.sh\n'}
+[14.744109] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/environment/path.dsv\n'}
+[14.744188] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/local_setup.bash\n'}
+[14.744263] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/local_setup.sh\n'}
+[14.744335] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/local_setup.zsh\n'}
+[14.744440] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/local_setup.dsv\n'}
+[14.744521] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.dsv\n'}
+[14.744563] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/ament_index/resource_index/packages/my_mas\n'}
+[14.744602] (my_mas) StdoutLine: {'line': b'-- Old export file "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport-noconfig.cmake].\n'}
+[14.744672] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport.cmake\n'}
+[14.744744] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.744869] (my_mas) StdoutLine: {'line': b'-- Old export file "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport.cmake" will be replaced.  Removing files [/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport-noconfig.cmake].\n'}
+[14.744946] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.745022] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.745101] (my_mas) StdoutLine: {'line': b'-- Old export file "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport-noconfig.cmake].\n'}
+[14.745146] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport.cmake\n'}
+[14.745215] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[14.745335] (my_mas) StdoutLine: {'line': b'-- Old export file "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport-noconfig.cmake].\n'}
+[14.745411] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport.cmake\n'}
+[14.745491] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[14.745532] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cppExport.cmake\n'}
+[14.745628] (my_mas) StdoutLine: {'line': b'-- Old export file "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport.cmake" will be replaced.  Removing files [/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake].\n'}
+[14.745673] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[14.745760] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[14.745840] (my_mas) StdoutLine: {'line': b'-- Old export file "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport-noconfig.cmake].\n'}
+[14.745922] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[14.746005] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.746089] (my_mas) StdoutLine: {'line': b'-- Old export file "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport-noconfig.cmake].\n'}
+[14.746233] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport.cmake\n'}
+[14.746280] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.746389] (my_mas) StdoutLine: {'line': b'-- Old export file "/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport.cmake" will be replaced.  Removing files [/home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport-noconfig.cmake].\n'}
+[14.746435] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport.cmake\n'}
+[14.746564] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.746610] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/rosidl_cmake-extras.cmake\n'}
+[14.746680] (my_mas) StdoutLine: {'line': b'-- Installing: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.746752] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.746890] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.746976] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.747043] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.747114] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.747258] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_masConfig.cmake\n'}
+[14.747318] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/cmake/my_masConfig-version.cmake\n'}
+[14.747378] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/trabajo/LabRemo/labremoto_ws/install/my_mas/share/my_mas/package.xml\n'}
+[14.749177] (my_mas) CommandEnded: {'returncode': 0}
+[14.827694] (-) TimerEvent: {}
+[14.927949] (-) TimerEvent: {}
+[15.028233] (-) TimerEvent: {}
+[15.060766] (my_mas) JobEnded: {'identifier': 'my_mas', 'rc': 0}
+[15.062903] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[15.128351] (-) TimerEvent: {}
+[15.228643] (-) TimerEvent: {}
+[15.328900] (-) TimerEvent: {}
+[15.429135] (-) TimerEvent: {}
+[15.529419] (-) TimerEvent: {}
+[15.565869] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build', 'install', '--record', '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/trabajo/LabRemo/labremoto_ws/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'trabajo', 'LC_TIME': 'es_ES.UTF-8', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/trabajo/LabRemo/labremoto_ws/install/my_mas/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/trabajo', 'OLDPWD': '/home/trabajo/LabRemo', 'DESKTOP_SESSION': 'xubuntu', 'ROS_PYTHON_VERSION': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_MONETARY': 'es_ES.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'trabajo', 'WINDOWID': '77594627', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'CLUTTER_BACKEND': 'x11', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/trabajo/arduino/bin:/media/programs/tools/Xilinx/ISE/14.7/ISE_DS/ISE/bin/lin64/:/media/programs/tools/Xilinx/Vivado/2023.2/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/vivado:@/tmp/.ICE-unix/1337,unix/vivado:/tmp/.ICE-unix/1337', 'GDM_LANG': 'en', 'PAPERSIZE': 'a4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'xfce-', 'LC_ADDRESS': 'es_ES.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LC_TELEPHONE': 'es_ES.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'xubuntu', 'XAUTHORITY': '/home/trabajo/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/trabajo', 'AMENT_PREFIX_PATH': '/home/trabajo/LabRemo/labremoto_ws/install/my_mas:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_ES.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'xubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'QT_IM_MODULE': 'ibus', 'XDG_VTNR': '7', 'PWD': '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg', 'CLUTTER_IM_MODULE': 'ibus', 'XDG_DATA_DIRS': '/usr/share/xfce4:/usr/share/xubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'PYTHONPATH': '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/prefix_override:/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages:/home/trabajo/LabRemo/labremoto_ws/install/my_mas/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_ES.UTF-8', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/trabajo/LabRemo/labremoto_ws/install/my_mas'}, 'shell': False}
+[15.629526] (-) TimerEvent: {}
+[15.719139] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[15.719591] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[15.719735] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[15.719913] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[15.720176] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[15.720276] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[15.722016] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[15.722291] (py_pubsub) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[15.722981] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[15.723101] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[15.723159] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[15.723539] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_transacciones.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.723753] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_transacciones_entrada.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.724035] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_log_salida.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.724206] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/auditor_transacciones.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.724482] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_prueba.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.724701] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_transentrada.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.724803] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/carga_bit_cliente.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.724899] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/vhdlbit_cliente.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.725019] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/supervisor_operaciones.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.725200] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_contratos.py -> /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[15.725677] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[15.725821] (py_pubsub) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[15.725899] (py_pubsub) StderrLine: {'line': b'  warnings.warn(\n'}
+[15.726114] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[15.726849] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/admin_transacciones.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.727027] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/admin_transacciones_entrada.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.727300] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/admin_log_salida.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.727445] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/auditor_transacciones.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.727680] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/publisher_prueba.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.727831] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/publisher_transentrada.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.727933] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/carga_bit_cliente.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.728042] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/vhdlbit_cliente.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.728137] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/supervisor_operaciones.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.728245] (py_pubsub) StdoutLine: {'line': b'copying /home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/build/lib/py_pubsub/admin_contratos.py -> /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[15.728904] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_transacciones.py to admin_transacciones.cpython-310.pyc\n'}
+[15.729546] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_transacciones_entrada.py to admin_transacciones_entrada.cpython-310.pyc\n'}
+[15.729678] (-) TimerEvent: {}
+[15.730327] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_log_salida.py to admin_log_salida.cpython-310.pyc\n'}
+[15.730765] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/auditor_transacciones.py to auditor_transacciones.cpython-310.pyc\n'}
+[15.731297] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_prueba.py to publisher_prueba.cpython-310.pyc\n'}
+[15.731705] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_transentrada.py to publisher_transentrada.cpython-310.pyc\n'}
+[15.732021] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/carga_bit_cliente.py to carga_bit_cliente.cpython-310.pyc\n'}
+[15.732554] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/vhdlbit_cliente.py to vhdlbit_cliente.cpython-310.pyc\n'}
+[15.733083] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/supervisor_operaciones.py to supervisor_operaciones.cpython-310.pyc\n'}
+[15.733570] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_contratos.py to admin_contratos.cpython-310.pyc\n'}
+[15.734174] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[15.734617] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.735941] (py_pubsub) StdoutLine: {'line': b"removing '/home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[15.736196] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info\n'}
+[15.736891] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[15.751254] (py_pubsub) StdoutLine: {'line': b'Installing admin_contratos script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.751486] (py_pubsub) StdoutLine: {'line': b'Installing admin_log_salida script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.751595] (py_pubsub) StdoutLine: {'line': b'Installing admin_transacciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.751714] (py_pubsub) StdoutLine: {'line': b'Installing admin_transacciones_entrada script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.751800] (py_pubsub) StdoutLine: {'line': b'Installing arduino_inf_cliente script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.751961] (py_pubsub) StdoutLine: {'line': b'Installing arduino_infrastructure script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.752084] (py_pubsub) StdoutLine: {'line': b'Installing auditor_transacciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.752175] (py_pubsub) StdoutLine: {'line': b'Installing publisher_prueba script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.752333] (py_pubsub) StdoutLine: {'line': b'Installing publisher_transentrada script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.752425] (py_pubsub) StdoutLine: {'line': b'Installing supervisor_operaciones script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.752523] (py_pubsub) StdoutLine: {'line': b'Installing transform_vhdl_bit script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.752670] (py_pubsub) StdoutLine: {'line': b'Installing vhdlbit_cliente script to /home/trabajo/LabRemo/labremoto_ws/install/py_pubsub/lib/py_pubsub\n'}
+[15.753188] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/trabajo/LabRemo/labremoto_ws/build/py_pubsub/install.log'\n"}
+[15.772836] (py_pubsub) CommandEnded: {'returncode': 0}
+[15.802855] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[15.803571] (-) EventReactorShutdown: {}

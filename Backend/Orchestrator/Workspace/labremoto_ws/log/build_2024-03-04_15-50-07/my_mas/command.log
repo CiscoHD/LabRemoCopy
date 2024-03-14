@@ -1,0 +1,4 @@
+Invoking command in '/home/trabajo/LabRemo/labremoto_ws/build/my_mas': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trabajo/LabRemo/labremoto_ws/build/my_mas -- -j3 -l3
+Invoked command in '/home/trabajo/LabRemo/labremoto_ws/build/my_mas' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trabajo/LabRemo/labremoto_ws/build/my_mas -- -j3 -l3
+Invoking command in '/home/trabajo/LabRemo/labremoto_ws/build/my_mas': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trabajo/LabRemo/labremoto_ws/build/my_mas
+Invoked command in '/home/trabajo/LabRemo/labremoto_ws/build/my_mas' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trabajo/LabRemo/labremoto_ws/build/my_mas
