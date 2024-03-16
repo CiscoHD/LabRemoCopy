@@ -21,7 +21,7 @@ The server plays a crucial role in synchronizing activities, providing web servi
 
 The physical setup, equipped with various actuators, sensors, and a 6-degree-of-freedom cobot, serves as the practical component for conducting experiments. This setup allows students to design, program, and experiment with real systems, enhancing learning in key engineering and technology areas. The integration of these elements makes the lab a powerful educational tool, offering a comprehensive practical and theoretical experience, fostering the development of essential skills and knowledge for engineering and computer science students in a remote and accessible environment.
 
-<img src="principalpage.png" alt="principalpage"> 
+<img src="principal_page.png" alt="principalpage"> 
 
 ## Folder Structure 
 
