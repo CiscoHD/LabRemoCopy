@@ -27,6 +27,16 @@ class ComponentList(modelBase):
 
 class Component(modelBase):
     model = models.CharField(max_length=100)
+    
+    intrnl_id = models.CharField(max_length=128,default='')
+    intrnl_type = models.CharField(max_length=32,default='')
+    intrnl_url = models.CharField(max_length=256,default='')
+    intrnl_alt = models.CharField(max_length=64,default='')
+    inrtnl_x = models.IntegerField(default=128)
+    inrtnl_y = models.IntegerField(default=128)
+    
+    intrnl_pins = models.CharField(max_length=8192,default='')
+    
     description = models.CharField(max_length=4096)
     elements = models.ForeignKey(
         ComponentList,

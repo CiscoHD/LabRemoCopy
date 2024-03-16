@@ -1,5 +1,6 @@
 from rest_framework import serializers, generics
-from .models import (Activity, AuthorLabSessions, Country, DuinoFile, LabSessions, Professor, Student, StudentLabSession, Subject, UploadedFile, User, Careers,
+from .models import (Activity, AuthorLabSessions, Country, #DuinoFile,
+                     LabSessions, Professor, Student, StudentLabSession, Subject, UploadedFile, User, Careers,
                      Universities,Schools,Course,Roster, UserType)
 
 
@@ -106,12 +107,12 @@ ActivityListCreateSerializer = GenericGeneratorSerializer(Activity,serializers.M
 ActivityDetailSerializer = GenericGeneratorSerializer(Activity,serializers.ModelSerializer)
 
 
-class UploadSerializer(serializers.Serializer):
-    file = serializers.FileField()
+# class UploadSerializer(serializers.Serializer):
+#     file = serializers.FileField()
 
-    class Meta:
-        model = DuinoFile
-        fields = '__all__'
+#     class Meta:
+#         model = DuinoFile
+#         fields = '__all__'
 
 
 class userInfoSerializer(serializers.Serializer):

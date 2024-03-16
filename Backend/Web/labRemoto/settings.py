@@ -102,6 +102,15 @@ DATABASES = {
         #'NAME': BASE_DIR / 'db.sqlite3',
         
         #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'OPTIONS': {
+        #        'options': '-c search_path=myschema'
+        #    },
+        #'NAME': 'labremdb', 
+        #'USER': 'trabajo',
+        #'PASSWORD': 'pepito2023',
+        #'HOST': 'localhost', 
+        #'PORT': '5432',
         'ENGINE': 'django.db.backends.postgresql',
         'OPTIONS': {
                 'options': '-c search_path=myschema'
@@ -109,7 +118,7 @@ DATABASES = {
         'NAME': 'labremdb', 
         'USER': 'trabajo',
         'PASSWORD': 'pepito2023',
-        'HOST': 'localhost', 
+        'HOST': '10.10.10.30', 
         'PORT': '5432',
     }
 }

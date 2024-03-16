@@ -280,10 +280,10 @@ class StudentLabSession(modelBase):
         default=1,
     )
 
-class DuinoFile(models.Model):
-    #date_time = date.today()
-    date_time = datetime.now()
-    file = models.FileField(upload_to='user_{0}/{1}'.format(1,date_time.strftime("%m-%d-%Y-%H:%M:%S/")), max_length=100)
+# class DuinoFile(models.Model):
+#     #date_time = date.today()
+#     date_time = datetime.now()
+#     file = models.FileField(upload_to='user_{0}/{1}'.format(1,date_time.strftime("%m-%d-%Y-%H:%M:%S/")), max_length=100)
 
 
 class UploadedFile(models.Model):

@@ -15,7 +15,7 @@ from rest_framework.views import APIView
 from .serializers import FileUploadSerializer
 
 
-from .models import DuinoFile
+# from .models import DuinoFile
 
 
 from .serializers import (
@@ -23,7 +23,8 @@ from .serializers import (
     CountriesDetailSerializer, CountriesListCreateSerializer, CourseDetailSerializer, CourseListCreateSerializer, LabSessionsDetailSerializer, LabSessionsListCreateSerializer, ProfessorDetailSerializer, ProfessorListCreateSerializer, RosterDetailSerializer, RosterListCreateSerializer, SchoolsDetailSerializer, SchoolsListCreateSerializer, StudentDetailSerializer, StudentLabSessionDetailSerializer, StudentLabSessionListCreateSerializer, StudentListCreateSerializer,
     SubjectDetailSerializer, SubjectListCreateSerializer, UniversitiesDetailSerializer, UniversitiesListCreateSerializer, 
     UserListSerializer,UserDetailSerializer, UserTypeDetailSerializer, UserTypeListCreateSerializer,
-    UploadSerializer,userInfoSerializer,
+    #UploadSerializer,
+    userInfoSerializer,
     )
 
 from .models import Activity, AuthorLabSessions, Careers, Country, Course, LabSessions, Professor, Roster, Schools, Student, StudentLabSession, Subject, Universities, User, UserType
@@ -161,30 +162,30 @@ ActivityRetrieveUpdateAPIView = GenericGeneratorAPIView(Activity,ActivityDetailS
 ActivityDestroyAPIView = GenericGeneratorAPIView(Activity,ActivityDetailSerializer,generics.DestroyAPIView)
 
 
-class UploadViewSet(generics.ListCreateAPIView):
-    queryset = DuinoFile.objects.all()
-    serializer_class = UploadSerializer
+# class UploadViewSet(generics.ListCreateAPIView):
+#     queryset = DuinoFile.objects.all()
+#     serializer_class = UploadSerializer
 
-    """def list(self, request):
-        return Response("GET API")"""
-    """
-    def create(self, request):
-        file_uploaded = request.FILES.get('file')
-        content_type = file_uploaded.content_type
-        with open(ROOT_MEDIA+'{}'.format(file_uploaded.name),'wb') as destination:
-            for chunk in file_uploaded.chunks():
-                destination.write(chunk)
-        response = "POST API and you have uploaded a {} file".format(content_type)
-        return Response(response)
-    """
-    """def post(self,request):
-        up_file = request.FILES['file_uploaded']
-        with open('/{}'.format(up_file.name,'wb')) as destination:
-            for chunk in up_file.chunks():
-                destination.write(chunk)
-            #destination.close()
+    # """def list(self, request):
+    #     return Response("GET API")"""
+    # """
+    # def create(self, request):
+    #     file_uploaded = request.FILES.get('file')
+    #     content_type = file_uploaded.content_type
+    #     with open(ROOT_MEDIA+'{}'.format(file_uploaded.name),'wb') as destination:
+    #         for chunk in file_uploaded.chunks():
+    #             destination.write(chunk)
+    #     response = "POST API and you have uploaded a {} file".format(content_type)
+    #     return Response(response)
+    # """
+    # """def post(self,request):
+    #     up_file = request.FILES['file_uploaded']
+    #     with open('/{}'.format(up_file.name,'wb')) as destination:
+    #         for chunk in up_file.chunks():
+    #             destination.write(chunk)
+    #         #destination.close()
 
-        return Response(up_file.name, status.HTTP_201_CREATED)"""
+    #     return Response(up_file.name, status.HTTP_201_CREATED)"""
 
 
 class userDetail(generics.ListAPIView):

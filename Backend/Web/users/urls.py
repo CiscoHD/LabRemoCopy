@@ -12,7 +12,7 @@ from .views import (
     CountryDestroyAPIView, CountryListCreateView, CountryRetrieveAPIView,
     CountryRetrieveUpdateAPIView, UserTypeDestroyAPIView, UserTypeListCreateView, UserTypeRetrieveAPIView, UserTypeRetrieveUpdateAPIView,
 
-    UploadViewSet,
+    # UploadViewSet,
     userDetail
 )
 
@@ -157,7 +157,7 @@ urlpatterns = [
     path(    str_activity+'delete/<str:id>', ActivityDestroyAPIView.as_view(),name='subject_destroy'),
 
 
-    path('upload', UploadViewSet.as_view(), name="upload"),
+    # path('upload', UploadViewSet.as_view(), name="upload"),
     path('upload2', FileUploadAPIView.as_view(), name="upload-file"),
 
 
