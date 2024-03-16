@@ -1,0 +1,206 @@
+/* overflow: 'scroll',
+overflowX: 'hidden',
+backgroundColor: '#EB984ECC', // Color del fondo
+color: "white",
+height: "60%",
+width: "12%",
+borderStyle: "solid",
+borderColor: "#EB984E",
+position: "absolute",
+top: "12rem",
+right:"1em",
+borderRadius: "20px", // Añade bordes redondeados a la barra lateral */
+:root{
+  --width-sb-vid: 16%;
+
+}
+.sidebar{
+    padding: 0.5rem;
+    background: var(--sidebar-bg-color);
+    color: var(--menu-dark-bgcolor);
+    height: 50%;
+    width: var(--width-sb-vid);
+    /* width: fit-content; */
+    border-style: solid;
+    /* border-color:#EB984EDD; */
+    border-color: #40A2E3DD;
+    border-radius: 20px;
+    position:absolute;
+    top: 12rem;
+    right: 1rem;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: auto;
+        height: auto; 
+      }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: #40A2E366;
+        border: 4px solid transparent;
+        border-radius: 20px;
+        background-clip: padding-box;
+      }
+}
+.sidebar-title{
+    font-size: 1.2rem;
+    color: var(--menu-dark-bgcolor);
+}
+.sidebar-type-separator{
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  /* overflow: visible; */
+  justify-content: center;
+  > * {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    height: 1px;
+    background: #000;
+    top: 3px;
+    margin-bottom: 1em;
+  }
+}
+.video-container{
+  background: #000000AA;
+  width: var(--width-sb-vid);
+  height: auto;
+  border-radius: var(--menu-border-radius);
+  border: 1px solid black;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 37rem;
+
+}
+.video-container-console-minimized{
+  background: #000000AA;
+  width: var(--width-sb-vid);
+  height: auto;
+  border-radius: var(--menu-border-radius);
+  border: 1px solid black;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 17rem;
+}
+.video-player{
+  width: 100%;
+  height: 9rem;
+}
+/* { width: '12%',
+                            border: '1px solid black',
+                            borderRadius: '5px',
+                            position: 'absolute',
+                            bottom: '2rem',
+                            right: '1rem' } */
+.console-container{
+  display: flex;
+  position: absolute;
+  right: 1rem;
+  bottom: 1.2rem;
+
+  width: 35rem;
+  height: 12rem;
+  background: #000000AA;
+
+  border-radius: var(--menu-border-radius);
+
+  overflow: hidden;
+}
+.console-container-mini{
+  display: flex;
+  position: absolute;
+  right: 1rem;
+  bottom: 1.2rem;
+
+  width: 14rem;
+  height: 2rem;
+  background: #000000AA;
+
+  border-radius: var(--menu-border-radius);
+
+  overflow: hidden;
+}
+.console-inner{
+  width: 100%;
+  padding: 2px;
+  margin: 3px;
+  background: var(--menu-light-bgcolor);
+}
+.console-title-container{
+  width: 100%;
+  height: fit-content;
+}
+.console-title{
+  display: inline;
+  position: absolute;
+  left: 1rem;
+}
+.minimize-console{
+  display: inline;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+
+  border-radius: 50%;
+  background: yellow;
+  border: 2px solid #008000CC;
+  width: 1rem;
+  height: 1rem;
+
+  padding: auto;
+  text-align: center;
+  *{
+    display: none;
+    transition: 0.3s;
+  }
+  &:hover{
+    cursor: pointer;
+    background: #FFFF00CC;
+    border: 2px solid #008000CC;
+    transition: 0.3s;
+    *{
+      display: block;
+      position: absolute;
+      top:-0.5rem;
+      right: 1.5rem;
+
+      padding: 5px;
+      background: green;
+      border-radius: var(--menu-border-radius);
+      border: 2px solid yellow;
+      z-index: 10;
+    }
+  }
+}
+.console-content{
+  display: block;
+  position: absolute;
+  top: 2rem;
+
+  margin: auto;
+  width: 98.2%;
+  height: 80%;
+  background: #000000BB;
+  border-radius: var(--menu-border-radius);
+
+  overflow: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: auto;
+    height: auto; 
+  }
+&::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #40A2E366;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    background-clip: padding-box;
+  }
+
+}

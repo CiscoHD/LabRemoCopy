@@ -1,0 +1,206 @@
+:root{
+    --menu-dark-bgcolor: #40A2E3;
+    --menu-light-bgcolor: #BBE2EC;
+    --menu-color: #FFF6E9;
+    --menu-color-second: #0D9276;
+
+    --menu-border-radius: 5px;
+    --menu-border-shbox: 0 0 1px 1px var(--menu-color);
+
+
+    --sidebar-bg-color: #FFF6E9CC;
+
+
+    --distance: 0.2em;
+}
+
+.mesa{
+    font-weight: bold;
+    width: 100%;
+    top: -20px;
+    height: 80em;
+    
+    --fondo: #F9F9F4;
+    --grosor-linea-gruesa: 2px;
+    --grosor-linea-delgada: 1px;
+
+    --alpha-linea-gruesa: 0.6;
+    --alpha-linea-delgada: 0.4;
+
+    --color-linea: rgba(128,128,128,var(--alpha-linea-gruesa));
+
+    --linea-gruesa-horizontal: linear-gradient(var(--color-linea) var(--grosor-linea-gruesa), transparent 2px);
+    --linea-gruesa-vertical: linear-gradient(90deg,var(--color-linea) var(--grosor-linea-gruesa), transparent 2px);
+    --linea-delgada-horizontal: linear-gradient(var(--color-linea) var(--grosor-linea-delgada), transparent 1px);
+    --linea-delgada-vertical: linear-gradient(90deg,var(--color-linea) var(--grosor-linea-delgada), transparent 1px);
+    
+
+    background-color: var(--fondo);
+    background-image: var(--linea-gruesa-horizontal), var(--linea-gruesa-vertical),
+    var(--linea-delgada-horizontal),var(--linea-delgada-vertical);
+
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+
+}
+.menu-workspace-main{
+    display: flex;
+    position: relative;
+    z-index: 10;
+
+    
+    top: var(--distance);
+
+    justify-content: space-between;
+}
+.menu-workspace{
+    margin-inline: auto;
+    /* padding: 0.8em; */
+    border-radius: var(--menu-border-radius);
+
+    color: var(--menu-color);
+
+    background: var(--menu-dark-bgcolor);
+    box-shadow: var(--menu-border-shbox);
+
+    /* box-shadow: 0 0 1px 1px black,
+                0 0 1px 2px gray,
+                0 0 1px 3px black,
+                0 0 1px 3px gray inset; */
+}
+.ws-item-menu{
+    /* margin-inline: 0.5em; */
+    padding: 1em;
+    cursor: pointer;
+    /* font-weight: 500; */
+    /* color: white; */
+    text-decoration: none;
+    /* overflow: hidden; */
+    
+    border-radius: var(--menu-border-radius);
+    
+    /* box-shadow: 0 0 2px 2px black,
+                0 0 2px 4px gray,
+                0 0 2px 6px black,
+                0 0 2px 12px gray inset; */
+
+    transition: 0.3s;
+    &:hover{
+        color: var(--menu-color-second);
+        background: var(--menu-light-bgcolor);
+        /* box-shadow: 0 0 2px 2px black,
+                    0 0 2px 4px gray,
+                    0 0 2px 6px black,
+                    0 0 4px 10px #ffffff55 inset; */
+    }
+}
+.ws-drop{
+    position: relative;
+    display: inline-block;
+    &:hover{
+        overflow: visible;
+    }
+}
+.ws-dropcontent{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 40%;
+    z-index: 3;
+
+    color: var(--menu-color);
+    background: var(--menu-dark-bgcolor);
+    border-radius:var(--menu-border-radius);
+    box-shadow: var(--menu-border-shbox);
+    /* box-shadow: 0px 0px 0px 0px #000; */
+
+}
+.ws-dropmenu-item{
+    position: relative;
+    padding-inline: 2em;
+    padding-block: 0.1em;
+    /* margin-block-start: 0em; */
+
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+    border-radius: var(--menu-border-radius);
+
+    &:hover{
+        background: var(--menu-light-bgcolor);
+        color: var(--menu-color-second);
+    }
+
+    /* box-shadow: 0 0 1px 1px black,
+                0 0 1px 1px gray,
+                0 0 1px 1px black,
+                0 0 1px 40px gray inset; */
+
+    transition: 0.3s;;
+}
+.ws-dropmenu-item:hover > span1{
+    display: inline-flex;
+    position: absolute;
+    top:33%;
+    left: 5%;
+    width: 10px;
+    height: 10px;
+
+    margin-inline-end: 1em;
+    border-radius: 50%;
+
+    transition: 0.3s;
+    background-color: greenyellow;
+    box-shadow: 0 0 4px 2px greenyellow;
+}
+.ws-drop:hover .ws-dropcontent{
+    background: var(--menu-dark-bgcolor);
+    display: block;
+}
+.subsubmenu{
+    display: none;
+    /* left: 4em; */
+    min-width: max-content;
+    overflow: hidden;
+
+    color: var(--menu-color);
+}
+.ws-dropmenu-item:hover .subsubmenu{
+    display: block;
+}
+.menu2{
+
+    --distance: 10em;
+
+    top: -1em !important;
+    right: -35% !important;
+}
+
+/* Define los estilos para el botón toggleButton */
+.toggleButton {
+    padding: 8px 16px;
+    margin: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #25c756;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambia el color del botón al pasar el mouse sobre él */
+.toggleButton:hover {
+    background-color: #6029b9;
+}
+.uploader-modal{
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    /* width: 75%; */
+    justify-content: center;
+    padding-inline: 100px;
+    margin: auto;
+}

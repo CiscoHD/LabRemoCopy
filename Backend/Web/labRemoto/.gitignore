@@ -1,0 +1,6 @@
+*.txt
+*.pyc
+*.sqlite3
+
+arduino/
+migrations/

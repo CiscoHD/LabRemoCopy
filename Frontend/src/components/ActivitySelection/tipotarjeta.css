@@ -1,0 +1,12 @@
+.select-board-panel{
+    width: 80%;
+    border-block-end: groove;
+    margin: auto;
+    /*margin: 'auto';
+    borderBottom: 'groove';
+    justifyContent: 'center';
+    */
+}
+.title-board-panel{
+    font-weight: bold;
+}

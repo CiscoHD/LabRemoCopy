@@ -1,0 +1,6 @@
+[{"model": "users.subject", "pk": 1, "fields": {"name": "Laboratorio de\nDise\u00f1o Digital y Sistemas Digitales", "isAvailable": 1, "career": null}},
+{"model": "users.subject", "pk": 2, "fields": {"name": "Laboratorio de Dise\u00f1o de Sistemas Digitales", "isAvailable": 1, "career": null}},
+{"model": "users.subject", "pk": 3, "fields": {"name": "Dise\u00f1o Digital Moderno", "isAvailable": 1, "career": null}},
+{"model": "users.subject", "pk": 4, "fields": {"name": "Laboratorio de Dispositivos\nElectr\u00f3nicos Programables", "isAvailable": 1, "career": null}},
+{"model": "users.subject", "pk": 5, "fields": {"name": "Pr\u00e1cticas de dise\u00f1o digital VLSI", "isAvailable": 1, "career": null}}
+]

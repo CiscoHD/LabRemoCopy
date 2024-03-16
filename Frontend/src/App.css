@@ -1,0 +1,39 @@
+.App {
+    text-align: center;
+    background: #f9f9f4;
+    height: 100vh;
+}
+body {
+    color: #908264;   
+}
+p {
+    color:  #DFE0DC;
+}
+.columna {    
+    text-align: left;
+    border-style: none;
+    border-radius: 1%;
+    margin: 1%;
+}
+.titleCol {
+    padding-block-start: 4%;
+    color: #1A6874;
+}
+.innerCol {
+    padding-left: 4%;
+}
+.secondary-text { 
+    color : #3C887E;
+}
+Button {
+    margin: 2%;
+}
+.separador{
+    min-height: 2em;
+}
+.spacing{
+    height: 0.5em;
+}
+.double-spacing{
+    height: 2em;
+}

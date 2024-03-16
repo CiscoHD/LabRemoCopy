@@ -1,0 +1,11 @@
+import { ReactComponent as MySVG1 } from '../Workbench/Pictures/7segmentos.svg';
+//import { ReactComponent as MySVG2 } from './MySVG2.svg';
+// ... otros SVGs
+
+const ComponentWithSVGs = () => {
+  return (
+      MySVG1
+  );
+};
+
+export  default ComponentWithSVGs;

@@ -1,0 +1,99 @@
+:root{
+    --log-and-welcome-width: 400px;
+    --log-and-welcome-height: 500px;
+}
+
+.login-container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+    width: fit-content;
+    box-shadow: -18px 14px 0px 0px #ebebeb;
+
+}
+.login-left-container{
+    width: var(--log-and-welcome-width);
+    height: var(--log-and-welcome-height);
+    background: #cccccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-left-container div > div {
+    margin-block-end: 1rem;
+}
+.login-text{
+    color: #edf7b5;
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+.login-subtitle{
+    color: #000000;
+    font-size: 0.8rem;
+    letter-spacing: -0.01rem;
+    font-weight: 500;
+}
+input{
+    border-radius: 5px;
+    margin-block: 0.5rem;
+    width: 80%;
+
+    background: transparent;
+
+    &:focus{
+        font-weight: bold;
+        color: #f9f9f4;
+        background: #bfbfbf;
+
+        padding: 2px;
+        outline: none;
+        border: thin solid #f9f9f4;
+
+    }
+}
+.welcome-right-container{
+    width: var(--log-and-welcome-width);
+    height: var(--log-and-welcome-height);
+    background: #b2c9ab;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-logo{
+    max-width: 8em;
+
+    border-radius: 50%;
+}
+.welcome-title{
+    color: #edf7b5;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.welcome-subtitle{
+    color: #000000;
+    font-size: 0.8rem;
+    letter-spacing: -0.01rem;
+    font-weight: 500;
+}
+.boton-login{
+    border: none;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    border-radius: 1.5em;
+    background: #b2c9ab;
+    color: #f9f9f4;
+
+    font-weight: 500;
+
+    transition: 0.1s;
+
+    &:active{
+        border: thin inset #f9f9f4;
+    }
+    
+}
