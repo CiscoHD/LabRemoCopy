@@ -1,0 +1,20 @@
+version 2
+2
+9
+.tran 50 400m{return}.kicad adjustpaths{return}.save all{return}.probe alli
+3
+1
+V(FMC_out)
+ 
+1
+V(FMC_out2)
+ 
+1
+V(Net-_D1-A_)
+ 
+9
+.tran 50 400m{return}.kicad adjustpaths{return}.save all{return}.probe alli
+1
+2
+I(D1)
+ 

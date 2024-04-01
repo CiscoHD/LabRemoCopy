@@ -1,0 +1,161 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 62dbb755-ae89-42c6-b7c8-f6862f754d28)
+
+  (paper "A4")
+
+  (title_block
+    (title "Maqueta de Laboratorio Remoto")
+    (date "2024-03-14")
+    (rev "2")
+    (company "IIMAS UNAM")
+    (comment 1 "Victor Manuel Lomas Barrie")
+    (comment 2 "Abner Maya Vergara")
+    (comment 3 "Autores:")
+    (comment 4 "Circuito referido al diagrama de maqueta 2.0")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 86.36 93.98) (size 12.7 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 0692ad00-a7cb-4612-ac3f-fb1e3ee63219)
+    (property "Sheetname" "Programables (2)" (at 86.36 93.2684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "ProgLR_2.kicad_sch" (at 86.36 103.4546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MaquetaLABREMO"
+        (path "/62dbb755-ae89-42c6-b7c8-f6862f754d28" (page "8"))
+      )
+    )
+  )
+
+  (sheet (at 116.84 76.2) (size 12.7 10.16) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2e39e5c6-8bd3-4ccd-ade3-c0bb8cf5fec2)
+    (property "Sheetname" "Matriz de Interconexión" (at 116.84 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MILR.kicad_sch" (at 116.84 86.9446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MaquetaLABREMO"
+        (path "/62dbb755-ae89-42c6-b7c8-f6862f754d28" (page "1"))
+      )
+    )
+  )
+
+  (sheet (at 149.86 62.23) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 303c3846-1b9a-462d-bc83-18c72301f6c7)
+    (property "Sheetname" "Actuadores" (at 149.86 61.5184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Act_LR.kicad_sch" (at 149.86 66.6246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MaquetaLABREMO"
+        (path "/62dbb755-ae89-42c6-b7c8-f6862f754d28" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 151.13 77.47) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 387752e9-7f99-4e9f-9d4b-90cde8b8fa8c)
+    (property "Sheetname" "Sensores" (at 151.13 76.7584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "SensLR.kicad_sch" (at 151.13 81.8646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MaquetaLABREMO"
+        (path "/62dbb755-ae89-42c6-b7c8-f6862f754d28" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 151.13 105.41) (size 21.59 7.62) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4d0f0ebd-b8fb-4103-9524-df6e43cb1460)
+    (property "Sheetname" "Luces (2)" (at 151.13 104.6984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "LucesLR_2.kicad_sch" (at 151.13 113.6146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MaquetaLABREMO"
+        (path "/62dbb755-ae89-42c6-b7c8-f6862f754d28" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 86.36 78.74) (size 19.05 7.62) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 8dad98e7-9743-47c4-ae7b-781d605fbb03)
+    (property "Sheetname" "Programables" (at 86.36 78.0284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "ProgLR.kicad_sch" (at 86.36 86.9446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MaquetaLABREMO"
+        (path "/62dbb755-ae89-42c6-b7c8-f6862f754d28" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 151.13 119.38) (size 12.7 7.62) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid a92c3a10-2b29-4dfe-85f2-8b7ae13ffb1b)
+    (property "Sheetname" "Luces (3)" (at 151.13 118.6684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "LucesLR_3.kicad_sch" (at 151.13 127.5846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MaquetaLABREMO"
+        (path "/62dbb755-ae89-42c6-b7c8-f6862f754d28" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 151.13 88.9) (size 15.24 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d0f3fcf8-efe4-4235-8ad5-f7fbd2a21c33)
+    (property "Sheetname" "Luces" (at 151.13 88.1884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "LucesLR.kicad_sch" (at 151.13 93.2946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MaquetaLABREMO"
+        (path "/62dbb755-ae89-42c6-b7c8-f6862f754d28" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "9"))
+  )
+)

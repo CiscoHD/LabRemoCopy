@@ -1,0 +1,20 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 4abcafc9-4567-4fc1-a7ae-8911f8ffbc7a)
+
+  (paper "A4")
+
+  (title_block
+    (title "Maqueta de Laboratorio Remoto")
+    (rev "2")
+    (company "IIMAS UNAM")
+    (comment 1 "Victor Manuel Lomas Barrie")
+    (comment 2 "Abner Maya Vergara")
+    (comment 3 "Autores:")
+    (comment 4 "Circuito referido al diagrama de maqueta 2.0")
+  )
+
+  (lib_symbols
+  )
+
+)

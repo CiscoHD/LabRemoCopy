@@ -1,0 +1,16 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 25f601ec-7d36-4493-82b2-1da2162c353a)
+
+  (paper "A4")
+
+  (title_block
+    (title "Maqueta de Laboratorio Remoto")
+    (rev "2")
+    (company "IIMAS UNAM")
+  )
+
+  (lib_symbols
+  )
+
+)
