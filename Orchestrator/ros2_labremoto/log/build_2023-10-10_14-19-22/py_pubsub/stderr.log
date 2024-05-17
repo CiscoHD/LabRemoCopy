@@ -1,3 +1,0 @@
-warning: install_data: setup script did not provide a directory for 'share/py_pubsub/launch' -- installing right in '/home/ffelix07/Documents/LabRemo/Orchestrator/ros2_labremoto/install/py_pubsub'
-
-error: can't copy 'share/py_pubsub/launch': doesn't exist or not a regular file

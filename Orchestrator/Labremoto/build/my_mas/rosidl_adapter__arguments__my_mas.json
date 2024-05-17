@@ -1,0 +1,21 @@
+{
+  "package_name": "my_mas",
+  "non_idl_tuples": [
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/Operacion.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/BitLoad.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/CreateBitStream.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/Auditor.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/SensorMeasurment.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/FileHexLoad.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/TransGlobal.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/Contrato.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/TransEntrada.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:msg/LogSalida.msg",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:srv/LoadFiledb.srv",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:srv/LoadFile.srv",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:action/Fibonacci.action",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:action/Cargahex.action",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:action/CargaBit.action",
+    "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas:action/Tranformvhdlbit.action"
+  ]
+}

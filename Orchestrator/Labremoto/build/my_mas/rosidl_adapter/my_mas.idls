@@ -1,0 +1,16 @@
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/Operacion.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/BitLoad.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/CreateBitStream.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/Auditor.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/SensorMeasurment.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/FileHexLoad.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/TransGlobal.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/Contrato.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/TransEntrada.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:msg/LogSalida.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:srv/LoadFiledb.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:srv/LoadFile.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:action/Fibonacci.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:action/Cargahex.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:action/CargaBit.idl
+/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas/rosidl_adapter/my_mas:action/Tranformvhdlbit.idl

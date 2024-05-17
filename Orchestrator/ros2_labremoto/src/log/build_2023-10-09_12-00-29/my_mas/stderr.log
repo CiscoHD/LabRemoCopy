@@ -1,7 +1,0 @@
-[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:42 (get_executable_path):
-  Unknown CMake command "get_executable_path".
-Call Stack (most recent call first):
-  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
-  CMakeLists.txt:14 (rosidl_generate_interfaces)
-
-[0m

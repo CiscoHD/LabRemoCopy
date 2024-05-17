@@ -1,0 +1,36 @@
+[0.514s] Invoking command in '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/py_pubsub': AMENT_PREFIX_PATH=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas CONDA_PROMPT_MODIFIER=(Labremoto) LD_LIBRARY_PATH=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/prefix_override:/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build install --record /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/install.log --single-version-externally-managed install_data
+[0.690s] running egg_info
+[0.690s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[0.690s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[0.691s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[0.691s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[0.691s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[0.693s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.694s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.694s] running build
+[0.694s] running build_py
+[0.695s] copying py_pubsub/token_dinamico.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub
+[0.696s] running install
+[0.696s] running install_lib
+[0.697s] copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/token_dinamico.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[0.698s] byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/token_dinamico.py to token_dinamico.cpython-310.pyc
+[0.699s] running install_data
+[0.699s] running install_egg_info
+[0.701s] removing '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[0.701s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info
+[0.702s] running install_scripts
+[0.720s] Installing admin_contratos script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.720s] Installing admin_log_salida script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.721s] Installing admin_transacciones script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.721s] Installing admin_transacciones_entrada script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.721s] Installing arduino_inf_cliente script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.721s] Installing arduino_infrastructure script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.721s] Installing auditor_transacciones script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.721s] Installing publisher_prueba script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.721s] Installing publisher_transentrada script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.722s] Installing supervisor_operaciones script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.722s] Installing token_dinamico script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.722s] Installing transform_vhdl_bit script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.722s] Installing vhdlbit_cliente script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub
+[0.722s] writing list of installed files to '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/install.log'
+[0.759s] Invoked command in '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/py_pubsub' returned '0': AMENT_PREFIX_PATH=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas CONDA_PROMPT_MODIFIER=(Labremoto) LD_LIBRARY_PATH=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/prefix_override:/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build install --record /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/install.log --single-version-externally-managed install_data

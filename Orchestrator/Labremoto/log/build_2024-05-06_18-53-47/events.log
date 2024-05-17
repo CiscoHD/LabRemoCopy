@@ -1,0 +1,1017 @@
+[0.000000] (-) TimerEvent: {}
+[0.000306] (hardware) JobQueued: {'identifier': 'hardware', 'dependencies': OrderedDict()}
+[0.000345] (my_mas) JobQueued: {'identifier': 'my_mas', 'dependencies': OrderedDict()}
+[0.000363] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('my_mas', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas')])}
+[0.000386] (my_mas) JobStarted: {'identifier': 'my_mas'}
+[0.004834] (hardware) JobStarted: {'identifier': 'hardware'}
+[0.010902] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'cmake'}
+[0.011581] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/my_mas', '-DCMAKE_INSTALL_PREFIX=/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas'], 'cwd': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(Labremoto)'), ('USER', 'felix'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/felix'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/felix/Documentos/LabRemo/Orchestrator'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1513'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'felix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'felix'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/felix/miniconda3/envs/Labremoto/bin:/home/felix/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/felix-Lenovo-V14-G4-AMN:@/tmp/.ICE-unix/1513,unix/felix-Lenovo-V14-G4-AMN:/tmp/.ICE-unix/1513'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9e92dabb_2ddd_4c36_95f2_6f8ed42eb7fc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('CONDA_PREFIX_1', '/home/felix/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.44GGN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ac19c76c1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.258'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/felix/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'Labremoto'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/felix/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/felix/miniconda3/envs/Labremoto'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.081499] (my_mas) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.091091] (my_mas) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.099068] (-) TimerEvent: {}
+[0.180464] (my_mas) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.187021] (my_mas) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.187305] (my_mas) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.187655] (my_mas) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.192685] (my_mas) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199214] (-) TimerEvent: {}
+[0.299599] (-) TimerEvent: {}
+[0.328589] (my_mas) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.399736] (-) TimerEvent: {}
+[0.422016] (my_mas) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.426667] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.433628] (my_mas) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.478328] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499904] (-) TimerEvent: {}
+[0.518090] (my_mas) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.521155] (hardware) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/hardware', 'build', '--build-base', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/build', 'install', '--record', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/hardware', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(Labremoto)', 'USER': 'felix', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/felix', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'CONDA_SHLVL': '2', 'OLDPWD': '/home/felix/Documentos/LabRemo/Orchestrator', 'TERM_PROGRAM_VERSION': '1.89.0', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1513', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d', 'COLORTERM': 'truecolor', '_CE_M': '', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/felix/miniconda3/envs/Labremoto/bin:/home/felix/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/felix-Lenovo-V14-G4-AMN:@/tmp/.ICE-unix/1513,unix/felix-Lenovo-V14-G4-AMN:/tmp/.ICE-unix/1513', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9e92dabb_2ddd_4c36_95f2_6f8ed42eb7fc', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'CONDA_PREFIX_1': '/home/felix/miniconda3', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.44GGN2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3ac19c76c1.sock', 'GNOME_TERMINAL_SERVICE': ':1.258', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/felix/miniconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'Labremoto', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/felix/miniconda3/bin/conda', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/prefix_override:/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/felix/miniconda3/envs/Labremoto', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.600058] (-) TimerEvent: {}
+[0.687796] (hardware) StdoutLine: {'line': b'running egg_info\n'}
+[0.688342] (hardware) StdoutLine: {'line': b'creating ../../build/hardware/hardware.egg-info\n'}
+[0.688530] (hardware) StdoutLine: {'line': b'writing ../../build/hardware/hardware.egg-info/PKG-INFO\n'}
+[0.688802] (hardware) StdoutLine: {'line': b'writing dependency_links to ../../build/hardware/hardware.egg-info/dependency_links.txt\n'}
+[0.689052] (hardware) StdoutLine: {'line': b'writing entry points to ../../build/hardware/hardware.egg-info/entry_points.txt\n'}
+[0.689193] (hardware) StdoutLine: {'line': b'writing requirements to ../../build/hardware/hardware.egg-info/requires.txt\n'}
+[0.689348] (hardware) StdoutLine: {'line': b'writing top-level names to ../../build/hardware/hardware.egg-info/top_level.txt\n'}
+[0.689464] (hardware) StdoutLine: {'line': b"writing manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'\n"}
+[0.690842] (hardware) StdoutLine: {'line': b"reading manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'\n"}
+[0.691419] (hardware) StdoutLine: {'line': b"writing manifest file '../../build/hardware/hardware.egg-info/SOURCES.txt'\n"}
+[0.691593] (hardware) StdoutLine: {'line': b'running build\n'}
+[0.691741] (hardware) StdoutLine: {'line': b'running build_py\n'}
+[0.691908] (hardware) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/build\n'}
+[0.692050] (hardware) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/build/lib\n'}
+[0.692199] (hardware) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/build/lib/hardware\n'}
+[0.692371] (hardware) StdoutLine: {'line': b'copying hardware/__init__.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/build/lib/hardware\n'}
+[0.692484] (hardware) StdoutLine: {'line': b'running install\n'}
+[0.692647] (hardware) StdoutLine: {'line': b'running install_lib\n'}
+[0.693365] (hardware) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/lib/python3.10/site-packages/hardware\n'}
+[0.693645] (hardware) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/build/lib/hardware/__init__.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/lib/python3.10/site-packages/hardware\n'}
+[0.693913] (hardware) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/lib/python3.10/site-packages/hardware/__init__.py to __init__.cpython-310.pyc\n'}
+[0.694141] (hardware) StdoutLine: {'line': b'running install_data\n'}
+[0.694328] (hardware) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/share/ament_index\n'}
+[0.694558] (hardware) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/share/ament_index/resource_index\n'}
+[0.694758] (hardware) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/share/ament_index/resource_index/packages\n'}
+[0.694921] (hardware) StdoutLine: {'line': b'copying resource/hardware -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/share/ament_index/resource_index/packages\n'}
+[0.695099] (hardware) StdoutLine: {'line': b'copying package.xml -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/share/hardware\n'}
+[0.695260] (hardware) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.696379] (hardware) StdoutLine: {'line': b'Copying ../../build/hardware/hardware.egg-info to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/hardware/lib/python3.10/site-packages/hardware-0.0.0-py3.10.egg-info\n'}
+[0.697221] (hardware) StdoutLine: {'line': b'running install_scripts\n'}
+[0.700192] (-) TimerEvent: {}
+[0.721175] (hardware) StdoutLine: {'line': b"writing list of installed files to '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/hardware/install.log'\n"}
+[0.766139] (hardware) CommandEnded: {'returncode': 0}
+[0.791199] (hardware) JobEnded: {'identifier': 'hardware', 'rc': 0}
+[0.800322] (-) TimerEvent: {}
+[0.900712] (-) TimerEvent: {}
+[1.001131] (-) TimerEvent: {}
+[1.061442] (my_mas) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.101261] (-) TimerEvent: {}
+[1.201787] (-) TimerEvent: {}
+[1.287991] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.301937] (-) TimerEvent: {}
+[1.402333] (-) TimerEvent: {}
+[1.502838] (-) TimerEvent: {}
+[1.592893] (my_mas) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.602948] (-) TimerEvent: {}
+[1.610298] (my_mas) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.611978] (my_mas) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.634311] (my_mas) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.634636] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.634731] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.634803] (my_mas) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.648690] (my_mas) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.703089] (-) TimerEvent: {}
+[1.712479] (my_mas) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.780466] (my_mas) StdoutLine: {'line': b'-- Generating done\n'}
+[1.783304] (my_mas) StdoutLine: {'line': b'-- Build files have been written to: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas\n'}
+[1.793661] (my_mas) CommandEnded: {'returncode': 0}
+[1.794328] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'build'}
+[1.795777] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas', '--', '-j8', '-l8'], 'cwd': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(Labremoto)'), ('USER', 'felix'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/felix'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/felix/Documentos/LabRemo/Orchestrator'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1513'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'felix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'felix'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/felix/miniconda3/envs/Labremoto/bin:/home/felix/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/felix-Lenovo-V14-G4-AMN:@/tmp/.ICE-unix/1513,unix/felix-Lenovo-V14-G4-AMN:/tmp/.ICE-unix/1513'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9e92dabb_2ddd_4c36_95f2_6f8ed42eb7fc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('CONDA_PREFIX_1', '/home/felix/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.44GGN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ac19c76c1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.258'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/felix/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'Labremoto'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/felix/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/felix/miniconda3/envs/Labremoto'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.803222] (-) TimerEvent: {}
+[1.845664] (my_mas) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.857422] (my_mas) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.866138] (my_mas) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_my_mas\n'}
+[1.903366] (-) TimerEvent: {}
+[2.003756] (-) TimerEvent: {}
+[2.059420] (my_mas) StdoutLine: {'line': b'running egg_info\n'}
+[2.059933] (my_mas) StdoutLine: {'line': b'creating my_mas.egg-info\n'}
+[2.060198] (my_mas) StdoutLine: {'line': b'writing my_mas.egg-info/PKG-INFO\n'}
+[2.060386] (my_mas) StdoutLine: {'line': b'writing dependency_links to my_mas.egg-info/dependency_links.txt\n'}
+[2.060559] (my_mas) StdoutLine: {'line': b'writing top-level names to my_mas.egg-info/top_level.txt\n'}
+[2.060717] (my_mas) StdoutLine: {'line': b"writing manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[2.064073] (my_mas) StdoutLine: {'line': b"reading manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[2.064502] (my_mas) StdoutLine: {'line': b"writing manifest file 'my_mas.egg-info/SOURCES.txt'\n"}
+[2.103452] (my_mas) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_my_mas_egg\n'}
+[2.103757] (-) TimerEvent: {}
+[2.204057] (-) TimerEvent: {}
+[2.304449] (-) TimerEvent: {}
+[2.405036] (-) TimerEvent: {}
+[2.505667] (-) TimerEvent: {}
+[2.606200] (-) TimerEvent: {}
+[2.706701] (-) TimerEvent: {}
+[2.807084] (-) TimerEvent: {}
+[2.907489] (-) TimerEvent: {}
+[3.007892] (-) TimerEvent: {}
+[3.108343] (-) TimerEvent: {}
+[3.208784] (-) TimerEvent: {}
+[3.309201] (-) TimerEvent: {}
+[3.320182] (my_mas) StdoutLine: {'line': b'[  0%] Built target my_mas__cpp\n'}
+[3.334014] (my_mas) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.334291] (my_mas) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.334370] (my_mas) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.409375] (-) TimerEvent: {}
+[3.509892] (-) TimerEvent: {}
+[3.610557] (-) TimerEvent: {}
+[3.617745] (my_mas) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/bit_load__functions.c.o\x1b[0m\n'}
+[3.619797] (my_mas) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/auditor__functions.c.o\x1b[0m\n'}
+[3.621409] (my_mas) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/sensor_measurment__functions.c.o\x1b[0m\n'}
+[3.622303] (my_mas) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/create_bit_stream__functions.c.o\x1b[0m\n'}
+[3.627246] (my_mas) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/operacion__functions.c.o\x1b[0m\n'}
+[3.710688] (-) TimerEvent: {}
+[3.716474] (my_mas) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_global__functions.c.o\x1b[0m\n'}
+[3.717849] (my_mas) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/file_hex_load__functions.c.o\x1b[0m\n'}
+[3.718770] (my_mas) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/contrato__functions.c.o\x1b[0m\n'}
+[3.719641] (my_mas) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/trans_entrada__functions.c.o\x1b[0m\n'}
+[3.722182] (my_mas) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/msg/detail/log_salida__functions.c.o\x1b[0m\n'}
+[3.796031] (my_mas) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_filedb__functions.c.o\x1b[0m\n'}
+[3.797831] (my_mas) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/fibonacci__functions.c.o\x1b[0m\n'}
+[3.798192] (my_mas) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/srv/detail/load_file__functions.c.o\x1b[0m\n'}
+[3.801376] (my_mas) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/cargahex__functions.c.o\x1b[0m\n'}
+[3.803917] (my_mas) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/carga_bit__functions.c.o\x1b[0m\n'}
+[3.810823] (-) TimerEvent: {}
+[3.895847] (my_mas) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_c.dir/rosidl_generator_c/my_mas/action/detail/tranformvhdlbit__functions.c.o\x1b[0m\n'}
+[3.910969] (-) TimerEvent: {}
+[4.011661] (-) TimerEvent: {}
+[4.086166] (my_mas) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libmy_mas__rosidl_generator_c.so\x1b[0m\n'}
+[4.111796] (-) TimerEvent: {}
+[4.145001] (my_mas) StdoutLine: {'line': b'[ 14%] Built target my_mas__rosidl_generator_c\n'}
+[4.159047] (my_mas) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.159354] (my_mas) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.160953] (my_mas) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.211953] (-) TimerEvent: {}
+[4.312660] (-) TimerEvent: {}
+[4.414553] (-) TimerEvent: {}
+[4.514954] (-) TimerEvent: {}
+[4.602753] (my_mas) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/create_bit_stream__type_support.cpp.o\x1b[0m\n'}
+[4.603859] (my_mas) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/operacion__type_support.cpp.o\x1b[0m\n'}
+[4.604392] (my_mas) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/bit_load__type_support.cpp.o\x1b[0m\n'}
+[4.615097] (-) TimerEvent: {}
+[4.715515] (-) TimerEvent: {}
+[4.815896] (-) TimerEvent: {}
+[4.916289] (-) TimerEvent: {}
+[5.016706] (-) TimerEvent: {}
+[5.073075] (my_mas) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/auditor__type_support.cpp.o\x1b[0m\n'}
+[5.090128] (my_mas) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/sensor_measurment__type_support.cpp.o\x1b[0m\n'}
+[5.116841] (-) TimerEvent: {}
+[5.162229] (my_mas) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/file_hex_load__type_support.cpp.o\x1b[0m\n'}
+[5.184924] (my_mas) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/operacion__type_support.cpp.o\x1b[0m\n'}
+[5.217008] (-) TimerEvent: {}
+[5.317654] (-) TimerEvent: {}
+[5.418325] (-) TimerEvent: {}
+[5.522007] (-) TimerEvent: {}
+[5.559938] (my_mas) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/bit_load__type_support.cpp.o\x1b[0m\n'}
+[5.565545] (my_mas) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/trans_global__type_support.cpp.o\x1b[0m\n'}
+[5.622149] (-) TimerEvent: {}
+[5.660967] (my_mas) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/operacion__type_support.cpp.o\x1b[0m\n'}
+[5.691351] (my_mas) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/bit_load__type_support.cpp.o\x1b[0m\n'}
+[5.722305] (-) TimerEvent: {}
+[5.727340] (my_mas) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/create_bit_stream__type_support.cpp.o\x1b[0m\n'}
+[5.764520] (my_mas) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/auditor__type_support.cpp.o\x1b[0m\n'}
+[5.793279] (my_mas) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/sensor_measurment__type_support.cpp.o\x1b[0m\n'}
+[5.818592] (my_mas) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/file_hex_load__type_support.cpp.o\x1b[0m\n'}
+[5.822490] (-) TimerEvent: {}
+[5.839199] (my_mas) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/create_bit_stream__type_support.cpp.o\x1b[0m\n'}
+[5.848633] (my_mas) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/trans_global__type_support.cpp.o\x1b[0m\n'}
+[5.875798] (my_mas) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/contrato__type_support.cpp.o\x1b[0m\n'}
+[5.922617] (-) TimerEvent: {}
+[5.927421] (my_mas) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/trans_entrada__type_support.cpp.o\x1b[0m\n'}
+[5.930415] (my_mas) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/msg/log_salida__type_support.cpp.o\x1b[0m\n'}
+[5.982881] (my_mas) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/srv/load_filedb__type_support.cpp.o\x1b[0m\n'}
+[5.994052] (my_mas) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/srv/load_file__type_support.cpp.o\x1b[0m\n'}
+[6.001145] (my_mas) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/contrato__type_support.cpp.o\x1b[0m\n'}
+[6.003506] (my_mas) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/operacion__type_support.cpp.o\x1b[0m\n'}
+[6.022778] (-) TimerEvent: {}
+[6.038093] (my_mas) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/bit_load__type_support.cpp.o\x1b[0m\n'}
+[6.053303] (my_mas) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[6.123125] (-) TimerEvent: {}
+[6.155023] (my_mas) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/cargahex__type_support.cpp.o\x1b[0m\n'}
+[6.226563] (-) TimerEvent: {}
+[6.269521] (my_mas) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/auditor__type_support.cpp.o\x1b[0m\n'}
+[6.299909] (my_mas) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/carga_bit__type_support.cpp.o\x1b[0m\n'}
+[6.326729] (-) TimerEvent: {}
+[6.427518] (-) TimerEvent: {}
+[6.436549] (my_mas) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_mas/action/tranformvhdlbit__type_support.cpp.o\x1b[0m\n'}
+[6.474713] (my_mas) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/trans_entrada__type_support.cpp.o\x1b[0m\n'}
+[6.527663] (-) TimerEvent: {}
+[6.529508] (my_mas) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.562606] (my_mas) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/sensor_measurment__type_support.cpp.o\x1b[0m\n'}
+[6.627848] (-) TimerEvent: {}
+[6.705256] (my_mas) StdoutLine: {'line': b'[ 39%] Built target my_mas__rosidl_typesupport_c\n'}
+[6.722678] (my_mas) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/trans_global__type_support.cpp.o\x1b[0m\n'}
+[6.727287] (my_mas) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/file_hex_load__type_support.cpp.o\x1b[0m\n'}
+[6.728481] (-) TimerEvent: {}
+[6.749678] (my_mas) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/operacion__type_support.c.o\x1b[0m\n'}
+[6.828675] (-) TimerEvent: {}
+[6.841395] (my_mas) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/create_bit_stream__type_support.cpp.o\x1b[0m\n'}
+[6.848207] (my_mas) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/bit_load__type_support.c.o\x1b[0m\n'}
+[6.920540] (my_mas) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/create_bit_stream__type_support.c.o\x1b[0m\n'}
+[6.928894] (-) TimerEvent: {}
+[6.988337] (my_mas) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/auditor__type_support.c.o\x1b[0m\n'}
+[7.027432] (my_mas) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/contrato__type_support.cpp.o\x1b[0m\n'}
+[7.029077] (-) TimerEvent: {}
+[7.032697] (my_mas) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/msg/log_salida__type_support.cpp.o\x1b[0m\n'}
+[7.040265] (my_mas) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/operacion__type_support_c.cpp.o\x1b[0m\n'}
+[7.062922] (my_mas) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/sensor_measurment__type_support.c.o\x1b[0m\n'}
+[7.129264] (-) TimerEvent: {}
+[7.130961] (my_mas) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/file_hex_load__type_support.c.o\x1b[0m\n'}
+[7.208147] (my_mas) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/trans_global__type_support.c.o\x1b[0m\n'}
+[7.229423] (-) TimerEvent: {}
+[7.307968] (my_mas) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/contrato__type_support.c.o\x1b[0m\n'}
+[7.329458] (my_mas) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/bit_load__type_support_c.cpp.o\x1b[0m\n'}
+[7.330503] (-) TimerEvent: {}
+[7.378725] (my_mas) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/trans_entrada__type_support.c.o\x1b[0m\n'}
+[7.381852] (my_mas) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/msg/detail/log_salida__type_support.c.o\x1b[0m\n'}
+[7.387995] (my_mas) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/trans_entrada__type_support.cpp.o\x1b[0m\n'}
+[7.430678] (-) TimerEvent: {}
+[7.447478] (my_mas) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/srv/detail/load_filedb__type_support.c.o\x1b[0m\n'}
+[7.449172] (my_mas) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/srv/detail/load_file__type_support.c.o\x1b[0m\n'}
+[7.530874] (-) TimerEvent: {}
+[7.537502] (my_mas) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/srv/load_filedb__type_support.cpp.o\x1b[0m\n'}
+[7.540726] (my_mas) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[7.544011] (my_mas) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/cargahex__type_support.c.o\x1b[0m\n'}
+[7.631042] (-) TimerEvent: {}
+[7.638971] (my_mas) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/create_bit_stream__type_support_c.cpp.o\x1b[0m\n'}
+[7.643951] (my_mas) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/carga_bit__type_support.c.o\x1b[0m\n'}
+[7.647214] (my_mas) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/auditor__type_support.cpp.o\x1b[0m\n'}
+[7.661230] (my_mas) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/auditor__type_support_c.cpp.o\x1b[0m\n'}
+[7.731247] (-) TimerEvent: {}
+[7.757693] (my_mas) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_mas/action/detail/tranformvhdlbit__type_support.c.o\x1b[0m\n'}
+[7.811626] (my_mas) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/msg/detail/log_salida__type_support.cpp.o\x1b[0m\n'}
+[7.831398] (-) TimerEvent: {}
+[7.846327] (my_mas) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libmy_mas__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.931597] (-) TimerEvent: {}
+[7.941543] (my_mas) StdoutLine: {'line': b'[ 58%] Built target my_mas__rosidl_typesupport_introspection_c\n'}
+[7.961693] (my_mas) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/srv/detail/load_filedb__type_support.cpp.o\x1b[0m\n'}
+[8.023394] (my_mas) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/srv/load_file__type_support.cpp.o\x1b[0m\n'}
+[8.026754] (my_mas) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/sensor_measurment__type_support_c.cpp.o\x1b[0m\n'}
+[8.031752] (-) TimerEvent: {}
+[8.108772] (my_mas) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[8.131946] (-) TimerEvent: {}
+[8.233153] (-) TimerEvent: {}
+[8.264062] (my_mas) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/file_hex_load__type_support_c.cpp.o\x1b[0m\n'}
+[8.293403] (my_mas) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_global__type_support_c.cpp.o\x1b[0m\n'}
+[8.333323] (-) TimerEvent: {}
+[8.358274] (my_mas) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/sensor_measurment__type_support.cpp.o\x1b[0m\n'}
+[8.433480] (-) TimerEvent: {}
+[8.500500] (my_mas) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/srv/detail/load_file__type_support.cpp.o\x1b[0m\n'}
+[8.525633] (my_mas) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/cargahex__type_support.cpp.o\x1b[0m\n'}
+[8.533639] (-) TimerEvent: {}
+[8.596132] (my_mas) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/contrato__type_support_c.cpp.o\x1b[0m\n'}
+[8.630858] (my_mas) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[8.633912] (-) TimerEvent: {}
+[8.734415] (-) TimerEvent: {}
+[8.834950] (-) TimerEvent: {}
+[8.868780] (my_mas) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/trans_entrada__type_support_c.cpp.o\x1b[0m\n'}
+[8.933964] (my_mas) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/msg/detail/log_salida__type_support_c.cpp.o\x1b[0m\n'}
+[8.935113] (-) TimerEvent: {}
+[9.011690] (my_mas) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/carga_bit__type_support.cpp.o\x1b[0m\n'}
+[9.035263] (-) TimerEvent: {}
+[9.072601] (my_mas) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/file_hex_load__type_support.cpp.o\x1b[0m\n'}
+[9.135447] (-) TimerEvent: {}
+[9.229751] (my_mas) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_filedb__type_support_c.cpp.o\x1b[0m\n'}
+[9.235627] (-) TimerEvent: {}
+[9.240324] (my_mas) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/cargahex__type_support.cpp.o\x1b[0m\n'}
+[9.335795] (-) TimerEvent: {}
+[9.438621] (-) TimerEvent: {}
+[9.447738] (my_mas) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/srv/detail/load_file__type_support_c.cpp.o\x1b[0m\n'}
+[9.497581] (my_mas) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/fibonacci__type_support_c.cpp.o\x1b[0m\n'}
+[9.504646] (my_mas) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/cargahex__type_support_c.cpp.o\x1b[0m\n'}
+[9.539038] (-) TimerEvent: {}
+[9.640567] (-) TimerEvent: {}
+[9.741476] (-) TimerEvent: {}
+[9.787629] (my_mas) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_mas/action/tranformvhdlbit__type_support.cpp.o\x1b[0m\n'}
+[9.841629] (-) TimerEvent: {}
+[9.872858] (my_mas) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/carga_bit__type_support.cpp.o\x1b[0m\n'}
+[9.880084] (my_mas) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/trans_global__type_support.cpp.o\x1b[0m\n'}
+[9.941816] (-) TimerEvent: {}
+[10.008715] (my_mas) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/carga_bit__type_support_c.cpp.o\x1b[0m\n'}
+[10.041998] (-) TimerEvent: {}
+[10.093196] (my_mas) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_mas/action/detail/tranformvhdlbit__type_support_c.cpp.o\x1b[0m\n'}
+[10.142201] (-) TimerEvent: {}
+[10.243233] (-) TimerEvent: {}
+[10.313343] (my_mas) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/contrato__type_support.cpp.o\x1b[0m\n'}
+[10.322798] (my_mas) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/trans_entrada__type_support.cpp.o\x1b[0m\n'}
+[10.343388] (-) TimerEvent: {}
+[10.444137] (-) TimerEvent: {}
+[10.542711] (my_mas) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/msg/detail/dds_fastrtps/log_salida__type_support.cpp.o\x1b[0m\n'}
+[10.544243] (-) TimerEvent: {}
+[10.646701] (-) TimerEvent: {}
+[10.747148] (-) TimerEvent: {}
+[10.753587] (my_mas) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/srv/detail/dds_fastrtps/load_filedb__type_support.cpp.o\x1b[0m\n'}
+[10.761236] (my_mas) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.833891] (my_mas) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/srv/detail/dds_fastrtps/load_file__type_support.cpp.o\x1b[0m\n'}
+[10.843173] (my_mas) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.847337] (-) TimerEvent: {}
+[10.886979] (my_mas) StdoutLine: {'line': b'[ 79%] Built target my_mas__rosidl_typesupport_cpp\n'}
+[10.904974] (my_mas) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[10.947508] (-) TimerEvent: {}
+[11.032401] (my_mas) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/cargahex__type_support.cpp.o\x1b[0m\n'}
+[11.047677] (-) TimerEvent: {}
+[11.118583] (my_mas) StdoutLine: {'line': b'[ 80%] Built target my_mas__rosidl_typesupport_fastrtps_c\n'}
+[11.134227] (my_mas) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/carga_bit__type_support.cpp.o\x1b[0m\n'}
+[11.134976] (my_mas) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_mas/action/detail/dds_fastrtps/tranformvhdlbit__type_support.cpp.o\x1b[0m\n'}
+[11.145080] (my_mas) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/my_mas__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_mas/action/detail/tranformvhdlbit__type_support.cpp.o\x1b[0m\n'}
+[11.147848] (-) TimerEvent: {}
+[11.248651] (-) TimerEvent: {}
+[11.349298] (-) TimerEvent: {}
+[11.449734] (-) TimerEvent: {}
+[11.550255] (-) TimerEvent: {}
+[11.650735] (-) TimerEvent: {}
+[11.751230] (-) TimerEvent: {}
+[11.851695] (-) TimerEvent: {}
+[11.952129] (-) TimerEvent: {}
+[11.972735] (my_mas) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.052268] (-) TimerEvent: {}
+[12.109086] (my_mas) StdoutLine: {'line': b'[ 83%] Built target my_mas__rosidl_typesupport_fastrtps_cpp\n'}
+[12.122063] (my_mas) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libmy_mas__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.152394] (-) TimerEvent: {}
+[12.244615] (my_mas) StdoutLine: {'line': b'[ 84%] Built target my_mas__rosidl_typesupport_introspection_cpp\n'}
+[12.252569] (-) TimerEvent: {}
+[12.269834] (my_mas) StdoutLine: {'line': b'[ 84%] Built target my_mas\n'}
+[12.296353] (my_mas) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.352698] (-) TimerEvent: {}
+[12.453049] (-) TimerEvent: {}
+[12.553473] (-) TimerEvent: {}
+[12.653901] (-) TimerEvent: {}
+[12.754268] (-) TimerEvent: {}
+[12.854742] (-) TimerEvent: {}
+[12.955071] (-) TimerEvent: {}
+[13.055401] (-) TimerEvent: {}
+[13.155769] (-) TimerEvent: {}
+[13.256157] (-) TimerEvent: {}
+[13.356674] (-) TimerEvent: {}
+[13.457252] (-) TimerEvent: {}
+[13.557648] (-) TimerEvent: {}
+[13.658056] (-) TimerEvent: {}
+[13.758504] (-) TimerEvent: {}
+[13.858994] (-) TimerEvent: {}
+[13.959560] (-) TimerEvent: {}
+[14.059964] (-) TimerEvent: {}
+[14.160372] (-) TimerEvent: {}
+[14.260780] (-) TimerEvent: {}
+[14.361322] (-) TimerEvent: {}
+[14.461731] (-) TimerEvent: {}
+[14.562111] (-) TimerEvent: {}
+[14.662524] (-) TimerEvent: {}
+[14.762925] (-) TimerEvent: {}
+[14.863326] (-) TimerEvent: {}
+[14.963737] (-) TimerEvent: {}
+[15.028588] (my_mas) StdoutLine: {'line': b'[ 85%] Built target my_mas__py\n'}
+[15.054522] (my_mas) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_bit_load_s.c.o\x1b[0m\n'}
+[15.054792] (my_mas) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_sensor_measurment_s.c.o\x1b[0m\n'}
+[15.054892] (my_mas) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_auditor_s.c.o\x1b[0m\n'}
+[15.054986] (my_mas) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_operacion_s.c.o\x1b[0m\n'}
+[15.055151] (my_mas) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_create_bit_stream_s.c.o\x1b[0m\n'}
+[15.055268] (my_mas) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_file_hex_load_s.c.o\x1b[0m\n'}
+[15.055356] (my_mas) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_contrato_s.c.o\x1b[0m\n'}
+[15.056414] (my_mas) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_global_s.c.o\x1b[0m\n'}
+[15.063962] (-) TimerEvent: {}
+[15.164469] (-) TimerEvent: {}
+[15.237199] (my_mas) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_trans_entrada_s.c.o\x1b[0m\n'}
+[15.238363] (my_mas) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_filedb_s.c.o\x1b[0m\n'}
+[15.239467] (my_mas) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/msg/_log_salida_s.c.o\x1b[0m\n'}
+[15.241529] (my_mas) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/srv/_load_file_s.c.o\x1b[0m\n'}
+[15.243680] (my_mas) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_cargahex_s.c.o\x1b[0m\n'}
+[15.243947] (my_mas) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_fibonacci_s.c.o\x1b[0m\n'}
+[15.244040] (my_mas) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_carga_bit_s.c.o\x1b[0m\n'}
+[15.246786] (my_mas) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_generator_py.dir/rosidl_generator_py/my_mas/action/_tranformvhdlbit_s.c.o\x1b[0m\n'}
+[15.264649] (-) TimerEvent: {}
+[15.365325] (-) TimerEvent: {}
+[15.463559] (my_mas) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_mas/libmy_mas__rosidl_generator_py.so\x1b[0m\n'}
+[15.465457] (-) TimerEvent: {}
+[15.522324] (my_mas) StdoutLine: {'line': b'[ 96%] Built target my_mas__rosidl_generator_py\n'}
+[15.545747] (my_mas) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[15.545985] (my_mas) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[15.546064] (my_mas) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/my_mas__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[15.565596] (-) TimerEvent: {}
+[15.666175] (-) TimerEvent: {}
+[15.766596] (-) TimerEvent: {}
+[15.787852] (my_mas) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.796267] (my_mas) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.804651] (my_mas) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.846912] (my_mas) StdoutLine: {'line': b'[100%] Built target my_mas__rosidl_typesupport_c__pyext\n'}
+[15.854364] (my_mas) StdoutLine: {'line': b'[100%] Built target my_mas__rosidl_typesupport_introspection_c__pyext\n'}
+[15.860840] (my_mas) StdoutLine: {'line': b'[100%] Built target my_mas__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.866707] (-) TimerEvent: {}
+[15.876914] (my_mas) CommandEnded: {'returncode': 0}
+[15.966825] (-) TimerEvent: {}
+[16.067133] (-) TimerEvent: {}
+[16.167419] (-) TimerEvent: {}
+[16.247374] (my_mas) JobProgress: {'identifier': 'my_mas', 'progress': 'install'}
+[16.258087] (my_mas) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas'], 'cwd': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(Labremoto)'), ('USER', 'felix'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/felix'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/felix/Documentos/LabRemo/Orchestrator'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1513'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'felix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'felix'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/felix/miniconda3/envs/Labremoto/bin:/home/felix/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/felix-Lenovo-V14-G4-AMN:@/tmp/.ICE-unix/1513,unix/felix-Lenovo-V14-G4-AMN:/tmp/.ICE-unix/1513'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9e92dabb_2ddd_4c36_95f2_6f8ed42eb7fc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('CONDA_PREFIX_1', '/home/felix/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.44GGN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ac19c76c1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.258'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/felix/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'Labremoto'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/my_mas'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/felix/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/felix/miniconda3/envs/Labremoto'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[16.267281] (my_mas) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.267578] (-) TimerEvent: {}
+[16.267789] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/ament_index/resource_index/rosidl_interfaces/my_mas\n'}
+[16.268069] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[16.268203] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[16.268279] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/load_file.h\n'}
+[16.268357] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[16.268469] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__functions.h\n'}
+[16.268550] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.h\n'}
+[16.268653] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__struct.h\n'}
+[16.268761] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__functions.h\n'}
+[16.268910] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__struct.h\n'}
+[16.269076] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__functions.c\n'}
+[16.269255] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__functions.c\n'}
+[16.269434] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.h\n'}
+[16.269596] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/load_filedb.h\n'}
+[16.269891] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[16.270051] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/tranformvhdlbit.h\n'}
+[16.270180] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/fibonacci.h\n'}
+[16.270352] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/carga_bit.h\n'}
+[16.270521] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[16.270662] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__functions.h\n'}
+[16.270898] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__struct.h\n'}
+[16.271092] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.h\n'}
+[16.271265] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__struct.h\n'}
+[16.271442] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__functions.c\n'}
+[16.271688] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__functions.c\n'}
+[16.271943] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__struct.h\n'}
+[16.272134] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__struct.h\n'}
+[16.272303] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.h\n'}
+[16.272479] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__functions.h\n'}
+[16.272726] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.h\n'}
+[16.272880] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__functions.c\n'}
+[16.273155] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__functions.h\n'}
+[16.273428] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__functions.c\n'}
+[16.273745] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__functions.h\n'}
+[16.274127] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.h\n'}
+[16.274270] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/cargahex.h\n'}
+[16.274418] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[16.274613] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/auditor.h\n'}
+[16.274787] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/operacion.h\n'}
+[16.274945] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/sensor_measurment.h\n'}
+[16.275102] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/file_hex_load.h\n'}
+[16.275258] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/contrato.h\n'}
+[16.275423] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.275586] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/bit_load.h\n'}
+[16.275753] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/trans_global.h\n'}
+[16.275903] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[16.276067] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__struct.h\n'}
+[16.276264] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__functions.h\n'}
+[16.276452] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__struct.h\n'}
+[16.276612] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__struct.h\n'}
+[16.276782] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__struct.h\n'}
+[16.276962] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__functions.c\n'}
+[16.277175] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__struct.h\n'}
+[16.277346] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__functions.c\n'}
+[16.277548] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.h\n'}
+[16.277731] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__struct.h\n'}
+[16.277901] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.h\n'}
+[16.278086] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__functions.h\n'}
+[16.278274] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__struct.h\n'}
+[16.278430] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__functions.c\n'}
+[16.278657] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__functions.c\n'}
+[16.278824] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__functions.c\n'}
+[16.278990] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__functions.c\n'}
+[16.279164] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__functions.h\n'}
+[16.279332] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__functions.h\n'}
+[16.279501] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.h\n'}
+[16.279674] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__struct.h\n'}
+[16.279838] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.h\n'}
+[16.279991] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__functions.h\n'}
+[16.280161] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__functions.c\n'}
+[16.280339] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__functions.c\n'}
+[16.280516] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__struct.h\n'}
+[16.280676] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__functions.h\n'}
+[16.280859] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.h\n'}
+[16.281019] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__functions.h\n'}
+[16.281191] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__functions.h\n'}
+[16.281357] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__struct.h\n'}
+[16.281519] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__functions.h\n'}
+[16.281691] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.h\n'}
+[16.281860] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__functions.h\n'}
+[16.282029] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.h\n'}
+[16.282186] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.h\n'}
+[16.282358] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__functions.c\n'}
+[16.282551] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.h\n'}
+[16.282718] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.h\n'}
+[16.282874] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__functions.c\n'}
+[16.283048] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/trans_entrada.h\n'}
+[16.283208] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/create_bit_stream.h\n'}
+[16.283364] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/log_salida.h\n'}
+[16.283719] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/environment/library_path.sh\n'}
+[16.283920] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/environment/library_path.dsv\n'}
+[16.284255] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_generator_c.so\n'}
+[16.285246] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_generator_c.so" to ""\n'}
+[16.285467] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[16.285548] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[16.285630] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[16.285751] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_fastrtps_c.h\n'}
+[16.285843] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_c.h\n'}
+[16.285956] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[16.286038] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[16.286115] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_fastrtps_c.h\n'}
+[16.286205] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_fastrtps_c.h\n'}
+[16.286301] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_fastrtps_c.h\n'}
+[16.286496] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[16.286658] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[16.286787] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[16.286887] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[16.287018] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_c.h\n'}
+[16.287178] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_c.h\n'}
+[16.287369] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_fastrtps_c.h\n'}
+[16.287518] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_fastrtps_c.h\n'}
+[16.287688] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_c.h\n'}
+[16.287871] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_c.h\n'}
+[16.288055] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_fastrtps_c.h\n'}
+[16.288259] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_fastrtps_c.h\n'}
+[16.288400] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_fastrtps_c.h\n'}
+[16.288589] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_fastrtps_c.h\n'}
+[16.288913] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_c.so\n'}
+[16.289735] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.289834] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[16.289896] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[16.289977] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[16.290075] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.c\n'}
+[16.290268] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_introspection_c.h\n'}
+[16.290442] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.c\n'}
+[16.291292] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_introspection_c.h\n'}
+[16.291441] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[16.291519] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[16.291578] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.c\n'}
+[16.291824] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_introspection_c.h\n'}
+[16.291997] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.c\n'}
+[16.292257] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.c\n'}
+[16.292514] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.c\n'}
+[16.292765] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_introspection_c.h\n'}
+[16.292936] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[16.293142] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_c.h\n'}
+[16.293275] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[16.293405] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[16.293501] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.c\n'}
+[16.293620] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.c\n'}
+[16.293787] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_introspection_c.h\n'}
+[16.293952] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_c.h\n'}
+[16.294112] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.c\n'}
+[16.294315] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.c\n'}
+[16.294478] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_introspection_c.h\n'}
+[16.294757] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_introspection_c.h\n'}
+[16.294886] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.c\n'}
+[16.295020] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.c\n'}
+[16.295203] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.c\n'}
+[16.295381] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_introspection_c.h\n'}
+[16.295552] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_introspection_c.h\n'}
+[16.295725] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.c\n'}
+[16.295901] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_introspection_c.h\n'}
+[16.296079] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_introspection_c.h\n'}
+[16.296251] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.c\n'}
+[16.296422] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_introspection_c.h\n'}
+[16.296591] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.c\n'}
+[16.296772] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_introspection_c.h\n'}
+[16.296942] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.297208] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_c.so\n'}
+[16.297824] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.297918] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_c.so\n'}
+[16.298459] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_c.so" to ""\n'}
+[16.298602] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[16.298678] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[16.298738] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/load_filedb.hpp\n'}
+[16.298831] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[16.298913] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__traits.hpp\n'}
+[16.299023] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__struct.hpp\n'}
+[16.299198] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__struct.hpp\n'}
+[16.299376] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__builder.hpp\n'}
+[16.299534] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__builder.hpp\n'}
+[16.299694] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__traits.hpp\n'}
+[16.299859] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/load_file.hpp\n'}
+[16.300005] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[16.300084] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/cargahex.hpp\n'}
+[16.300296] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/tranformvhdlbit.hpp\n'}
+[16.300452] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/carga_bit.hpp\n'}
+[16.300615] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[16.300762] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__builder.hpp\n'}
+[16.300885] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__struct.hpp\n'}
+[16.301140] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__builder.hpp\n'}
+[16.301298] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__traits.hpp\n'}
+[16.301497] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__traits.hpp\n'}
+[16.301710] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__traits.hpp\n'}
+[16.301922] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__struct.hpp\n'}
+[16.302154] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__builder.hpp\n'}
+[16.302330] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__struct.hpp\n'}
+[16.302602] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__builder.hpp\n'}
+[16.302799] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__traits.hpp\n'}
+[16.302983] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__struct.hpp\n'}
+[16.303222] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/fibonacci.hpp\n'}
+[16.303391] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[16.303540] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/auditor.hpp\n'}
+[16.303698] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/operacion.hpp\n'}
+[16.303813] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/file_hex_load.hpp\n'}
+[16.303951] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/trans_global.hpp\n'}
+[16.304118] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/trans_entrada.hpp\n'}
+[16.304278] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/sensor_measurment.hpp\n'}
+[16.304462] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/create_bit_stream.hpp\n'}
+[16.304652] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/bit_load.hpp\n'}
+[16.304800] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/log_salida.hpp\n'}
+[16.304952] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[16.305072] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__struct.hpp\n'}
+[16.305275] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__builder.hpp\n'}
+[16.305452] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__builder.hpp\n'}
+[16.305639] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__builder.hpp\n'}
+[16.305816] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__struct.hpp\n'}
+[16.306027] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__traits.hpp\n'}
+[16.306236] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__struct.hpp\n'}
+[16.306413] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__struct.hpp\n'}
+[16.307123] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__struct.hpp\n'}
+[16.307318] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__builder.hpp\n'}
+[16.307505] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__struct.hpp\n'}
+[16.307701] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__struct.hpp\n'}
+[16.307882] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__builder.hpp\n'}
+[16.308058] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__struct.hpp\n'}
+[16.308249] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__struct.hpp\n'}
+[16.308433] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__traits.hpp\n'}
+[16.308609] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__builder.hpp\n'}
+[16.308782] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__traits.hpp\n'}
+[16.308951] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__builder.hpp\n'}
+[16.309134] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__traits.hpp\n'}
+[16.309306] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__builder.hpp\n'}
+[16.309486] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__traits.hpp\n'}
+[16.309659] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__traits.hpp\n'}
+[16.309841] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__traits.hpp\n'}
+[16.310015] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__traits.hpp\n'}
+[16.310190] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__traits.hpp\n'}
+[16.310378] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__builder.hpp\n'}
+[16.310564] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__struct.hpp\n'}
+[16.310741] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__builder.hpp\n'}
+[16.310917] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__traits.hpp\n'}
+[16.311089] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/contrato.hpp\n'}
+[16.311337] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[16.311425] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[16.311521] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[16.311610] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.311720] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.311886] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/dds_fastrtps\n'}
+[16.312011] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[16.312086] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[16.312190] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.312321] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.312515] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.312705] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.312889] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/dds_fastrtps\n'}
+[16.313002] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[16.313100] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.313219] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[16.313311] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.313471] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.313654] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.313887] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.314057] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.314222] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.314390] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.314672] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/dds_fastrtps\n'}
+[16.314820] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.314997] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.315169] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.315439] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.316462] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.316553] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas\n'}
+[16.316651] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv\n'}
+[16.316727] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail\n'}
+[16.316831] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.316947] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_filedb__type_support.cpp\n'}
+[16.317102] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__type_support.cpp\n'}
+[16.317264] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/srv/detail/load_file__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.317413] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action\n'}
+[16.317506] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail\n'}
+[16.317608] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.317760] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__type_support.cpp\n'}
+[16.318046] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.318258] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.318402] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/carga_bit__type_support.cpp\n'}
+[16.318631] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/fibonacci__type_support.cpp\n'}
+[16.318882] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/tranformvhdlbit__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.319059] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/action/detail/cargahex__type_support.cpp\n'}
+[16.319286] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg\n'}
+[16.319353] (my_mas) StdoutLine: {'line': b'-- Up-to-date: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail\n'}
+[16.319435] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.319605] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__type_support.cpp\n'}
+[16.319780] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.319965] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__type_support.cpp\n'}
+[16.320136] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__type_support.cpp\n'}
+[16.320319] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__type_support.cpp\n'}
+[16.320496] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__type_support.cpp\n'}
+[16.320674] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.320847] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/create_bit_stream__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.321030] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_global__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.321197] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/trans_entrada__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.321375] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.321553] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__type_support.cpp\n'}
+[16.321726] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/log_salida__type_support.cpp\n'}
+[16.321913] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/operacion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.322083] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/file_hex_load__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.322265] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/auditor__type_support.cpp\n'}
+[16.322442] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/sensor_measurment__type_support.cpp\n'}
+[16.322635] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/contrato__type_support.cpp\n'}
+[16.322813] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/include/my_mas/my_mas/msg/detail/bit_load__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.323104] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_cpp.so\n'}
+[16.324059] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.324148] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_cpp.so\n'}
+[16.324899] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_typesupport_cpp.so" to ""\n'}
+[16.325065] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/environment/pythonpath.sh\n'}
+[16.325196] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/environment/pythonpath.dsv\n'}
+[16.325421] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info\n'}
+[16.325675] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[16.325835] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[16.325990] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[16.326143] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[16.326356] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas\n'}
+[16.326706] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/libmy_mas__rosidl_generator_py.so\n'}
+[16.327171] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/__init__.py\n'}
+[16.327322] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.327933] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.328323] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv\n'}
+[16.328444] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/__init__.py\n'}
+[16.328610] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_filedb.py\n'}
+[16.328792] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file.py\n'}
+[16.328963] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_filedb_s.c\n'}
+[16.329138] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file_s.c\n'}
+[16.329305] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_c.c\n'}
+[16.329838] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action\n'}
+[16.329956] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_carga_bit.py\n'}
+[16.330196] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci.py\n'}
+[16.330420] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex_s.c\n'}
+[16.330648] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/__init__.py\n'}
+[16.330801] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_carga_bit_s.c\n'}
+[16.331015] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci_s.c\n'}
+[16.331223] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex.py\n'}
+[16.331464] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_tranformvhdlbit.py\n'}
+[16.331694] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_tranformvhdlbit_s.c\n'}
+[16.331892] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg\n'}
+[16.332019] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment.py\n'}
+[16.332198] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_global_s.c\n'}
+[16.332362] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_bit_load.py\n'}
+[16.332531] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/__init__.py\n'}
+[16.332687] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_file_hex_load_s.c\n'}
+[16.332851] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_operacion.py\n'}
+[16.333015] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_contrato.py\n'}
+[16.333185] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_file_hex_load.py\n'}
+[16.333351] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_bit_load_s.c\n'}
+[16.333509] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_operacion_s.c\n'}
+[16.333674] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor_s.c\n'}
+[16.333844] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor.py\n'}
+[16.334011] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_entrada_s.c\n'}
+[16.334175] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_log_salida.py\n'}
+[16.334340] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_log_salida_s.c\n'}
+[16.334514] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_contrato_s.c\n'}
+[16.334732] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_entrada.py\n'}
+[16.334889] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_create_bit_stream_s.c\n'}
+[16.335066] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_global.py\n'}
+[16.335200] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment_s.c\n'}
+[16.335359] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_create_bit_stream.py\n'}
+[16.335538] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.335928] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/_my_mas_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.336469] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.367742] (-) TimerEvent: {}
+[16.398238] (my_mas) StdoutLine: {'line': b"Listing '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas'...\n"}
+[16.398552] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/__init__.py'...\n"}
+[16.398693] (my_mas) StdoutLine: {'line': b"Listing '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action'...\n"}
+[16.398811] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/__init__.py'...\n"}
+[16.398969] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_carga_bit.py'...\n"}
+[16.399089] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_cargahex.py'...\n"}
+[16.399153] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_fibonacci.py'...\n"}
+[16.399206] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/action/_tranformvhdlbit.py'...\n"}
+[16.399259] (my_mas) StdoutLine: {'line': b"Listing '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg'...\n"}
+[16.399317] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/__init__.py'...\n"}
+[16.399378] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_auditor.py'...\n"}
+[16.399436] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_bit_load.py'...\n"}
+[16.399506] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_contrato.py'...\n"}
+[16.399566] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_create_bit_stream.py'...\n"}
+[16.399625] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_file_hex_load.py'...\n"}
+[16.399683] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_log_salida.py'...\n"}
+[16.399749] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_operacion.py'...\n"}
+[16.399808] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_sensor_measurment.py'...\n"}
+[16.399866] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_entrada.py'...\n"}
+[16.399926] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/msg/_trans_global.py'...\n"}
+[16.399985] (my_mas) StdoutLine: {'line': b"Listing '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv'...\n"}
+[16.400044] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/__init__.py'...\n"}
+[16.400103] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_file.py'...\n"}
+[16.400162] (my_mas) StdoutLine: {'line': b"Compiling '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/srv/_load_filedb.py'...\n"}
+[16.405131] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.405810] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.406138] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.406885] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.407138] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.407836] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages/my_mas/my_mas_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.407934] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_generator_py.so\n'}
+[16.408724] (my_mas) StdoutLine: {'line': b'-- Set runtime path of "/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib/libmy_mas__rosidl_generator_py.so" to ""\n'}
+[16.408879] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/Operacion.idl\n'}
+[16.409089] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/BitLoad.idl\n'}
+[16.409292] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/CreateBitStream.idl\n'}
+[16.409486] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/Auditor.idl\n'}
+[16.409780] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/SensorMeasurment.idl\n'}
+[16.409982] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/FileHexLoad.idl\n'}
+[16.410184] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/TransGlobal.idl\n'}
+[16.410389] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/Contrato.idl\n'}
+[16.410648] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/TransEntrada.idl\n'}
+[16.410872] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/LogSalida.idl\n'}
+[16.411158] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/srv/LoadFiledb.idl\n'}
+[16.411348] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/srv/LoadFile.idl\n'}
+[16.411626] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/action/Fibonacci.idl\n'}
+[16.411831] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/action/Cargahex.idl\n'}
+[16.412030] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/action/CargaBit.idl\n'}
+[16.412221] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/action/Tranformvhdlbit.idl\n'}
+[16.412424] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/Operacion.msg\n'}
+[16.412645] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/BitLoad.msg\n'}
+[16.412854] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/CreateBitStream.msg\n'}
+[16.413065] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/Auditor.msg\n'}
+[16.413278] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/SensorMeasurment.msg\n'}
+[16.413496] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/FileHexLoad.msg\n'}
+[16.413709] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/TransGlobal.msg\n'}
+[16.413927] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/Contrato.msg\n'}
+[16.414141] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/TransEntrada.msg\n'}
+[16.414359] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/msg/LogSalida.msg\n'}
+[16.414597] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/srv/LoadFiledb.srv\n'}
+[16.414795] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/srv/LoadFiledb_Request.msg\n'}
+[16.415008] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/srv/LoadFiledb_Response.msg\n'}
+[16.415216] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/srv/LoadFile.srv\n'}
+[16.415416] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/srv/LoadFile_Request.msg\n'}
+[16.415616] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/srv/LoadFile_Response.msg\n'}
+[16.415815] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/action/Fibonacci.action\n'}
+[16.416026] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/action/Cargahex.action\n'}
+[16.416243] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/action/CargaBit.action\n'}
+[16.416422] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/action/Tranformvhdlbit.action\n'}
+[16.416729] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/ament_index/resource_index/package_run_dependencies/my_mas\n'}
+[16.417022] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/ament_index/resource_index/parent_prefix_path/my_mas\n'}
+[16.417236] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/environment/ament_prefix_path.sh\n'}
+[16.417435] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/environment/ament_prefix_path.dsv\n'}
+[16.417673] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/environment/path.sh\n'}
+[16.417930] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/environment/path.dsv\n'}
+[16.418164] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/local_setup.bash\n'}
+[16.418390] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/local_setup.sh\n'}
+[16.418700] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/local_setup.zsh\n'}
+[16.418896] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/local_setup.dsv\n'}
+[16.419114] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/package.dsv\n'}
+[16.419389] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/ament_index/resource_index/packages/my_mas\n'}
+[16.419681] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport.cmake\n'}
+[16.419912] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cExport-noconfig.cmake\n'}
+[16.420157] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[16.420385] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[16.420631] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport.cmake\n'}
+[16.420859] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[16.421118] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport.cmake\n'}
+[16.421319] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[16.421550] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_cppExport.cmake\n'}
+[16.421780] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[16.422007] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[16.422209] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[16.422436] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[16.422706] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport.cmake\n'}
+[16.422918] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_mas__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[16.423132] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport.cmake\n'}
+[16.423356] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/export_my_mas__rosidl_generator_pyExport-noconfig.cmake\n'}
+[16.423577] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/rosidl_cmake-extras.cmake\n'}
+[16.423790] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.423995] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.424215] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.424439] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.424648] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[16.424842] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[16.425074] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_masConfig.cmake\n'}
+[16.425251] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/cmake/my_masConfig-version.cmake\n'}
+[16.425477] (my_mas) StdoutLine: {'line': b'-- Installing: /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/share/my_mas/package.xml\n'}
+[16.429127] (my_mas) CommandEnded: {'returncode': 0}
+[16.467838] (-) TimerEvent: {}
+[16.568141] (-) TimerEvent: {}
+[16.668445] (-) TimerEvent: {}
+[16.768728] (-) TimerEvent: {}
+[16.797223] (my_mas) JobEnded: {'identifier': 'my_mas', 'rc': 0}
+[16.798044] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[16.868857] (-) TimerEvent: {}
+[16.969300] (-) TimerEvent: {}
+[17.069695] (-) TimerEvent: {}
+[17.170147] (-) TimerEvent: {}
+[17.270604] (-) TimerEvent: {}
+[17.287900] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build', 'install', '--record', '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(Labremoto)', 'USER': 'felix', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/felix', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'CONDA_SHLVL': '2', 'OLDPWD': '/home/felix/Documentos/LabRemo/Orchestrator', 'TERM_PROGRAM_VERSION': '1.89.0', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1513', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d', 'COLORTERM': 'truecolor', '_CE_M': '', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/felix/miniconda3/envs/Labremoto/bin:/home/felix/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/felix-Lenovo-V14-G4-AMN:@/tmp/.ICE-unix/1513,unix/felix-Lenovo-V14-G4-AMN:/tmp/.ICE-unix/1513', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9e92dabb_2ddd_4c36_95f2_6f8ed42eb7fc', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'CONDA_PREFIX_1': '/home/felix/miniconda3', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.44GGN2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3ac19c76c1.sock', 'GNOME_TERMINAL_SERVICE': ':1.258', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/felix/miniconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'Labremoto', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/felix/miniconda3/bin/conda', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=94d77a7b7d5b233584a00d6266390e1d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/prefix_override:/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages:/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/felix/miniconda3/envs/Labremoto', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/my_mas'}, 'shell': False}
+[17.370726] (-) TimerEvent: {}
+[17.468137] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[17.468976] (py_pubsub) StdoutLine: {'line': b'creating ../../build/py_pubsub/py_pubsub.egg-info\n'}
+[17.469298] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[17.469702] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[17.469958] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[17.470081] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[17.470173] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[17.470632] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[17.470722] (-) TimerEvent: {}
+[17.474167] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[17.475087] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[17.475256] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[17.475315] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[17.475504] (py_pubsub) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build\n'}
+[17.475581] (py_pubsub) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib\n'}
+[17.475685] (py_pubsub) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.475747] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/client_member_function.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.476112] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/service_member_function.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.476860] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_contratos.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.477131] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/fibonacci_action_server.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.477392] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/carga_bit_cliente.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.477678] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/vhdlbit_cliente.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.477866] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/__init__.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.477958] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_prueba.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.478114] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/sesiones.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.478285] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/arduino_infrastructure.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.478454] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_transacciones_entrada.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.478637] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publicador_prueba.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.478793] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/SendTran_Service.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.478956] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/carga_bit.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.479123] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_transentrada.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.479295] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/auditor_transacciones.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.479451] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_member_function.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.479624] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/supervisor_operaciones.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.479783] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/transform_vhdl_bit.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.479962] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_log_salida.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.480129] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/arduino.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.480325] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/SendTran_Cliente.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.480489] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/arduino_inf_cliente.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.480620] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/admin_transacciones.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.480757] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/subscriber_member_function.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub\n'}
+[17.481324] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[17.481669] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[17.482382] (py_pubsub) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.482576] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/client_member_function.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.482672] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/service_member_function.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.482765] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/admin_contratos.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.482874] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/fibonacci_action_server.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.482956] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/carga_bit_cliente.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483075] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/vhdlbit_cliente.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483162] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483259] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/publisher_prueba.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483354] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/sesiones.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483460] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/arduino_infrastructure.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483565] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/admin_transacciones_entrada.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483681] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/publicador_prueba.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483772] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/SendTran_Service.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483868] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/carga_bit.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.483966] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/publisher_transentrada.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484056] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/auditor_transacciones.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484150] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484239] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/supervisor_operaciones.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484355] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/transform_vhdl_bit.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484489] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/admin_log_salida.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484593] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/arduino.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484702] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/SendTran_Cliente.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484793] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/arduino_inf_cliente.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.484884] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/admin_transacciones.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.485033] (py_pubsub) StdoutLine: {'line': b'copying /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub\n'}
+[17.485836] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/client_member_function.py to client_member_function.cpython-310.pyc\n'}
+[17.486595] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/service_member_function.py to service_member_function.cpython-310.pyc\n'}
+[17.487150] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_contratos.py to admin_contratos.cpython-310.pyc\n'}
+[17.488021] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/fibonacci_action_server.py to fibonacci_action_server.cpython-310.pyc\n'}
+[17.488474] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/carga_bit_cliente.py to carga_bit_cliente.cpython-310.pyc\n'}
+[17.488937] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/vhdlbit_cliente.py to vhdlbit_cliente.cpython-310.pyc\n'}
+[17.489387] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/__init__.py to __init__.cpython-310.pyc\n'}
+[17.489513] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_prueba.py to publisher_prueba.cpython-310.pyc\n'}
+[17.489794] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/sesiones.py to sesiones.cpython-310.pyc\n'}
+[17.489988] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino_infrastructure.py to arduino_infrastructure.cpython-310.pyc\n'}
+[17.490521] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_transacciones_entrada.py to admin_transacciones_entrada.cpython-310.pyc\n'}
+[17.490982] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publicador_prueba.py to publicador_prueba.cpython-310.pyc\n'}
+[17.491272] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/SendTran_Service.py to SendTran_Service.cpython-310.pyc\n'}
+[17.491580] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/carga_bit.py to carga_bit.cpython-310.pyc\n'}
+[17.492085] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_transentrada.py to publisher_transentrada.cpython-310.pyc\n'}
+[17.492385] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/auditor_transacciones.py to auditor_transacciones.cpython-310.pyc\n'}
+[17.492761] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-310.pyc\n'}
+[17.493073] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/supervisor_operaciones.py to supervisor_operaciones.cpython-310.pyc\n'}
+[17.493587] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/transform_vhdl_bit.py to transform_vhdl_bit.cpython-310.pyc\n'}
+[17.494271] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_log_salida.py to admin_log_salida.cpython-310.pyc\n'}
+[17.494631] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino.py to arduino.cpython-310.pyc\n'}
+[17.495343] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/SendTran_Cliente.py to SendTran_Cliente.cpython-310.pyc\n'}
+[17.495692] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/arduino_inf_cliente.py to arduino_inf_cliente.cpython-310.pyc\n'}
+[17.496214] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/admin_transacciones.py to admin_transacciones.cpython-310.pyc\n'}
+[17.496648] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc\n'}
+[17.496987] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[17.497155] (py_pubsub) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/share/ament_index\n'}
+[17.497256] (py_pubsub) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/share/ament_index/resource_index\n'}
+[17.497338] (py_pubsub) StdoutLine: {'line': b'creating /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[17.497394] (py_pubsub) StdoutLine: {'line': b'copying resource/py_pubsub -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[17.497473] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/share/py_pubsub\n'}
+[17.497540] (py_pubsub) StdoutLine: {'line': b'copying launch/partes.launch.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/share/py_pubsub\n'}
+[17.497714] (py_pubsub) StdoutLine: {'line': b'copying launch/action.launch.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/share/py_pubsub\n'}
+[17.497868] (py_pubsub) StdoutLine: {'line': b'copying launch/inicio.launch.py -> /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/share/py_pubsub\n'}
+[17.498015] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.499945] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info\n'}
+[17.500845] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[17.522311] (py_pubsub) StdoutLine: {'line': b'Installing admin_contratos script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.522629] (py_pubsub) StdoutLine: {'line': b'Installing admin_log_salida script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.522807] (py_pubsub) StdoutLine: {'line': b'Installing admin_transacciones script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.522932] (py_pubsub) StdoutLine: {'line': b'Installing admin_transacciones_entrada script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523053] (py_pubsub) StdoutLine: {'line': b'Installing arduino_inf_cliente script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523213] (py_pubsub) StdoutLine: {'line': b'Installing arduino_infrastructure script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523292] (py_pubsub) StdoutLine: {'line': b'Installing auditor_transacciones script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523353] (py_pubsub) StdoutLine: {'line': b'Installing publisher_prueba script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523413] (py_pubsub) StdoutLine: {'line': b'Installing publisher_transentrada script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523473] (py_pubsub) StdoutLine: {'line': b'Installing supervisor_operaciones script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523533] (py_pubsub) StdoutLine: {'line': b'Installing transform_vhdl_bit script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523593] (py_pubsub) StdoutLine: {'line': b'Installing vhdlbit_cliente script to /home/felix/Documentos/LabRemo/Orchestrator/Labremoto/install/py_pubsub/lib/py_pubsub\n'}
+[17.523837] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/felix/Documentos/LabRemo/Orchestrator/Labremoto/build/py_pubsub/install.log'\n"}
+[17.565417] (py_pubsub) CommandEnded: {'returncode': 0}
+[17.570896] (-) TimerEvent: {}
+[17.571635] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[17.572266] (-) EventReactorShutdown: {}
