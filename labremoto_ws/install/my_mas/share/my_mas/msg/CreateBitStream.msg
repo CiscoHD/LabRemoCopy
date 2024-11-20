@@ -1,3 +1,0 @@
-string path_vhdl
-string path_constrains
-string path_savefolder

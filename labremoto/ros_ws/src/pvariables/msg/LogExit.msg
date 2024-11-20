@@ -1,0 +1,2 @@
+string log_exit
+string status

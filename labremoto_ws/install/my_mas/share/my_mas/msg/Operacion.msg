@@ -1,4 +1,0 @@
-string nameoperacion
-string descoperacion	
-string estatusoperacion	
-string fechaoperacion

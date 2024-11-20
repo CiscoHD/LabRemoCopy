@@ -1,2 +1,0 @@
-bool estado
-string stad

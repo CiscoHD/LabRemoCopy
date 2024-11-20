@@ -1,3 +1,0 @@
-string tipo_motor
-float32 velocidad
-bool direccion

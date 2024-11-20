@@ -1,0 +1,5 @@
+int64 id_contract
+string name_contract
+string type_contract
+string desc_contract
+string specification_contract

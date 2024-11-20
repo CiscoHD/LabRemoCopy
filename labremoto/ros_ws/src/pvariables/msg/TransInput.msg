@@ -1,0 +1,5 @@
+string type_transaction
+string status
+string id_student
+string id_session
+string description

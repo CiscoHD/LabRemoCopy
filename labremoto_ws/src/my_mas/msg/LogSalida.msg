@@ -1,2 +1,0 @@
-string logsalida
-string status
