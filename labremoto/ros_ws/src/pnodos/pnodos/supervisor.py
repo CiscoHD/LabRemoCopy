@@ -1,7 +1,7 @@
 import rclpy
 from pvariables.msg import Operation
 from rclpy.node import Node
-from nodefather import NodeFather, main_base
+from parent_class import NodeFather, main_base
 
 class SupervisorMessage(Node, NodeFather):
     

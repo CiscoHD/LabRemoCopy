@@ -1,7 +1,7 @@
 import rclpy
 from pvariables.msg import TransGlobal, FileHexLoad, CreateBitStream
 from rclpy.node import Node
-from nodefather import NodeFather, main_base
+from parent_class import NodeFather, main_base
 
 #Nodo para manejar publiaciones en consola
 class AdminTransactioner(Node, NodeFather):
@@ -22,23 +22,27 @@ class AdminTransactioner(Node, NodeFather):
         
     def listener_callback(self, msg):
         #Recibe mensajes para consola y los imprime
-        NodeFather.publisher_consoler(self, msg.folio, "Accepted Transaction Received")
+        NodeFather.publisher_consoler(self, msg.folio, "Accepted Transaction Received. Folio")
 
         msg_type = CreateBitStream()
         # TODO En esta variable se podría crear una función que busque u obtenga el archivo
-        # ! Podría ser con el folio que se pasa en el mensaje y después buscar el archivo en bbdd
+        # ! Podría ser con el folio que se pasa en el mensaje y después buscar el archivo en DB
         file_path = '/home/laboratorio_remo_remasterizado/labremoto/files/build/blink.ino.hex'
         #* Usando path de archivo de prueba
         #? de dónde vendrá este path? En dónde estará ubicado?
-        NodeFather.publisher_consoler(self, file_path, "Searching file")
+        type_action = None
         if msg.name_node == '':
             msg_type = FileHexLoad()
             msg_type.path_hex = file_path
+            type_action = 'Arduino'
             self.publisher_arduino_.publish(msg_type)
         else:
             msg_type = CreateBitStream()
             msg_type.path_vhdl = file_path
+            type_action = 'VHDL'
             self.publisher_bit_.publish(msg_type)   
+
+        NodeFather.publisher_consoler(self, type_action, "Selecting type action")
     
 def main(args=None):
     rclpy.init(args=args)

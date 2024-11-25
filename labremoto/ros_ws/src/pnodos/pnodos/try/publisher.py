@@ -1,7 +1,7 @@
 import rclpy
 from std_msgs.msg import String
 from rclpy.node import Node
-from nodefather import NodeFather, main_base
+from parent_class import NodeFather, main_base
 
 class PublisherMessage(Node, NodeFather):
     

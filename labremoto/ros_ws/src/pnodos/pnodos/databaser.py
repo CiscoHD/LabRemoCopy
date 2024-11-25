@@ -1,8 +1,7 @@
 import rclpy
 from pvariables.msg import Auditor, Operation
 from rclpy.node import Node
-from nodefather import NodeFather, NodeConn, main_base
-import sqlite3
+from parent_class import NodeFather, NodeConn, main_base
 
 class DatabaserLogger(Node, NodeFather, NodeConn):
     

@@ -1,0 +1,1 @@
+## En esta carpeta están archivos que en algún punto fueron utilizados como pruebas o intentos para implementar el sistema

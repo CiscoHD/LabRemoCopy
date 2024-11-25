@@ -2,7 +2,7 @@ import rclpy
 from pvariables.msg import Operation
 from pvariables.action import CargaHex
 from rclpy.node import Node
-from nodefather import NodeFather, ActionParentServer, main_base
+from parent_class import NodeFather, ActionParentServer, main_base
 import os
 import json
 
@@ -49,15 +49,14 @@ class ArduinoActionServer(Node, NodeFather, ActionParentServer):
                 raise PortNotFoundError()
             
             self.send_feedback(f'Microcontroller port: {port}') #Envia puerto como feedback
-        
 
             file_path = goal_handle.request.path_hex #Recupera la ruta del archivo
+            self.send_feedback(f'Searching file: {file_path}') #Devulve la ruta del archivo como feedback
+
             if not os.path.exists(file_path):#Comprueba que el archivo exista
                 raise FileNotFoundError()
             
-            self.send_feedback(f'Searching file: {file_path}') #Devulve el archivo como feedback
             
-            #NodeFather.publisher_consoler(self, 'Upload to arduino', 'Executing')
             self.send_feedback('Executing upload to arduino')
 
             #Ejecuta el comando desde el método de clase
@@ -85,7 +84,7 @@ class ArduinoActionServer(Node, NodeFather, ActionParentServer):
 def main(args=None):
     rclpy.init(args=args)
     arduino_inf_server = ArduinoActionServer()
-    main_base(arduino_inf_server)
+    rclpy.spin(arduino_inf_server)
     
 if __name__ == "__main__":
     main() 

@@ -1589,3 +1589,17 @@ In this commit the changes are:
     * ### File README
 
         - Adding instructions and fixing steps to initializate the venv
+
+* ## Version 0.3.2 | Directory Try and modify class name
+
+    * ### Directory _Try_
+
+        - This directory is used to save files for testing or to trying in the system, but the files are not in use now.
+
+        - Modify the nodefather.py file in this directory
+
+    * ### Nodes: _administrator_, _arduino_inf_client_, _arduino_inf_server_, _auditor_, _databaser_, _exit_logger_, _input_transactioner_, _supervisor_ and _transactioner_
+
+        - Some changes minors
+
+        - Change the importation to **_parent_class_**

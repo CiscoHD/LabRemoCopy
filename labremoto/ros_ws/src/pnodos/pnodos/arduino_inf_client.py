@@ -2,7 +2,7 @@ import rclpy
 from pvariables.msg import FileHexLoad
 from pvariables.action import CargaHex
 from rclpy.node import Node
-from nodefather import NodeFather, ActionParentClient, main_base
+from parent_class import NodeFather, ActionParentClient
 
 class ArduinoActionClient(Node, NodeFather, ActionParentClient):
     
@@ -13,21 +13,21 @@ class ArduinoActionClient(Node, NodeFather, ActionParentClient):
         #Se da como parámetro el self, el action_type y el action_name
         ActionParentClient.__init__(self, CargaHex, 'arduino_inf')
     
-        #Agregar self al topic_code para acceder al creado en node_father
+        #Se suscribe a transactioner.py para recibir la orden de acción
         self.subscription_ = self.create_subscription(FileHexLoad, self.topic_code, self.listener_callback, 10)
         self.subscription_
 
         self.initialization_notice()
         
     def listener_callback(self, msg):
-        NodeFather.publisher_consoler(self,'Arduino action initializated.', 'File finded');
-        #Mandar el mensaje a la funcion listener_callback del ActionParentClient Class
+        NodeFather.publisher_consoler(self,'Arduino action initializated.', 'File found');
+        #Mandar el mensaje a la function_callback del ActionParentClient Class
         ActionParentClient.function_callback(self,msg)
     
 def main(args=None):
     rclpy.init(args=args)
     arduino_inf_client = ArduinoActionClient()
-    main_base(arduino_inf_client)
+    rclpy.spin(arduino_inf_client)
     
 if __name__ == "__main__":
     main() 

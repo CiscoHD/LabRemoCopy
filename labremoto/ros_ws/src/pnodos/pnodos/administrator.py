@@ -1,7 +1,7 @@
 import rclpy
 from pvariables.msg import Contract, TransGlobal, LogExit
 from rclpy.node import Node
-from nodefather import NodeFather, NodeConn, main_base
+from parent_class import NodeFather, NodeConn, main_base
 
 class AdministratorContracts(Node, NodeFather, NodeConn):
     

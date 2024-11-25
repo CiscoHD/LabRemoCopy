@@ -2,7 +2,7 @@ import rclpy # type: ignore
 from std_msgs.msg import String # type: ignore
 from rclpy.node import Node # type: ignore
 from pvariables.msg import Auditor
-from nodefather import NodeFather, main_base
+from parent_class import NodeFather, main_base
 
 class SubscriberMessage(Node, NodeFather):
     

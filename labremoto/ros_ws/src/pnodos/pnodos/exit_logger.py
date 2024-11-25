@@ -1,7 +1,7 @@
 import rclpy
 from pvariables.msg import LogExit
 from rclpy.node import Node
-from nodefather import NodeFather, main_base
+from parent_class import NodeFather, main_base
 
 #Nodo para manejar publiaciones en consola
 class LoggerConsole(Node, NodeFather):

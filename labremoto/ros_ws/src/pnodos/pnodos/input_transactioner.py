@@ -1,7 +1,7 @@
 import rclpy
 from pvariables.msg import Contract, TransInput
 from rclpy.node import Node
-from nodefather import NodeFather, NodeConn, main_base
+from parent_class import NodeFather, NodeConn, main_base
 
 #Nodo para manejar publiaciones en consola
 class InputTransactioner(Node, NodeFather, NodeConn):
