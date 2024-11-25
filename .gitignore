@@ -8,6 +8,8 @@ labremoto/files/build/
 labremoto/files/blink/
 labremoto/files/db_develop.db
 labremoto/files/comandos.txt
+__pycache__/
+share/
 lib/
 bin/
 *.cfg

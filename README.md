@@ -1,12 +1,14 @@
-# laboratorio_remo_remasterizado
+# Laboratorio Remoto con ROS2 HUMBLE
 laboratorio_remo_remasterizado
 **Using ros2 humble on ubuntu 22.04**
 
-# Commands to init the nodes (v0.3.0)
+# Commands to init the nodes (v0.3.1)
 
-_In the directory laboratorio_remo_remasterizado/_
+_In the directory before LabRemo/_ execute the command: `python3 -m virtualenv LabRemo/` to init the virtual enviroment
 
-*`source bin/activate` For the virtual enviroment activation
+_In the directory LabRemo/_
+
+* `source bin/activate` For the virtual enviroment activation
 
 _In the same directory_
 
@@ -14,7 +16,7 @@ _In the same directory_
 
 _In the same directory_
 
-* `pip freeze > requirements.txt` For save the new dependences in the requirements.txt file
+* `pip freeze > requirements.txt` For save the new dependencies in the requirements.txt file (**Only if there are new dependencies on project**)
 
 _In the directory labremoto/ros_ws/_
 
@@ -781,7 +783,7 @@ In this commit the changes are:
                 self.create_publisher(LogExit, self.get_code_tema('top_console'), 10).publish(msg_consoler_)
                 ~~~
         - Create the **_request_info_db_** method in **_NodeConn_**
-            This function is simillar to the **__** method to connect db and execute the query, just adding the auditor verifications:
+            This function is simillar to the **__** method to connect DB and execute the query, just adding the auditor verifications:
 
             Both functions should be better, can be refactorizated because some of the code is repeated.
 
@@ -1437,7 +1439,7 @@ In this commit the changes are:
 
     * ### Node administrator.py
 
-    - Change the path of db used for NodeConn: `'/home/laboratorio_remo_remasterizado/labremoto/files/db_develop.db'`
+    - Change the path of DB used for NodeConn: `'/home/laboratorio_remo_remasterizado/labremoto/files/db_develop.db'`
 
     - Delete the publisher_auditor and the publisher_console because they have implemented in the NodeFather
 
@@ -1447,7 +1449,7 @@ In this commit the changes are:
     result,data = NodeConn.request_info_db(self,'admin',msg.id_contract)
     ~~~
 
-    - Using the _data_ from db for create a _**TransGlobal**_ message and publish on the _top_transactions_accepted_
+    - Using the _data_ from DB to create a _**TransGlobal**_ message and publish it on the _top_transactions_accepted_
 
         ~~~
         msg_tran_accepted = TransGlobal()
@@ -1478,7 +1480,7 @@ In this commit the changes are:
 
         - _**listener_callback**_ method
 
-            * The verification and the conection to db is commented for the test
+            * The verification and the conection to DB is commented for the test
 
             * Change the name attributes in  _**msg_contract**_
 
@@ -1549,7 +1551,7 @@ In this commit the changes are:
 
     * ### File setup.py
 
-        - Add the nodes for arduino action
+        - Adding the nodes for arduino action
             ~~~
             'arduino_inf_client = pnodos.arduino_inf_client:main',
             'arduino_inf_server = pnodos.arduino_inf_server:main'
@@ -1558,7 +1560,7 @@ In this commit the changes are:
 
     * ### File requirements.txt
 
-        - In this file there is a list of package and source with the version to use in the venv
+        - In this file, there is a list of packages and sources with the version to use in the venv
 
         - For activate the venv use the command: `source bin/activate` in the directory "laboratorio_remo_remasterizado"
 
@@ -1575,3 +1577,15 @@ In this commit the changes are:
     * ### File README.md
 
         - Adding version 0.3.0 and commands to use
+
+* ## Version 0.3.1 | Fixing the requirements.txt, installation and venv
+
+    * ### File requirements.txt
+
+        - Fixing the format for version dependencies
+
+        - Adding more dependencies 
+    
+    * ### File README
+
+        - Adding instructions and fixing steps to initializate the venv
