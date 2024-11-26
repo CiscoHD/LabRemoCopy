@@ -34,34 +34,47 @@ Then...
 
 ### Directory structure
 
-* _laboratorio_remo_remasterizado/_
+* *laboratorio_remo_remasterizado/*
 
-In this directory was created the repository (this github)
+In this directory was created the repository (In this github *LabRemo* or *laboratorio_remo_remasterizado*) has the repository and venv configuration
 
-* _laboratorio_remo_remasterizado/labremoto_
+* *%DIR%/labremoto*
 
 This is the principal work directory
 
-* _laboratorio_remo_remasterizado/labremoto/files_
+* *%DIR%/labremoto/files*
 
 This directory is for files for use in the project (.csv, .db, etc...)
 >db_develop.db and topics.csv  
 
-* _laboratorio_remo_remasterizado/labremoto/ros_ws/_
+* *%DIR%/labremoto/ros_ws/*
 
 In this directory is the package creation, is used the command: `colcon build` in each change for a new package compilation
 
-* _laboratorio_remo_remasterizado/labremoto/ros_ws/src/pnodos/pnodos_
+* *%DIR%/labremoto/ros_ws/src/pnodos/pnodos*
 
-In this file is our nodes scripts in python
+In this file is our nodes scripts in python (_actions, supervisor, etc_)
 
-* _laboratorio_remo_remasterizado/labremoto/ros_ws/src/pnodos/launch_
+* *%DIR%/labremoto/ros_ws/src/pnodos/launch*
 
-In this directory is the launch files to use the command: `ros2 run pnodos *.launch.py` and execute many nodes
+In this directory is the launch files to use the command: `ros2 run pnodos *.launch.py` and execute many nodes (_Execute each command in one terminal_)
 
-* _laboratorio_remo_remasterizado/labremoto/ros_ws/src/pvariable_
+    ~~~
+    ros2 launch pnodos nodos_log.launch.py
+    ros2 launch pnodos nodos_inicio.launch.py
+    ~~~
 
-In this directory is the enviroment configuration
+* *%DIR%/labremoto/ros_ws/src/pvariable*
+
+In this directory is the enviroment configuration (_actions, messages, etc_)
+
+* *%DIR%/labremoto/ros_ws_src/pnodos/pnodos/parent_class*
+
+In this directory there are the main class files to use as a module
+
+* *%DIR%/labremoto/ros_ws_src/pnodos/pnodos/try*
+
+Old files or testing files. They are now deprecated
 
 ### Initial configuration
 
@@ -84,14 +97,18 @@ You need *initial configurations* for this project:
 
 _Add this commands to ~/.bashrc (Autoexecution in new terminal)_
 
-- Code for use _nodefather_ as a module
+- Code for use _nodefather_ as a module (_Maybe this command is not necessary now_)
 
 `export PYTHONPATH=$PYTHONPATH:/laboratorio_remo_remasterizado/labremoto/ros_ws/src/pnodos/pnodos`
 > Example with my own path
 
 _Add this command to ~/.bashrc (Autoexecution in new terminal)_
 
-- Colcon Build: Package and creation 
+    ~~~
+    source /laboratorio_remo_remasterizado/labremoto/ros_ws/install/setup.bash
+    ~~~
+
+- Colcon Build: Package and creation (**_Just in a new project_**)
 
 With the command: `ros2 pkg create --build-type ament_python pnodos` create the package to work
 >In this project the package is named: _pnodos_
@@ -272,7 +289,7 @@ def generate_launch_description():
     )
 ~~~
 
-## Version 0.1 - Firsts steps
+## Version 0.1 | Firsts steps
 
 In this commit the changes are: 
 
@@ -414,9 +431,9 @@ Delete some comments
 
 Add all the initial configurations, the directory structure, the files to modify and the to _Version 0_ and _Version 0.1_ code in the nodes. 
 
-## Version 0.2 - Begin the code
+## Version 0.2 | Begin the code
 
-## Version 0.2.1 - Supervisor and Auditor nodes
+## Version 0.2.1 | Supervisor and Auditor nodes
 
 In this commit the changes are:
 
@@ -763,7 +780,7 @@ In this commit the changes are:
 
     Add the _version_ code **0.2** and the _sub-version_ **0.2.1**
 
-* ## Version 0.2.2 - administrator and exit_logger nodes
+* ## Version 0.2.2 | administrator and exit_logger nodes
     * ### File nodefather.py
         - Adding a new sentence to diction_db from the NodeConn class:
 
@@ -1255,6 +1272,8 @@ In this commit the changes are:
 
         - Add the Version 0.2.3 | input_transactioner, transactioner nodes and message attributes (snake_case)
 
+* ## Version 0.3 | Starting the actions
+
 * ## Version 0.3.0 | arduino_inf_server, arduino_inf_client, ActionParentServer, ActionParentClient, venv Python
 
     * ### Node _**arduino_inf_client**_ (new)
@@ -1724,3 +1743,13 @@ In this commit the changes are:
         - *send_feedback()*: Send feedback messages to the client
 
         - *execute_command()*: Execute the command. When it has been executed, mark  the goal as success and return the result
+    
+* ## Version 0.3.4 | Improving the code instructions and the organization of folders and files
+
+    * ### File README.md
+
+        - Modify instructions
+
+        - Fixing some errors
+
+        - Adding more comments
