@@ -20,7 +20,7 @@ class ArduinoActionClient(Node, NodeFather, ActionParentClient):
         self.initialization_notice()
         
     def listener_callback(self, msg):
-        NodeFather.publisher_consoler(self,'Arduino action initializated.', 'File found');
+        NodeFather.publisher_consoler(self,'Arduino action initialized.', 'File found');
         #Mandar el mensaje a la function_callback del ActionParentClient Class
         ActionParentClient.function_callback(self,msg)
     

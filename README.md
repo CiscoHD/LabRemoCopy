@@ -294,7 +294,7 @@ In this commit the changes are:
             Delete some comments
         * **_self.initialization_notice_**
 
-            Modify the line: `msg.data = f"Node {self.get_name()} Initializated//{self.get_name()}, {self.topic_code}, {datetime.now()}"`
+            Modify the line: `msg.data = f"Node {self.get_name()} Initialized//{self.get_name()}, {self.topic_code}, {datetime.now()}"`
             With this, the node send the information to print in the terminal (First part delimited by '//') and the information to save on the database (Second part selimited by '//') 
 
             In this second part: node_name, topic_code and datetime.
@@ -597,7 +597,7 @@ In this commit the changes are:
 
         - Import the **_Auditor_** and **_Operation_** custom messages: `from pvariables.msg import Auditor, Operation`
 
-        - Change the topic initializated in the nodefather: `NodeFather.__init__(self, "db_supervisor")`
+        - Change the topic initialized in the nodefather: `NodeFather.__init__(self, "db_supervisor")`
 
         - Subscription to the **_db_supervisor_** topic, using the **_Operation_** message.
         `self.subscription_ = self.create_subscription(Operation,self.topic_code,self.listener_callback,10)`
@@ -664,7 +664,7 @@ In this commit the changes are:
     * ### Node auditor.py (create)
         - Use the _nodefather_ structure and import the Auditor message: `from pvariables.msg import Auditor`
 
-        - Initializate the class fathers with node name **_auditor_transactions_** and use the **_top_auditor_transactions_** topic.
+        - Initialize the class fathers with node name **_auditor_transactions_** and use the **_top_auditor_transactions_** topic.
 
             ~~~
             Node.__init__(self,'auditor_transactions')
@@ -976,7 +976,7 @@ In this commit the changes are:
         ~~~
 
     * ### File README.md
-        Add the _sub-version_ **0.2.2** and the commands to initializate the nodes
+        Add the _sub-version_ **0.2.2** and the commands to initialize the nodes
 
 * ## Version 0.2.3 | input_transactioner, transactioner nodes and message attributes (snake_case)
 
@@ -1279,7 +1279,7 @@ In this commit the changes are:
 
             * **_PortNotFoundError_**
 
-        - **_init()_**: Initializate the server action with the method from class
+        - **_init()_**: Initialize the server action with the method from class
 
             ~~~
             ActionParentServer.__init__(self, CargaHex, 'arduino_inf')
@@ -1588,7 +1588,7 @@ In this commit the changes are:
     
     * ### File README
 
-        - Adding instructions and fixing steps to initializate the venv
+        - Adding instructions and fixing steps to initialize the venv
 
 * ## Version 0.3.2 | Directory Try and modify class name
 
@@ -1603,3 +1603,124 @@ In this commit the changes are:
         - Some changes minors
 
         - Change the importation to **_parent_class_**
+
+* ## Version 0.3.3 | Modularization of the parent class
+
+    * ### Directory _parent_class_ 
+
+        - In this directory, there are the class python files and the __*__init __.py*__ file to import all classes, replacing the **_nodefather.py_** file
+    
+    * ### File *__init __.py*
+
+        - **_main_function_** (Before in nodefather.py)
+            
+        - Importing all class files (Now in separate files)
+
+            ~~~
+            from .node_father import NodeFather
+            from .node_conn import NodeConn
+            from .action_parent_server import ActionParentServer
+            from .action_parent_client import ActionParentClient
+            ~~~
+
+        - Use the abstract class __*__all__*__ to export all class
+
+            ~~~
+            __all__ = ['NodeFather','NodeConn','ActionParentServer','ActionParentClient','main_base']
+            ~~~
+
+    * ### File __*node_conn.py*__ and __*node_father.py*__: The same class, just changing the imports
+
+        - _Conn_ (imports)
+
+            ~~~
+            import sqlite3
+            ~~~
+
+        - _Father_ (imports)
+
+            ~~~
+            from pvariables.msg import Operation, Auditor, LogExit
+            from datetime import datetime
+            import pandas as pd
+            ~~~
+        
+    * ### File __*action_parent_client.py*__
+
+        - Fixing all structure for a correct functionally
+
+        - *function_callback()*
+
+            * Receive the message and verify if is the arduino or vhdl action
+
+            * Execute the *send_goal()* with the correct params
+
+        - *send_goal()*
+
+            * Start the **_goal_** with the action type
+
+            * Execute the *wait_for_server()* method from *_action_client*
+
+            * Send the async goal and the feedback_callback 
+            
+                ~~~
+                self._send_goal_future = self._action_client.send_goal_async(goal_msg,feedback_callback=self.feedback_callback)
+                ~~~
+            * Add the done_callback to execute when the goal is finished
+
+                ~~~
+                self._send_goal_future.add_done_callback(self.goal_response_callback)
+                ~~~
+
+        - *goal_response_callback()*
+
+            * Get the result from future (_result returned from server action_)
+
+            * Verify that the goal was accepted by the server action
+
+            * Get the async result 
+
+                ~~~
+                self._get_result_future = goal_handle.get_result_async()
+                ~~~
+
+            * Add the done result action to execute when the results had been received
+
+                ~~~
+                self._get_result_future.add_done_callback(self.get_result_callback)
+                ~~~
+        - *get_result_callback()*
+
+            * Get the result
+
+                ~~~
+                result = future.result().result.status_final 
+                ~~~
+            
+            * Print the result on console
+
+                ~~~
+                NodeFather.publisher_consoler(self,result,'Action result')
+                ~~~
+
+            * Publish the result on *auditor*
+
+                ~~~
+                NodeFather.auditor_msg(self, logprocess=f"Goal sent from {self.get_name()} and result {result}", typetransaction="Goal Finished")
+                ~~~
+        - *feedback_callback()*
+
+            * Receive the feedback.status from feedback
+
+            * Print the feedback on console
+
+                ~~~
+                #Recibiendo feedback del action_server y publicando en consola
+                ~~~
+    * ### File __*action_parent_server.py*__
+
+        - *execute_goal()*: Save the *goal_handle* and initialize the feedback. Called first by the instance and send feedback
+
+        - *send_feedback()*: Send feedback messages to the client
+
+        - *execute_command()*: Execute the command. When it has been executed, mark  the goal as success and return the result
