@@ -34,9 +34,12 @@ setup(
             'exit_logger = pnodos.exit_logger:main',
             'transactioner = pnodos.transactioner:main',
             'input_transactioner = pnodos.input_transactioner:main',
-            #Action ------------------------------------- CargaHex
+            #Action ------------------------------------- HexCharge
             'arduino_inf_client = pnodos.arduino_inf_client:main',
-            'arduino_inf_server = pnodos.arduino_inf_server:main'
+            'arduino_inf_server = pnodos.arduino_inf_server:main',
+            #Action ------------------------------------- BinCharge
+            'esp32_inf_client = pnodos.esp32_inf_client:main',
+            'esp32_inf_server = pnodos.esp32_inf_server:main'
 
         ],
     },

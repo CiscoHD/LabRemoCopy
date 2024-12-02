@@ -1769,3 +1769,45 @@ In this commit the changes are:
     * ### File README.md
 
         - Adding the v0.3.5
+    
+* ## Version 0.3.6 | esptool, action and message to use with the esp32
+
+    * File **_setup.py_**: Adding the nodes for the action to program the esp32
+
+        ~~~
+            'esp32_inf_client = pnodos.esp32_inf_client:main',
+            'esp32_inf_server = pnodos.esp32_inf_server:main'
+        ~~~
+
+    * Message **_FileBinLoad_**: This message is used to receive message by the esp32 client
+
+        ~~~
+        string path_bin
+        string status
+        ~~~
+
+    * Action **_BinCharge.action_**: This action is used by the esp32 microcontroller
+
+        ~~~
+        string path_bin
+        ---
+        string status_final
+        ---
+        string status
+        ~~~
+
+    * Action ChargeHex.action -> **_HexCharge.action_**: Just rename the action
+
+    * File **_CMakeLists.txt_**: Adding `msg/FileBinLoad.msg` and `action/BinCharge.action`
+
+    * File **_topics.csv_**
+
+        - Adding the *top_files_bin* topic and update the topic codes
+
+    * File **_requirements.txt_**
+
+        - Add the module _esptool.py_ and update the file: `pip install esptool.py`
+
+    * File **_README.md_**
+
+        - Adding the v0.3.6

@@ -22,6 +22,7 @@ set(msg_files
 "msg/CreateBitStream.msg"
 "msg/FileHexLoad.msg"
 "msg/TransInput.msg"
+"msg/FileBinLoad.msg"
 )
 
 #set(srv_files
@@ -29,7 +30,8 @@ set(msg_files
 #)
 
 set(action_files
-"action/CargaHex.action"
+"action/HexCharge.action"
+"action/BinCharge.action"
 )
 
 
