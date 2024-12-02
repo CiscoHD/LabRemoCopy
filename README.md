@@ -1811,3 +1811,63 @@ In this commit the changes are:
     * File **_README.md_**
 
         - Adding the v0.3.6
+
+* ## Version 0.3.7 | Using the custom exceptions, improving the action_parent_server and the action_parent_client
+
+    * Launch **_nodos_inicio.launch.py_**: Adding the esp32 action nodes
+
+    * Class **_NodeConn_** 
+
+        - Implementing the custom exceptions: `DataBaseNotConnected, RowNotFoundError`
+
+        - Create the *callback_error* method to print the error messages
+
+        - Deleting the errors dictionary
+
+        - Deleting the contract verification (Now on _administrator_)
+
+    * Class **_ActionParentServer_**
+
+        - Modify the *execute_command* to replace _os.popen()_ to **_subprocess.check_output(command,shell=True,text=True)_**
+
+            ~~~
+            import subprocess
+            ~~~
+
+        - Modify the *callback_error* to use the message from exceptions and deleting some printed message duplicates in client
+
+        - Adding the *available_port()* method: To check if the custom name port is available. Return True or False and a False raise a custom exception.
+
+        - Adding the commands to use th esp32 and the raspberry
+
+        - Deleting the errors dictionary
+
+    * Class **_ActionParentClient_**
+        
+        - Deliting the *function_callback* method
+
+        - Adding conditional to use *path_bin* and *path_hex*
+    
+    * Node **_transactioner.py_**
+
+        - Adding a path to _.bin_ file (demo): `#file_path = '/home/laboratorio_remo_remasterizado/labremoto/files/build/blink.ino.with_bootloader.bin'`
+
+        - Adding conditional to use esp32, arduino, vhdl, raspberry, etc...
+
+        - Creating a publisher for the esp32: `self.publisher_esp32_ = self.create_publisher(FileBinLoad, self.get_code_tema('top_files_bin'),10)`
+
+    * Node **_input_transactioner.py_**: Some comments
+
+    * Node **_administrator.py_**
+
+        - Adding the custom exceptions (database): `ContractNotValidError`
+        
+        - Change the verification of contracts logic to *listener_callback* method (Before in _NodeConn_)
+
+    * Node **_arduino_inf_client.py_**: Adding the arguments to use *send_goal* method
+
+    * Node **_arduino_inf_server.py_**: Modify the params of *callback_error* to use the custom exceptions and using the custom name on microcontroller port
+
+    * Node *__esp32_inf_client.py__*: Imlementing the esp32, using _FileBinLoad_ message and _BinCharge_ action
+
+    * Node *__esp32_inf_server.py__*: Imlementing the esp32 action server, using the custom exceptions

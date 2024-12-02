@@ -2,7 +2,7 @@ import rclpy
 from rclpy.action import ActionServer
 from rclpy.node import Node
 from parent_class import NodeFather
-from pvariables.action import CargaHex
+from pvariables.action import HexCharge
 
 class FibonacciActionServer(Node,NodeFather):
 
@@ -11,14 +11,14 @@ class FibonacciActionServer(Node,NodeFather):
         NodeFather.__init__(self)
         self._action_server = ActionServer(
             self,
-            CargaHex,
+            HexCharge,
             'fibonacci',
             self.execute_callback)
 
     def execute_callback(self, goal_handle):
         NodeFather.publisher_consoler(self,'Executing goal...')
 
-        feedback_msg = CargaHex.Feedback()
+        feedback_msg = HexCharge.Feedback()
         feedback_msg.status = str([0, 1])
 
         for i in range(1, int(goal_handle.request.path_hex)):
@@ -28,7 +28,7 @@ class FibonacciActionServer(Node,NodeFather):
 
         goal_handle.succeed()
 
-        result = CargaHex.Result()
+        result = HexCharge.Result()
         result.status_final = feedback_msg.status
         return result
 

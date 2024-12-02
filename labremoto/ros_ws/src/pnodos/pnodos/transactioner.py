@@ -1,5 +1,5 @@
 import rclpy
-from pvariables.msg import TransGlobal, FileHexLoad, CreateBitStream
+from pvariables.msg import TransGlobal, FileHexLoad, FileBinLoad, CreateBitStream
 from rclpy.node import Node
 from parent_class import NodeFather, main_base
 
@@ -17,6 +17,7 @@ class AdminTransactioner(Node, NodeFather):
 
         self.publisher_arduino_ = self.create_publisher(FileHexLoad, self.get_code_tema('top_files_hex'), 10)
         self.publisher_bit_ = self.create_publisher(CreateBitStream, self.get_code_tema('top_files_bit'), 10)
+        self.publisher_esp32_ = self.create_publisher(FileBinLoad, self.get_code_tema('top_files_bin'),10)
 
         self.initialization_notice()
         
@@ -28,19 +29,31 @@ class AdminTransactioner(Node, NodeFather):
         # TODO En esta variable se podría crear una función que busque u obtenga el archivo
         # ! Podría ser con el folio que se pasa en el mensaje y después buscar el archivo en DB
         file_path = '/home/laboratorio_remo_remasterizado/labremoto/files/build/blink.ino.hex'
+        #* Path del binario para la esp32
+        #file_path = '/home/laboratorio_remo_remasterizado/labremoto/files/build/blink.ino.with_bootloader.bin'
         #* Usando path de archivo de prueba
         #? de dónde vendrá este path? En dónde estará ubicado?
         type_action = None
-        if msg.name_node == '':
+        if msg.name_node == 'arduino': #Revisar si puedo poner otro parámetro para distinguir el tipo de acción
             msg_type = FileHexLoad()
             msg_type.path_hex = file_path
             type_action = 'Arduino'
             self.publisher_arduino_.publish(msg_type)
-        else:
+
+        elif msg.name_node == 'vhdl':
             msg_type = CreateBitStream()
             msg_type.path_vhdl = file_path
             type_action = 'VHDL'
-            self.publisher_bit_.publish(msg_type)   
+            self.publisher_bit_.publish(msg_type)
+
+        elif msg.name_node == 'esp32':
+            msg_type = FileBinLoad()
+            msg_type.path_bin = file_path
+            type_action = 'ESP32'
+            self.publisher_esp32_.publish(msg_type)
+            
+        elif msg.name_node == 'raspberry':
+            pass
 
         NodeFather.publisher_consoler(self, type_action, "Selecting type action")
     

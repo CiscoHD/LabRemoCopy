@@ -1,7 +1,8 @@
 import rclpy
-from pvariables.msg import Contract, TransGlobal, LogExit
+import time
+from pvariables.msg import Contract, TransGlobal
 from rclpy.node import Node
-from parent_class import NodeFather, NodeConn, main_base
+from parent_class import NodeFather, NodeConn, ContractNotValidError, main_base
 
 class AdministratorContracts(Node, NodeFather, NodeConn):
     
@@ -22,20 +23,40 @@ class AdministratorContracts(Node, NodeFather, NodeConn):
         self.initialization_notice()
         
     def listener_callback(self, msg):
-        NodeFather.publisher_consoler(self, msg.id_contract, "Request received for contract")
-        #Envia mensaje a base de datos para consultar validez
-        result,data = NodeConn.request_info_db(self,'admin',msg.id_contract)
-        NodeFather.publisher_consoler(self, data, result)
-        if not data == None: #Si no hay data, es un error
-            msg_tran_accepted = TransGlobal()
+        try:
+            NodeFather.publisher_consoler(self, msg.id_contract, "Request received for contract")
+            result, data = NodeConn.request_info_db(self,'contract',msg.id_contract)#Envia mensaje a base de datos para consultar validez
+            NodeFather.publisher_consoler(self, data, result) #Publica los resultados
+            
+            #! Ahora el contrato se va a validar desde aquí (Serái bueno usar un atributo en la fila)
+            # ! Falta desarrollar las condiciones para que sea un contrato aceptada o valido
+            # TODO Hacer la función de verificación de contratos
+            #Comunicación con el backend, a través de ROS BRIDGE se recibe las operaciones y el certificado
+            #Enviar al back y esperar TRUE or FALSE (algo por el estílo para verificar que la operación a realizar sea válida)
+            #raise ContractNotValidError() #*Usar esta en caso de que después de verificarlo no sea valido 
+
+            #? Mensajes provicional para pruebas - ARDUINO
+        #    data = {'result' : 'Pruebas', 'status' : 'accepted', 'name_node' : 'arduino', 'date' : 'TimeActual', 'folio' : 'Assigned by BBDD' }
+            #? ESP32
+            data = {'result' : 'Pruebas', 'status' : 'accepted', 'name_node' : 'esp32', 'date' : time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), 'folio' : 'Assigned by BBDD' }
+
+
+            msg_tran_accepted = TransGlobal()#En caso de que salga bien inicia el mensaje con la información que viene de la base
+            #TODO: Tal vez agregar aquí otro identificador más explicito para saber la operación a realizar // por ejemplo: action = data.get('type_action) o algo por el estilo
             msg_tran_accepted.result = data.get('result')
             msg_tran_accepted.status = data.get('status')
             msg_tran_accepted.name_node = data.get('name_node')
             msg_tran_accepted.date = data.get('date')
             msg_tran_accepted.folio = data.get('folio')
+
             NodeFather.publisher_consoler(self,msg_tran_accepted,'Transaction published')
-            self.publisher_admintrans_.publish(msg_tran_accepted)
-    
+            self.publisher_admintrans_.publish(msg_tran_accepted) #Publica en las transacciones aceptadas
+        except ContractNotValidError(e):
+            self.callback_error(e)
+
+        except Exception as e:
+            self.callback_error(e)
+
 def main(args=None):
     rclpy.init(args=args)
     administrator = AdministratorContracts()

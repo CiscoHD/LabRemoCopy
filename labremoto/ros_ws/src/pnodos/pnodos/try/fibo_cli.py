@@ -3,20 +3,20 @@ from pvariables.msg import FileHexLoad
 from rclpy.action import ActionClient
 from rclpy.node import Node
 from parent_class import NodeFather
-from pvariables.action import CargaHex
+from pvariables.action import HexCharge
 
 class FibonacciActionClient(Node,NodeFather):
 
     def __init__(self):
         Node.__init__(self,'fibonacci_action_client')
         NodeFather.__init__(self,'top_files_hex')
-        self._action_client = ActionClient(self, CargaHex, 'fibonacci')
+        self._action_client = ActionClient(self, HexCharge, 'fibonacci')
 
         self.subscription_ = self.create_subscription(FileHexLoad, self.topic_code, self.listener_callback, 10)
         self.subscription_
 
     def send_goal(self, order):
-        goal_msg = CargaHex.Goal()
+        goal_msg = HexCharge.Goal()
         goal_msg.path_hex = order
 
         self._action_client.wait_for_server()

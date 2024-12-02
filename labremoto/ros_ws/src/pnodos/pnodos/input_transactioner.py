@@ -28,14 +28,16 @@ class InputTransactioner(Node, NodeFather, NodeConn):
         # NodeFather.publisher_consoler(self,msg.type_transaction,"Input transaction received")
         # result,data = NodeConn.request_info_db(self, "input_transactioner", msg.id_student)
     
-        # if result > 1:
+        # if not result == 1:
         #     #Si hay errores los imprime en consola  
         #     NodeFather.publisher_consoler(self,result[1],result[0])
         # elif msg.type_transaction == "charge_hex":
+        #TODO: Agregar un condicional provicional que sirva para hacer las pruebas entre tarjetas
+        #TODO: Una vez que haya terminado con todas las tarjetas revisar la base de datos para comenzar las conexiones y ver la estructura de datos que utiliza
             msg_contract = Contract()
             ## ? Por qué el id 4?
             ## ! Hay que revisar que tal vez aquí se envie el id del estudiante
-            #! -------- Falta cambiar para usar la variable data para armar el mensaje
+            #! -------- Falta cambiar para usar la variable data (viene de base de datos) para armar el mensaje
             msg_contract.id_contract = 4
             msg_contract.name_contract = 'charge'
             msg_contract.type_contract = 'hex'
