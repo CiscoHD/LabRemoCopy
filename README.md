@@ -1278,7 +1278,7 @@ In this commit the changes are:
 
     * ### Node _**arduino_inf_client**_ (new)
 
-        - Use the _**ActionParentClient**_ class and the action _**CargaHex.action**_
+        - Use the _**ActionParentClient**_ class and the action _**HexCharge.action**_
 
         - Subscription to _top_files_hex_ topic
 
@@ -1290,7 +1290,7 @@ In this commit the changes are:
 
     * ### Node _**arduino_inf_server**_ (new)
 
-        - Use the _**ActionParentServer**_ class and the action _**CargaHex.action**_
+        - Use the _**ActionParentServer**_ class and the action _**HexCharge.action**_
 
         - Custom exception for the errors:
 
@@ -1301,7 +1301,7 @@ In this commit the changes are:
         - **_init()_**: Initialize the server action with the method from class
 
             ~~~
-            ActionParentServer.__init__(self, CargaHex, 'arduino_inf')
+            ActionParentServer.__init__(self, HexCharge, 'arduino_inf')
             ~~~
         - **_execute_callback_**:
 
@@ -1441,7 +1441,7 @@ In this commit the changes are:
 
             * **_auditor_msg_**: change the _msg_ to _msg_auditor_
 
-    * ### Action CargaHex.action
+    * ### Action HexCharge.action
 
         - This action is used for the action to programm the arduino microcontroller
 
@@ -1585,11 +1585,11 @@ In this commit the changes are:
 
     * ### File CMakeLists.txt
 
-        - Adding the action _CargaHex_
+        - Adding the action _HexCharge_
 
         ~~~
         set(action_files
-        "action/CargaHex.action"
+        "action/HexCharge.action"
         )
         ~~~
 
@@ -1753,3 +1753,19 @@ In this commit the changes are:
         - Fixing some errors
 
         - Adding more comments
+
+* ## Version 0.3.5 | Adding the exceptions, for contracts actions and node_conn to database
+
+    * ### File _exceptions.py_: This file is used to save the custom exceptions for the entire system with a unique message for each exception
+
+        - **_Database_** Exceptions: Exceptions for node_conn class: `RowNotFoundError, DataBaseNotConnected, DataNotFoundError`
+
+        - **_Contracts_** Exceptions: Exceptions for contracts and command execution in action_parent_server: `DeviceNotFoundError, PortNotFoundError, ContractNotValidError, CommandExecutionFailedError, FileNotFoundError`
+
+    * ### File *_init__.py*
+
+        - Adding the new classes from exception.py file
+
+    * ### File README.md
+
+        - Adding the v0.3.5
