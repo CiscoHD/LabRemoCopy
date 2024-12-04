@@ -20,10 +20,9 @@ class ActionParentServer:
             # TODO: Tal vez se pueda combinar en un solo comando
             'charge_bit' : 'openFPGALoader -b xc7z010 {path_bitstream}',
             #Carga el archivo .bin en la esp-32
-            #TODO: Instalar esptool
             'esp32': 'esptool.py --port {port} write_flash 0x1000 {file_path}',
-            #Prueba para rasperry. Ejemplo: rshell -p /dev/ttyACM0 cp main.py /pyboard/
-            'rasperry' : 'rshell -p {port} cp {file_path} /pyboard/'
+            #Prueba para raspberry. Ejemplo: rshell -p /dev/ttyACM0 cp main.py /pyboard/
+            'raspberry' : 'rshell -p {port} cp {file_path} /pyboard/'
         }
 
     def available_port(self,port_name): #Recibe el nombre personalizado del puerto (Modificación de reglas de los nombres de los puertos
@@ -60,8 +59,9 @@ class ActionParentServer:
             command = command_template.format(port=port, file_path=file_path, constrain_path=constrain_path)
             self.send_feedback('Executing command')#Feedback para mostrar el progreso         
 
-            subprocess.check_output(command,shell=True,text=True)#Ejecución del comando, usar este módulo para manejo de excepciones
-            self.send_feedback('Command executed successfully') #Feedback de que la acción se completo con éxito
+            result = subprocess.check_output(command,shell=True,text=True)#Ejecución del comando, usar este módulo para manejo de excepciones
+            
+            self.send_feedback(f'Command executed successfully: {result}') #Feedback de que la acción se completo con éxito
            
             self.goal_handle.succeed()#Marca la tarea como completada
             self.result.status_final = 'Command executed successfully' #Publica el status de la tarea        

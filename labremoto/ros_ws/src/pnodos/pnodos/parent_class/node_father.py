@@ -28,9 +28,9 @@ class NodeFather:
         msg.status_operation = "Started"
         msg.date_operation = f"{datetime.now()}"
         msg.topic_operation = f"{self.topic_code}"
-
+        # Genera el topic para publicar
         topic = self.get_code_tema('top_supervisor_operations')
-        self.create_publisher(Operation, topic, 10).publish(msg)
+        self.create_publisher(Operation, topic, 10).publish(msg) #Publica
 
     def auditor_msg(self, logprocess="", idnote=0, iduser="", typetransaction=""):
         #Crea un publisher para el topic y message de Auditor
@@ -50,10 +50,7 @@ class NodeFather:
     #Ahora esta función se va a encargar de publicar en el nodo de consola
     #def listener_callback(self,msg,info_msg='Message received'):
     def publisher_consoler(self,msg,info_msg='Message received'):
-        msg_consoler_ = LogExit()
-        #Creando mensaje de consola con los datos pasados en la función
-        # * Informe general del tipo de mensaje
-        msg_consoler_.log_exit = str(info_msg)
-        # * Status (Más detalles del mensaje)
-        msg_consoler_.status = str(msg)
-        self.create_publisher(LogExit, self.get_code_tema('top_console'), 10).publish(msg_consoler_)
+        msg_consoler_ = LogExit()#Creando mensaje de consola con los datos pasados en la función
+        msg_consoler_.log_exit = str(info_msg)# Informe general del tipo de mensaje
+        msg_consoler_.status = str(msg)# Status (Más detalles del mensaje)
+        self.create_publisher(LogExit, self.get_code_tema('top_console'), 10).publish(msg_consoler_) #Publicando

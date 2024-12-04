@@ -10,12 +10,42 @@ def generate_launch_description():
                 executable = 'arduino_inf_server',
                 output = 'screen'
             ),
+            Node(
+                package = 'pnodos',
+                executable = 'esp32_inf_server',
+                output = 'screen'
+            ),
+            Node(
+                package = 'pnodos',
+                executable = 'rasp_inf_server',
+                output = 'screen'
+            ),
             TimerAction(
                 period = 2.5,  # Espera 2.5 segundos antes de iniciar el siguiente nodo
                 actions = [
                     Node(
                         package = 'pnodos',
                         executable = 'arduino_inf_client',
+                        output = 'screen'
+                    )
+                ]
+            ),
+            TimerAction(
+                period = 2.5,  # Espera 2.5 segundos antes de iniciar el siguiente nodo
+                actions = [
+                    Node(
+                        package = 'pnodos',
+                        executable = 'esp32_inf_client',
+                        output = 'screen'
+                    )
+                ]
+            ),
+            TimerAction(
+                period = 2.5,  # Espera 2.5 segundos antes de iniciar el siguiente nodo
+                actions = [
+                    Node(
+                        package = 'pnodos',
+                        executable = 'rasp_inf_client',
                         output = 'screen'
                     )
                 ]

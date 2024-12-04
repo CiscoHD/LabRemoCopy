@@ -39,8 +39,10 @@ setup(
             'arduino_inf_server = pnodos.arduino_inf_server:main',
             #Action ------------------------------------- BinCharge
             'esp32_inf_client = pnodos.esp32_inf_client:main',
-            'esp32_inf_server = pnodos.esp32_inf_server:main'
-
+            'esp32_inf_server = pnodos.esp32_inf_server:main',
+            #Action --------------------------------------
+            'rasp_inf_client = pnodos.rasp_inf_client:main',
+            'rasp_inf_server = pnodos.rasp_inf_server:main'
         ],
     },
 )

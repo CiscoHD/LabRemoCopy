@@ -1,6 +1,7 @@
 labremoto/ros_ws/build/
 labremoto/ros_ws/install/
 labremoto/ros_ws/log/
+labremoto/ros_ws/src/pnodos/test/
 labremoto/ros_ws/src/pnodos/pnodos/__pycache__/
 labremoto/ros_ws/src/pnodos/pnodos/__pycache__/nodefather.cpython-310.pyc
 labremoto/.vscode/

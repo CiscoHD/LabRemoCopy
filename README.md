@@ -2,7 +2,7 @@
 laboratorio_remo_remasterizado
 **Using ros2 humble on ubuntu 22.04**
 
-# Commands to init the nodes (v0.3.8)
+# Commands to init the nodes (v0.3.9)
 
 _In the directory before LabRemo/_ execute the command: `python3 -m virtualenv LabRemo/` to init the virtual enviroment
 
@@ -28,9 +28,19 @@ Then...
 
 # Extra installations
 
-* **Arduino Cli** For use the arduino commands `https://arduino.github.io/arduino-cli/1.0/installation/`
+* **Arduino Cli** To use the arduino commands `https://arduino.github.io/arduino-cli/1.0/installation/`
 
-* **ESPTOOL.PY** For use the esp32 microcontroller `pip install esptool.py`
+* **ESPTOOL.PY** To use the esp32 microcontroller `pip install esptool.py`
+
+* **RSHELL** To use the raspberry and connect to its console `sudo apt install pyboard-rshell`
+
+    ~~~
+    rshell -p /dev/raspberry #To connect to the raspberry
+
+    repl #To execute the python enviorement
+
+    import {file_path} #To execute the python script
+    ~~~
 
 # Extra configurations
 
@@ -59,6 +69,7 @@ Then...
         ~~~
         SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="arduino_uno"
         SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="esp32"
+        SUBSYSTEM=="tty", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0005", SYMLINK+="raspberry"
         ~~~
 
 ## Version 0 
@@ -1307,7 +1318,7 @@ In this commit the changes are:
 
 * ## Version 0.3.0 | arduino_inf_server, arduino_inf_client, ActionParentServer, ActionParentClient, venv Python
 
-    * ### Node _**arduino_inf_client**_ (new)
+    * ### (NEW) Node _**arduino_inf_client**_ (new)
 
         - Use the _**ActionParentClient**_ class and the action _**HexCharge.action**_
 
@@ -1319,7 +1330,7 @@ In this commit the changes are:
             ActionParentClient.function_callback(self,msg)
             ~~~
 
-    * ### Node _**arduino_inf_server**_ (new)
+    * ### (NEW) Node _**arduino_inf_server**_ (new)
 
         - Use the _**ActionParentServer**_ class and the action _**HexCharge.action**_
 
@@ -1472,7 +1483,7 @@ In this commit the changes are:
 
             * **_auditor_msg_**: change the _msg_ to _msg_auditor_
 
-    * ### Action HexCharge.action
+    * ### (NEW) Action HexCharge.action
 
         - This action is used for the action to programm the arduino microcontroller
 
@@ -1608,7 +1619,7 @@ In this commit the changes are:
             ~~~
 
 
-    * ### File requirements.txt
+    * ### (NEW) File requirements.txt
 
         - In this file, there is a list of packages and sources with the version to use in the venv
 
@@ -1656,11 +1667,11 @@ In this commit the changes are:
 
 * ## Version 0.3.3 | Modularization of the parent class
 
-    * ### Directory _parent_class_ 
+    * ### (NEW) Directory _parent_class_ 
 
         - In this directory, there are the class python files and the __*__init __.py*__ file to import all classes, replacing the **_nodefather.py_** file
     
-    * ### File *__init __.py*
+    * ### (NEW) File *__init __.py*
 
         - **_main_function_** (Before in nodefather.py)
             
@@ -1695,7 +1706,7 @@ In this commit the changes are:
             import pandas as pd
             ~~~
         
-    * ### File __*action_parent_client.py*__
+    * ### (NEW) File __*action_parent_client.py*__
 
         - Fixing all structure for a correct functionally
 
@@ -1767,7 +1778,7 @@ In this commit the changes are:
                 ~~~
                 #Recibiendo feedback del action_server y publicando en consola
                 ~~~
-    * ### File __*action_parent_server.py*__
+    * ### (NEW) File __*action_parent_server.py*__
 
         - *execute_goal()*: Save the *goal_handle* and initialize the feedback. Called first by the instance and send feedback
 
@@ -1787,7 +1798,7 @@ In this commit the changes are:
 
 * ## Version 0.3.5 | Adding the exceptions, for contracts actions and node_conn to database
 
-    * ### File _exceptions.py_: This file is used to save the custom exceptions for the entire system with a unique message for each exception
+    * ### (NEW) File _exceptions.py_: This file is used to save the custom exceptions for the entire system with a unique message for each exception
 
         - **_Database_** Exceptions: Exceptions for node_conn class: `RowNotFoundError, DataBaseNotConnected, DataNotFoundError`
 
@@ -1803,21 +1814,21 @@ In this commit the changes are:
     
 * ## Version 0.3.6 | esptool, action and message to use with the esp32
 
-    * File **_setup.py_**: Adding the nodes for the action to program the esp32
+    * ### File **_setup.py_**: Adding the nodes for the action to program the esp32
 
         ~~~
             'esp32_inf_client = pnodos.esp32_inf_client:main',
             'esp32_inf_server = pnodos.esp32_inf_server:main'
         ~~~
 
-    * Message **_FileBinLoad_**: This message is used to receive message by the esp32 client
+    * ### (NEW) Message **_FileBinLoad_**: This message is used to receive message by the esp32 client
 
         ~~~
         string path_bin
         string status
         ~~~
 
-    * Action **_BinCharge.action_**: This action is used by the esp32 microcontroller
+    * ### (NEW) Action **_BinCharge.action_**: This action is used by the esp32 microcontroller
 
         ~~~
         string path_bin
@@ -1827,27 +1838,27 @@ In this commit the changes are:
         string status
         ~~~
 
-    * Action ChargeHex.action -> **_HexCharge.action_**: Just rename the action
+    * ### Action ChargeHex.action -> **_HexCharge.action_**: Just rename the action
 
-    * File **_CMakeLists.txt_**: Adding `msg/FileBinLoad.msg` and `action/BinCharge.action`
+    * ### File **_CMakeLists.txt_**: Adding `msg/FileBinLoad.msg` and `action/BinCharge.action`
 
-    * File **_topics.csv_**
+    * ### File **_topics.csv_**
 
         - Adding the *top_files_bin* topic and update the topic codes
 
-    * File **_requirements.txt_**
+    * ### File **_requirements.txt_**
 
         - Add the module _esptool.py_ and update the file: `pip install esptool.py`
 
-    * File **_README.md_**
+    * ### File **_README.md_**
 
         - Adding the v0.3.6
 
 * ## Version 0.3.7 | Using the custom exceptions, improving the action_parent_server and the action_parent_client
 
-    * Launch **_nodos_inicio.launch.py_**: Adding the esp32 action nodes
+    * ### Launch **_nodos_inicio.launch.py_**: Adding the esp32 action nodes
 
-    * Class **_NodeConn_** 
+    * ### Class **_NodeConn_** 
 
         - Implementing the custom exceptions: `DataBaseNotConnected, RowNotFoundError`
 
@@ -1857,7 +1868,7 @@ In this commit the changes are:
 
         - Deleting the contract verification (Now on _administrator_)
 
-    * Class **_ActionParentServer_**
+    * ### Class **_ActionParentServer_**
 
         - Modify the *execute_command* to replace _os.popen()_ to **_subprocess.check_output(command,shell=True,text=True)_**
 
@@ -1873,13 +1884,13 @@ In this commit the changes are:
 
         - Deleting the errors dictionary
 
-    * Class **_ActionParentClient_**
+    * ### Class **_ActionParentClient_**
         
         - Deliting the *function_callback* method
 
         - Adding conditional to use *path_bin* and *path_hex*
     
-    * Node **_transactioner.py_**
+    * ### Node **_transactioner.py_**
 
         - Adding a path to _.bin_ file (demo): `#file_path = '/home/laboratorio_remo_remasterizado/labremoto/files/build/blink.ino.with_bootloader.bin'`
 
@@ -1887,24 +1898,143 @@ In this commit the changes are:
 
         - Creating a publisher for the esp32: `self.publisher_esp32_ = self.create_publisher(FileBinLoad, self.get_code_tema('top_files_bin'),10)`
 
-    * Node **_input_transactioner.py_**: Some comments
+    * ### Node **_input_transactioner.py_**: Some comments
 
-    * Node **_administrator.py_**
+    * ### Node **_administrator.py_**
 
         - Adding the custom exceptions (database): `ContractNotValidError`
         
         - Change the verification of contracts logic to *listener_callback* method (Before in _NodeConn_)
 
-    * Node **_arduino_inf_client.py_**: Adding the arguments to use *send_goal* method
+    * ### Node **_arduino_inf_client.py_**: Adding the arguments to use *send_goal* method
 
-    * Node **_arduino_inf_server.py_**: Modify the params of *callback_error* to use the custom exceptions and using the custom name on microcontroller port
+    * ### Node **_arduino_inf_server.py_**: Modify the params of *callback_error* to use the custom exceptions and using the custom name on microcontroller port
 
-    * Node *__esp32_inf_client.py__*: Imlementing the esp32, using _FileBinLoad_ message and _BinCharge_ action
+    * ### (NEW) Node *__esp32_inf_client.py__*: Imlementing the esp32, using _FileBinLoad_ message and _BinCharge_ action
 
-    * Node *__esp32_inf_server.py__*: Imlementing the esp32 action server, using the custom exceptions
+    * ### (NEW) Node *__esp32_inf_server.py__*: Imlementing the esp32 action server, using the custom exceptions
+
+    * ### File **_README.md_**
+
+        - Adding the v0.3.7
 
 * ## Version 0.3.8 | Customizing the port names
 
-    * File _README.md_
+    * ### File **_README.md_**
 
         - Adding the instructions to modify the _name port_ rules and create custom names (For actions)
+
+        - Adding the v0.3.8
+* ## Version 0.3.9 | Raspberry action: rasp_inf_client, rasp_inf_server, rshell
+
+    * ### (NEW) Node Action Client __*rasp_inf_client.py*__
+
+    * ### (NEW) Node Action Server __*rasp_inf_server.py*__
+
+    * ### Node **_administrator.py_**
+
+        - Modify the _data_ variable to execute the raspberry action
+
+    * ### Node **_transactioner.py_**
+
+        - Creating the publisher to publish in raspberry topic: `self.publisher_raspberry_ = self.create_publisher(FilePyLoad, self.get_code_tema('top_files_py'),10)`
+
+        - Modify the *file_path* to use a python script
+
+        - Creating the message to publish in raspberry topic
+
+            ~~~
+            ...
+            elif msg.name_node == 'raspberry':
+                msg_type = FilePyLoad()
+                msg_type.path_py = file_path
+                type_action = 'Raspberry'
+                self.publisher_raspberry_.publish(msg_type)
+            ~~~
+
+    * ### Class **_ActionParentClient_**
+
+        - *send_goal* method: adding the *path_py=None* param
+
+        - Modify the conditional sentence to execute the raspberry action
+
+            ~~~
+            if path_hex is None and path_bin is None:
+                goal_msg.path_py = path_py #!Depende del tipo de archivo
+            elif path_bin is None:
+                goal_msg.path_hex = path_hex
+            else:
+                goal_msg.path_bin = path_bin
+            ~~~
+
+    * ### Class **_ActionParentServer_**
+
+        - *execute_command* method: Saving the result from execution and send as feedback
+
+            ~~~
+            result = subprocess.check_output(command,shell=True,text=True)
+            self.send_feedback(f'Command executed successfully: {result}')
+            ~~~
+
+    * ### Launch __*nodos_inicio.launch.py*__
+
+        - Adding the new action nodes
+
+    * ### (NEW) Action **_PyCharge.action_**
+
+        ~~~
+        string path_py
+        ---
+        string status_final
+        ---
+        string status
+        ~~~
+
+    * ### (NEW) Message **_FilePyLoad.msg_**
+
+        ~~~
+        string path_py
+        string status
+        ~~~
+
+    * ### (NEW) File __*prueba_rasp.py*__ 
+
+        - To test the file upload to the raspberry
+    
+    * ### File **_setup.py_** 
+
+        - Adding the new nodes
+
+            ~~~
+            'rasp_inf_client = pnodos.rasp_inf_client:main',
+            'rasp_inf_server = pnodos.rasp_inf_server:main'
+            ~~~
+
+    * ### File **_generate.py_**
+
+        - Improving the code to generate the *topic_codes*
+
+            ~~~
+            topics['code_topic'] = random.randint(1000000000, 9999999999, size=len(topics))
+            topics['date_time'] = datetime.now()
+            ~~~
+
+    * ### File **_topics.csv_**
+        
+        - Adding the *top_files_py* topic
+
+    * ### File **_CMakeLists.txt_**
+
+        - Adding the message and action to use the raspberry
+
+            ~~~
+            "msg/FilePyLoad.msg"
+            ...
+            "action/PyCharge.action"
+            ~~~
+
+    * ### File **_README.md_**
+
+        - Adding the installation and usage instructions for raspberry (Rshell)
+
+        - Adding the v0.3.9
