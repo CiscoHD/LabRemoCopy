@@ -2,7 +2,7 @@
 laboratorio_remo_remasterizado
 **Using ros2 humble on ubuntu 22.04**
 
-# Commands to init the nodes (v0.3.1)
+# Commands to init the nodes (v0.3.8)
 
 _In the directory before LabRemo/_ execute the command: `python3 -m virtualenv LabRemo/` to init the virtual enviroment
 
@@ -29,6 +29,37 @@ Then...
 # Extra installations
 
 * **Arduino Cli** For use the arduino commands `https://arduino.github.io/arduino-cli/1.0/installation/`
+
+* **ESPTOOL.PY** For use the esp32 microcontroller `pip install esptool.py`
+
+# Extra configurations
+
+* Add this command to ~/.bashrc (_Autoexecution in new terminal)_
+
+    ~~~
+    source /laboratorio_remo_remasterizado/labremoto/ros_ws/install/setup.bash
+    ~~~
+
+* Port custom names (Give custom names and use them)
+
+    - First: Check the _productId_ and the _vendorId_ returned by the command: `lsusb`. For example:
+
+        ~~~
+        Device 001: ID 1d6b:0002 // -> // vendorId:productId
+        ~~~
+
+    - With this information, create a new rule in _99-arduino.rules_ file (using nano or another text editor)
+
+        ~~~
+        sudo nano /etc/udev/rules.d/99-arduino.rules
+        ~~~
+
+    - The rule name follows the next template: `SUBSYSTEM=="tty", ATTRS{idVendor}=="`**_vendorID_**`", ATTRS{idProduct}=="`**_productID_**`", SYMLINK+="`**_customName_**`"`.For example (Using it now for the microcontrollers):
+
+        ~~~
+        SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="arduino_uno"
+        SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="esp32"
+        ~~~
 
 ## Version 0 
 
@@ -1871,3 +1902,9 @@ In this commit the changes are:
     * Node *__esp32_inf_client.py__*: Imlementing the esp32, using _FileBinLoad_ message and _BinCharge_ action
 
     * Node *__esp32_inf_server.py__*: Imlementing the esp32 action server, using the custom exceptions
+
+* ## Version 0.3.8 | Customizing the port names
+
+    * File _README.md_
+
+        - Adding the instructions to modify the _name port_ rules and create custom names (For actions)
