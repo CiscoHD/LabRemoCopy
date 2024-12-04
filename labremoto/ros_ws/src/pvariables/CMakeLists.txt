@@ -36,6 +36,7 @@ set(action_files
 "action/BinCharge.action"
 "action/PyCharge.action"
 "action/BitCharge.action"
+"action/VhdlToBit.action"
 )
 
 

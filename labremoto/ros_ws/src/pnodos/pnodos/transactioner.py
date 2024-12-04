@@ -1,5 +1,5 @@
 import rclpy
-from pvariables.msg import TransGlobal, FileHexLoad, FileBinLoad, FilePyLoad, CreateBitStream
+from pvariables.msg import TransGlobal, FileHexLoad, FileBinLoad, FilePyLoad, CreateBitStream, FileBitLoad
 from rclpy.node import Node
 from parent_class import NodeFather, main_base
 
@@ -16,9 +16,10 @@ class AdminTransactioner(Node, NodeFather):
         self.subscription_
 
         self.publisher_arduino_ = self.create_publisher(FileHexLoad, self.get_code_tema('top_files_hex'), 10)
-        self.publisher_bit_ = self.create_publisher(CreateBitStream, self.get_code_tema('top_files_bit'), 10)
         self.publisher_esp32_ = self.create_publisher(FileBinLoad, self.get_code_tema('top_files_bin'),10)
         self.publisher_raspberry_ = self.create_publisher(FilePyLoad, self.get_code_tema('top_files_py'),10)
+        self.publisher_fpga_ = self.create_publisher(FileBitLoad, self.get_code_tema('top_files_bit'), 10)
+        self.publisher_vhdlToBit_ = self.create_publisher(CreateBitStream, self.get_code_tema('top_vhdl_to_bit'), 10)
 
         self.initialization_notice()
         
@@ -35,6 +36,8 @@ class AdminTransactioner(Node, NodeFather):
         #* Path del archivo py para raspberry
         file_path = '/home/laboratorio_remo_remasterizado/labremoto/files/prueba_rasp.py'
         #* Usando path de archivo de prueba
+        file_path_constrains = '' #TODO Falta definir esta parte
+        path_folder = ''
         #? de dónde vendrá este path? En dónde estará ubicado?
         type_action = None
         if msg.name_node == 'arduino': #Revisar si puedo poner otro parámetro para distinguir el tipo de acción
@@ -46,8 +49,10 @@ class AdminTransactioner(Node, NodeFather):
         elif msg.name_node == 'vhdl':
             msg_type = CreateBitStream()
             msg_type.path_vhdl = file_path
-            type_action = 'VHDL'
-            self.publisher_bit_.publish(msg_type)
+            msg_type.path_constrains = file_path_constrains
+            msg_type.path_savefolder = path_folder #Directorio para guardar el .bit
+            type_action = 'VhdlToBit'
+            self.publisher_vhdlToBit_.publish(msg_type)
 
         elif msg.name_node == 'esp32':
             msg_type = FileBinLoad()
@@ -60,6 +65,12 @@ class AdminTransactioner(Node, NodeFather):
             msg_type.path_py = file_path
             type_action = 'Raspberry'
             self.publisher_raspberry_.publish(msg_type)
+
+        elif msg.name_node == 'fpga':
+            msg_type = FileBitLoad()
+            msg_type.path_bit = file_path
+            type_action = 'FPGA'
+            self.publisher_fpga_.publish(msg_type)
 
         NodeFather.publisher_consoler(self, type_action, "Selecting type action")
     

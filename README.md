@@ -72,7 +72,7 @@ Then...
         SUBSYSTEM=="tty", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0005", SYMLINK+="raspberry"
         ~~~
 
-# 🔴Remaining tasks (!) | V 0.4.0
+# 🔴Remaining tasks (!) | V 0.4.0, 0.4.1
 
 * Install the `openFPGALoader` command
 
@@ -80,9 +80,11 @@ Then...
 
 * Create the `.tcl` script to _FPGA_ action to check the connected devices
 
-* Add the node _FPGA_ actions (_client and server_) to the launcher *nodos_inicio.launch.py*
+* Add the node _FPGA_  and VhdlToBit actions (_client and server_) to the launcher *nodos_inicio.launch.py*
 
 * Test the _FPGA_ action and commands
+
+* Test the VhdlToBit
 
 ## Version 0 
 
@@ -2101,3 +2103,79 @@ In this commit the changes are:
         - Adding the installations and remaining tasks.
 
         - Adding the v0.4.0
+
+* ## Version 0.4.1 | Action: VHDL To BitStream
+
+    * ### Node **_transactioner.py_**
+
+        - Create the both publishers to _fpga_ and _vhdlToBit_
+
+            ~~~
+            self.publisher_fpga_ = self.create_publisher(FileBitLoad, self.get_code_tema('top_files_bit'), 10)
+            self.publisher_vhdlToBit_ = self.create_publisher(CreateBitStream, self.get_code_tema('top_vhdl_to_bit'), 10)
+            ~~~
+        - 🔴Remaining: Define the *path_constrains* and *path_folder* to use _vhdlToBit_
+
+    * ### Class **_ActionParentClient_**
+
+        - *send_goal* method: adding the *path_bit=None* param
+
+        - Modify the conditional sentence to execute the VhdlToBit action
+
+            ~~~
+            if path_hex is None and path_bin is None and path_bit is None:
+                goal_msg.path_py = path_py #!Depende del tipo de archivo
+            elif path_bin is None and path_bit is None:
+                goal_msg.path_hex = path_hex
+            elif path_bit is None:
+                goal_msg.path_bin = path_bin
+            else:
+                goal_msg.path_bit = path_bit
+            ~~~
+
+    * ### (NEW) Node __*vhdlToBit_inf_client.py*__
+
+        - 🔴Remaining: Add the node to launcher
+
+    * ### (NEW) Node __*vhdlToBit_inf_server.py*__
+
+        - 🔴Remaining: Add the node to launcher 
+
+        - 🔴Remainig: Create the script to convert vhdl to bit
+
+        - Double verification of files (_vhdl_ and _constrains_) 
+
+        - Deleting verification of port
+
+    * ### Message **_CreateBitStream.msg_**
+
+        ~~~
+        string path_vhdl
+        string path_constrains
+        string path_savefolder
+        ~~~
+    
+    * ### (NEW) Action **_VhdlToBit.action_**
+
+        ~~~
+        string path_vhdl
+        string path_constrains
+        ---
+        string status_final
+        ---
+        string status
+        ~~~
+
+    * ### File **_topics.csv_**
+
+        - Adding the `top_vhdl_to_bit` topic
+
+    * ### File **_CMakeLists.txt_**
+
+        - Adding the `VhdlToBit.action`
+
+    * ### File **_README.md_**
+
+        - Adding more remaining actions (VhdlToBit action)
+
+        - Adding the v0.4.1

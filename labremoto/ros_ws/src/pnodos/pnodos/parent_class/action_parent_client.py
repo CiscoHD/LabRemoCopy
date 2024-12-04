@@ -14,18 +14,20 @@ class ActionParentClient:
         #Recibiendo feedback del action_server y publicando en consola
         NodeFather.publisher_consoler(self,feedback_msg.feedback.status,'Feedback')
 
-    def send_goal(self, path_hex=None, path_bin=None, path_vhdl=None, path_constrains=None, path_py=None):
+    def send_goal(self, path_hex=None, path_bin=None, path_vhdl=None, path_constrains=None, path_py=None, path_bit=None):
         #Crea una goal con el tipo de Action usado
         goal_msg = self.action_type.Goal()
         #Asigna las rutas a los atributos del goal
         if path_constrains is None:
             #Depende de los argumentos el atributo creado
-            if path_hex is None and path_bin is None:
+            if path_hex is None and path_bin is None and path_bit is None:
                 goal_msg.path_py = path_py #!Depende del tipo de archivo
-            elif path_bin is None:
+            elif path_bin is None and path_bit is None:
                 goal_msg.path_hex = path_hex
-            else:
+            elif path_bit is None:
                 goal_msg.path_bin = path_bin
+            else:
+                goal_msg.path_bit = path_bit
         else:
             # Solo un condicional porque solo son 2 tipos de atributos para las Actions
             goal_msg.path_vhdl = path_vhdl
