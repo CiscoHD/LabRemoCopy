@@ -72,6 +72,18 @@ Then...
         SUBSYSTEM=="tty", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0005", SYMLINK+="raspberry"
         ~~~
 
+# 🔴Remaining tasks (!) | V 0.4.0
+
+* Install the `openFPGALoader` command
+
+* Install the `vivado` command
+
+* Create the `.tcl` script to _FPGA_ action to check the connected devices
+
+* Add the node _FPGA_ actions (_client and server_) to the launcher *nodos_inicio.launch.py*
+
+* Test the _FPGA_ action and commands
+
 ## Version 0 
 
 ### Directory structure
@@ -2038,3 +2050,54 @@ In this commit the changes are:
         - Adding the installation and usage instructions for raspberry (Rshell)
 
         - Adding the v0.3.9
+
+* ## Version 0.4.0 | Starting with the FPGA action (There is not the board, then after try and test the node actions and commands)
+
+    * ### (NEW) Node __*fpga_inf_client.py*__: Just remaining the test in a real board
+
+    * ### (NEW) Node __*fpga_inf_server.py*__
+
+        - 🔴Remaining: Do the test in a real board
+
+        - 🔴Remaining: Create the _script.tcl_ and test it
+
+        - 🔴Remaining: Install all necessary command
+
+    * ### Class **_ActionParentServer_**
+
+        - *devices_vivado()* method: To search (in theory) the vivado devices. It need a _.tcl_ script...
+
+
+    * ### File **_setup.py_**: Adding the new action nodes
+
+        ~~~
+        'fpga_inf_client = pnodos.fpga_inf_client:main',
+        'fpga_inf_server = pnodos.fpga_inf_server:main',
+        ~~~
+
+    * ### (NEW) Message **_FileBitLoad.msg_**
+
+        ~~~
+        string path_bit
+        string status
+        ~~~
+
+    * ### (NEW) Action **_BitCharge.action_** 
+
+        ~~~
+        string path_bit
+        ---
+        string status_final
+        ---
+        string status
+        ~~~
+
+    * ### File **_CMakeLists.txt_**
+
+        - Adding the `FileBitLoad.msg` and `BitCharge.action`
+
+    * ### File **_README.md_**
+
+        - Adding the installations and remaining tasks.
+
+        - Adding the v0.4.0

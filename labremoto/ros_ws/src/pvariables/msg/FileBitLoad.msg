@@ -1,0 +1,2 @@
+string path_bit
+string status

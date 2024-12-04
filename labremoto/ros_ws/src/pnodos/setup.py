@@ -40,9 +40,12 @@ setup(
             #Action ------------------------------------- BinCharge
             'esp32_inf_client = pnodos.esp32_inf_client:main',
             'esp32_inf_server = pnodos.esp32_inf_server:main',
-            #Action --------------------------------------
+            #Action -------------------------------------- PyCharge
             'rasp_inf_client = pnodos.rasp_inf_client:main',
-            'rasp_inf_server = pnodos.rasp_inf_server:main'
+            'rasp_inf_server = pnodos.rasp_inf_server:main',
+            #Action -------------------------------------- BitCharge
+            'fpga_inf_client = pnodos.fpga_inf_client:main',
+            'fpga_inf_server = pnodos.fpga_inf_server:main',
         ],
     },
 )

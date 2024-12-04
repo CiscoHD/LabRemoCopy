@@ -24,6 +24,7 @@ set(msg_files
 "msg/TransInput.msg"
 "msg/FileBinLoad.msg"
 "msg/FilePyLoad.msg"
+"msg/FileBitLoad.msg"
 )
 
 #set(srv_files
@@ -34,6 +35,7 @@ set(action_files
 "action/HexCharge.action"
 "action/BinCharge.action"
 "action/PyCharge.action"
+"action/BitCharge.action"
 )
 
 

@@ -13,17 +13,30 @@ class ActionParentServer:
             # * Aquí se pueden agregar más placas/microcircuito en el futuro
             #Comando para programar placas arduino
             'arduino': "avrdude -c arduino -P {port} -b 115200 -p atmega328p -D -U flash:w:{file_path}",
-            #! Aún no tienen la VHDL
+            #! Aún no tienen la VHDL y las acciones faltan por ser probadas con las tarjetas reales
             #Esta acción se encarga de transformar archivos de vhdl a .bit --- FPGA
             'vhdl_to_bit' : 'vivado -mode batch -source s-compile.tcl -tclargs {vhdl_path} {constrain_path}',
-            #Esta acción carga el .bit (Va encadenada con la otra acción)
-            # TODO: Tal vez se pueda combinar en un solo comando
-            'charge_bit' : 'openFPGALoader -b xc7z010 {path_bitstream}',
+            #Esta acción carga el .bit (Cuando la FPGA NO es matriz y solo se usa como tarjeta)
+            'fpga' : 'openFPGALoader -b xc7z010 {path_bitstream}',
             #Carga el archivo .bin en la esp-32
             'esp32': 'esptool.py --port {port} write_flash 0x1000 {file_path}',
             #Prueba para raspberry. Ejemplo: rshell -p /dev/ttyACM0 cp main.py /pyboard/
             'raspberry' : 'rshell -p {port} cp {file_path} /pyboard/'
         }
+
+    def devices_vivado(self,script):#Función que se tendría que utilizar al subir el .bit a la fpga
+        try: #Ejecuta el script .tcl que va a buscar los dispositivos conectados
+            device = subprocess.check_output(f"vivado -mode batch -source {script}",shell=True,text=True) #Guarda el resultado
+            if len(device) < 1:
+                return False #Retorna error para lanzar la exception que no se encontró dispositivos
+            return True
+        except subprocess.CalledProcessError as e: #Error en la ejecución del comando
+            NodeFather.publisher_consoler(self,f'Failed Execution. {e}','Error')
+            return False #Este return lanzará la otra exception (personalizada)
+        
+        except Exception as e: #Cualquier error en la ejecución
+            NodeFather.publisher_consoler(self,f'Unexpected error. {e}','Error')
+            return False
 
     def available_port(self,port_name): #Recibe el nombre personalizado del puerto (Modificación de reglas de los nombres de los puertos
         #* El archivo debe de estar bien configurado con los nombres personalizados
