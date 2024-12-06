@@ -40,8 +40,7 @@ class AdministratorContracts(Node, NodeFather, NodeConn):
             #? ESP32
         #    data = {'result' : 'Pruebas', 'status' : 'accepted', 'name_node' : 'esp32', 'date' : time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), 'folio' : 'Assigned by BBDD' }
 
-            data = {'result' : 'Pruebas', 'status' : 'accepted', 'name_node' : 'raspberry', 'date' : time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), 'folio' : 'Assigned by BBDD' }
-
+            data = {'result' : 'Pruebas', 'status' : 'accepted', 'name_node' : 'vhdl', 'date' : time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), 'folio' : 'Assigned by BBDD' }
 
             msg_tran_accepted = TransGlobal()#En caso de que salga bien inicia el mensaje con la información que viene de la base
             #TODO: Tal vez agregar aquí otro identificador más explicito para saber la operación a realizar // por ejemplo: action = data.get('type_action) o algo por el estilo

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ES-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS2 Web Interface | Prueba</title>
+    <script src="https://cdn.jsdelivr.net/npm/roslib/build/roslib.min.js"></script>
+</head>
+<body style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <h1>ROS2 Web Interface</h1>
+
+    <span id="send" style="font-size:1.5rem;border-radius: 7px;background-color: rgb(256,182,256); padding: 5px 10px;cursor: pointer;">Enviar mensaje</span>
+    <!--  {type_transaction : 'ros2', status : 'contract', id_student : 12, id_session : 'session_id1', description : 'Prueba'}--> 
+    <p>Feedback:</p>
+    <div id="feedback"></div>
+
+    <script>
+        // Conectar a ROS Bridge WebSocket
+        var ros = new ROSLIB.Ros();
+
+        // Manejar eventos de conexión
+        ros.on('connection', function() {
+            console.log('Conectado al servidor ROS');
+        });
+
+        // Manejar errores de WebSocket
+        ros.on('error', function(error) {
+            console.log('Error en la conexión: ', error);
+        });
+
+        // Manejar desconexión
+        ros.on('close', function() {
+            console.log('Conexión cerrada');
+        });
+        ros.connect('ws://localhost:9090');
+
+        // Crear un publisher para enviar datos al nodo "input"
+        var inputPublisher = new ROSLIB.Topic({
+            ros: ros,
+            name: '/top_transactions_input',
+            messageType: 'pvariables/TransInput'
+        });
+
+        // Crear un suscriptor para recibir el feedback
+        var feedbackSubscriber = new ROSLIB.Topic({
+            ros: ros,
+            name: '/return_bridge',
+            messageType: 'std_msgs/String'
+        });
+
+        // Función para manejar el feedback recibido
+        document.addEventListener('DOMContentLoaded', function() {
+            feedbackSubscriber.subscribe((message) => {
+                console.log("Mensaje recibido:", message);
+                document.getElementById('feedback').innerText = message.data;
+                alert('Feedback recibido: ' + message.data);
+                alert('La página se va a reiniciar...')
+            });
+        });
+
+
+        // Enviar un mensaje cuando se hace clic en el botón
+        document.getElementById('send').addEventListener('click', function() {
+            event.preventDefault();  // Evita recargar la página
+            event.stopPropagation();
+            //ros2 topic pub --once top_transactions_input pvariables/TransInput "{type_transaction : 'ros2', status : 'contract', id_student : 12, id_session : 'session_id1', description : 'Prueba'}"
+            var message = new ROSLIB.Message({
+                type_transaction : 'ros2',
+                status : 'contract',
+                id_student : '12', 
+                id_session : 'session_id1', 
+                description : 'Prueba desde ROS BRIDGE'
+            });
+            inputPublisher.publish(message);
+            alert('Mensaje enviado desde ROS BRIDGE');
+        });
+    </script>
+</body>
+</html>

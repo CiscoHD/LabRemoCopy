@@ -2,7 +2,7 @@
 laboratorio_remo_remasterizado
 **Using ros2 humble on ubuntu 22.04**
 
-# Commands to init the nodes (v0.3.9)
+# Commands to init the nodes (v0.4.2)
 
 _In the directory before LabRemo/_ execute the command: `python3 -m virtualenv LabRemo/` to init the virtual enviroment
 
@@ -18,15 +18,23 @@ _In the same directory_
 
 * `pip freeze > requirements.txt` For save the new dependencies in the requirements.txt file (**Only if there are new dependencies on project**)
 
-_In the directory labremoto/ros_ws/_
+*In the directory labremoto/ros_ws/*
+
+* `ros2 launch rosbridge_server rosbridge_websocket_launch.xml` To start ros-server and use ros-bridge
 
 * `ros2 launch pnodos nodos_log.launch.py`
 
 Then...
 
-* `ros2 launch pnodos nodos_inicio.launch.py` For activate the actions (v0.3.0:**Now just the arduino action**)
+* `ros2 launch pnodos nodos_inicio.launch.py` For activate the actions 
 
-# Extra installations
+_In the directory labremoto/files_
+
+* **_try.html_** to emulate a web client to publish and subscribe node topics through ros-bridge (Just for develop test)
+
+# 🔴 Extra installations
+
+* **ROS server** To use ros-bridge: `sudo apt install rosbridge_server`
 
 * **Arduino Cli** To use the arduino commands `https://arduino.github.io/arduino-cli/1.0/installation/`
 
@@ -76,11 +84,11 @@ Then...
 
 * Install the `openFPGALoader` command
 
-* Install the `vivado` command
+* Install the `vivado` command (Vivado env)
 
-* Create the `.tcl` script to _FPGA_ action to check the connected devices
+* Create the `.tcl` script to _FPGA_ action to check the connected devices✅
 
-* Add the node _FPGA_  and VhdlToBit actions (_client and server_) to the launcher *nodos_inicio.launch.py*
+* Add the node _FPGA_  and VhdlToBit actions (_client and server_) to the launcher *nodos_inicio.launch.py*✅
 
 * Test the _FPGA_ action and commands
 
@@ -2179,3 +2187,52 @@ In this commit the changes are:
         - Adding more remaining actions (VhdlToBit action)
 
         - Adding the v0.4.1
+
+* ## Version 0.4.2 | Installing ros_server to use ros-bridge, emulated web client and files to test vhdl
+
+    * ### Node **_administrator.py_**
+
+        - Adding the data required to use the VhdlToBit action
+
+    * ### Class **_ActionParentClient_**
+
+        - In the last method: *get_result_callback*, adding the instruction to publish the result to the ros-bridge
+
+    * ### Class **_NodeFather_**
+
+        - Adding the provisional method: *return_bridge* to test sending messages to ros-bridge. (🔴This method only uses String as the type message and a plain text topic)
+
+    * ### File **_constrains.xdc_**: The file with the configuration for the fpga
+
+    * ### File **_example.vhdl_**: The file to test VhdlToBit actions
+
+    * ### File **_compile_vhdl.tcl_**: The instructions to use .vhdl and .xdc files
+
+        - The file that will be used to generate the .bit file from VHDL code.
+
+    * ### File **_topics.csv_**
+
+        - Deleting the unused topic
+
+    * ### File **_try.html_**
+
+        - An html file with javascript to emulated a web client, it send messages to ros (*input_transactioner*) through ros-bridge.
+
+    * ### Launch __*nodos_inicio*__: Adding the actions nodes from previous version
+
+    * ### File **_setup.py_**
+
+        - Adding the action nodes from the previous version
+
+            ~~~
+            'vhdlToBit_inf_client = pnodos.vhdlToBit_inf_client:main',
+            'vhdlToBit_inf_server = pnodos.vhdlToBit_inf_server:main',
+            ~~~
+
+    * ### File **_requeriments.txt_**
+
+        - Adding all modules and packages used by ros-server
+
+    * ### **_README.md_**
+
+        - New command: To start the ros-server on port 9090 `ros2 launch rosbridge_server rosbridge_websocket_launch.xml`

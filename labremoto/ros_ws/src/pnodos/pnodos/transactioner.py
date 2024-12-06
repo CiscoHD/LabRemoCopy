@@ -26,8 +26,6 @@ class AdminTransactioner(Node, NodeFather):
     def listener_callback(self, msg):
         #Recibe mensajes para consola y los imprime
         NodeFather.publisher_consoler(self, msg.folio, "Accepted Transaction Received. Folio")
-
-        msg_type = CreateBitStream()
         # TODO En esta variable se podría crear una función que busque u obtenga el archivo
         # ! Podría ser con el folio que se pasa en el mensaje y después buscar el archivo en DB
         #file_path = '/home/laboratorio_remo_remasterizado/labremoto/files/build/blink.ino.hex'

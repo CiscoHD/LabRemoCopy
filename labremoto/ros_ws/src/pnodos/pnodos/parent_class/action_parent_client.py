@@ -59,5 +59,5 @@ class ActionParentClient:
         NodeFather.publisher_consoler(self,result,'Action result')
         #Crea un mensaje del auditor utilizando la función en la clase padre
         NodeFather.auditor_msg(self, logprocess=f"Goal sent from {self.get_name()} and result: {result}", typetransaction="Goal Finished")
-        
+        NodeFather.return_bridge(self,result) #TODO: Definir que va a recibir de regreso el front-end
         # rclpy.shutdown() #Comentado para que no detenga la ejecución del nodo y acepte muchas acciones

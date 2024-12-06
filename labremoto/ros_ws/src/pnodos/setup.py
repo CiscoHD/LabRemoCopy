@@ -46,6 +46,9 @@ setup(
             #Action -------------------------------------- BitCharge
             'fpga_inf_client = pnodos.fpga_inf_client:main',
             'fpga_inf_server = pnodos.fpga_inf_server:main',
+            #Action -------------------------------------- VhdlToBit
+            'vhdlToBit_inf_client = pnodos.vhdlToBit_inf_client:main',
+            'vhdlToBit_inf_server = pnodos.vhdlToBit_inf_server:main',
         ],
     },
 )

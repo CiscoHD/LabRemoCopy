@@ -1,5 +1,6 @@
 from pvariables.msg import Operation, Auditor, LogExit
 from datetime import datetime
+from std_msgs.msg import String
 import pandas as pd
 
 class NodeFather:
@@ -54,3 +55,8 @@ class NodeFather:
         msg_consoler_.log_exit = str(info_msg)# Informe general del tipo de mensaje
         msg_consoler_.status = str(msg)# Status (Más detalles del mensaje)
         self.create_publisher(LogExit, self.get_code_tema('top_console'), 10).publish(msg_consoler_) #Publicando
+
+    def return_bridge(self, result):
+        msg = String()
+        msg.data = str(result)
+        self.create_publisher(String,'/return_bridge', 10).publish(msg)

@@ -15,7 +15,7 @@ class ActionParentServer:
             'arduino': "avrdude -c arduino -P {port} -b 115200 -p atmega328p -D -U flash:w:{file_path}",
             #! Aún no tienen la VHDL y las acciones faltan por ser probadas con las tarjetas reales
             #Esta acción se encarga de transformar archivos de vhdl a .bit --- FPGA
-            'vhdl_to_bit' : 'vivado -mode batch -source s-compile.tcl -tclargs {vhdl_path} {constrain_path}',
+            'vhdl_to_bit' : 'vivado -mode batch -source s-compile.tcl -tclargs xc7z010 {vhdl_path} {constrain_path}',
             #Esta acción carga el .bit (Cuando la FPGA NO es matriz y solo se usa como tarjeta)
             'fpga' : 'openFPGALoader -b xc7z010 {path_bitstream}',
             #Carga el archivo .bin en la esp-32

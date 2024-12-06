@@ -20,6 +20,11 @@ def generate_launch_description():
                 executable = 'rasp_inf_server',
                 output = 'screen'
             ),
+            Node(
+                package = 'pnodos',
+                executable = 'vhdlToBit_inf_server',
+                output = 'screen'
+            ),
             TimerAction(
                 period = 2.5,  # Espera 2.5 segundos antes de iniciar el siguiente nodo
                 actions = [
@@ -46,6 +51,16 @@ def generate_launch_description():
                     Node(
                         package = 'pnodos',
                         executable = 'rasp_inf_client',
+                        output = 'screen'
+                    )
+                ]
+            ),
+            TimerAction(
+                period = 2.5,  # Espera 2.5 segundos antes de iniciar el siguiente nodo
+                actions = [
+                    Node(
+                        package = 'pnodos',
+                        executable = 'vhdlToBit_inf_client',
                         output = 'screen'
                     )
                 ]
