@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowJs": true,         // Allow JavaScript files
+    "strict": true,          // Enable strict type-checking options
+    "noEmit": true           // Prevent emitting compiled files
+  },
+  "include": ["src/**/*"],   // Include all files in the `src` folder
+  "exclude": ["node_modules"] // Exclude `node_modules` folder
+}

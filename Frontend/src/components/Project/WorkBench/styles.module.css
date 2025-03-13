@@ -1,0 +1,53 @@
+.contextMenu {
+  background: #25252bd5;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 4;
+  backdrop-filter: blur(0.5vh);
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  /* padding: 1em; */
+}
+.name {
+  color: rgb(189, 189, 189);
+}
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(161, 161, 161);
+  border: none;
+  font-size: 0.9em;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0.5em 1em;
+  border-top: 1px solid #63636393;
+
+  &:hover {
+    background-color: #74747450;
+  }
+}
+.hide {
+  display: none;
+}
+.row {
+  border-top: 1px solid #63636393;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input[type="color"] {
+  width: 4em;
+  height: 2.3em;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin: auto;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 5px;
+}

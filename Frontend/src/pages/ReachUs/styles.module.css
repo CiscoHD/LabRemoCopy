@@ -1,0 +1,132 @@
+.contactPage {
+  display: flex;
+  flex-direction: row;
+  color: rgb(27, 27, 26);
+  padding: 3vw;
+  gap: 0 15%;
+  justify-content: left;
+  font-weight: bold;
+}
+.mainText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 3.5em;
+}
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 18%;
+}
+.sideBar {
+  width: 30%;
+  margin-right: 5%;
+}
+.subTitle {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.7em;
+  height: 9%;
+}
+.info {
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  justify-content: left;
+  font-size: 1.6em;
+  margin-top: 6vh;
+  margin-bottom: 1vh;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.icon {
+  font-size: 2.3em;
+  cursor: pointer;
+  scale: 1.2;
+  transition: all 0.2s ease;
+  transition-property: unset;
+  position: relative;
+  line-height: 1;
+  padding: 0.3em;
+
+  display: flex;
+  justify-content: space-around;
+}
+.infoText {
+  display: block;
+  text-align: left;
+  color: #797878;
+}
+.input {
+  background: none;
+  border: none;
+  height: 2em;
+  font-size: 1.1em;
+  border-bottom: 0.2vh solid rgb(102, 101, 101);
+  margin-top: 4vh;
+  &:focus {
+    outline: none;
+  }
+}
+.message {
+  display: flex;
+  justify-content: left;
+  font-size: 1em;
+  height: 5vh;
+  align-items: center;
+  margin: 2vh 0 1vh 0;
+  color: #797878;
+}
+.textArea {
+  margin-bottom: 1.5vh;
+  padding: 1vh;
+  font-size: 1.1em;
+  max-width: 50em;
+  min-width: 50em;
+  border-radius: 5px;
+  min-height: 4em;
+  max-height: 10em;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.facebook:hover {
+  border-radius: 50%;
+  transform: scale(1.3);
+  color: rgb(0, 102, 255);
+}
+.instagram:hover {
+  color: transparent;
+  background: radial-gradient(
+    ellipse at 40% 110%,
+    rgb(255, 192, 58) 15%,
+    rgb(255, 0, 0) 50%,
+    rgb(84, 0, 163) 60%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: scale(1.3);
+}
+
+.twitter:hover {
+  color: white;
+  background-color: #474747;
+  border-radius: 50%;
+}
+.youtube:hover {
+  color: red;
+  transform: scale(1.4);
+}

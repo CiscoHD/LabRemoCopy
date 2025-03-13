@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  color: wheat;
+  height: var(--Content-height);
+}
+.menu_list {
+  width: 30%;
+  background-color: #002d49;
+}
+.image {
+  width: 45%;
+  border-start-start-radius: 1.5vh;
+  margin: 7% 0;
+  cursor: pointer;
+}
+.content {
+  width: 70%;
+  border-radius: 0 1.5vh 1.5vh 0;
+  /* background-color: var(--blue-background); */
+  color: rgb(27, 27, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option {
+  font-size: 2vh;
+  display: block;
+  text-align: left;
+  padding: 1vh 1vw;
+  border-top: 0.01vh inset rgb(0, 22, 34);
+  transition: background 0.3s ease;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    background: rgb(0, 6, 8, 0.5);
+  }
+}
+.selected {
+  background: rgb(0, 6, 8, 0.7);
+}

@@ -1,39 +1,47 @@
-.App {
-    text-align: center;
-    background: #f9f9f4;
-    height: 100vh;
+:root {
+  --NavBar-height: 10vh;
+  --Content-height: calc(100vh - var(--NavBar-height));
+
+  --green-main: rgb(13, 146, 118);
+  --shadow-green: rgb(30, 167, 137);
+  --blue-main: rgb(64, 162, 227);
+  --blue-background: rgb(202, 226, 218);
+  --bg-modal: rgba(202, 226, 218, 0.9);
+  --main-font-color: rgb(144, 130, 100);
+  --main-shadow: rgb(100, 100, 111);
+  --error-color: rgba(245, 110, 110, 0.5);
+
+  --menu-dark-bgcolor: #40a2e3;
+  --menu-light-bgcolor: #bbe2ec;
+  --menu-color: #fff6e9;
+  --menu-color-second: #0d9276;
+
+  --menu-border-radius: 5px;
+  --menu-border-shbox: var(--main-shadow-effect) var(--menu-dark-bgcolor);
+
+  --main-shadow-effect: 0 0 10px;
 }
+
+#root {
+  width: 100vw;
+  padding: 0;
+  text-align: center;
+}
+
 body {
-    color: #908264;   
-}
-p {
-    color:  #DFE0DC;
-}
-.columna {    
-    text-align: left;
-    border-style: none;
-    border-radius: 1%;
-    margin: 1%;
-}
-.titleCol {
-    padding-block-start: 4%;
-    color: #1A6874;
-}
-.innerCol {
-    padding-left: 4%;
-}
-.secondary-text { 
-    color : #3C887E;
-}
-Button {
-    margin: 2%;
-}
-.separador{
-    min-height: 2em;
-}
-.spacing{
-    height: 0.5em;
-}
-.double-spacing{
-    height: 2em;
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  height: 200%;
+  overflow-x: hidden;
 }

@@ -1,0 +1,73 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: #363636;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 0.2em 1em;
+  margin-top: auto;
+  color: #c7cacc;
+  border-radius: 1.5vh 1.5vh 0 0;
+}
+
+.output {
+  color: var(--blue-main);
+  background-color: rgba(12, 20, 24, 0.7);
+  border-radius: 0 0 1.5vh 1.5vh;
+  backdrop-filter: blur(0.5vh);
+  width: auto;
+  transition: height 2s ease, width 2s ease;
+  margin-bottom: .8vh;
+  overflow: hidden;
+}
+
+.open_output {
+  height: 20vh;
+  padding: 1vh;
+}
+
+.close {
+  height: 0;
+}
+
+.status_info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  right: 1vw;
+  gap: 0.5vw;
+  user-select: none;
+  cursor: pointer;
+}
+.done {
+  color: rgb(9, 148, 33);
+}
+.wrong {
+  color: rgb(243, 28, 28);
+}
+.doing {
+  color: yellow;
+}
+.waiting {
+  color: rgb(0, 0, 0);
+}
+.minimized_title{
+  box-shadow: 3px 4px 8px 4px rgba(0, 0, 0, 0.4);
+  width: auto;
+  border-radius: 1.5vh;
+  gap: 2vw;
+  margin-top: auto;
+  transition: border-radius 4.8s ease, width 2s ease;
+}
+
+.live {
+  z-index: 3;
+  height: 20em;
+}

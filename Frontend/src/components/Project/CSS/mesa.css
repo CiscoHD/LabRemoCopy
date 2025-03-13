@@ -1,0 +1,189 @@
+.mesa {
+  font-weight: bold;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.dropDownMenu {
+  position: absolute;
+  z-index: 2;
+  top: 12vh;
+  right: 1.5vw;
+  color: white;
+  padding: 0.5em;
+  background-color: #0a8be0;
+  box-shadow: var(--main-shadow-effect) rgba(10, 139, 224, 0.6);
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 1.5vh;
+  user-select: none;
+  top: 7.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menuIcon {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0.1em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.menuDropAble {
+  padding: 1vh;
+  cursor: pointer;
+  font-size: 1.7vh;
+  gap: 0.8vh;
+}
+
+.menu-workspace-main {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  top: 7.5rem;
+  width: 80%;
+  user-select: none;
+  gap: 20%;
+  padding-inline-start: 10%;
+}
+
+.menu-workspace {
+  border-radius: var(--menu-border-radius);
+
+  color: var(--menu-color);
+
+  background: var(--menu-dark-bgcolor);
+  box-shadow: var(--menu-border-shbox);
+}
+
+.ws-item-menu {
+  padding: 1.8vh;
+  cursor: pointer;
+  text-decoration: none;
+  /* overflow: hidden; */
+
+  border-radius: var(--menu-border-radius);
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--menu-color-second);
+    background: var(--menu-light-bgcolor);
+  }
+}
+
+.ws-drop {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    overflow: visible;
+  }
+}
+
+.ws-dropcontent {
+  display: none;
+  position: absolute;
+  top: 85%;
+  left: 60%;
+  z-index: 3;
+
+  color: var(--menu-color);
+  border-radius: var(--menu-border-radius);
+  box-shadow: var(--menu-border-shbox);
+}
+
+.ws-dropmenu-item {
+  position: relative;
+  padding-inline: 1.5vw;
+  padding-block: 0.5vw;
+
+  white-space: nowrap;
+
+  border-radius: var(--menu-border-radius);
+  transition: 0.3s ease;
+
+  background-color: #77a1d1;
+
+  &:hover {
+    background: var(--menu-light-bgcolor);
+    color: var(--menu-color-second);
+  }
+}
+
+.ws-dropmenu-item:hover>span1 {
+  display: inline-flex;
+  position: absolute;
+  top: 33%;
+  left: 5%;
+  width: 10px;
+  height: 10px;
+
+  margin-inline-end: 1em;
+  border-radius: 50%;
+
+  transition: 0.3s;
+  background-color: greenyellow;
+  box-shadow: 0 0 4px 2px greenyellow;
+}
+
+.ws-drop:hover .ws-dropcontent {
+  background: var(--menu-dark-bgcolor);
+  display: block;
+}
+
+.subsubmenu {
+  display: none;
+  /* left: 4em; */
+  min-width: max-content;
+  overflow: hidden;
+
+  color: var(--menu-color);
+  background-color: var(--menu-dark-bgcolor);
+}
+
+.ws-dropmenu-item:hover .subsubmenu {
+  display: block;
+}
+
+/* Define los estilos para el botón toggleButton */
+.toggleButton {
+  padding: 8px 16px;
+  margin: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #25c756;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Cambia el color del botón al pasar el mouse sobre él */
+.toggleButton:hover {
+  background-color: #6029b9;
+}
+
+.uploader-modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  /* width: 75%; */
+  justify-content: center;
+  padding-inline: 100px;
+  margin: auto;
+}
+
+.consoleAndVideo {
+  position: absolute;
+  bottom: 0vh;
+  right: 1vw;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}

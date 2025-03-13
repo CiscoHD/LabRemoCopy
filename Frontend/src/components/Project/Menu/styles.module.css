@@ -1,0 +1,74 @@
+.container {
+  --icon-size: 1.2vw;
+  --icons: calc(6 + 4);
+
+  display: flex;
+  position: absolute;
+  margin: 0.5em;
+  z-index: 1;
+  right: 0;
+  gap: 5px;
+  padding: 0.2em 0;
+  overflow: hidden;
+  width: calc(var(--icon-size) * 2);
+  transition: width 0.3s ease;
+}
+
+.mainIcons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 0.5s ease;
+  border-radius: 5px;
+  padding-right: 0.5em;
+}
+
+.dropped {
+  width: calc(var(--icon-size) * var(--icons));
+}
+
+.icon,
+.mainIcon {
+  background-color: var(--blue-main);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 0.05em;
+  width: 1.8em;
+  height: 1.5em;
+  font-size: var(--icon-size);
+  color: black;
+  transition:
+    color 0.3s ease,
+    background-color 0.3 ease;
+
+  &:hover {
+    background-color: rgba(64, 162, 227, 0.7);
+  }
+}
+
+.mainIcon {
+  z-index: 2;
+}
+
+.mainIcon::after {
+  content: "";
+  position: absolute;
+  height: 1.6em;
+  width: 1.9em;
+  z-index: -1;
+  background-color: var(--blue-main);
+  border-radius: 15px;
+}
+
+.arrow {
+  z-index: 3;
+}
+
+.active {
+  background-color: #383838;
+  color: var(--blue-main);
+  font-weight: bold;
+}

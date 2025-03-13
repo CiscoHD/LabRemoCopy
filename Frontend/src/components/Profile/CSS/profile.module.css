@@ -1,0 +1,61 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  color: rgb(27, 27, 26);
+}
+.welcome {
+  padding-inline: 2em;
+  font-size: 1.2vw;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.practice {
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4em;
+
+  &:hover {
+    background-color: #0d740054;
+    font-weight: 600;
+  }
+}
+.actions {
+  display: flex;
+  width: 4em;
+  justify-content: space-between;
+}
+.view {
+  cursor: pointer;
+  width: 1.7em;
+  height: 1.5em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: #0843;
+  }
+}
+
+.trash {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7em;
+  height: 1.5em;
+  border-radius: 5px;
+  &:hover {
+    background-color: #f003;
+  }
+}

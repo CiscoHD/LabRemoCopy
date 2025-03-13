@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Inicio",
+    "url": ""
+  },
+  {
+    "label": "Laboratorio",
+    "url": "lab"
+  },
+  {
+    "label": "Nosotros",
+    "url": "us"
+  },
+  {
+    "label": "Contacto",
+    "url": "contact"
+  },
+  {
+    "label": "Perfil",
+    "url": "profile"
+  }
+]

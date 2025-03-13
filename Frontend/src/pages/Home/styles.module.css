@@ -1,0 +1,80 @@
+.container {
+  height: var(--Content-height);
+  --timeLab: 1.2s;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10em;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.welcome {
+  position: relative;
+  height: 8em;
+  &::before {
+    content: "Laboratorio";
+    position: absolute;
+    color: #c3d350;
+    font-size: 7em;
+    font-weight: 600;
+    inset: 0;
+
+    animation: animLab var(--timeLab);
+  }
+  &::after {
+    content: "Remoto";
+    color: #8899bb;
+    font-weight: 500;
+    font-size: 5em;
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    animation: animRem var(--timeLab);
+  }
+}
+
+.links {
+  margin-inline: auto;
+  margin-top: 5em;
+  width: 50%;
+  /* height: 20%; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row: auto auto;
+  grid-gap: 2em;
+}
+
+.element {
+  background: #40a2e3;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@keyframes animLab {
+  from {
+    transform: translateX(-80vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animRem {
+  from {
+    transform: translateX(50vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
