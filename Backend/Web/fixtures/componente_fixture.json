@@ -1,0 +1,3196 @@
+[
+    {
+        "model": "workspace.Componente",
+        "pk": 1,
+        "fields": {
+            "nombre": "DC Motor G",
+            "tipo": 1,
+            "especificaciones": {
+                "Modelo": "GM 25-370 12V 330RPM",
+                "Voltaje": "12V",
+                "Relación_de_reducción": "1:34",
+                "Velocidad_sin_carga": "330 RPM",
+                "Corriente_sin_carga": "< 200mA",
+                "Velocidad_nominal": "180 RPM",
+                "Corriente_nominal": "< 1.7A",
+                "Torque": "5.8 kg.cm",
+                "Corriente_de_bloqueo": "< 5.6A",
+                "Par_de_bloqueo": "12 kg.cm"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 2,
+        "fields": {
+            "nombre": "Módulo A",
+            "tipo": 1,
+            "especificaciones": {
+                "Driver": "Transistor",
+                "Pines": "1 salida"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 3,
+        "fields": {
+            "nombre": "DC Motor Y x2",
+            "tipo": 1,
+            "especificaciones": {
+                "Motorreductor": {
+                    "Reducción": "48:1",
+                    "Voltaje": "3V - 6V DC",
+                    "Corriente_sin_carga": {
+                        "3V": "80 mA",
+                        "5V": "90 mA",
+                        "6V": "120 mA"
+                    },
+                    "Corriente_máxima_de_paro": {
+                        "3V": "500 mA",
+                        "5V": "850 mA",
+                        "6V": "950 mA"
+                    },
+                    "Velocidad_sin_carga": "230 RPM",
+                    "Torque_máximo": "0.7 kg.cm"
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 4,
+        "fields": {
+            "nombre": "Módulo B",
+            "tipo": 1,
+            "especificaciones": {
+                "Driver": "L298N",
+                "Pines": {
+                    "Cantidad": 6,
+                    "Descripciones": {
+                        "1": "ENA",
+                        "2": "IN 1",
+                        "3": "IN 2",
+                        "4": "IN 3",
+                        "5": "IN 4",
+                        "6": "ENB"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 5,
+        "fields": {
+            "nombre": "Stepper",
+            "tipo": 1,
+            "especificaciones": {
+                "Modelo": "Nema 17 17HS4023",
+                "Voltaje_nominal": "12V",
+                "Corriente": "0.7 A/fase",
+                "Fase": "2 fases",
+                "Resistencia_por_fase": "1.5 ohm",
+                "Inductancia_por_fase": "2.8 mH",
+                "Torque": "14 N.cm",
+                "Clave_de_aislamiento": "B",
+                "Ángulo_de_paso": "1:8 +- 5% /paso"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 6,
+        "fields": {
+            "nombre": "Módulo C",
+            "tipo": 1,
+            "especificaciones": {
+                "Driver": "L298N",
+                "Pines": {
+                    "Cantidad": 4,
+                    "Descripciones": {
+                        "1": "IN 1",
+                        "2": "IN 2",
+                        "3": "IN 3",
+                        "4": "IN 4"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 7,
+        "fields": {
+            "nombre": "Módulo D",
+            "tipo": 1,
+            "especificaciones": {
+                "Driver": "A4988",
+                "Pines": {
+                    "Cantidad": 2,
+                    "Descripciones": {
+                        "1": "STEP",
+                        "2": "DIRECTION"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 8,
+        "fields": {
+            "nombre": "Servomotor",
+            "tipo": 1,
+            "especificaciones": {
+                "modelo": "MG 995",
+                "Voltaje_de_operación": "4.8 a 7.2 VDC",
+                "Corriente_sin_carga": "100 mA a 350 mA",
+                "Corriente_con_carga": "1200 mA",
+                "Velocidad_sin_carga_4.8V": "0.17 seg/60 gramos",
+                "Velocidad_sin_carga_6V": "0.13 seg/60 gramos",
+                "Par_de_parada_4.8V": "13 Kg cm",
+                "Par_de_parada_6V": "15 Kg cm"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 9,
+        "fields": {
+            "nombre": "Módulo E",
+            "tipo": 1,
+            "especificaciones": {
+                "Driver": "Transistor",
+                "Pines": "1 salida"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 10,
+        "fields": {
+            "nombre": "Brushless",
+            "tipo": 1,
+            "especificaciones": {
+                "modelo": "KV2200 A 2212 /6T",
+                "RPM_por_Voltio": "2200 KV",
+                "Corriente": "12 A / 60 s",
+                "Eficiencia_máxima": "80%",
+                "Corriente_máxima_de_eficiencia": "4 - 10 A (>75%)",
+                "Corriente_sin_carga": "10V / 0.5A"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 11,
+        "fields": {
+            "nombre": "Módulo F",
+            "tipo": 1,
+            "especificaciones": {
+                "Driver": "ESC",
+                "Pines": "1 salida"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 12,
+        "fields": {
+            "nombre": "Solenoide",
+            "tipo": 1,
+            "especificaciones": {
+                "Cerradura_electronica": {
+                    "Voltaje": "12V",
+                    "Corriente": "0.8A",
+                    "Potencia": "9.6W",
+                    "Tiempo_de_activación": "1 - 10 segundos"
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 13,
+        "fields": {
+            "nombre": "Módulo G",
+            "tipo": 1,
+            "especificaciones": {
+                "Driver": "Relevador",
+                "Pines": "1 salida"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 14,
+        "fields": {
+            "nombre": "Luces x4 RGB",
+            "tipo": 2,
+            "especificaciones": {
+                "Modelo_de_tarjeta": "Ky - 009",
+                "Modelo_de_LED": "5050 SmD",
+                "Voltaje": "5V",
+                "Corriente": "30 mA/60 mA",
+                "Consumo_de_energía": "90 mW"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 15,
+        "fields": {
+            "nombre": "Módulo H",
+            "tipo": 2,
+            "especificaciones": {
+                "Driver": "Transistor",
+                "Pines": {
+                    "Total_de_salidas": 12,
+                    "Descripciones": {
+                        "1": "R1",
+                        "2": "G1",
+                        "3": "B1",
+                        "4": "R2",
+                        "5": "G2",
+                        "6": "B2",
+                        "7": "R3",
+                        "8": "G3",
+                        "9": "B3",
+                        "10": "R4",
+                        "11": "G4",
+                        "12": "B4"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 16,
+        "fields": {
+            "nombre": "Cubo Led x27",
+            "tipo": 2,
+            "especificaciones": {
+                "Led_difuso_amarillo_x27": {
+                    "Voltaje": "5V",
+                    "Corriente_tipica": "20 mA"
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 17,
+        "fields": {
+            "nombre": "Módulo I",
+            "tipo": 2,
+            "especificaciones": {
+                "Driver": "Transistor",
+                "Pines": {
+                    "Cantidad": 12,
+                    "Descripciones": {
+                        "1": "A",
+                        "2": "B",
+                        "3": "C",
+                        "4": "D",
+                        "5": "E",
+                        "6": "F",
+                        "7": "G",
+                        "8": "H",
+                        "9": "I",
+                        "10": "LV1",
+                        "11": "LV2",
+                        "12": "LV3"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 18,
+        "fields": {
+            "nombre": "Display 7 seg ",
+            "tipo": 2,
+            "especificaciones": {
+                "Anodo_comun_x6_23101_BS": {
+                    "Voltaje": "7.2 - 8.5 VDC",
+                    "Voltaje_Punto": "3.6 - 4.2 VDC",
+                    "Corriente_maxima": "20A",
+                    "Corriente_tipica": "12 mA"
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 19,
+        "fields": {
+            "nombre": "Módulo J",
+            "tipo": 2,
+            "especificaciones": {
+                "Driver": "Transistor",
+                "Pines": {
+                    "Total_salidas": 14,
+                    "Descripciones": {
+                        "1": "A",
+                        "2": "B",
+                        "3": "C",
+                        "4": "D",
+                        "5": "E",
+                        "6": "F",
+                        "7": "G",
+                        "8": "DP",
+                        "9": "Disp1",
+                        "10": "Disp2",
+                        "11": "Disp3",
+                        "12": "Disp4",
+                        "13": "Disp5",
+                        "14": "Disp6"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 20,
+        "fields": {
+            "nombre": "Pantalla Gráfica",
+            "tipo": 2,
+            "especificaciones": {
+                "Modelo": "GMT130 - v1.0",
+                "Chip": "ST7789",
+                "Voltaje": "5 V pc",
+                "Tipo_de_visualización": "IPS",
+                "Pantalla": "1.3 pulgadas",
+                "Corriente": "25 mA",
+                "Interfaz": "SPI",
+                "Resolución": "128 x 64",
+                "Color_de_pantalla": "23.4 x 23.4 mm"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 21,
+        "fields": {
+            "nombre": "Módulo K",
+            "tipo": 2,
+            "especificaciones": {
+                "Driver": "Transistor",
+                "Pines": {
+                    "Cantidad": 4,
+                    "Tipo": "Bidireccional",
+                    "Descripciones": {
+                        "1": "RESET",
+                        "2": "DC",
+                        "3": "BLK",
+                        "4": "SCL",
+                        "5": "SDA"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 22,
+        "fields": {
+            "nombre": "Sensor de luminosidad",
+            "tipo": 3,
+            "especificaciones": {
+                "Modelo": "GL_5528",
+                "Sensor": "Fotorresistor",
+                "Voltaje": "3.3V a 5V",
+                "Resistencia_a_10_Lux": "8 - 20 K ohm",
+                "Resistencia_a_0_Lux": "1 M ohm"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 23,
+        "fields": {
+            "nombre": "Módulo L",
+            "tipo": 3,
+            "especificaciones": {
+                "Driver": "ADC",
+                "Pines": {
+                    "Cantidad": 1,
+                    "Tipo": "entrada",
+                    "Descripciones": {
+                        "1": "LDR"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 24,
+        "fields": {
+            "nombre": "Sensor de temperatura y humedad",
+            "tipo": 3,
+            "especificaciones": {
+                "Modelo": "AHT 10",
+                "Interfaz": "I2C",
+                "Voltaje": "3.3V - 5V",
+                "Rango_de_medición": {
+                    "Temperatura": "-4°C a 85°C",
+                    "Humedad": "0% - 100% (+- 2% RM)"
+                },
+                "Precisión_de_temperatura": "±0.3°C",
+                "Resolución_de_temperatura": "0.01°C",
+                "Resolución_de_humedad": "0.02%",
+                "Precisión_de_humedad": "2%"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 25,
+        "fields": {
+            "nombre": "Módulo M",
+            "tipo": 3,
+            "especificaciones": {
+                "Driver": "MUX/DEMUX",
+                "Pines": {
+                    "Cantidad": 2,
+                    "Tipo": "bidireccional",
+                    "Descripciones": {
+                        "1": "SDA",
+                        "2": "SCL"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 26,
+        "fields": {
+            "nombre": "Sensor de efecto hall",
+            "tipo": 3,
+            "especificaciones": {
+                "Modelo_1": "KY035",
+                "Modelo_2": "SS49E",
+                "Voltaje": "3.3V a 5V",
+                "Corriente": "8 mA",
+                "Rango_de_detección": "650 - 1000 Gauss"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 27,
+        "fields": {
+            "nombre": "Módulo N",
+            "tipo": 3,
+            "especificaciones": {
+                "Driver": "ADC",
+                "Pines": {
+                    "Cantidad": 1,
+                    "Tipo": "entrada",
+                    "Descripciones": {
+                        "1": "Data"
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 28,
+        "fields": {
+            "nombre": "Sensor de proximidad",
+            "tipo": 3,
+            "especificaciones": {
+                "Modelo": "HC - SR04",
+                "Voltaje": "5V",
+                "Corriente": "15 mA",
+                "Rango_de_medición": "2 - 400 cm",
+                "Frecuencia_de_trabajo": "40 KHz",
+                "Ángulo_de_medición": [
+                    "< 15°",
+                    "30°"
+                ],
+                "Precisión": "±3mm",
+                "Duración_mínima_de_pulso_de_disparo": "10 ms"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 29,
+        "fields": {
+            "nombre": "Módulo O",
+            "tipo": 3,
+            "especificaciones": {
+                "Driver": "Digital",
+                "Pines": {
+                    "Salidas": {
+                        "Cantidad": 1,
+                        "Descripciones": {
+                            "1": "Trigger (out)"
+                        }
+                    },
+                    "Entradas": {
+                        "Cantidad": 1,
+                        "Descripciones": {
+                            "1": "Echo (In)"
+                        }
+                    }
+                }
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 30,
+        "fields": {
+            "nombre": "Arduino MEGA",
+            "tipo": 4,
+            "especificaciones": {
+                "Modelo": "Arduino Mega 2560 Rev3",
+                "Microcontrolador": "ATmega2560",
+                "Tensión_de_funcionamiento": "5V",
+                "Voltaje_de_entrada_recomendado": "7-12 V",
+                "Voltaje_de_entrada_límite": "6-20 V",
+                "Pines_de_E/S_digitales": {
+                    "Cantidad": 70,
+                    "PWM": 15,
+                    "Analog": 16
+                },
+                "Pines_de_entrada_analógica": 16,
+                "Corriente_CC_por_pin_de_E/S": "20 mA",
+                "Corriente_CC_para_pin_de_3.3V": "50 mA",
+                "Memoria_flash": "256 KB de los cuales 8 KB utiliza el gestor de arranque",
+                "SRAM": "8 KB",
+                "EEPROM": "4 KB",
+                "Velocidad_de_reloj": "16 MHz",
+                "Interfaces": [
+                    "USB",
+                    "SPI",
+                    "I2C",
+                    "UART"
+                ],
+                "Led_de_la_tarjeta": "LED_BUILTIN 13"
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 31,
+        "fields": {
+            "nombre": "Módulo P",
+            "tipo": 4,
+            "especificaciones": [
+                {
+                    "Pin": "",
+                    "Nombre": "LED_BUILTIN",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB7",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 01",
+                    "Nombre": "NC",
+                    "Tipo": "Not connected",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 02",
+                    "Nombre": "IOREF",
+                    "Tipo": "Reference for digital logic V - connected to 5V",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 03",
+                    "Nombre": "Reset",
+                    "Tipo": "Reset",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 04",
+                    "Nombre": "+3V3",
+                    "Tipo": "3V3 Power Rail",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 05",
+                    "Nombre": "+5V",
+                    "Tipo": "5V Power Rail",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 06",
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 07",
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 08",
+                    "Nombre": "VIN",
+                    "Tipo": "Voltage Input",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 09",
+                    "Nombre": "A0",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D54",
+                    "Analog": "Analog input 00",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 0",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 10",
+                    "Nombre": "A1",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D55",
+                    "Analog": "Analog input 01",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 1",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 11",
+                    "Nombre": "A2",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D56",
+                    "Analog": "Analog input 02",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 2",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 12",
+                    "Nombre": "A3",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D57",
+                    "Analog": "Analog input 03",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 3",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 13",
+                    "Nombre": "A4",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D58",
+                    "Analog": "Analog input 04",
+                    "Digital": "JTAG TCK",
+                    "Interfaz": "",
+                    "ADC": "ADC 4",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 14",
+                    "Nombre": "A5",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D59",
+                    "Analog": "Analog input 05",
+                    "Digital": "JTAG TMS",
+                    "Interfaz": "",
+                    "ADC": "ADC 5",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 15",
+                    "Nombre": "A6",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D60",
+                    "Analog": "Analog input 06",
+                    "Digital": "JTAG TDO",
+                    "Interfaz": "",
+                    "ADC": "ADC 6",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 16",
+                    "Nombre": "A7",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D61",
+                    "Analog": "Analog input 07",
+                    "Digital": "JTAG TDI",
+                    "Interfaz": "",
+                    "ADC": "ADC 7",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 17",
+                    "Nombre": "A8",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D62",
+                    "Analog": "Analog input 08",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 8",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 18",
+                    "Nombre": "A9",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D63",
+                    "Analog": "Analog input 09",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 9",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 19",
+                    "Nombre": "A10",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D64",
+                    "Analog": "Analog input 10",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 10",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 20",
+                    "Nombre": "A11",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D65",
+                    "Analog": "Analog input 11",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 11",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 21",
+                    "Nombre": "A12",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D66",
+                    "Analog": "Analog input 12",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 12",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 22",
+                    "Nombre": "A13",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D67",
+                    "Analog": "Analog input 13",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 13",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 23",
+                    "Nombre": "A14",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D68",
+                    "Analog": "Analog input 14",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 14",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 24",
+                    "Nombre": "A15",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D69",
+                    "Analog": "Analog input 15",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 15",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 01",
+                    "Nombre": "D21/SCL",
+                    "Tipo": "Digital Input / I2C",
+                    "Puerto MC": "PD0",
+                    "Analog": "",
+                    "Digital": "Digital input 21",
+                    "Interfaz": "I2C SCL",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 02",
+                    "Nombre": "D20/SDA",
+                    "Tipo": "Digital Input / I2C",
+                    "Puerto MC": "PD1",
+                    "Analog": "",
+                    "Digital": "Digital input 20",
+                    "Interfaz": "I2C SDA",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 03",
+                    "Nombre": "AREF",
+                    "Tipo": "Analog Reference Voltage",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 04",
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 05",
+                    "Nombre": "D13",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB7",
+                    "Analog": "",
+                    "Digital": "Digital input 13",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 06",
+                    "Nombre": "D12",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB6",
+                    "Analog": "",
+                    "Digital": "Digital input 12",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 07",
+                    "Nombre": "D11",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB5",
+                    "Analog": "",
+                    "Digital": "Digital input 11",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 08",
+                    "Nombre": "D10",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB4",
+                    "Analog": "",
+                    "Digital": "Digital input 10",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 09",
+                    "Nombre": "D9",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH6",
+                    "Analog": "",
+                    "Digital": "Digital input 09",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 10",
+                    "Nombre": "D8",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH5",
+                    "Analog": "",
+                    "Digital": "Digital input 08",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 11",
+                    "Nombre": "D7",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH4",
+                    "Analog": "",
+                    "Digital": "Digital input 07",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 12",
+                    "Nombre": "D6",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH3",
+                    "Analog": "",
+                    "Digital": "Digital input 06",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 13",
+                    "Nombre": "D5",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE3",
+                    "Analog": "",
+                    "Digital": "Digital input 05",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 14",
+                    "Nombre": "D4",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PG5",
+                    "Analog": "",
+                    "Digital": "Digital input 04",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 15",
+                    "Nombre": "D3",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE5",
+                    "Analog": "",
+                    "Digital": "Digital input 03",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 16",
+                    "Nombre": "D2",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE4",
+                    "Analog": "",
+                    "Digital": "Digital input 02",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 17",
+                    "Nombre": "D1/TX0",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE1",
+                    "Analog": "",
+                    "Digital": "Digital input 01",
+                    "Interfaz": "UART TXD0",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 18",
+                    "Nombre": "D0/Tx1",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE0",
+                    "Analog": "",
+                    "Digital": "Digital input 00",
+                    "Interfaz": "UART RXD0",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 19",
+                    "Nombre": "D14",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PJ1",
+                    "Analog": "",
+                    "Digital": "Digital input 14",
+                    "Interfaz": "UART TXD3",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 20",
+                    "Nombre": "D15",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PJ0",
+                    "Analog": "",
+                    "Digital": "Digital input 15",
+                    "Interfaz": "UART RXD3",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 21",
+                    "Nombre": "D16",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH1",
+                    "Analog": "",
+                    "Digital": "Digital input 16",
+                    "Interfaz": "UART TXD2",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 22",
+                    "Nombre": "D17",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH0",
+                    "Analog": "",
+                    "Digital": "Digital input 17",
+                    "Interfaz": "UART RXD2",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 23",
+                    "Nombre": "D18",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD3",
+                    "Analog": "",
+                    "Digital": "Digital input 18",
+                    "Interfaz": "UART TXD1",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 24",
+                    "Nombre": "D19",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD2",
+                    "Analog": "",
+                    "Digital": "Digital input 19",
+                    "Interfaz": "UART RXD1",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 25",
+                    "Nombre": "D20",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD1",
+                    "Analog": "",
+                    "Digital": "Digital input 20",
+                    "Interfaz": "I2C SDA",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 26",
+                    "Nombre": "D21",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD0",
+                    "Analog": "",
+                    "Digital": "Digital input 21",
+                    "Interfaz": "I2C SCL",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital LHS 01",
+                    "Nombre": "5V",
+                    "Tipo": "Power supply of 5V",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital LHS 02",
+                    "Nombre": "D22",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA0",
+                    "Analog": "",
+                    "Digital": "Digital input 22",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 03",
+                    "Nombre": "D24",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA2",
+                    "Analog": "",
+                    "Digital": "Digital input 24",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 04",
+                    "Nombre": "D26",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA4",
+                    "Analog": "",
+                    "Digital": "Digital input 26",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 05",
+                    "Nombre": "D28",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA6",
+                    "Analog": "",
+                    "Digital": "Digital input 28",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 06",
+                    "Nombre": "D30",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC7",
+                    "Analog": "",
+                    "Digital": "Digital input 30",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 07",
+                    "Nombre": "D32",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC5",
+                    "Analog": "",
+                    "Digital": "Digital input 32",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 08",
+                    "Nombre": "D34",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC3",
+                    "Analog": "",
+                    "Digital": "Digital input 34",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 09",
+                    "Nombre": "D36",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC1",
+                    "Analog": "",
+                    "Digital": "Digital input 36",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 10",
+                    "Nombre": "D38",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD7",
+                    "Analog": "",
+                    "Digital": "Digital input 38",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 11",
+                    "Nombre": "D40",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PG1",
+                    "Analog": "",
+                    "Digital": "Digital input 40",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 12",
+                    "Nombre": "D42",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL7",
+                    "Analog": "",
+                    "Digital": "Digital input 42",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 13",
+                    "Nombre": "D44",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL5",
+                    "Analog": "",
+                    "Digital": "Digital input 44",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 14",
+                    "Nombre": "D46",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL3",
+                    "Analog": "",
+                    "Digital": "Digital input 46",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 15",
+                    "Nombre": "D48",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL1",
+                    "Analog": "",
+                    "Digital": "Digital input 48",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 16",
+                    "Nombre": "D50",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB3",
+                    "Analog": "",
+                    "Digital": "Digital input 50",
+                    "Interfaz": "SPI CIPO",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 17",
+                    "Nombre": "D52",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB1",
+                    "Analog": "",
+                    "Digital": "Digital input 52",
+                    "Interfaz": "SPI SCK",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 18",
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital RHS 01",
+                    "Nombre": "5V",
+                    "Tipo": "Power supply of 5V",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital RHS 02",
+                    "Nombre": "D23",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA1",
+                    "Analog": "",
+                    "Digital": "Digital input 23",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 03",
+                    "Nombre": "D25",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA3",
+                    "Analog": "",
+                    "Digital": "Digital input 25",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 04",
+                    "Nombre": "D27",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA5",
+                    "Analog": "",
+                    "Digital": "Digital input 27",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 05",
+                    "Nombre": "D29",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA7",
+                    "Analog": "",
+                    "Digital": "Digital input 29",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 06",
+                    "Nombre": "D31",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC6",
+                    "Analog": "",
+                    "Digital": "Digital input 31",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 07",
+                    "Nombre": "D33",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC4",
+                    "Analog": "",
+                    "Digital": "Digital input 33",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 08",
+                    "Nombre": "D35",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC2",
+                    "Analog": "",
+                    "Digital": "Digital input 35",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 09",
+                    "Nombre": "D37",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC0",
+                    "Analog": "",
+                    "Digital": "Digital input 37",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 10",
+                    "Nombre": "D39",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PG2",
+                    "Analog": "",
+                    "Digital": "Digital input 39",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 11",
+                    "Nombre": "D41",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PG0",
+                    "Analog": "",
+                    "Digital": "Digital input 41",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 12",
+                    "Nombre": "D43",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL6",
+                    "Analog": "",
+                    "Digital": "Digital input 43",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 13",
+                    "Nombre": "D45",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL4",
+                    "Analog": "",
+                    "Digital": "Digital input 45",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 14",
+                    "Nombre": "D47",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL2",
+                    "Analog": "",
+                    "Digital": "Digital input 47",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 15",
+                    "Nombre": "D49",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL0",
+                    "Analog": "",
+                    "Digital": "Digital input 49",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 16",
+                    "Nombre": "D51",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB2",
+                    "Analog": "",
+                    "Digital": "Digital input 51",
+                    "Interfaz": "SPI COPI",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 17",
+                    "Nombre": "D53",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB0",
+                    "Analog": "",
+                    "Digital": "Digital input 53",
+                    "Interfaz": "SPI SS",
+                    "ADC": "",
+                    "PWM Output": "No"
+                }
+            ],
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 32,
+        "fields": {
+            "nombre": "ESP32",
+            "tipo": 4,
+            "especificaciones": [
+                {
+                    "Pin": "",
+                    "Nombre": "LED_BUILTIN",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB7",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 01",
+                    "Nombre": "NC",
+                    "Tipo": "Not connected",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 02",
+                    "Nombre": "IOREF",
+                    "Tipo": "Reference for digital logic V - connected to 5V",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 03",
+                    "Nombre": "Reset",
+                    "Tipo": "Reset",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 04",
+                    "Nombre": "+3V3",
+                    "Tipo": "3V3 Power Rail",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 05",
+                    "Nombre": "+5V",
+                    "Tipo": "5V Power Rail",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 06",
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 07",
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 08",
+                    "Nombre": "VIN",
+                    "Tipo": "Voltage Input",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 09",
+                    "Nombre": "A0",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D54",
+                    "Analog": "Analog input 00",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 0",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 10",
+                    "Nombre": "A1",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D55",
+                    "Analog": "Analog input 01",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 1",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 11",
+                    "Nombre": "A2",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D56",
+                    "Analog": "Analog input 02",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 2",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 12",
+                    "Nombre": "A3",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D57",
+                    "Analog": "Analog input 03",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 3",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 13",
+                    "Nombre": "A4",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D58",
+                    "Analog": "Analog input 04",
+                    "Digital": "JTAG TCK",
+                    "Interfaz": "",
+                    "ADC": "ADC 4",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 14",
+                    "Nombre": "A5",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D59",
+                    "Analog": "Analog input 05",
+                    "Digital": "JTAG TMS",
+                    "Interfaz": "",
+                    "ADC": "ADC 5",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 15",
+                    "Nombre": "A6",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D60",
+                    "Analog": "Analog input 06",
+                    "Digital": "JTAG TDO",
+                    "Interfaz": "",
+                    "ADC": "ADC 6",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 16",
+                    "Nombre": "A7",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D61",
+                    "Analog": "Analog input 07",
+                    "Digital": "JTAG TDI",
+                    "Interfaz": "",
+                    "ADC": "ADC 7",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Analog 17",
+                    "Nombre": "A8",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D62",
+                    "Analog": "Analog input 08",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 8",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 18",
+                    "Nombre": "A9",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D63",
+                    "Analog": "Analog input 09",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 9",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 19",
+                    "Nombre": "A10",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D64",
+                    "Analog": "Analog input 10",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 10",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 20",
+                    "Nombre": "A11",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D65",
+                    "Analog": "Analog input 11",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 11",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 21",
+                    "Nombre": "A12",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D66",
+                    "Analog": "Analog input 12",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 12",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 22",
+                    "Nombre": "A13",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D67",
+                    "Analog": "Analog input 13",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 13",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 23",
+                    "Nombre": "A14",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D68",
+                    "Analog": "Analog input 14",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 14",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Analog 24",
+                    "Nombre": "A15",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "D69",
+                    "Analog": "Analog input 15",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "ADC 15",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 01",
+                    "Nombre": "D21/SCL",
+                    "Tipo": "Digital Input / I2C",
+                    "Puerto MC": "PD0",
+                    "Analog": "",
+                    "Digital": "Digital input 21",
+                    "Interfaz": "I2C SCL",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 02",
+                    "Nombre": "D20/SDA",
+                    "Tipo": "Digital Input / I2C",
+                    "Puerto MC": "PD1",
+                    "Analog": "",
+                    "Digital": "Digital input 20",
+                    "Interfaz": "I2C SDA",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 03",
+                    "Nombre": "AREF",
+                    "Tipo": "Analog Reference Voltage",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 04",
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 05",
+                    "Nombre": "D13",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB7",
+                    "Analog": "",
+                    "Digital": "Digital input 13",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 06",
+                    "Nombre": "D12",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB6",
+                    "Analog": "",
+                    "Digital": "Digital input 12",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 07",
+                    "Nombre": "D11",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB5",
+                    "Analog": "",
+                    "Digital": "Digital input 11",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 08",
+                    "Nombre": "D10",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB4",
+                    "Analog": "",
+                    "Digital": "Digital input 10",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 09",
+                    "Nombre": "D9",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH6",
+                    "Analog": "",
+                    "Digital": "Digital input 09",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 10",
+                    "Nombre": "D8",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH5",
+                    "Analog": "",
+                    "Digital": "Digital input 08",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 11",
+                    "Nombre": "D7",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH4",
+                    "Analog": "",
+                    "Digital": "Digital input 07",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 12",
+                    "Nombre": "D6",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH3",
+                    "Analog": "",
+                    "Digital": "Digital input 06",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 13",
+                    "Nombre": "D5",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE3",
+                    "Analog": "",
+                    "Digital": "Digital input 05",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 14",
+                    "Nombre": "D4",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PG5",
+                    "Analog": "",
+                    "Digital": "Digital input 04",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 15",
+                    "Nombre": "D3",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE5",
+                    "Analog": "",
+                    "Digital": "Digital input 03",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 16",
+                    "Nombre": "D2",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE4",
+                    "Analog": "",
+                    "Digital": "Digital input 02",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": "Digital 17",
+                    "Nombre": "D1/TX0",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE1",
+                    "Analog": "",
+                    "Digital": "Digital input 01",
+                    "Interfaz": "UART TXD0",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 18",
+                    "Nombre": "D0/Tx1",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PE0",
+                    "Analog": "",
+                    "Digital": "Digital input 00",
+                    "Interfaz": "UART RXD0",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital 19",
+                    "Nombre": "D14",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PJ1",
+                    "Analog": "",
+                    "Digital": "Digital input 14",
+                    "Interfaz": "UART TXD3",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 20",
+                    "Nombre": "D15",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PJ0",
+                    "Analog": "",
+                    "Digital": "Digital input 15",
+                    "Interfaz": "UART RXD3",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 21",
+                    "Nombre": "D16",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH1",
+                    "Analog": "",
+                    "Digital": "Digital input 16",
+                    "Interfaz": "UART TXD2",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 22",
+                    "Nombre": "D17",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PH0",
+                    "Analog": "",
+                    "Digital": "Digital input 17",
+                    "Interfaz": "UART RXD2",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 23",
+                    "Nombre": "D18",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD3",
+                    "Analog": "",
+                    "Digital": "Digital input 18",
+                    "Interfaz": "UART TXD1",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 24",
+                    "Nombre": "D19",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD2",
+                    "Analog": "",
+                    "Digital": "Digital input 19",
+                    "Interfaz": "UART RXD1",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 25",
+                    "Nombre": "D20",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD1",
+                    "Analog": "",
+                    "Digital": "Digital input 20",
+                    "Interfaz": "I2C SDA",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital 26",
+                    "Nombre": "D21",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD0",
+                    "Analog": "",
+                    "Digital": "Digital input 21",
+                    "Interfaz": "I2C SCL",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital LHS 01",
+                    "Nombre": "5V",
+                    "Tipo": "Power supply of 5V",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital LHS 02",
+                    "Nombre": "D22",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA0",
+                    "Analog": "",
+                    "Digital": "Digital input 22",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 03",
+                    "Nombre": "D24",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA2",
+                    "Analog": "",
+                    "Digital": "Digital input 24",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 04",
+                    "Nombre": "D26",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA4",
+                    "Analog": "",
+                    "Digital": "Digital input 26",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 05",
+                    "Nombre": "D28",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA6",
+                    "Analog": "",
+                    "Digital": "Digital input 28",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 06",
+                    "Nombre": "D30",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC7",
+                    "Analog": "",
+                    "Digital": "Digital input 30",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 07",
+                    "Nombre": "D32",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC5",
+                    "Analog": "",
+                    "Digital": "Digital input 32",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 08",
+                    "Nombre": "D34",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC3",
+                    "Analog": "",
+                    "Digital": "Digital input 34",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 09",
+                    "Nombre": "D36",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC1",
+                    "Analog": "",
+                    "Digital": "Digital input 36",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 10",
+                    "Nombre": "D38",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PD7",
+                    "Analog": "",
+                    "Digital": "Digital input 38",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 11",
+                    "Nombre": "D40",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PG1",
+                    "Analog": "",
+                    "Digital": "Digital input 40",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 12",
+                    "Nombre": "D42",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL7",
+                    "Analog": "",
+                    "Digital": "Digital input 42",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 13",
+                    "Nombre": "D44",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL5",
+                    "Analog": "",
+                    "Digital": "Digital input 44",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 14",
+                    "Nombre": "D46",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL3",
+                    "Analog": "",
+                    "Digital": "Digital input 46",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 15",
+                    "Nombre": "D48",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL1",
+                    "Analog": "",
+                    "Digital": "Digital input 48",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 16",
+                    "Nombre": "D50",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB3",
+                    "Analog": "",
+                    "Digital": "Digital input 50",
+                    "Interfaz": "SPI CIPO",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 17",
+                    "Nombre": "D52",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB1",
+                    "Analog": "",
+                    "Digital": "Digital input 52",
+                    "Interfaz": "SPI SCK",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital LHS 18",
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "",
+                    "Nombre": "",
+                    "Tipo": "",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital RHS 01",
+                    "Nombre": "5V",
+                    "Tipo": "Power supply of 5V",
+                    "Puerto MC": "",
+                    "Analog": "",
+                    "Digital": "",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": "Digital RHS 02",
+                    "Nombre": "D23",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA1",
+                    "Analog": "",
+                    "Digital": "Digital input 23",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 03",
+                    "Nombre": "D25",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA3",
+                    "Analog": "",
+                    "Digital": "Digital input 25",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 04",
+                    "Nombre": "D27",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA5",
+                    "Analog": "",
+                    "Digital": "Digital input 27",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 05",
+                    "Nombre": "D29",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PA7",
+                    "Analog": "",
+                    "Digital": "Digital input 29",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 06",
+                    "Nombre": "D31",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC6",
+                    "Analog": "",
+                    "Digital": "Digital input 31",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 07",
+                    "Nombre": "D33",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC4",
+                    "Analog": "",
+                    "Digital": "Digital input 33",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 08",
+                    "Nombre": "D35",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC2",
+                    "Analog": "",
+                    "Digital": "Digital input 35",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 09",
+                    "Nombre": "D37",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PC0",
+                    "Analog": "",
+                    "Digital": "Digital input 37",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 10",
+                    "Nombre": "D39",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PG2",
+                    "Analog": "",
+                    "Digital": "Digital input 39",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 11",
+                    "Nombre": "D41",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PG0",
+                    "Analog": "",
+                    "Digital": "Digital input 41",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 12",
+                    "Nombre": "D43",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL6",
+                    "Analog": "",
+                    "Digital": "Digital input 43",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 13",
+                    "Nombre": "D45",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL4",
+                    "Analog": "",
+                    "Digital": "Digital input 45",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 14",
+                    "Nombre": "D47",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL2",
+                    "Analog": "",
+                    "Digital": "Digital input 47",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 15",
+                    "Nombre": "D49",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PL0",
+                    "Analog": "",
+                    "Digital": "Digital input 49",
+                    "Interfaz": "",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 16",
+                    "Nombre": "D51",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB2",
+                    "Analog": "",
+                    "Digital": "Digital input 51",
+                    "Interfaz": "SPI COPI",
+                    "ADC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": "Digital RHS 17",
+                    "Nombre": "D53",
+                    "Tipo": "GPIO",
+                    "Puerto MC": "PB0",
+                    "Analog": "",
+                    "Digital": "Digital input 53",
+                    "Interfaz": "SPI SS",
+                    "ADC": "",
+                    "PWM Output": "No"
+                }
+            ],
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 33,
+        "fields": {
+            "nombre": "Módulo Q",
+            "tipo": 4,
+            "especificaciones": [
+                {
+                    "Pin": 1,
+                    "Nombre": "3V3",
+                    "Tipo": "3.3V",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 2,
+                    "Nombre": "EN",
+                    "Tipo": "Restart / Enable",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 3,
+                    "Nombre": "SP",
+                    "Tipo": "Input only",
+                    "GPIO": "GPIO 36",
+                    "RTC GPIO": "RTC GPIO 0",
+                    "ADC": "ADC1_0",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": 4,
+                    "Nombre": "SN",
+                    "Tipo": "Input only",
+                    "GPIO": "GPIO 39",
+                    "RTC GPIO": "RTC GPIO 3",
+                    "ADC": "ADC1_3",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": 5,
+                    "Nombre": "G34",
+                    "Tipo": "Input only",
+                    "GPIO": "GPIO 34",
+                    "RTC GPIO": "RTC GPIO 4",
+                    "ADC": "ADC1_6",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": 6,
+                    "Nombre": "G35",
+                    "Tipo": "Input only",
+                    "GPIO": "GPIO 35",
+                    "RTC GPIO": "RTC GPIO 5",
+                    "ADC": "ADC1_7",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "No"
+                },
+                {
+                    "Pin": 7,
+                    "Nombre": "G32",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 32",
+                    "RTC GPIO": "RTC GPIO 9",
+                    "ADC": "ADC1_4",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 8,
+                    "Nombre": "G33",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 33",
+                    "RTC GPIO": "RTC GPIO 8",
+                    "ADC": "ADC1_5",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 9,
+                    "Nombre": "G25",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 25",
+                    "RTC GPIO": "RTC GPIO 6",
+                    "ADC": "ADC2_8",
+                    "Interfaz": "",
+                    "DAC": "DAC 1",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 10,
+                    "Nombre": "G26",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 26",
+                    "RTC GPIO": "RTC GPIO 7",
+                    "ADC": "ADC2_9",
+                    "Interfaz": "",
+                    "DAC": "DAC 2",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 11,
+                    "Nombre": "G27",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 27",
+                    "RTC GPIO": "RTC GPIO 17",
+                    "ADC": "ADC2_7",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 12,
+                    "Nombre": "G14",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 14",
+                    "RTC GPIO": "RTC GPIO 16",
+                    "ADC": "ADC2_6",
+                    "Interfaz": "HSPI CLK",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 13,
+                    "Nombre": "G12",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 12",
+                    "RTC GPIO": "RTC GPIO 15",
+                    "ADC": "ADC2_5",
+                    "Interfaz": "HSPI MISO",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 14,
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 15,
+                    "Nombre": "G13",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 13",
+                    "RTC GPIO": "RTC GPIO 14",
+                    "ADC": "ADC2_4",
+                    "Interfaz": "HSPI MOSI",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 16,
+                    "Nombre": "SD2",
+                    "Tipo": "NO DISPONIBLE",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 17,
+                    "Nombre": "SD3",
+                    "Tipo": "NO DISPONIBLE",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 18,
+                    "Nombre": "CMD",
+                    "Tipo": "NO DISPONIBLE",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 19,
+                    "Nombre": "V5",
+                    "Tipo": "5 V",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 20,
+                    "Nombre": "CLK",
+                    "Tipo": "NO DISPONIBLE",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 21,
+                    "Nombre": "SD0",
+                    "Tipo": "NO DISPONIBLE",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 22,
+                    "Nombre": "SD1",
+                    "Tipo": "NO DISPONIBLE",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 23,
+                    "Nombre": "G15",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 15",
+                    "RTC GPIO": "RTC GPIO 13",
+                    "ADC": "ADC2_3",
+                    "Interfaz": "HSPI CS",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 24,
+                    "Nombre": "G2",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 2",
+                    "RTC GPIO": "RTC GPIO 12",
+                    "ADC": "ADC2_2",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 25,
+                    "Nombre": "G0",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 0",
+                    "RTC GPIO": "RTC GPIO 11",
+                    "ADC": "ADC2_1",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 26,
+                    "Nombre": "G4",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 4",
+                    "RTC GPIO": "RTC GPIO 10",
+                    "ADC": "ADC2_0",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 27,
+                    "Nombre": "G16",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 16",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "UART RX2",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 28,
+                    "Nombre": "G17",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 17",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "UART TX2",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 29,
+                    "Nombre": "G5",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 5",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "VSPI CS",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 30,
+                    "Nombre": "G18",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 18",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "VSPI CLK",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 31,
+                    "Nombre": "G19",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 19",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "VSPI MISO",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 32,
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 33,
+                    "Nombre": "G21",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 21",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "I2C SDA",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 34,
+                    "Nombre": "RXD",
+                    "Tipo": "NO DISPONIBLE",
+                    "GPIO": "GPIO 3",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "UART RX0",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 35,
+                    "Nombre": "TXD",
+                    "Tipo": "NO DISPONIBLE",
+                    "GPIO": "GPIO 1",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "UART TX0",
+                    "DAC": "",
+                    "PWM Output": ""
+                },
+                {
+                    "Pin": 36,
+                    "Nombre": "G22",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 22",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "I2C SCL",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 37,
+                    "Nombre": "G23",
+                    "Tipo": "Input / Output",
+                    "GPIO": "GPIO 23",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "VSPI MOSI",
+                    "DAC": "",
+                    "PWM Output": "Yes"
+                },
+                {
+                    "Pin": 38,
+                    "Nombre": "GND",
+                    "Tipo": "Ground",
+                    "GPIO": "",
+                    "RTC GPIO": "",
+                    "ADC": "",
+                    "Interfaz": "",
+                    "DAC": "",
+                    "PWM Output": ""
+                }
+            ],
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    },
+    {
+        "model": "workspace.Componente",
+        "pk": 34,
+        "fields": {
+            "nombre": "Zybo",
+            "tipo": 4,
+            "especificaciones": {
+                "Modelo": "Zybo Z7-10 Zynq-7000 ARM/FPGA SoC Trainer Board",
+                "FPGA": "XC7Z010-1CLG400C",
+                "Procesador": "650Mhz dual-core Cortex-A9 processor",
+                "Velocidad_de_reloj": "450 MHz+",
+                "Conectores_PMOD": {
+                    "Cantidad": 6,
+                    "Descripción": "1 processor-dedicated, 1 dual analog/digital, 3 high-speed differential, 1 logic-dedicated"
+                },
+                "Audio": "Codec de audio con auriculares, micrófono y línea de entrada",
+                "Network": "Gigabit Ethernet USB 2.0",
+                "Video": "HDMI Source/Sink y VGA 16-bit",
+                "Voltaje": "USB: 5V",
+                "Controlador_de_memoria": "DDR3 con 8 canales DMA",
+                "Interfaces": [
+                    "SPI",
+                    "UART",
+                    "CAN",
+                    "I2C"
+                ]
+            },
+            "fecha_creacion": "2025-03-24T22:49:46.868602+00:00",
+            "fecha_actualizacion": "2025-03-24T22:49:46.868602+00:00"
+        }
+    }
+]

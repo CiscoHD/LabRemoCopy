@@ -1,16 +1,18 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, Group, Permission
 from django.db import models
 
-
+from django.core.exceptions import ValidationError
 
 from datetime import datetime
 from datetime import date
+
+from .constants.user_types import UserTypeConfig
 
 
 # Create your models here.
 
 class modelBase(models.Model):
-    name = models.CharField(max_length=45,unique=True)
+    name = models.CharField(max_length=99,unique=True)
     
     ON = 1
     OFF = 0
@@ -31,7 +33,6 @@ class modelBase(models.Model):
 class Country(modelBase):
     cKey = models.CharField(max_length=3,unique=True)
     
-
 class Universities(modelBase):
     country = models.ForeignKey(
         Country,
@@ -41,6 +42,20 @@ class Universities(modelBase):
         #null=True,
         default=1,
     )
+    siglas = models.CharField(max_length=20, blank=True, null=True)
+    
+    class Meta:
+        verbose_name = 'University'
+        verbose_name_plural = 'Universities'
+        ordering = ['name']
+
+    def clean(self):
+        # Ignorar validación si siglas está vacío o es None
+        if self.siglas=='':
+            return
+
+        if Universities.objects.filter(siglas__iexact=self.siglas).exclude(id=self.id).exists():
+            raise ValidationError({'siglas': 'Estas siglas ya existen'})
 
 class Schools(modelBase):
     university = models.ForeignKey(
@@ -94,46 +109,139 @@ class Activity(modelBase):
                                      null=True,)
     #created = DateType
 
-
-
 class UserType(modelBase):
-    pass
+    """Modelo para tipos de usuario"""
+    # Constantes
+    STUDENT = UserTypeConfig.STUDENT
+    TEACHER = UserTypeConfig.TEACHER
+    STAFF = UserTypeConfig.STAFF
+    ADMIN = UserTypeConfig.ADMIN
+    
+    TYPE_CHOICES = UserTypeConfig.TYPE_CHOICES
+    GROUP_NAMES = UserTypeConfig.GROUP_NAMES
+    
+    code = models.CharField(
+        max_length=3,
+        choices=TYPE_CHOICES,
+        unique=True,
+        verbose_name='Código'
+    )
+    
+    group = models.OneToOneField(
+        Group,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='user_type'
+    )
+
+    def save(self, *args, **kwargs):
+        """Override save para crear/actualizar grupo automáticamente"""
+        creating = self._state.adding  # Verifica si es creación nueva
+        
+        super().save(*args, **kwargs)  # Guarda primero el UserType
+        
+        if creating or not self.group:
+            group_name = UserTypeConfig.GROUP_NAMES.get(self.code)
+            if group_name:
+                # Crea o obtiene el grupo
+                group, created = Group.objects.get_or_create(name=group_name)
+                self.group = group
+                self.save()  # Guarda nuevamente con el grupo asignad
+    
+    def __str__(self):
+        return UserTypeConfig.get_display_name(self.code)
 
 class User(AbstractUser):
     id = models.AutoField(primary_key=True)
-    username = models.CharField(max_length=45,unique=True)
-    email = models.CharField(max_length=45,unique=True)
+    username = models.CharField(max_length=45, unique=True)
+    email = models.CharField(max_length=45, unique=True)
     password = models.CharField(max_length=200)
-    #isAvailable = models.SmallIntegerField(default=1)
-
-    ON = 1
-    OFF = 0
-    CHOICES = (
-        (ON, 'Available'),
-        (OFF, 'Unavailable'),
+    
+    # Estado disponible (usando constantes para evitar magic numbers)
+    class Availability:
+        ON = 1
+        OFF = 0
+        CHOICES = (
+            (ON, 'Available'),
+            (OFF, 'Unavailable'),
+        )
+    
+    isAvailable = models.IntegerField(
+        choices=Availability.CHOICES,
+        default=Availability.OFF,
     )
-
-    isAvailable = models.CharField(
-        max_length=2,
-        choices=CHOICES,
-        default=OFF,
-    )
-
-    userType = models.ForeignKey(
-        UserType,
+    
+    user_type = models.ForeignKey(
+        'UserType',
         related_name='users',
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         blank=True,
-        null=True,
-        #default=1,
+        null=True
     )
 
+    # Métodos base
     @property
     def getId(self):
         return self.id
 
-    #USERNAME_FIELD = 'email'
-    #REQUIRED_FIELDS = []
+    # Propiedades de tipo (usando UserTypeConfig como fuente de verdad)
+    @property
+    def is_student(self):
+        return self._check_type(UserTypeConfig.STUDENT)
+
+    @property
+    def is_teacher(self):
+        return self._check_type(UserTypeConfig.TEACHER)
+
+    @property
+    def is_staff_member(self):
+        return self._check_type(UserTypeConfig.STAFF)
+
+    @property
+    def is_admin_user(self):
+        return self._check_type(UserTypeConfig.ADMIN) or self.is_superuser
+
+    # Métodos de apoyo
+    def _check_type(self, target_code):
+        """Verifica tanto user_type como grupos"""
+        type_matches = self.user_type and self.user_type.code == target_code
+        group_matches = self._check_group(target_code)
+        return type_matches or group_matches
+
+    def _check_group(self, target_code):
+        """Verifica pertenencia a grupo sin hardcodear strings"""
+        group_name = UserTypeConfig.GROUP_NAMES.get(target_code)
+        return group_name and self.groups.filter(name=group_name).exists()
+
+    def sync_groups(self):
+        """Sincroniza grupos con el user_type actual"""
+        if self.user_type:
+            group_name = UserTypeConfig.GROUP_NAMES.get(self.user_type.code)
+            if group_name:
+                group, _ = Group.objects.get_or_create(name=group_name)
+                self.groups.set([group])  # Reemplaza cualquier grupo existente
+                if not self.user_type.group:
+                    self.user_type.group = group
+                    self.user_type.save()
+
+    def get_user_type_display(self):
+        """Versión mejorada que usa UserTypeConfig"""
+        if self.user_type:
+            return UserTypeConfig.get_display_name(self.user_type.code)
+        return "Sin tipo asignado"
+
+    # Metadata adicional
+    class Meta:
+        verbose_name = 'Usuario'
+        verbose_name_plural = 'Usuarios'
+        permissions = [
+            ('can_manage_students', 'Puede gestionar estudiantes'),
+            ('can_manage_teachers', 'Puede gestionar profesores'),
+        ]
+
+    def __str__(self):
+        return f"{self.username} ({self.get_user_type_display()})"
 
 #####################################################
 ####   NOTA:                                       **
@@ -153,8 +261,6 @@ class AuthorLabSessions(modelBase):
         default=1,
     )
     
-
-
 class LabSessions(modelBase):
     serializedSet = models.TextField()
     subject = models.ForeignKey(
@@ -174,7 +280,6 @@ class LabSessions(modelBase):
         default=1,
     )
     #created = DateType
-
 
 #####################################################
 ####   NOTA:                                       **
@@ -258,7 +363,6 @@ class Roster(modelBase):
         default=1,
     )
     
-
 class StudentLabSession(modelBase):
     name = None
     serializedSet = models.TextField()
@@ -284,7 +388,6 @@ class StudentLabSession(modelBase):
 #     #date_time = date.today()
 #     date_time = datetime.now()
 #     file = models.FileField(upload_to='user_{0}/{1}'.format(1,date_time.strftime("%m-%d-%Y-%H:%M:%S/")), max_length=100)
-
 
 class UploadedFile(models.Model):
 

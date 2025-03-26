@@ -1,0 +1,162 @@
+[
+    {
+        "model": "users.schools",
+        "pk": 1,
+        "fields": {
+            "name": "Facultad de Ingeniería",
+            "isAvailable": true
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 2,
+        "fields": {
+            "name": "Facultad de Arquitectura",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 3,
+        "fields": {
+            "name": "Facultad de Artes y Diseño",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 4,
+        "fields": {
+            "name": "Facultad de Ciencias",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 5,
+        "fields": {
+            "name": "Facultad de Ciencias Políticas y Sociales",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 6,
+        "fields": {
+            "name": "Facultad de Contaduría y Administración",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 7,
+        "fields": {
+            "name": "Facultad de Derecho",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 8,
+        "fields": {
+            "name": "Facultad de Economía",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 9,
+        "fields": {
+            "name": "Facultad de Estudios Superiores Acatlán",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 10,
+        "fields": {
+            "name": "Facultad de Estudios Superiores Aragón",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 11,
+        "fields": {
+            "name": "Facultad de Estudios Superiores Cuautitlán",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 12,
+        "fields": {
+            "name": "Facultad de Estudios Superiores  Iztacala",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 13,
+        "fields": {
+            "name": "Facultad de Estudios Superiores Zaragoza",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 14,
+        "fields": {
+            "name": "Facultad de Filosofía y Letras",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 15,
+        "fields": {
+            "name": "Facultad de Medicina",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 16,
+        "fields": {
+            "name": "Facultad de Medicina Veterinaria y Zootecnia",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 17,
+        "fields": {
+            "name": "Facultad de Música",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 18,
+        "fields": {
+            "name": "Facultad de Odontología",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 19,
+        "fields": {
+            "name": "Facultad de Psicología",
+            "isAvailable": false
+        }
+    },
+    {
+        "model": "users.schools",
+        "pk": 20,
+        "fields": {
+            "name": "Facultad de Química",
+            "isAvailable": false
+        }
+    }
+]

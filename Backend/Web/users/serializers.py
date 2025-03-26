@@ -3,11 +3,10 @@ from .models import (Activity, AuthorLabSessions, Country, #DuinoFile,
                      LabSessions, Professor, Student, StudentLabSession, Subject, UploadedFile, User, Careers,
                      Universities,Schools,Course,Roster, UserType)
 
-
 class UserListSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id','username','email','password','isAvailable','userType']
+        fields = ['id','username','email','password','isAvailable','user_type']
         ###########################################################
         ### por definir si isAvailable se queda solo modificable
         ### por un administrador
@@ -34,7 +33,7 @@ class UserDetailSerializer(serializers.ModelSerializer):
             'email',
             'password',
             'isAvailable',
-            'userType',
+            'user_type',
         ]
         extra_kwargs = {
             'password':{'write_only':True}
@@ -102,7 +101,6 @@ AuthorLabSessionsDetailSerializer = GenericGeneratorSerializer(AuthorLabSessions
 StudentLabSessionListCreateSerializer = GenericGeneratorSerializer(StudentLabSession,serializers.ModelSerializer)
 StudentLabSessionDetailSerializer = GenericGeneratorSerializer(StudentLabSession,serializers.ModelSerializer)
 
-
 ActivityListCreateSerializer = GenericGeneratorSerializer(Activity,serializers.ModelSerializer)
 ActivityDetailSerializer = GenericGeneratorSerializer(Activity,serializers.ModelSerializer)
 
@@ -118,7 +116,7 @@ ActivityDetailSerializer = GenericGeneratorSerializer(Activity,serializers.Model
 class userInfoSerializer(serializers.Serializer):
     class Meta:
         model = User
-        fields = ['id','username','email','password','isAvailable','userType']
+        fields = ['id','username','email','password','isAvailable','user_type']
 
 
 class FileUploadSerializer(serializers.ModelSerializer):

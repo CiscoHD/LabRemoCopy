@@ -1,0 +1,34 @@
+[
+    {
+        "model": "workspace.TipoComponente",
+        "pk": 1,
+        "fields": {
+            "nombre": "Actuador",
+            "descripcion": "Componentes que realizan acciones físicas (motores, servos, etc.)"
+        }
+    },
+    {
+        "model": "workspace.TipoComponente",
+        "pk": 2,
+        "fields": {
+            "nombre": "Luces",
+            "descripcion": "Componentes de iluminación (LEDs, displays, etc.)"
+        }
+    },
+    {
+        "model": "workspace.TipoComponente",
+        "pk": 3,
+        "fields": {
+            "nombre": "Sensor",
+            "descripcion": "Componentes que detectan variables del entorno (temperatura, movimiento, etc.)"
+        }
+    },
+    {
+        "model": "workspace.TipoComponente",
+        "pk": 4,
+        "fields": {
+            "nombre": "Programable",
+            "descripcion": "Dispositivos programables (microcontroladores, FPGAs, etc.)"
+        }
+    }
+]

@@ -1,0 +1,742 @@
+[
+    {
+        "model": "users.universities",
+        "pk": 1,
+        "fields": {
+            "name": "Universidad Nacional Autónoma de México",
+            "siglas": "UNAM",
+            "isAvailable": true,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 2,
+        "fields": {
+            "name": "Instituto Politécnico Nacional",
+            "siglas": "IPN",
+            "isAvailable": true,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 3,
+        "fields": {
+            "name": "Universidad Autónoma Metropolitana",
+            "siglas": "UAM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 4,
+        "fields": {
+            "name": "Universidad Autónoma de la Ciudad de México",
+            "siglas": "UACM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 5,
+        "fields": {
+            "name": "Universidad Abierta y a Distancia de México",
+            "siglas": "UnADM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 6,
+        "fields": {
+            "name": "Universidad Pedagógica Nacional",
+            "siglas": "UPN",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 7,
+        "fields": {
+            "name": "El Colegio de México",
+            "siglas": "COLMEX",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 8,
+        "fields": {
+            "name": "Centro de Investigación y Docencia Económicas",
+            "siglas": "CIDE",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 9,
+        "fields": {
+            "name": "Universidad Autónoma de Aguascalientes",
+            "siglas": "UAA",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 10,
+        "fields": {
+            "name": "Benemérita Universidad Autónoma de Puebla",
+            "siglas": "BUAP",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 11,
+        "fields": {
+            "name": "Universidad Autónoma Agraria Antonio Narro",
+            "siglas": "UAAAN",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 12,
+        "fields": {
+            "name": "Universidad Autónoma Chapingo",
+            "siglas": "UACh",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 13,
+        "fields": {
+            "name": "Centro de Enseñanza Técnica Industrial",
+            "siglas": "CETI",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 14,
+        "fields": {
+            "name": "Universidad Autónoma de Sinaloa",
+            "siglas": "UAS",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 15,
+        "fields": {
+            "name": "Universidad de Sonora",
+            "siglas": "UNISON",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 16,
+        "fields": {
+            "name": "Universidad Autónoma de Chihuahua",
+            "siglas": "UACH",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 17,
+        "fields": {
+            "name": "Universidad Autónoma de Ciudad Juárez",
+            "siglas": "UACJ",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 18,
+        "fields": {
+            "name": "Universidad Michoacana de San Nicolás de Hidalgo",
+            "siglas": "UMICH",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 19,
+        "fields": {
+            "name": "Universidad Autónoma de Nuevo León",
+            "siglas": "UANL",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 20,
+        "fields": {
+            "name": "Universidad Autónoma de Baja California Sur",
+            "siglas": "UABCS",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 21,
+        "fields": {
+            "name": "Universidad Autónoma del Estado de México",
+            "siglas": "UAEMéx",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 22,
+        "fields": {
+            "name": "Universidad Autónoma del Estado de Hidalgo",
+            "siglas": "UAEH",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 23,
+        "fields": {
+            "name": "Universidad Autónoma de Yucatán",
+            "siglas": "UADY",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 24,
+        "fields": {
+            "name": "Universidad Autónoma de Campeche",
+            "siglas": "UACAM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 25,
+        "fields": {
+            "name": "Universidad Autónoma de Nayarit",
+            "siglas": "UAN",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 26,
+        "fields": {
+            "name": "Universidad Autónoma de Tlaxcala",
+            "siglas": "UATX",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 27,
+        "fields": {
+            "name": "Universidad Autónoma de Chiapas",
+            "siglas": "UNACH",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 28,
+        "fields": {
+            "name": "Universidad Juárez Autónoma de Tabasco",
+            "siglas": "UJAT",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 29,
+        "fields": {
+            "name": "Universidad Autónoma de Coahuila",
+            "siglas": "UADEC",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 30,
+        "fields": {
+            "name": "Universidad Autónoma de Guerrero",
+            "siglas": "UAGro",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 31,
+        "fields": {
+            "name": "Universidad Autónoma de Zacatecas",
+            "siglas": "UAZ",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 32,
+        "fields": {
+            "name": "Universidad de Quintana Roo",
+            "siglas": "UQROO",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 33,
+        "fields": {
+            "name": "Universidad Autónoma de Tamaulipas",
+            "siglas": "UAT",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 34,
+        "fields": {
+            "name": "Universidad Autónoma de San Luis Potosí",
+            "siglas": "UASLP",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 35,
+        "fields": {
+            "name": "Universidad de Guanajuato",
+            "siglas": "UG",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 36,
+        "fields": {
+            "name": "Universidad Autónoma Benito Juárez de Oaxaca",
+            "siglas": "UABJO",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 37,
+        "fields": {
+            "name": "Universidad Autónoma de Baja California",
+            "siglas": "UABC",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 38,
+        "fields": {
+            "name": "Universidad Veracruzana",
+            "siglas": "UV",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 39,
+        "fields": {
+            "name": "Universidad Autónoma de Querétaro",
+            "siglas": "UAQ",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 40,
+        "fields": {
+            "name": "Universidad Autónoma del Estado de Morelos",
+            "siglas": "UAEM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 41,
+        "fields": {
+            "name": "Universidad de Colima",
+            "siglas": "UDEC",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 42,
+        "fields": {
+            "name": "Universidad de Guadalajara",
+            "siglas": "UdG",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 43,
+        "fields": {
+            "name": "Universidad Juárez del Estado de Durango",
+            "siglas": "UJED",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 44,
+        "fields": {
+            "name": "Escuela Normal Superior",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 45,
+        "fields": {
+            "name": "Escuelas Normales de México",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 46,
+        "fields": {
+            "name": "Universidades Tecnológicas de México",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 47,
+        "fields": {
+            "name": "Universidades Politécnicas de México",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 48,
+        "fields": {
+            "name": "Tecnológico Nacional de México",
+            "siglas": "TecNM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 49,
+        "fields": {
+            "name": "Educación superior privada",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 50,
+        "fields": {
+            "name": "Instituto Tecnológico Autónomo de México",
+            "siglas": "ITAM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 51,
+        "fields": {
+            "name": "Universidad Autónoma de Guadalajara",
+            "siglas": "UAG",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 52,
+        "fields": {
+            "name": "Universidad Latinoamericana",
+            "siglas": "ULA",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 53,
+        "fields": {
+            "name": "Universidad Mondragón",
+            "siglas": "UM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 54,
+        "fields": {
+            "name": "Centro Universitario Iberoamericano",
+            "siglas": "CUNIB",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 55,
+        "fields": {
+            "name": "Universidad Autónoma de Durango",
+            "siglas": "UAD",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 56,
+        "fields": {
+            "name": "Instituto Tecnológico y de Estudios Superiores de Monterrey",
+            "siglas": "ITESM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 57,
+        "fields": {
+            "name": "Universidad Linda Vista",
+            "siglas": "ULV",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 58,
+        "fields": {
+            "name": "Universidad de Montemorelos",
+            "siglas": "UM",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 59,
+        "fields": {
+            "name": "Universidad de las Américas de Puebla",
+            "siglas": "UDLAP",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 60,
+        "fields": {
+            "name": "Universidad Popular Autónoma del Estado de Puebla",
+            "siglas": "UPAEP",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 61,
+        "fields": {
+            "name": "Universidad Iberoamericana",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 62,
+        "fields": {
+            "name": "Universidad Anáhuac",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 63,
+        "fields": {
+            "name": "Universidad Marista",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 64,
+        "fields": {
+            "name": "Instituto Tecnológico y de Estudios Superiores de Occidente",
+            "siglas": "ITESO",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 65,
+        "fields": {
+            "name": "Instituto Tecnológico Superior de Sinaloa",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 66,
+        "fields": {
+            "name": "Universidad Tecnológica de México",
+            "siglas": "UNITEC",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 67,
+        "fields": {
+            "name": "Universidad TecMilenio",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 68,
+        "fields": {
+            "name": "Universidad Panamericana",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 69,
+        "fields": {
+            "name": "Universidad de Monterrey",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 70,
+        "fields": {
+            "name": "Universidad La Salle",
+            "siglas": "ULSA",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 71,
+        "fields": {
+            "name": "Centro de Estudios Superiores de San Ángel",
+            "siglas": "CESSA",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 72,
+        "fields": {
+            "name": "Universidad Latina",
+            "siglas": "UNILA",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 73,
+        "fields": {
+            "name": "UMOV Academy",
+            "siglas": "UMOV",
+            "isAvailable": false,
+            "country": 1
+        }
+    },
+    {
+        "model": "users.universities",
+        "pk": 74,
+        "fields": {
+            "name": "TECH Universidad Tecnológica",
+            "siglas": "",
+            "isAvailable": false,
+            "country": 1
+        }
+    }
+]
