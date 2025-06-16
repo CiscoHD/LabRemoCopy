@@ -1,4 +1,4 @@
-import Arduino from "@/assets/media/Nodes/Programables/Arduino.png";
+import Arduino from "@/assets/media/Nodes/Programables/ARDUINO_NANO33.png";
 
 export default {
   name: "Arduino",

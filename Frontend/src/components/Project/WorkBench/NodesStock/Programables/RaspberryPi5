@@ -1,20 +1,20 @@
-import ESP32 from "@/assets/media/Nodes/Programables/ESP32.png";
+import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
 
 export default {
-  name: "Esp32",
-  url: ESP32,
+  name: "RaspberryPi5",
+  url: RaspberryPi5,
   type: "programable",
   size: { x: "162.5px", y: "87.5px" },
   handles: [
     {
-      id: "pin1_s",
+      id: "pin1_1",
       type: "source",
       position: "bottom",
       style: { bottom: 0, left: "90%" },
       isConnectable: true,
     },
     {
-      id: "pin2_s",
+      id: "pin2_2",
       type: "source",
       position: "bottom",
       style: { bottom: 0, left: "80%" },

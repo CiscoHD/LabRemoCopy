@@ -1,4 +1,4 @@
-import ZedBoard from "@/assets/media/Nodes/Programables/Zedboard.png";
+import ZedBoard from "@/assets/media/Nodes/Programables/ZYBO2.png";
 
 const size = ".1em";
 const firstLeft = "12%";

@@ -17,6 +17,7 @@ import AHT10 from "./Sensores/AHT10";
 import Arduino from "./Programables/Arduino";
 import ZedBoard from "./Programables/ZedBoard";
 import Esp32 from "./Programables/Esp32";
+import RaspberryPi5 from "./Programables/RaspberryPi5"; 
 
 //AUXILIAR
 import T from "./Auxiliar/T";
@@ -41,6 +42,7 @@ export default {
   Arduino: Arduino,
   Esp32: Esp32,
   ZedBoard: ZedBoard,
+  RaspberryPi5: RaspberryPi5,
 
   //AUXILIAR
   T: T,

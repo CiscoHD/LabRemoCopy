@@ -2,9 +2,10 @@ import styles from "./index.module.css";
 
 import Info from "@/utils/Modal/Info";
 
-import Arduino from "@/assets/media/Nodes/Programables/Arduino.png";
-import ESP8226 from "@/assets/media/Nodes/Programables/Arduino.png";
-import ZYBO from "@/assets/media/Nodes/Programables/Arduino.png";
+import Arduino from "@/assets/media/Nodes/Programables/ARDUINO_NANO33.png";
+import ESP8226 from "@/assets/media/Nodes/Programables/ESP32.png";
+import ZYBO from "@/assets/media/Nodes/Programables/Zedboard.png";
+import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png"
 
 import TypeBoardInfo from "./TypeBoardInfo";
 
@@ -77,6 +78,8 @@ export const ShowBoardInfo = ({ board }) => {
       return <Info label={"Zedboard"} url={ZYBO} />;
     case "ARDUINO":
       return <Info label={"Arduino"} url={Arduino} />;
+    case "RASPBERRYPI5":
+      return <Info label={"RaspberryPi5"} url={RaspberryPi5} />;
     default:
       return <></>;
   }
