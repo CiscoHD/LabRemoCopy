@@ -78,8 +78,8 @@
   color: var(--green-main);
 }
 .image {
-  height: 40%;
-  width: 80%;
+  height: 60%;
+  width: 100%;
   padding: 1em;
 }
 .info {

@@ -1,6 +1,6 @@
-import ZedBoard from "@/assets/media/Nodes/Programables/ZYBO2.png";
+import ZedBoard from "@/assets/media/Nodes/Programables/Zedboard.png";
 
-const size = ".1em";
+const size = {width: ".1em", height: ".1em"}; 
 const firstLeft = "12%";
 const secondLeft = "14.8%";
 
@@ -154,5 +154,11 @@ export default {
       position: "left",
       style: { left: secondLeft, top: "76%", width: size, height: size },
     },
-  ],
+  ].map((handle) => ({
+    ...handle,
+    style: {
+      ...size,
+      ...handle.style,
+    },
+  })),
 };

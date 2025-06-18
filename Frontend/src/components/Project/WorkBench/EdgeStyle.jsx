@@ -24,7 +24,7 @@ export default function EdgeStyle({
   return (
     <>
       <BaseEdge id={id} path={edgePath} style={{ stroke, strokeWidth }} />
-      <circle r="4" fill={stroke} stroke="black" strokeWidth="1">
+      <circle r="4" fill={stroke} stroke="white" strokeWidth="1">
         <animateMotion dur="3s" repeatCount="indefinite" path={edgePath} />
       </circle>
     </>

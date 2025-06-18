@@ -12,6 +12,11 @@ import DisplayIC2 from "./Luminosos/DisplayIC2";
 //SENSORES
 import LDR from "./Sensores/LDR";
 import AHT10 from "./Sensores/AHT10";
+import SENS_AHT20_BMP280 from "./Sensores/SENS_AHT20_BMP280";
+import SENS_DC_INA219 from "./Sensores/SENS_DC_INA219";
+import SENS_GY302 from "./Sensores/SENS_GY302";
+import SENS_RGB_TCS34725 from "./Sensores/SENS_RGB_TCS34725";
+
 
 //PROGRAMABLES
 import Arduino from "./Programables/Arduino";
@@ -37,6 +42,10 @@ export default {
   //SENSORES
   LDR: LDR,
   AHT10: AHT10,
+  SENS_AHT20_BMP280 : SENS_AHT20_BMP280,
+  SENS_DC_INA219 : SENS_DC_INA219,
+  SENS_GY302 : SENS_GY302, 
+  SENS_RGB_TCS34725 : SENS_RGB_TCS34725,
 
   //PROGRAMABLES
   Arduino: Arduino,

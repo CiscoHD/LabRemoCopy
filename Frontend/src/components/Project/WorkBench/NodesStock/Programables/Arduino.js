@@ -1,16 +1,19 @@
 import Arduino from "@/assets/media/Nodes/Programables/ARDUINO_NANO33.png";
 
+
+const defaultHandleSize = { width: 20, height: 20 };
+
 export default {
   name: "Arduino",
   url: Arduino,
   type: "programable",
-  size: { x: "162.5px", y: "87.5px" },
+  size: { x: "50%", y: "50%" },
   handles: [
     {
       id: "pin1",
       type: "source",
       position: "bottom",
-      style: { bottom: 0, left: 0 },
+      style: { bottom: 0, left: 0, },
       isConnectable: true,
     },
     {
@@ -27,5 +30,5 @@ export default {
       style: { bottom: 0, left: "95%" },
       isConnectable: true,
     },
-  ],
+  ].map(handle => ( {...handle, style: {...defaultHandleSize, ...handle.style},} )),
 };
