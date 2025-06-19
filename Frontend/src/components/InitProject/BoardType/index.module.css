@@ -78,9 +78,10 @@
   color: var(--green-main);
 }
 .image {
-  height: 60%;
-  width: 100%;
+  height: auto;
+  width: 70%;
   padding: 1em;
+  object-fit: contain;
 }
 .info {
   display: flex;
