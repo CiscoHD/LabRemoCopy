@@ -22,10 +22,7 @@ const ImageNode = ({ data }) => {
             type={handle.type}
             position={handle.position}
             style={{ 
-              bottom: handle.style.bottom,
-              left: handle.style.left,
-              width: handle.style?.width || 3,  
-              height: handle.style?.height || 3,
+              ...handle.style,
               background: backgroundColor,
             }}
             isConnectable={handle.isConnectable}

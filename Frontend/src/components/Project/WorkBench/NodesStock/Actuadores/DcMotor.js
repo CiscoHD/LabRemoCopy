@@ -1,5 +1,7 @@
 import A_MotorDC from "@/assets/media/Nodes/Actuadores (A-G)/A_MotorDC.svg";
 
+const defaultHandleSize = {width: 12, height: 12};
+
 export default {
   name: "DcMotor",
   url: A_MotorDC,
@@ -13,5 +15,11 @@ export default {
       style: { left: ".25em", top: "3.55em" },
       isConnectable: true,
     },
-  ],
+  ].map((handle) => ({
+    ...handle,
+    style: {
+      ...defaultHandleSize,
+      ...handle.style,
+    },
+  })),
 };
