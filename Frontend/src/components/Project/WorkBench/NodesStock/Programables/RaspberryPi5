@@ -1,24 +1,35 @@
 import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
 
-const defaultHandleSize = { width: 20, height: 20 };
+const defaultHandleSize = { width: 6, height: 6 };
+const firstUp = "16.5%";
+const secondUp = "12.5%";
+
+
 export default {
   name: "RaspberryPi5",
   url: RaspberryPi5,
   type: "programable",
-  size: { x: "162.5px", y: "87.5px" },
+  size: { x: "50%", y: "50%" },
   handles: [
     {
       id: "pin1_1",
       type: "source",
       position: "bottom",
-      style: { bottom: 0, left: "90%" },
+      style: { bottom: firstUp, left: "39.5%" },
       isConnectable: true,
     },
     {
-      id: "pin2_2",
+      id: "pin1_2",
       type: "source",
       position: "bottom",
-      style: { bottom: 0, left: "80%" },
+      style: { bottom: firstUp, left: "39.5%" },
+      isConnectable: true,
+    },
+    {
+      id: "pin2_1",
+      type: "source",
+      position: "bottom",
+      style: { bottom: secondUp, left: "39.5%" },
       isConnectable: true,
     },
   ].map(handle => ( {...handle, style: {...defaultHandleSize, ...handle.style},} )),

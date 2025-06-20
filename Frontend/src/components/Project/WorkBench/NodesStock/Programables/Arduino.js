@@ -1,6 +1,5 @@
 import Arduino from "@/assets/media/Nodes/Programables/ARDUINO_NANO33.png";
 
-
 const defaultHandleSize = { width: 20, height: 20 };
 
 export default {
