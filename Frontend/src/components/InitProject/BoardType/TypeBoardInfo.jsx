@@ -4,13 +4,13 @@ import CardBoard from "./CardBoard";
 
 import ArduinoMega from "@/assets/media/Nodes/Programables/ARDUINO_NANO33.png";
 import ESP32 from "@/assets/media/Nodes/Programables/ESP32.png";
-import ZYBO from "@/assets/media/Nodes/Programables/Zedboard.png";
+import ZYBO from "@/assets/media/Nodes/Programables/ZEDBOARD2.png";
 import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
 
 export default function TypeBoard() {
   //Opciones de incio
   const boards = [
-    { board: "Arduino", title: "Arduino MEGA", url: ArduinoMega },
+    { board: "Arduino", title: "Arduino Nano 33", url: ArduinoMega },
     { board: "Esp32", title: "ESP32", url: ESP32 },
     { board: "ZedBoard", title: "ZedBoard", url: ZYBO },
     { board: "RaspberryPi5", title: "RaspberryPi5", url: RaspberryPi5 },

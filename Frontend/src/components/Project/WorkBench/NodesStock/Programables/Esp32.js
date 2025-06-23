@@ -1,6 +1,6 @@
 import ESP32 from "@/assets/media/Nodes/Programables/ESP32.png";
 
-const defaultHandleSize = { width: 20, height: 20 };
+const defaultHandleSize = { width: 3, height: 3 };
 export default {
   name: "Esp32",
   url: ESP32,

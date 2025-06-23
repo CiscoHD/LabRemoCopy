@@ -1,164 +1,79 @@
-import ZedBoard from "@/assets/media/Nodes/Programables/Zedboard.png";
+import ZedBoard from "@/assets/media/Nodes/Programables/ZEDBOARD.png";
 
-const defaultHandleSize = {width: 3, height: 3}; 
-const firstLeft = "12%";
-const secondLeft = "14.8%";
+const defaultHandleSize = { width: 3, height: 3 };
+const firstLeft = "4%"; // Más hacia la izquierda
+const secondLeft = "5%"; // Cerca del borde derecho
 
+// Bloques de pines y su posición vertical (top)
+const filavertical = [
+  { prefijo: "JA", top: ["46%", "48.2%", "50.5%", "52.5%"]},
+  { prefijo: "JB", top: ["59%", "61.3%", "63.5%", "65.5%"] },
+  { prefijo: "JC", top: ["72%", "74%", "76%", "78.5%"] },
+];
+
+// lOS Handles son los pines 
+// Generar todos los handles dinámicamente
+let handles = [];
+
+filavertical.forEach(({ prefijo, top}) => {
+  top.forEach((t, i) => {
+    const pinNumber = 4 - i;
+    handles.push({
+      id: `${prefijo}${pinNumber}`,
+      type: "source",
+      position: "left", // Conexión hacia la izquierda
+      style: { left: firstLeft, top: t },
+    });
+    handles.push({
+      id: `${prefijo}${pinNumber}_1`,
+      type: "source",
+      position: "right", // Conexión hacia la derecha
+      style: { left: secondLeft, top: t },
+      zIndex: 10,
+    });
+  });
+});
+// Pines horizontales en la parte inferior
+
+const filaInferior = [
+  { prefijo: "JD", cantidad: 4, top: "86%", inicio: 8, espacio: 1.5},
+  { prefijo: "JE", cantidad: 4, top: "83%", inicio: 8, espacio: 1.5 },
+  { prefijo: "JF", cantidad: 4, top: "86%", inicio: 16.5, espacio: 1.5},
+  { prefijo: "JG", cantidad: 4, top: "83%", inicio: 16.5, espacio: 1.5 },
+  
+];
+
+filaInferior.forEach(({ prefijo, cantidad, top, inicio, espacio }) => {
+  for (let i = 1; i <= cantidad; i++) {
+    handles.push({
+      id: `${prefijo}${i}`,
+      type: "source",
+      position: "bottom",
+      style: {
+        top,
+        left: `${inicio + (i - 1) * espacio}%`,
+        zIndex: 10,
+        ...defaultHandleSize,
+      },
+    });
+  }
+});
+
+
+// Agregar estilo base a todos los handles
+handles = handles.map((handle) => ({
+  ...handle,
+  style: {
+    ...defaultHandleSize,
+    ...handle.style,
+  },
+}));
+
+// Exportar el nodo completo
 export default {
   name: "ZedBoard",
   url: ZedBoard,
   type: "programable",
-  size: { x: "250px", y: "250px" },
-  handles: [
-    {
-      id: "JE4",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "45%",   },
-    },
-    {
-      id: "JE3",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "47.2%",   },
-    },
-    {
-      id: "JE2",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "49.5%",   },
-    },
-    {
-      id: "JE1",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "51.5%",   },
-    },
-    {
-      id: "JE4_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "45%",   },
-    },
-    {
-      id: "JE3_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "47.2%",   },
-    },
-    {
-      id: "JE2_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "49.5%",   },
-    },
-    {
-      id: "JE1_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "51.5%",   },
-    },
-    {
-      id: "JD4",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "57%",   },
-    },
-    {
-      id: "JD3",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "59.3%",   },
-    },
-    {
-      id: "JD2",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "61.5%",   },
-    },
-    {
-      id: "JD1",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "63.5%",   },
-    },
-    {
-      id: "JD4_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "57%",   },
-    },
-    {
-      id: "JD3_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "59.3%",   },
-    },
-    {
-      id: "JD2_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "61.5%",   },
-    },
-    {
-      id: "JD1_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "63.5%",   },
-    },
-    {
-      id: "JC4",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "70%",   },
-    },
-    {
-      id: "JC3",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "72%",   },
-    },
-    {
-      id: "JC2",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "74%",   },
-    },
-    {
-      id: "JC1",
-      type: "source",
-      position: "left",
-      style: { left: firstLeft, top: "76%",   },
-    },
-    {
-      id: "JC4_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "70%",   },
-    },
-    {
-      id: "JC3_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "72%",   },
-    },
-    {
-      id: "JC2_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "74%",   },
-    },
-    {
-      id: "JC1_1",
-      type: "source",
-      position: "left",
-      style: { left: secondLeft, top: "76%",   },
-    },
-  ].map((handle) => ({
-    ...handle,
-    style: {
-      ...defaultHandleSize,
-      ...handle.style,
-    },
-  })),
+  size: { x: "45%", y: "45%" },
+  handles,
 };
