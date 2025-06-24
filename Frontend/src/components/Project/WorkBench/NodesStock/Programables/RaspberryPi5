@@ -1,35 +1,46 @@
-import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
+import ESP32 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
 
-const defaultHandleSize = { width: 6, height: 6 };
-const firstUp = "16.5%";
-const secondUp = "12.5%";
+const defaultHandleSize = { width: 3, height: 3 };
+let handles = [];
+
+const filaInferior = [
+  { prefijo: "JA", cantidad: 20, top: "83.5%", inicio: 39, espacio: 2.5 },
+  { prefijo: "JD", cantidad: 20, top: "83.5%", inicio: 39, espacio: 2.5},
+];
+
+// Prefijos que se conectan hacia arriba
+const haciaArriba = ["JD"];
+
+filaInferior.forEach(({ prefijo, cantidad, top, inicio, espacio }) => {
+  const posicion = haciaArriba.includes(prefijo) ? "top" : "bottom";
+
+  for (let i = 1; i <= cantidad; i++) {
+    handles.push({
+      id: `${prefijo}${i}`,
+      type: "source",
+      position: posicion,
+      style: {
+        top,
+        left: `${inicio + (i - 1) * espacio}%`,
+        zIndex: 10,
+        ...defaultHandleSize,
+      },
+    });
+  }
+});
+
+handles = handles.map((handle) => ({
+  ...handle,
+  style: {
+    ...defaultHandleSize,
+    ...handle.style,
+  },
+}));
 
 export default {
   name: "RaspberryPi5",
-  url: RaspberryPi5,
+  url: ESP32,
   type: "programable",
-  size: { x: "50%", y: "50%" },
-  handles: [
-    {
-      id: "pin1_1",
-      type: "source",
-      position: "bottom",
-      style: { bottom: firstUp, left: "39.5%" },
-      isConnectable: true,
-    },
-    {
-      id: "pin1_2",
-      type: "source",
-      position: "bottom",
-      style: { bottom: firstUp, left: "39.5%" },
-      isConnectable: true,
-    },
-    {
-      id: "pin2_1",
-      type: "source",
-      position: "bottom",
-      style: { bottom: secondUp, left: "39.5%" },
-      isConnectable: true,
-    },
-  ].map(handle => ( {...handle, style: {...defaultHandleSize, ...handle.style},} )),
+  size: { x: "45%", y: "45%" },
+  handles,
 };

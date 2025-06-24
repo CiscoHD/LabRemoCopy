@@ -5,11 +5,7 @@ let handles = [];
 
 const filaInferior = [
   { prefijo: "JA", cantidad: 14, top: "83%", inicio: 11, espacio: 5 },
- // { prefijo: "JB", cantidad: 5, top: "78%", inicio: 38, espacio: 6 },
- //{ prefijo: "Jc", cantidad: 5, top: "79%", inicio: 67.5, espacio: 6 },
   { prefijo: "JD", cantidad: 14, top: "8%", inicio: 11, espacio: 5 },
-  //{ prefijo: "JE", cantidad: 5, top: "8%", inicio: 38, espacio: 6 },
-  //{ prefijo: "JF", cantidad: 5, top: "8%", inicio: 67.5, espacio: 6 },
 ];
 
 // Prefijos que se conectan hacia arriba
