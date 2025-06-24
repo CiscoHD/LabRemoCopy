@@ -9,10 +9,10 @@ const filaInferior = [
   { prefijo: "Jc", cantidad: 5, top: "79%", inicio: 67.5, espacio: 6 },
   { prefijo: "JD", cantidad: 5, top: "6%", inicio: 8.5, espacio: 6 },
   { prefijo: "JE", cantidad: 5, top: "6%", inicio: 38, espacio: 6 },
-  { prefijo: "JF", cantidad: 5, top: "6%", inicio: 67.5, espacio: 6 },
+  { prefijo: "JF", cantidad: 5, top: "6.5%", inicio: 67, espacio: 6 },
 ];
 
-// Prefijos que se conectan hacia arriba
+// Pines que se conectan por arriba
 const haciaArriba = ["JD", "JE", "JF"];
 
 filaInferior.forEach(({ prefijo, cantidad, top, inicio, espacio }) => {
@@ -33,13 +33,25 @@ filaInferior.forEach(({ prefijo, cantidad, top, inicio, espacio }) => {
   }
 });
 
-handles = handles.map((handle) => ({
-  ...handle,
-  style: {
-    ...defaultHandleSize,
-    ...handle.style,
-  },
-}));
+// Lista de pines inactivos que se deben ver pero no funcionar
+const pinesInactivos = ["JA4", "JB5", "JF2", "JD3"]; // Es solo un ejemplo estos no son los pines no son esos 
+
+handles = handles.map((handle) => {
+  const esInactivo = pinesInactivos.includes(handle.id);
+
+  return {
+    ...handle,
+    isActive: !esInactivo,
+    style: {
+      ...defaultHandleSize,
+      ...handle.style,
+      backgroundColor: esInactivo ? "#FF0000" : "#00BFFF",
+      pointerEvents: esInactivo ? "none" : "auto",
+      opacity: esInactivo ? 0.5 : 1,
+      cursor: esInactivo ? "default" : "pointer",
+    },
+  };
+});
 
 export default {
   name: "Arduino",
@@ -48,4 +60,3 @@ export default {
   size: { x: "45%", y: "45%" },
   handles,
 };
-
