@@ -5,7 +5,7 @@ import Info from "@/utils/Modal/Info";
 import Arduino from "@/assets/media/Nodes/Programables/ARDUINO_NANO33.png";
 import ESP8226 from "@/assets/media/Nodes/Programables/ESP32.png";
 import ZYBO from "@/assets/media/Nodes/Programables/ZEDBOARD2.png";
-import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png"
+import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI5_2.png"
 
 import TypeBoardInfo from "./TypeBoardInfo";
 

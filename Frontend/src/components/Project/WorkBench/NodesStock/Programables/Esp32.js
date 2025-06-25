@@ -1,11 +1,11 @@
 import ESP32 from "@/assets/media/Nodes/Programables/ESp32.png";
 
-const defaultHandleSize = { width: 8, height: 8 };
+const defaultHandleSize = { width: 8, height: 8 };//el tamaño de los pines 
 let handles = [];
 
 const filaInferior = [
-  { prefijo: "JA", cantidad: 14, top: "83%", inicio: 11, espacio: 5 },
-  { prefijo: "JD", cantidad: 14, top: "8%", inicio: 11, espacio: 5 },
+  { prefijo: "JA", cantidad: 14, top: "83%", inicio: 11, espacio: 5 },//pines de abajo
+  { prefijo: "JD", cantidad: 14, top: "8%", inicio: 11, espacio: 5 },//pines de arriba
 ];
 
 // Prefijos que se conectan hacia arriba
