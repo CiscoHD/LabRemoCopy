@@ -1,4 +1,4 @@
-import ESP32 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
+import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
 
 const defaultHandleSize = { width: 1, height: 1 };
 const firstLeft = "58%"; // Más hacia la izquierda
@@ -43,7 +43,7 @@ handles = handles.map((handle) => ({
 
 export default {
   name: "RaspberryPi5",
-  url: ESP32,
+  url: RaspberryPi5,
   type: "programable",
   size: { x: "50%", y: "50%" },
   handles,
