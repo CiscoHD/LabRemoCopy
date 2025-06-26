@@ -67,6 +67,7 @@
   display: flex;
   flex-wrap: wrap;
   color: rgb(0, 146, 214);
+  text-align: justify;
 }
 .active {
   background-color: rgb(240, 240, 240);
