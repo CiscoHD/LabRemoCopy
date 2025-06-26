@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 
 import Info from "@/utils/Modal/Info";
+import Info_Raspberry from "@/utils/Modal/info_Raspberry";
 
 import Arduino from "@/assets/media/Nodes/Programables/ARDUINO_NANO33.png";
 import ESP8226 from "@/assets/media/Nodes/Programables/ESP32.png";
@@ -79,7 +80,7 @@ export const ShowBoardInfo = ({ board }) => {
     case "ARDUINO":
       return <Info label={"Arduino"} url={Arduino} />;
     case "RASPBERRYPI5":
-      return <Info label={"RaspberryPi5"} url={RaspberryPi5} />;
+      return <Info_Raspberry label={"RaspberryPi5"} url={RaspberryPi5} />;
     default:
       return <></>;
   }
