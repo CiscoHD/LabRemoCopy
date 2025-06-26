@@ -1,79 +1,60 @@
-import ZedBoard from "@/assets/media/Nodes/Programables/ZEDBOARD.png";
+import ZedBoard from "@/assets/media/Nodes/Programables/Zedboard1.png";
 
-const defaultHandleSize = { width: 3, height: 3 };
+const defaultHandleSize = { width: 4, height: 5};
 const firstLeft = "4%"; // Más hacia la izquierda
 const secondLeft = "5%"; // Cerca del borde derecho
 
-// Bloques de pines y su posición vertical (top)
-const filavertical = [
-  { prefijo: "JA", top: ["46%", "48.2%", "50.5%", "52.5%"]},
-  { prefijo: "JB", top: ["59%", "61.3%", "63.5%", "65.5%"] },
-  { prefijo: "JC", top: ["72%", "74%", "76%", "78.5%"] },
-];
-
-// lOS Handles son los pines 
-// Generar todos los handles dinámicamente
-let handles = [];
-
-filavertical.forEach(({ prefijo, top}) => {
-  top.forEach((t, i) => {
-    const pinNumber = 4 - i;
-    handles.push({
-      id: `${prefijo}${pinNumber}`,
-      type: "source",
-      position: "left", // Conexión hacia la izquierda
-      style: { left: firstLeft, top: t },
-    });
-    handles.push({
-      id: `${prefijo}${pinNumber}_1`,
-      type: "source",
-      position: "right", // Conexión hacia la derecha
-      style: { left: secondLeft, top: t },
-      zIndex: 10,
-    });
-  });
-});
-// Pines horizontales en la parte inferior
-
 const filaInferior = [
-  { prefijo: "JD", cantidad: 4, top: "86%", inicio: 8, espacio: 1.5},
+   
+  { prefijo: "J20", cantidad: 23, top: "69%", inicio: 85.5, espacio: 2 },// pines de lado vertical de la FMC
+  { prefijo: "J16", cantidad: 26, top: "68%", inicio: 48, espacio: 1.5},// pines de abajo de la FMC
+  { prefijo: "J1", cantidad: 26, top: "24%", inicio: 48, espacio: 1.5 },// pines de la parte de arriba FMC 
+  { prefijo: "Jl", cantidad: 4, top: "86%", inicio: 8, espacio: 1.5},
   { prefijo: "JE", cantidad: 4, top: "83%", inicio: 8, espacio: 1.5 },
   { prefijo: "JF", cantidad: 4, top: "86%", inicio: 16.5, espacio: 1.5},
   { prefijo: "JG", cantidad: 4, top: "83%", inicio: 16.5, espacio: 1.5 },
-  
 ];
+// lOS Handles son los pines 
+// Generar todos los handles dinámicamente
+const haciaArriba = ["J1"];
+let handles = [];
 
 filaInferior.forEach(({ prefijo, cantidad, top, inicio, espacio }) => {
+  const esJD = prefijo === "J20";
+  const posicion = esJD
+    ? "right" // Conexión hacia la derecha
+    : haciaArriba.includes(prefijo)
+    ? "top"
+    : "bottom";
+
   for (let i = 1; i <= cantidad; i++) {
+    const style = esJD
+      ? {
+          top: `${parseFloat(top) - (i - 1) * espacio}%`,
+          left: `${inicio}%`,
+        }
+      : {
+          top,
+          left: `${inicio + (i - 1) * espacio}%`,
+        };
+// Agregar estilo base a todos los handles
     handles.push({
       id: `${prefijo}${i}`,
       type: "source",
-      position: "bottom",
+      position: posicion,
       style: {
-        top,
-        left: `${inicio + (i - 1) * espacio}%`,
-        zIndex: 10,
         ...defaultHandleSize,
+        ...style,
+        zIndex: 10,
       },
     });
   }
 });
-
-
-// Agregar estilo base a todos los handles
-handles = handles.map((handle) => ({
-  ...handle,
-  style: {
-    ...defaultHandleSize,
-    ...handle.style,
-  },
-}));
-
 // Exportar el nodo completo
 export default {
   name: "ZedBoard",
   url: ZedBoard,
   type: "programable",
-  size: { x: "45%", y: "45%" },
+  size: { x: "55%", y: "60%" },
   handles,
 };

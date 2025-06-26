@@ -1,8 +1,8 @@
 import ESP32 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
 
 const defaultHandleSize = { width: 1, height: 1 };
-const firstLeft = "59%"; // Más hacia la izquierda
-const secondLeft = "63.5%"; // Cerca del borde derecho
+const firstLeft = "58%"; // Más hacia la izquierda
+const secondLeft = "64%"; // Cerca del borde derecho
 
 // Bloques de pines y su posición vertical (top)
 const filavertical = [
