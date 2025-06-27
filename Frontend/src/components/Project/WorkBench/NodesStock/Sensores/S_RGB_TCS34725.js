@@ -4,7 +4,7 @@ export default {
   name: "RGB_TCS34725",
   url: S_RGB_TCS34725,
   type: "sensor",
-  size: { x: "80px", y: "50px" },
+  size: { x: "20%", y: "20%" },
   handles: [
     {
       id: "OUT",

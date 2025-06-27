@@ -1,12 +1,14 @@
 import styles from "./index.module.css";
 
-import Info from "@/utils/Modal/Info";
+import Info_ArduinoNano from "@/utils/Modal/Info_ArduinoNano";
 import Info_Raspberry from "@/utils/Modal/info_Raspberry";
+import Info_Esp32 from "@/utils/Modal/info_Esp32";
+import Info_Zedboard from "@/utils/Modal/info_Zebdoard";
 
 import Arduino from "@/assets/media/Nodes/Programables/ARDUINO_NANO33.png";
 import ESP8226 from "@/assets/media/Nodes/Programables/ESP32.png";
 import ZYBO from "@/assets/media/Nodes/Programables/ZEDBOARD2.png";
-import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI5_2.png"
+import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI5_2.png";
 
 import TypeBoardInfo from "./TypeBoardInfo";
 
@@ -74,11 +76,11 @@ const loadFileModal = () => {
 export const ShowBoardInfo = ({ board }) => {
   switch (board.toUpperCase()) {
     case "ESP32":
-      return <Info label={"Esp326"} url={ESP8226} />;
+      return <Info_Esp32 label={"Esp32"} url={ESP8226} />;
     case "ZEDBOARD":
-      return <Info label={"Zedboard"} url={ZYBO} />;
+      return <Info_Zedboard label={"Zedboard"} url={ZYBO} />;
     case "ARDUINO":
-      return <Info label={"Arduino"} url={Arduino} />;
+      return <Info_ArduinoNano label={"Arduino"} url={Arduino} />;
     case "RASPBERRYPI5":
       return <Info_Raspberry label={"RaspberryPi5"} url={RaspberryPi5} />;
     default:

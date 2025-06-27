@@ -24,7 +24,7 @@
   margin: 0.7em;
   padding: 2rem;
   padding-bottom: 0;
-  width: 30%;
+  width: 40%;
   border-radius: 15px;
   border: none;
   box-shadow: -1px 7px 10px black;
@@ -70,8 +70,8 @@
   text-align: justify;
 }
 .active {
-  background-color: rgb(240, 240, 240);
-  box-shadow: -5px 7px 15px yellowgreen;
+  background-color: rgb(253, 253, 253);
+  box-shadow: -5px 7px 15px rgb(170, 240, 30);
 }
 .title {
   text-transform: uppercase;
@@ -79,8 +79,10 @@
   color: var(--green-main);
 }
 .image {
-  height: 60%;
-  width: 100%;
+
+  max-width: 120%;
+  height: auto;
+  display: block;
   padding: 1em;
 }
 .info {

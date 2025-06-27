@@ -4,7 +4,7 @@ export default {
   name: "GY302",
   url: S_GY302,
   type: "sensor",
-  size: { x: "80px", y: "50px" },
+  size: { x: "20%", y: "20%" },
   handles: [
     {
       id: "OUT",

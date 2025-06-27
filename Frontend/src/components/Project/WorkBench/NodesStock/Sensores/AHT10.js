@@ -4,7 +4,7 @@ export default {
   name: "AHT10",
   url: M_AHT10,
   type: "sensor",
-  size: { x: "60px", y: "110px" },
+  size: { x: "20%", y: "20%" },
   handles: [
     {
       id: "SCL",

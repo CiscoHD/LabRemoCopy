@@ -6,9 +6,10 @@ export default function BoardInfo({ label }) {
       <div className={styles.info_card}>
         <div className={styles.info_title}>{label}</div>
         <div className={styles.info_text}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s
+       Es un kit de desarrollo completo para diseñadores interesados 
+       ​en explorar diseños con el SoC totalmente programable AMD 
+       Xilinx Zynq®-7000 . La placa contiene todas las interfaces y 
+       funciones de soporte necesarias para una amplia gama de aplicaciones.
         </div>
       </div>
     </div>
