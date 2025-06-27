@@ -1,14 +1,14 @@
 import { Handle } from "@xyflow/react";
 
 const ImageNode = ({ data }) => {
-  const { image, size, handles } = data;
+  const { image, size, handles, rotation=0} = data;
 
   return (
     <div style={{ position: "relative", width: size.x, height: size.y }}>
       <img
         src={image.url}
         alt={image.alt}
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "100%", transform: `rotate(${rotation}deg)`, }}
       />
       {handles.map((handle, index) => {
         const backgroundColor =

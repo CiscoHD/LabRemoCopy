@@ -41,6 +41,22 @@ export default function EdgeContextMenu({
     notShowMenu();
   }, [id, getEdges, setEdges]);
 
+  //Función para rotar un nodo
+const rotateNode = useCallback(() => {
+  setNodes((nodes) =>
+    nodes.map((node) =>
+      node.id === id
+        ? {
+            ...node,
+            data: {
+              ...node.data,
+              rotation: (node.data?.rotation || 0) + 15,
+            },
+          }
+        : node
+    )
+  );
+}, [id, getEdges, setEdges]);
   const changeColor = useCallback(() => {
     setEdges((edges) =>
       edges.map((edge) =>

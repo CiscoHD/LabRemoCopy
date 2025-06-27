@@ -53,6 +53,26 @@ export default function NodeContextMenu({
     notShowMenu();
   }, [id]);
 
+  //Función para rotar un nodo
+  const rotateNode = useCallback(() => {
+    setNodes((nodes) =>
+    nodes.map((node) =>{
+      if (node.id == id){
+        const currentRotation = node.data?.rotation ||0;
+        return {
+          ...node,
+          data: {
+            ...node.data,
+            rotation: (currentRotation + 90) % 360,
+          },
+        };
+      }
+      return node;
+    })
+    );
+    //notShowMenu();
+  }, [id]);
+
   const showInfo = useCallback(() => {
     setShow(!show);
   });
@@ -69,6 +89,10 @@ export default function NodeContextMenu({
           <button className={styles.button} onClick={deleteNode}>
             Delete
             <div className={styles.key}>Del</div>
+          </button>
+          <button className={styles.button} onClick={rotateNode}>
+            Rotate
+            <div className={styles.key}>R</div>
           </button>
         </>
       )}
