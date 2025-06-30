@@ -68,9 +68,10 @@ export default function NodeContextMenu({
         };
       }
       return node;
+
     })
     );
-    //notShowMenu();
+    notShowMenu();
   }, [id]);
 
   const showInfo = useCallback(() => {
