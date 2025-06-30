@@ -1,48 +1,30 @@
-import S_GY302 from "@/assets/media/Nodes/Sensores (L-O)/S_GY302.png";
+import sensorImg from "@/assets/media/Nodes/Sensores (L-O)/S_GY302.png";
 
-const defaultHandleSize = { width: 1, height: 1 };
+const defaultHandleStyle = (left) => ({
+  left,
+  bottom: "0.7em",
+  background: "orange",
+});
+
+const createHandle = (id, left) => ({
+  id,
+  type: "target",
+  position: "bottom",
+  style: defaultHandleStyle(left),
+  isConnectable: true,
+});
 
 export default {
   name: "s_GY302",
-  url: S_GY302,
+  url: sensorImg,
   type: "sensor",
   size: { x: "20%", y: "20%" },
   handles: [
-    {
-      id: "vcc",
-      type: "target",
-      position: "bottom",
-      style: { left: "20.5%", bottom: "0.7em", background: "orange" },
-      isConnectable: true,
-    },
-    {
-      id: "GND",
-      type: "target",
-      position: "bottom",
-      style: { left: "37%", bottom: "0.7em", background: "orange" },
-      isConnectable: true,
-    },
-    {
-      id: "SCL",
-      type: "target",
-      position: "bottom",
-      style: { left: "52.5%", bottom: "0.7em", background: "orange" },
-      isConnectable: true,
-    },
-    {
-      id: "SDA",
-      type: "target",
-      position: "bottom",
-      style: { left: "70.5%", bottom: "0.7em", background: "orange" },
-      isConnectable: true,
-    },
-    {
-      id: "ADDR",
-      type: "target",
-      position: "bottom",
-      style: { left: "87%", bottom: "0.7em", background: "orange" },
-      isConnectable: true,
-    },
+    createHandle("vcc", "20.5%"),
+    createHandle("GND", "37%"),
+    createHandle("SCL", "52.5%"),
+    createHandle("SDA", "70.5%"),
+    createHandle("ADDR", "87%"),
   ],
 };
 
