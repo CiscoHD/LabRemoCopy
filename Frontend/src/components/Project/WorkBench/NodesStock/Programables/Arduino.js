@@ -10,7 +10,7 @@ const filaInferior = [
 
 const haciaArriba = new Set(["JA"]);// pines que se conectan por arriba 
 const pinesInactivos = new Set(["JA4", "JB9"]);// los pines que el usario no puede usar (esto solo es un ejmplo)
-const espacio = 6;
+const espacio = 6; //espacio que hay de pin a pin 
 
 const handles = filaInferior.flatMap(({ prefijo, cantidad, top, inicio }) =>
   Array.from({ length: cantidad }, (_, i) => {

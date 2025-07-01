@@ -16,6 +16,7 @@ import S_AHT20_BMP280 from "./Sensores/S_AHT20_BMP280";
 import S_DC_INA219 from "./Sensores/S_DC_INA219";
 import S_GY302 from "./Sensores/S_GY302";
 import S_RGB_TCS34725 from "./Sensores/S_RGB_TCS34725";
+import S_DS3231_RTC from "./Sensores/S_DS3231_RTC";
 
 
 //PROGRAMABLES
@@ -46,7 +47,7 @@ export default {
   S_DC_INA219 : S_DC_INA219,
   S_GY302 : S_GY302, 
   S_RGB_TCS34725 : S_RGB_TCS34725,
-
+  S_DS3231_RTC : S_DS3231_RTC,
   //PROGRAMABLES
   Arduino: Arduino,
   Esp32: Esp32,
