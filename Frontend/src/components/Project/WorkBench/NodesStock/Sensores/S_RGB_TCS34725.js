@@ -1,7 +1,8 @@
 import S_RGB_TCS34725 from "@/assets/media/Nodes/Sensores (L-O)/S_RGB_TCS34725.png";
+const trueDimensions = { tamX: 387 , tamY: 337   }; 
 const defaultHandleStyle = (left) => ({
   left,
-  bottom: "0.7em",
+  bottom: "0.45em",
   background: "orange",
 });
 
@@ -16,7 +17,8 @@ export default {
   name: "RGB_TCS34725",
   url: S_RGB_TCS34725,
   type: "sensor",
-  size: { x: "20%", y: "20%" },
+ size: { x: `${Math.ceil(trueDimensions.tamX*.20)}px`, 
+          y: `${Math.ceil(trueDimensions.tamY*.20)}px` },
   handles: [
     createHandle("LED", "12%"),
     createHandle("INT", "24%"),

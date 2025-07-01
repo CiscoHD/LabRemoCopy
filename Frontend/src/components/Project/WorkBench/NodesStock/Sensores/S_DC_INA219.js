@@ -1,8 +1,8 @@
 import sensorImg from "@/assets/media/Nodes/Sensores (L-O)/S_DC_INA219.png";
-
+const trueDimensions = { tamX: 375, tamY: 321  }; 
 const defaultHandleStyle = (left) => ({
   left,
-  bottom: "1em",
+  bottom: "0.7em",
   background: "orange",
 });
 
@@ -18,7 +18,8 @@ export default {
   name: "s_DC_INA219",
   url: sensorImg,
   type: "sensor",
-  size: { x: "20%", y: "20%" },
+   size: { x: `${Math.ceil(trueDimensions.tamX*.20)}px`, 
+          y: `${Math.ceil(trueDimensions.tamY*.20)}px` },
   handles: [
     createHandle("vcc", "27%"),
     createHandle("GND", "37%"),

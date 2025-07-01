@@ -40,6 +40,7 @@ export default {
   name: "Arduino",
   url: Arduino,
   type: "programable",
+   //Escala la imagen multiplicando el tamaño real por el porcentaje deseado
   size: { x: `${Math.ceil(trueDimensions.tamX*.45)}px`, 
           y: `${Math.ceil(trueDimensions.tamY*.45)}px` },
   handles,
