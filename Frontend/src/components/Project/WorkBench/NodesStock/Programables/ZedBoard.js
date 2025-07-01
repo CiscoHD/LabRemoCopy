@@ -3,6 +3,7 @@ import ZedBoard from "@/assets/media/Nodes/Programables/Zedboard1.png";
 const defaultHandleSize = { width: 5, height: 5};
 const firstLeft = "4%"; // Más hacia la izquierda
 const secondLeft = "5%"; // Cerca del borde derecho
+const trueDimensions = { tamX: 931, tamY: 445 }; //Dimensiones reales de la imagen original 
 
 const filaInferior = [
    
@@ -51,6 +52,7 @@ export default {
   name: "ZedBoard",
   url: ZedBoard,
   type: "programable",
-  size: { x: "55%", y: "55%" },
+  size: { x: `${Math.ceil(trueDimensions.tamX*.55)}px`, 
+          y: `${Math.ceil(trueDimensions.tamY*.55)}px` },
   handles,
 };

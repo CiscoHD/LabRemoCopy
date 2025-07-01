@@ -1,6 +1,7 @@
 import Arduino from "@/assets/media/Nodes/Programables/ARDUINO_NANO33_1.png";
 
 const defaultHandleSize = { width: 7, height: 7};
+const trueDimensions = { tamX: 507, tamY: 209 }; //Dimensiones reales de la imagen original 
 
 const filaInferior = [
   { prefijo: "JA", cantidad: 15, top: "6%", inicio: 7.5 },// pines de arriba 
@@ -39,7 +40,7 @@ export default {
   name: "Arduino",
   url: Arduino,
   type: "programable",
-  size: { x: "50%", y: "50%" },
+  size: { x: `${Math.ceil(trueDimensions.tamX*.45)}px`, 
+          y: `${Math.ceil(trueDimensions.tamY*.45)}px` },
   handles,
 };
-

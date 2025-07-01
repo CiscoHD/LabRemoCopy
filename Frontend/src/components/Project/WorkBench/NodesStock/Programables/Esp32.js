@@ -1,6 +1,7 @@
 import ESP32 from "@/assets/media/Nodes/Programables/ESp32.png";
 
 const defaultHandleSize = { width: 8, height: 8 };//el tamaño de los pines 
+const trueDimensions = { tamX: 694, tamY: 360 }; //Dimensiones reales de la imagen original
 let handles = [];
 
 const filaInferior = [
@@ -41,6 +42,7 @@ export default {
   name: "ESP32",
   url: ESP32,
   type: "programable",
-  size: { x: "45%", y: "45%" },
+  size: { x: `${Math.ceil(trueDimensions.tamX*.45)}px`, 
+          y: `${Math.ceil(trueDimensions.tamY*.45)}px` },
   handles,
 };

@@ -3,6 +3,7 @@ import RaspberryPi5 from "@/assets/media/Nodes/Programables/RASPBERRYPI_5.png";
 const defaultHandleSize = { width: 1, height: 1 };
 const firstLeft = "58%"; // Más hacia la izquierda
 const secondLeft = "64%"; // Cerca del borde derecho
+const trueDimensions = { tamX: 440, tamY: 567 }; //Dimensiones reales de la imagen original 
 
 // Bloques de pines y su posición vertical (top)
 const filavertical = [
@@ -10,7 +11,7 @@ const filavertical = [
 
 ];
 
-// lOS Handles son los pines 
+// Los Handles son los pines 
 // Generar todos los handles dinámicamente
 let handles = [];
 
@@ -45,6 +46,8 @@ export default {
   name: "RaspberryPi5",
   url: RaspberryPi5,
   type: "programable",
-  size: { x: "50%", y: "50%" },
+  //Escala la imagen multiplicando el tamaño real por el porcentaje deseado 
+  size: { x: `${Math.ceil(trueDimensions.tamX*.45)}px`, 
+          y: `${Math.ceil(trueDimensions.tamY*.45)}px` },
   handles,
 };
