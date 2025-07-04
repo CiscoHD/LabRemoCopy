@@ -59,11 +59,13 @@ export default function NodeContextMenu({
     nodes.map((node) =>{
       if (node.id == id){
         const currentRotation = node.data?.rotation ||0;
+        const newRotation = (currentRotation + 90) % 360;
+        
         return {
           ...node,
           data: {
             ...node.data,
-            rotation: (currentRotation + 90) % 360,
+            rotation: newRotation,
           },
         };
       }
@@ -71,6 +73,7 @@ export default function NodeContextMenu({
 
     })
     );
+    
     notShowMenu();
   }, [id]);
 

@@ -1,7 +1,20 @@
-import { Handle } from "@xyflow/react";
+import { Handle, useUpdateNodeInternals } from "@xyflow/react";
+import { useEffect, useState } from "react";
 
-const ImageNode = ({ data }) => {
+const ImageNode = ({ data, id }) => {
   const { image, size, handles, rotation = 0, scale = 1 } = data;
+  const updateNodeInternals = useUpdateNodeInternals();
+  const [currentRotation, setCurrentRotation] = useState(rotation);
+
+  // Actualizar las posiciones de los handles cuando cambia la rotación
+  useEffect(() => {
+    updateNodeInternals(id);
+  }, [currentRotation, id, updateNodeInternals]);
+
+  // Sincronizar con la rotación externa
+  useEffect(() => {
+    setCurrentRotation(rotation);
+  }, [rotation]);
 
   const outerStyle = {
     width: size.x * scale,
@@ -12,8 +25,8 @@ const ImageNode = ({ data }) => {
   const innerStyle = {
     width: size.x,
     height: size.y,
-    transform: `scale(${scale}) rotate(${rotation}deg)`,
-    transformOrigin: "top left",
+    transform: `scale(${scale}) rotate(${currentRotation}deg)`,
+    transformOrigin: "center center",
   };
 
   return (
@@ -34,7 +47,7 @@ const ImageNode = ({ data }) => {
 
           return (
             <Handle
-              key={index}
+              key={`${handle.id}-${currentRotation}`}
               id={handle.id}
               type={handle.type}
               position={handle.position}

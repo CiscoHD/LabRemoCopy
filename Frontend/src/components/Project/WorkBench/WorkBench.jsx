@@ -39,6 +39,77 @@ const WorkBench = () => {
 
   const { boardChoosen, reactFlowInstance } = useContext(MenuContext);
 
+  // Función para actualizar la rotación de un nodo
+  const handleRotationChange = useCallback((nodeId, newRotation) => {
+    setNodes((nodes) =>
+      nodes.map((node) => {
+        if (node.id === nodeId) {
+          return {
+            ...node,
+            data: {
+              ...node.data,
+              rotation: newRotation,
+            },
+          };
+        }
+        return node;
+      })
+    );
+  }, [setNodes]);
+
+  // Función para guardar el último programable seleccionado
+  const saveLastProgramable = useCallback((boardName) => {
+    try {
+      localStorage.setItem('lastProgramable', boardName);
+    } catch (error) {
+      console.error('Error saving last programable:', error);
+    }
+  }, []);
+
+  // Función para cargar el último programable seleccionado
+  const loadLastProgramable = useCallback(() => {
+    try {
+      return localStorage.getItem('lastProgramable');
+    } catch (error) {
+      console.error('Error loading last programable:', error);
+    }
+    return null;
+  }, []);
+
+  // Cargar o crear nodo programable al inicializar
+  useEffect(() => {
+    if (boardChoosen && nodes.length === 0) {
+      // Guardar el programable actual
+      saveLastProgramable(boardChoosen);
+      
+      // Asegurarse de que el contenedor de React Flow está montado
+      if (ref.current) {
+        const reactFlowBounds = ref.current.getBoundingClientRect();
+
+        // Calcular la posición central
+        const position = {
+          x: reactFlowBounds.width / 2,
+          y: reactFlowBounds.height / 2,
+        };
+
+        //CREAMOS EL NODO DE LA TARJETA SELECCIONADA
+        const initialBoard = Stock[boardChoosen];
+        const newNode = RenderNodes({
+          id: initialBoard.name,
+          name: initialBoard.name,
+          position: position,
+          url: initialBoard.url,
+          nodeType: initialBoard.type,
+          size: initialBoard.size,
+          handles: initialBoard.handles,
+          onRotationChange: handleRotationChange,
+        });
+        
+        setNodes([newNode]);
+      }
+    }
+  }, [boardChoosen, saveLastProgramable, handleRotationChange, nodes.length, setNodes]);
+
   const onEdgeClick = useCallback(
     (event, edge) => {
       event.stopPropagation(); // Evita que otros eventos se disparen
@@ -77,38 +148,6 @@ const WorkBench = () => {
       })),
     );
   }, [selectedEdge, nodeMenu, edgeMenu, setEdges]);
-
-  //Iniciar con tarjeta
-  useEffect(() => {
-    // Asegurarse de que el contenedor de React Flow está montado
-    if (ref.current) {
-      const reactFlowBounds = ref.current.getBoundingClientRect();
-
-      // Calcular la posición central
-      const position = {
-        x: reactFlowBounds.width / 2,
-        y: reactFlowBounds.height / 2,
-      };
-
-      if (boardChoosen) {
-        //CREAMOS EL NODO DE LA TARJETA SELECCIONADA
-        const initialBoard = Stock[boardChoosen];
-        const newNode = RenderNodes({
-          id: initialBoard.name,
-          name: initialBoard.name,
-          position: position,
-          url: initialBoard.url,
-          nodeType: initialBoard.type,
-          size: initialBoard.size,
-          handles: initialBoard.handles,
-        });
-        //VERIFICAMOS SI EXISTE EL NODO PARA PODER AGREGARLO
-        if (newNode && !nodes.some((node) => node.id === newNode.id)) {
-          setNodes((prevNodes) => [...prevNodes, newNode]);
-        }
-      }
-    }
-  }, [nodes, boardChoosen, setNodes]);
 
   const onConnect = useCallback(
     (params) => {
@@ -161,6 +200,22 @@ const WorkBench = () => {
     [edges, nodes, setEdges, sessionConnections],
   );
 
+  // Manejador para el drag de nodos existentes
+  const onNodeDragStop = useCallback((event, node) => {
+    // Asegurar que el nodo se quede en la posición exacta donde se soltó
+    setNodes((nodes) =>
+      nodes.map((n) => {
+        if (n.id === node.id) {
+          return {
+            ...n,
+            position: node.position,
+          };
+        }
+        return n;
+      })
+    );
+  }, [setNodes]);
+
   //TODO: Eliminar el drag y drop
   const onDragOver = useCallback((event) => {
     event.preventDefault();
@@ -182,11 +237,21 @@ const WorkBench = () => {
       // Obtener el contenedor de React Flow
       const reactFlowBounds = ref.current.getBoundingClientRect();
 
-      // Obtener las coordenadas del evento drop, ajustadas al contenedor
-      const position = {
-        x: reactFlowBounds.width / 3,
-        y: reactFlowBounds.height / 3,
-      };
+      let position;
+
+      // Si tenemos una instancia de React Flow, usar coordenadas transformadas
+      if (rfInsatnce) {
+        position = rfInsatnce.screenToFlowPosition({
+          x: event.clientX,
+          y: event.clientY,
+        });
+      } else {
+        // Fallback: calcular coordenadas relativas al contenedor
+        position = {
+          x: event.clientX - reactFlowBounds.left,
+          y: event.clientY - reactFlowBounds.top,
+        };
+      }
 
       const newNode = RenderNodes({
         id: `${node.name}_${+new Date()}`,
@@ -196,11 +261,12 @@ const WorkBench = () => {
         nodeType: node.type,
         size: node.size,
         handles: node.handles,
+        onRotationChange: handleRotationChange,
       });
 
       setNodes((prevNodes) => [...prevNodes, newNode]);
     },
-    [reactFlowInstance, setNodes],
+    [rfInsatnce, setNodes, handleRotationChange],
   );
 
   //Menu Contextual para Nodos
@@ -324,6 +390,7 @@ const WorkBench = () => {
         onNodeContextMenu={nodeContextMenu}
         onEdgeContextMenu={edgeContextMenu}
         fitView
+        onNodeDragStop={onNodeDragStop}
       >
         <Background variant="dots" color="#000" />
         <Controls showInteractive={false} />

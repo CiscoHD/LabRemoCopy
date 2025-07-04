@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import navMenu from "@/pages/NavBar/navMenu";
 
 export const MenuContext = createContext();
@@ -21,6 +21,14 @@ export function MenuProvider({ children }) {
 
   // Para ver cuando
   const [boardChoosen, setBoardChoosen] = useState(null);
+
+  // Cargar el último programable guardado al inicializar
+  useEffect(() => {
+    const lastProgramable = localStorage.getItem('lastProgramable');
+    if (lastProgramable) {
+      setBoardChoosen(lastProgramable);
+    }
+  }, []);
 
   const urlToInt = (currentUrl) => {
     return [...new Set(navMenu.map((item) => item.url))].indexOf(
